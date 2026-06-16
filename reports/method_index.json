@@ -1,0 +1,2676 @@
+[
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/WithWebGoatUser.java",
+    "methods": [
+      "createSecurityContext"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/webwolf/user/UserServiceTest.java",
+    "methods": [
+      "testLoadUserByUsername",
+      "testLoadUserByUsername_NULL",
+      "testAddUser"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/webwolf/mailbox/MailboxControllerTest.java",
+    "methods": [
+      "setup",
+      "sendingMailShouldStoreIt",
+      "userShouldBeAbleToReadOwnEmail",
+      "differentUserShouldNotBeAbleToReadOwnEmail"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/webwolf/jwt/JWTTokenTest.java",
+    "methods": [
+      "toString"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/spoofcookie/SpoofCookieAssignmentTest.java",
+    "methods": [
+      "providedCookieValues"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/spoofcookie/encoders/EncDecTest.java",
+    "methods": [
+      "providedForEncValues",
+      "providedForDecValues"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/passwordreset/SecurityQuestionAssignmentTest.java",
+    "methods": [
+      "setup",
+      "oneQuestionShouldNotSolveTheAssignment",
+      "twoQuestionsShouldSolveTheAssignment",
+      "answeringSameQuestionTwiceShouldNotSolveAssignment",
+      "solvingForOneUserDoesNotSolveForOtherUser"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/passwordreset/ResetLinkAssignmentTest.java",
+    "methods": [
+      "setup"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/bypassrestrictions/BypassRestrictionsFrontendValidationTest.java",
+    "methods": [
+      "setup"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/xxe/ContentTypeAssignmentTest.java",
+    "methods": [
+      "setup",
+      "countComments"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/xxe/BlindSendFileAssignmentTest.java",
+    "methods": [
+      "countComments",
+      "containsComment",
+      "performXXE"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/missingac/MissingFunctionYourHashTest.java",
+    "methods": [
+      "setup"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/missingac/MissingFunctionACYourHashAdminTest.java",
+    "methods": [
+      "setup"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/hijacksession/cas/HijackSessionAuthenticationProviderTest.java",
+    "methods": [
+      "authenticationForCookieValues"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/xss/StoredXssCommentsTest.java",
+    "methods": [
+      "isNotEncoded",
+      "isEncoded"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/vulnerablecomponents/VulnerableComponentsLessonTest.java",
+    "methods": [
+      "testTransformation",
+      "testIllegalTransformation",
+      "testIllegalPayload"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/csrf/CSRFFeedbackTest.java",
+    "methods": [
+      "setup",
+      "postingJsonMessageThroughWebGoatShouldWork",
+      "csrfAttack"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/clientsidefiltering/ShopEndpointTest.java",
+    "methods": [
+      "setup",
+      "getSuperCoupon",
+      "getCoupon",
+      "askForUnknownCouponCode",
+      "fetchAllTheCouponsShouldContainGetItForFree"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/clientsidefiltering/ClientSideFilteringFreeAssignmentTest.java",
+    "methods": [
+      "setup",
+      "success",
+      "wrongSalary",
+      "getSalaries"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/clientsidefiltering/ClientSideFilteringAssignmentTest.java",
+    "methods": [
+      "setup",
+      "success",
+      "wrongCouponCode"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectMitigationCheckTest.java",
+    "methods": [
+      "OpenRedirectMitigationCheck"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask1Test.java",
+    "methods": [
+      "OpenRedirectTask1"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask3Test.java",
+    "methods": [
+      "OpenRedirectTask3"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask4Test.java",
+    "methods": [
+      "OpenRedirectTask4"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectQuizTest.java",
+    "methods": [
+      "OpenRedirectQuiz"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask2Test.java",
+    "methods": [
+      "OpenRedirectTask2"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectLessonMetadataTest.java",
+    "methods": [
+      "OpenRedirect",
+      "OpenRedirectSecureController",
+      "OpenRedirectRealRedirect"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/cryptography/CryptoUtilTest.java",
+    "methods": [
+      "testSigningAssignment",
+      "assertThat"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/authbypass/BypassVerificationTest.java",
+    "methods": [
+      "testCheatingDetection",
+      "success",
+      "failure"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/ssrf/SSRFTest2.java",
+    "methods": [
+      "setup",
+      "modifyUrlIfconfigPro",
+      "modifyUrlCat"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/ssrf/SSRFTest1.java",
+    "methods": [
+      "setup",
+      "modifyUrlTom",
+      "modifyUrlJerry",
+      "modifyUrlCat"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson9Test.java",
+    "methods": [
+      "malformedQueryReturnsError",
+      "SmithIsNotMostEarning",
+      "OnlySmithSalaryMustBeUpdated",
+      "OnlySmithMustMostEarning",
+      "SmithIsMostEarningCompletesAssignment"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson6bTest.java",
+    "methods": [
+      "submitCorrectPassword",
+      "submitWrongPassword"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson6aTest.java",
+    "methods": [
+      "wrongSolution",
+      "wrongNumberOfColumns",
+      "wrongDataTypeOfColumns",
+      "correctSolution",
+      "noResultsReturned",
+      "noUnionUsed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5Test.java",
+    "methods": [
+      "removeGrant",
+      "grantSolution",
+      "differentTableShouldNotSolveIt",
+      "noGrantShouldNotSolveIt"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson8Test.java",
+    "methods": [
+      "oneAccount",
+      "multipleAccounts",
+      "wrongNameReturnsNoAccounts",
+      "wrongTANReturnsNoAccounts",
+      "malformedQueryReturnsError"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson10Test.java",
+    "methods": [
+      "tableExistsIsFailure",
+      "tableMissingIsSuccess"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson2Test.java",
+    "methods": [
+      "solution"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5aTest.java",
+    "methods": [
+      "knownAccountShouldDisplayData",
+      "unknownAccount",
+      "sqlInjection",
+      "sqlInjectionWrongShouldDisplayError"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionLesson13Test.java",
+    "methods": [
+      "knownAccountShouldDisplayData",
+      "addressCorrectShouldOrderByHostname",
+      "addressCorrectShouldOrderByHostnameUsingSubstr",
+      "addressIncorrectShouldOrderByIdUsingSubstr",
+      "trueShouldSortByHostname",
+      "falseShouldSortById",
+      "addressIncorrectShouldOrderByHostname",
+      "postingCorrectAnswerShouldPassTheLesson",
+      "postingWrongAnswerShouldNotPassTheLesson"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlOnlyInputValidationOnKeywordsTest.java",
+    "methods": [
+      "solve",
+      "containsForbiddenSqlKeyword"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlOnlyInputValidationTest.java",
+    "methods": [
+      "solve",
+      "containsSpace"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/challenges/Assignment1Test.java",
+    "methods": [
+      "setup"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/challenges/challenge7/MD5Test.java",
+    "methods": [
+      "providedForMD5Values"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/jwt/JWTVotesEndpointTest.java",
+    "methods": [
+      "setup",
+      "solveAssignment",
+      "solveAssignmentWithBoolean",
+      "resetWithoutTokenShouldNotWork",
+      "guestShouldNotGetAToken",
+      "tomShouldGetAToken",
+      "guestShouldNotSeeNumberOfVotes",
+      "tomShouldSeeNumberOfVotes",
+      "invalidTokenShouldSeeGuestView",
+      "tomShouldBeAbleToVote",
+      "findNodeByTitle",
+      "guestShouldNotBeAbleToVote",
+      "unknownUserWithValidTokenShouldNotBeAbleToVote",
+      "unknownUserShouldSeeGuestView"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/jwt/JWTDecodeEndpointTest.java",
+    "methods": [
+      "setup",
+      "solveAssignment",
+      "wrongUserShouldNotSolveAssignment"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/jwt/JWTSecretKeyEndpointTest.java",
+    "methods": [
+      "setup",
+      "createClaims",
+      "solveAssignment",
+      "solveAssignmentWithLowercase",
+      "oneOfClaimIsMissingShouldNotSolveAssignment",
+      "incorrectUser",
+      "incorrectToken"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/jwt/TokenTest.java",
+    "methods": [
+      "test",
+      "resolveSigningKeyBytes",
+      "testRefresh"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/jwt/claimmisuse/JWTHeaderJKUEndpointTest.java",
+    "methods": [
+      "setup",
+      "setupWebWolf",
+      "generateRsaKey",
+      "createTokenAndSignIt",
+      "setupJsonWebKeySetInWebWolf"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/jwt/claimmisuse/JWTHeaderKIDEndpointTest.java",
+    "methods": [
+      "setup",
+      "solveAssignment",
+      "withJerrysKeyShouldNotSolveAssignment",
+      "shouldNotBeAbleToBypassWithSimpleToken"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/lessons/chromedevtools/ChromeDevToolsTest.java",
+    "methods": [
+      "setup",
+      "NetworkAssignmentTest_Success",
+      "NetworkAssignmentTest_Fail"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/container/users/UserProgressRepositoryTest.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle",
+      "getAssignments"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/ServerUrlConfig.java",
+    "methods": [
+      "ServerUrlConfig",
+      "getBaseUrl",
+      "url",
+      "getFullUrl",
+      "webGoat",
+      "webWolf",
+      "env"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/playwright/webwolf/pages/WebWolfLoginPage.java",
+    "methods": [
+      "open",
+      "login",
+      "logout"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/playwright/webgoat/PlaywrightTest.java",
+    "methods": [
+      "getOptions",
+      "getContextOptions",
+      "webGoatUrl",
+      "webWolfURL"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/playwright/webgoat/helpers/Authentication.java",
+    "methods": [
+      "User",
+      "User",
+      "User",
+      "sylvester",
+      "tweety",
+      "login"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/playwright/webgoat/pages/WebGoatLoginPage.java",
+    "methods": [
+      "open",
+      "login"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/playwright/webgoat/pages/RegistrationPage.java",
+    "methods": [
+      "open",
+      "register"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/playwright/webgoat/pages/lessons/LessonPage.java",
+    "methods": [
+      "navigateTo",
+      "open",
+      "refreshPage",
+      "resetLesson",
+      "numberOfAssignments",
+      "isAssignmentSolved",
+      "noAssignmentsCompleted",
+      "getAssignmentOutput",
+      "getHintsOutput"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/playwright/webgoat/pages/lessons/HttpBasicsLessonPage.java",
+    "methods": [
+      "super",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/playwright/webgoat/pages/lessons/OpenRedirectLessonPage.java",
+    "methods": [
+      "super",
+      "solveTask1",
+      "task1Output",
+      "solveTask2",
+      "task2Output",
+      "solveTask3",
+      "task3Output",
+      "solveTask4",
+      "autofillTask4",
+      "task4Output",
+      "submitMitigation",
+      "mitigationOutput",
+      "invokeSafeRedirect",
+      "solveQuiz",
+      "submitTask",
+      "taskOutput",
+      "quizContainer",
+      "solvedAssignments"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/playwright/webgoat/pages/lessons/SecurityMisconfigurationLessonPage.java",
+    "methods": [
+      "super",
+      "open",
+      "fillDefaultCredentials",
+      "submitTask1",
+      "task1Output",
+      "triggerDebugLeak",
+      "debugOutput",
+      "extractTokenFromDebug",
+      "submitTask2",
+      "requestActuatorEnv",
+      "extractApiKey",
+      "submitTask3",
+      "task3Output",
+      "applyHardeningConfig",
+      "task4Output"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/integration/SqlInjectionMitigationIntegrationTest.java",
+    "methods": [
+      "runTests"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/integration/SqlInjectionLessonIntegrationTest.java",
+    "methods": [
+      "varchar",
+      "runTests"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/integration/XXEIntegrationTest.java",
+    "methods": [
+      "xxeSecure",
+      "getSecret",
+      "runTests"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/integration/SqlInjectionAdvancedIntegrationTest.java",
+    "methods": [
+      "runTests"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/integration/IDORIntegrationTest.java",
+    "methods": [
+      "init",
+      "shutdown",
+      "loginIDOR",
+      "profile"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/integration/WebWolfIntegrationTest.java",
+    "methods": [
+      "runTests"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/integration/CSRFIntegrationTest.java",
+    "methods": [
+      "init",
+      "shutdown",
+      "uploadTrickHtml",
+      "callTrickHtml",
+      "checkAssignment3",
+      "checkAssignment4",
+      "checkAssignment7",
+      "checkAssignment8",
+      "registerCSRFUser"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/integration/DeserializationIntegrationTest.java",
+    "methods": [
+      "runTests"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/integration/OpenRedirectIntegrationTest.java",
+    "methods": [
+      "runTests"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/integration/XSSIntegrationTest.java",
+    "methods": [
+      "crossSiteScriptingAssignments"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/integration/LabelAndHintIntegrationTest.java",
+    "methods": [
+      "testSingleLabel",
+      "testHints",
+      "testLabels",
+      "getProperties",
+      "checkLang",
+      "getLabels",
+      "getHints"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/integration/PasswordResetLessonIntegrationTest.java",
+    "methods": [
+      "init",
+      "assignment2",
+      "assignment4",
+      "assignment5",
+      "solveAssignment",
+      "sendEmailShouldBeAvailableInWebWolf",
+      "shutdown",
+      "changePassword",
+      "getPasswordResetLinkFromLandingPage",
+      "clickForgotEmailLink"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/integration/SSRFIntegrationTest.java",
+    "methods": [
+      "runTests"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/integration/IntegrationTest.java",
+    "methods": [
+      "login",
+      "login",
+      "logout",
+      "startLesson",
+      "startLesson",
+      "checkAssignment",
+      "checkAssignmentWithPUT",
+      "checkResults",
+      "checkResults",
+      "checkAssignment",
+      "checkAssignmentWithGet",
+      "getWebWolfFileServerLocation",
+      "webGoatServerDirectory",
+      "cleanMailbox"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/integration/PathTraversalIntegrationTest.java",
+    "methods": [
+      "init",
+      "assignment1",
+      "assignment2",
+      "assignment3",
+      "assignment4",
+      "assignment5"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/integration/ProgressRaceConditionIntegrationTest.java",
+    "methods": [
+      "runTests"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/integration/CryptoIntegrationTest.java",
+    "methods": [
+      "runTests",
+      "checkAssignment2",
+      "checkAssignment3",
+      "checkAssignment4",
+      "checkAssignmentSigning",
+      "checkAssignmentDefaults"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/integration/AccessControlIntegrationTest.java",
+    "methods": [
+      "assignment3",
+      "assignment2",
+      "assignment1"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/integration/GeneralLessonIntegrationTest.java",
+    "methods": [
+      "httpBasics",
+      "solveAsOtherUserHttpBasics",
+      "httpProxies",
+      "cia",
+      "vulnerableComponents",
+      "insecureLogin",
+      "securePasswords",
+      "chrome",
+      "authByPass",
+      "lessonTemplate"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/integration/JWTLessonIntegrationTest.java",
+    "methods": [
+      "solveAssignment",
+      "generateToken",
+      "getSecretToken",
+      "decodingToken",
+      "findPassword",
+      "resetVotes",
+      "buyAsTom",
+      "deleteTomThroughKidClaim",
+      "deleteTomThroughJkuClaim",
+      "quiz"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/dummy/insecure/framework/VulnerableTaskHolder.java",
+    "methods": [
+      "super",
+      "toString",
+      "readObject"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/WebWolf.java",
+    "methods": [
+      "traceRepository"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/FileServer.java",
+    "methods": [
+      "getFileLocation",
+      "importFile",
+      "getFiles",
+      "getCreationTime"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/WebSecurityConfig.java",
+    "methods": [
+      "filterChain",
+      "configureGlobal",
+      "userDetailsServiceBean",
+      "authenticationManager",
+      "passwordEncoder"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/MvcConfiguration.java",
+    "methods": [
+      "addResourceHandlers",
+      "addViewControllers",
+      "addInterceptors",
+      "createDirectory"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/user/UserService.java",
+    "methods": [
+      "loadUserByUsername",
+      "addUser"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/user/WebWolfUser.java",
+    "methods": [
+      "createUser",
+      "getAuthorities",
+      "isAccountNonExpired",
+      "isAccountNonLocked",
+      "isCredentialsNonExpired",
+      "isEnabled"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/requests/LandingPage.java",
+    "methods": [
+      "ok"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/requests/Requests.java",
+    "methods": [
+      "get",
+      "allowedTrace",
+      "path",
+      "toJsonString"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/requests/WebWolfTraceRepository.java",
+    "methods": [
+      "matches",
+      "contains",
+      "endsWith",
+      "findAll",
+      "isInExclusionList",
+      "add"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/mailbox/Email.java",
+    "methods": [
+      "getSummary",
+      "getTimestamp",
+      "getTime",
+      "getShortSender"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/mailbox/MailboxController.java",
+    "methods": [
+      "mail",
+      "sendEmail",
+      "deleteAllMail"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/jwt/JWTToken.java",
+    "methods": [
+      "decode",
+      "decode",
+      "parse",
+      "write",
+      "encode",
+      "parseToken",
+      "validateSignature",
+      "validateWithSharedSecret",
+      "validateWithJwks"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/jwt/JWTController.java",
+    "methods": [
+      "jwt",
+      "decode",
+      "encode"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/server/StartWebGoat.java",
+    "methods": [
+      "main",
+      "printStartUpMessage"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/spoofcookie/SpoofCookie.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/spoofcookie/SpoofCookieAssignment.java",
+    "methods": [
+      "login",
+      "cleanup",
+      "credentialsLoginFlow",
+      "cookieLoginFlow"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/spoofcookie/encoders/EncDec.java",
+    "methods": [
+      "encode",
+      "decode",
+      "revert",
+      "hexEncode",
+      "hexDecode",
+      "base64Encode",
+      "base64Decode"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/logging/LogSpoofingTask.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/logging/LogBleedingTask.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/logging/LogSpoofing.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/passwordreset/QuestionsAssignment.java",
+    "methods": [
+      "passwordReset"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/passwordreset/ResetLinkAssignmentForgotPassword.java",
+    "methods": [
+      "resolveDNSOrNull",
+      "sendPasswordResetLink",
+      "sendMailToUser",
+      "fakeClickingLinkEmail"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/passwordreset/SimpleMailAssignment.java",
+    "methods": [
+      "login",
+      "resetPassword",
+      "extractUsername",
+      "sendEmail"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/passwordreset/SecurityQuestionAssignment.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/passwordreset/PasswordReset.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/passwordreset/TriedQuestions.java",
+    "methods": [
+      "incr",
+      "isComplete"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/passwordreset/ResetLinkAssignment.java",
+    "methods": [
+      "login",
+      "resetPassword",
+      "changePassword",
+      "checkIfLinkIsFromTom"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/bypassrestrictions/BypassRestrictions.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/bypassrestrictions/BypassRestrictionsFieldRestrictions.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/bypassrestrictions/BypassRestrictionsFrontendValidation.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/lessontemplate/SampleAttack.java",
+    "methods": [
+      "completed",
+      "getItemsInBasket"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/lessontemplate/LessonTemplate.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xxe/ContentTypeAssignment.java",
+    "methods": [
+      "createNewUser",
+      "parseJson",
+      "checkSolution"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xxe/XXE.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xxe/User.java",
+    "methods": [
+      "getPassword",
+      "setPassword",
+      "getUsername",
+      "setUsername"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xxe/CommentsEndpoint.java",
+    "methods": [
+      "retrieveComments"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xxe/Ping.java",
+    "methods": [
+      "logRequest"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xxe/SimpleXXE.java",
+    "methods": [
+      "createNewComment",
+      "checkSolution",
+      "getSampleDTDFile"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xxe/CommentsCache.java",
+    "methods": [
+      "Comments",
+      "initDefaultComments",
+      "getComments",
+      "parseXml",
+      "addComment",
+      "reset"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xxe/BlindSendFileAssignment.java",
+    "methods": [
+      "createSecretFileWithRandomContents",
+      "addComment",
+      "initialize"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/missingac/MissingFunctionACYourHash.java",
+    "methods": [
+      "simple"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/missingac/DisplayUser.java",
+    "methods": [
+      "genUserHash"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/missingac/MissingFunctionACHiddenMenus.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/missingac/MissingFunctionACUsers.java",
+    "methods": [
+      "listUsers",
+      "usersService",
+      "usersFixed",
+      "addUser"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/missingac/MissingFunctionAC.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/missingac/MissingAccessControlUserRepository.java",
+    "methods": [
+      "findAllUsers",
+      "findByUsername",
+      "save"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/missingac/MissingFunctionACYourHashAdmin.java",
+    "methods": [
+      "admin"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/IDORLogin.java",
+    "methods": [
+      "initIDORInfo",
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/IDOREditOtherProfile.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/IDOR.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/IDORViewOwnProfileAltUrl.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/UserProfile.java",
+    "methods": [
+      "setProfileFromId",
+      "setProfileFromId",
+      "profileToMap",
+      "toHTMLString",
+      "getUserId",
+      "setUserId",
+      "getName",
+      "setName",
+      "getColor",
+      "setColor",
+      "getSize",
+      "setSize",
+      "isAdmin",
+      "setAdmin",
+      "getRole",
+      "setRole"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/IDORViewOwnProfile.java",
+    "methods": [
+      "invoke"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/IDORViewOtherProfile.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/IDORDiffAttributes.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/hijacksession/HijackSessionAssignment.java",
+    "methods": [
+      "login",
+      "setCookie"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/hijacksession/HijackSession.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/hijacksession/cas/Authentication.java",
+    "methods": [
+      "getName",
+      "setAuthenticated",
+      "setId"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/hijacksession/cas/HijackSessionAuthenticationProvider.java",
+    "methods": [
+      "Random",
+      "authenticate",
+      "authorizedUserAutoLogin",
+      "addSession",
+      "getSessionsSize"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/insecurelogin/InsecureLoginTask.java",
+    "methods": [
+      "completed",
+      "login"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/insecurelogin/InsecureLogin.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/DOMCrossSiteScripting.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/DOMCrossSiteScriptingVerifier.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScripting.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingLesson5a.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingLesson6a.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingLesson1.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingQuiz.java",
+    "methods": [
+      "completed",
+      "getResults"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/mitigation/CrossSiteScriptingMitigation.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/mitigation/CrossSiteScriptingLesson3.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/mitigation/CrossSiteScriptingLesson4.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/stored/StoredXssComments.java",
+    "methods": [
+      "retrieveComments",
+      "createNewComment",
+      "parseJson"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/stored/StoredCrossSiteScriptingVerifier.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/stored/CrossSiteScriptingStored.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/vulnerablecomponents/VulnerableComponents.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/vulnerablecomponents/Contact.java",
+    "methods": [
+      "getId",
+      "setId",
+      "getFirstName",
+      "setFirstName",
+      "getLastName",
+      "setLastName",
+      "getEmail",
+      "setEmail"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/vulnerablecomponents/VulnerableComponentsLesson.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileUploadRemoveUserInput.java",
+    "methods": [
+      "uploadFileHandler"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/PathTraversal.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileUploadFix.java",
+    "methods": [
+      "super",
+      "uploadFileHandler",
+      "getProfilePicture"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileUpload.java",
+    "methods": [
+      "super",
+      "uploadFileHandler",
+      "getProfilePicture"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileUploadRetrieval.java",
+    "methods": [
+      "initAssignment",
+      "execute",
+      "getProfilePicture"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileUploadBase.java",
+    "methods": [
+      "execute",
+      "cleanupAndCreateDirectoryForUser",
+      "attemptWasMade",
+      "solvedIt",
+      "getProfilePicture",
+      "getProfilePictureAsBase64",
+      "defaultImage"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileZipSlip.java",
+    "methods": [
+      "super",
+      "uploadFileHandler",
+      "processZipUpload",
+      "isSolved",
+      "getProfilePicture",
+      "getProfileImage"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/htmltampering/HtmlTampering.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/htmltampering/HtmlTamperingTask.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/csrf/CSRFFeedback.java",
+    "methods": [
+      "completed",
+      "flag",
+      "hostOrRefererDifferentHost",
+      "requestContainsWebGoatCookie"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/csrf/CSRFConfirmFlag1.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/csrf/CSRFLogin.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/csrf/CSRFGetFlag.java",
+    "methods": [
+      "invoke"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/csrf/CSRF.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/csrf/ForgedReviews.java",
+    "methods": [
+      "retrieveReviews",
+      "createNewReview"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/webgoatintroduction/WebGoatIntroduction.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/ClientSideFilteringAssignment.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/ClientSideFilteringFreeAssignment.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/ShopEndpoint.java",
+    "methods": [
+      "get",
+      "getDiscountCode",
+      "all"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/Salaries.java",
+    "methods": [
+      "copyFiles",
+      "invoke"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/ClientSideFiltering.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirect.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask1.java",
+    "methods": [
+      "simulate",
+      "escape"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectMitigationCheck.java",
+    "methods": [
+      "check",
+      "esc"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectRealRedirect.java",
+    "methods": [
+      "real"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask2.java",
+    "methods": [
+      "simulate",
+      "escape"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask3.java",
+    "methods": [
+      "challenge",
+      "escape"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectSecureController.java",
+    "methods": [
+      "safe"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask4.java",
+    "methods": [
+      "doubleDecode",
+      "esc"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectQuiz.java",
+    "methods": [
+      "submit",
+      "results"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/XOREncodingAssignment.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/SigningAssignment.java",
+    "methods": [
+      "getPrivateKey",
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/SecureDefaultsAssignment.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/Cryptography.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/HashingAssignment.java",
+    "methods": [
+      "getMd5",
+      "getSha256",
+      "completed",
+      "getHash"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/EncodingAssignment.java",
+    "methods": [
+      "getBasicAuth",
+      "getBasicAuth",
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/CryptoUtil.java",
+    "methods": [
+      "generateKeyPair",
+      "getPrivateKeyInPEM",
+      "signMessage",
+      "verifyMessage",
+      "verifyAssignment",
+      "getPrivateKeyFromPEM"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/authbypass/AuthBypass.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/authbypass/VerifyAccount.java",
+    "methods": [
+      "completed",
+      "parseSecQuestions"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/authbypass/AccountVerificationHelper.java",
+    "methods": [
+      "didUserLikelylCheat",
+      "verifyAccount"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/ssrf/SSRFTask1.java",
+    "methods": [
+      "completed",
+      "stealTheCheese"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/ssrf/SSRFTask2.java",
+    "methods": [
+      "completed",
+      "furBall",
+      "getFailedResult"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/ssrf/SSRF.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/securepasswords/SecurePasswordsAssignment.java",
+    "methods": [
+      "completed",
+      "calculateTime"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/securepasswords/SecurePasswords.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cia/CIAQuiz.java",
+    "methods": [
+      "completed",
+      "getResults"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cia/CIA.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/deserialization/InsecureDeserialization.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/deserialization/SerializationHelper.java",
+    "methods": [
+      "fromString",
+      "toString",
+      "show",
+      "bytesToHex"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/deserialization/InsecureDeserializationTask.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson2.java",
+    "methods": [
+      "completed",
+      "injectableQuery"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5a.java",
+    "methods": [
+      "completed",
+      "injectableQuery",
+      "writeTable"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson10.java",
+    "methods": [
+      "completed",
+      "injectableQueryAvailability",
+      "tableExists"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5.java",
+    "methods": [
+      "createUser",
+      "completed",
+      "injectableQuery",
+      "checkSolution"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson3.java",
+    "methods": [
+      "completed",
+      "injectableQuery"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson8.java",
+    "methods": [
+      "completed",
+      "injectableQueryConfidentiality",
+      "generateTable",
+      "log"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5b.java",
+    "methods": [
+      "completed",
+      "injectableQuery"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson9.java",
+    "methods": [
+      "completed",
+      "injectableQueryIntegrity",
+      "getSqlInt",
+      "getMaxSalary",
+      "getSumSalariesOfOtherEmployees",
+      "getJohnSalary",
+      "getEmployeesDataOrderBySalaryDesc"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson4.java",
+    "methods": [
+      "completed",
+      "injectableQuery"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjection.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionQuiz.java",
+    "methods": [
+      "completed",
+      "getResults"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionLesson6b.java",
+    "methods": [
+      "completed",
+      "getPassword"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionChallenge.java",
+    "methods": [
+      "registerNewUser",
+      "checkArguments"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionChallengeLogin.java",
+    "methods": [
+      "login"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionAdvanced.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionLesson6a.java",
+    "methods": [
+      "completed",
+      "injectableQuery",
+      "unionQueryChecker",
+      "executeSqlInjection",
+      "appendSuccededMessage",
+      "verifySqlInjection"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionLesson10a.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionMitigations.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlOnlyInputValidationOnKeywords.java",
+    "methods": [
+      "attack"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlOnlyInputValidation.java",
+    "methods": [
+      "attack"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionLesson10b.java",
+    "methods": [
+      "completed",
+      "compileFromString",
+      "getJavaFileContentsAsString",
+      "main",
+      "super",
+      "getCharContent",
+      "check_text"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionLesson13.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/Servers.java",
+    "methods": [
+      "sort"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/webwolfintroduction/MailAssignment.java",
+    "methods": [
+      "sendEmail",
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/webwolfintroduction/LandingAssignment.java",
+    "methods": [
+      "click",
+      "openPasswordReset"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/webwolfintroduction/WebWolfIntroduction.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/Flags.java",
+    "methods": [
+      "getFlag"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/FlagController.java",
+    "methods": [
+      "postFlag"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/Flag.java",
+    "methods": [
+      "Flag",
+      "isCorrect",
+      "toString"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/ChallengeIntro.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge8/Challenge8.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge8/Assignment8.java",
+    "methods": [
+      "vote",
+      "getVotes",
+      "average",
+      "notUsed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/Challenge7.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/PasswordResetLink.java",
+    "methods": [
+      "createPasswordReset",
+      "scramble",
+      "main"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/MD5.java",
+    "methods": [
+      "reset",
+      "main",
+      "getHash",
+      "getHashString",
+      "getHash",
+      "getHashString",
+      "getHash",
+      "getHashString",
+      "getHash",
+      "getHashString",
+      "getHash",
+      "getHashString",
+      "getHash",
+      "getHashString",
+      "reset",
+      "toString",
+      "update",
+      "update",
+      "update",
+      "update",
+      "update",
+      "update",
+      "update",
+      "MD5State",
+      "MD5State",
+      "reset",
+      "reset",
+      "copy",
+      "toHex",
+      "FF",
+      "GG",
+      "HH",
+      "II",
+      "encode",
+      "encode",
+      "decode",
+      "transform"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/Assignment7.java",
+    "methods": [
+      "resetPassword",
+      "sendPasswordResetLink",
+      "git"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge1/ImageServlet.java",
+    "methods": [
+      "Random",
+      "logo"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge1/Challenge1.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge1/Assignment1.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge5/Challenge5.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge5/Assignment5.java",
+    "methods": [
+      "login"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/httpbasics/HttpBasicsQuiz.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/httpbasics/HttpBasicsLesson.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/httpbasics/HttpBasics.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/httpproxies/HttpBasicsInterceptRequest.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/httpproxies/HttpProxies.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/securitymisconfiguration/ActuatorExposureTask.java",
+    "methods": [
+      "actuatorEnv",
+      "actuatorHealth",
+      "submitApiKey"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/securitymisconfiguration/ConfigHardeningTask.java",
+    "methods": [
+      "submitConfig"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/securitymisconfiguration/DefaultCredentialsTask.java",
+    "methods": [
+      "login"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/securitymisconfiguration/SecurityMisconfiguration.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/securitymisconfiguration/VerboseErrorTask.java",
+    "methods": [
+      "triggerError",
+      "fetchConfig",
+      "submitToken"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTQuiz.java",
+    "methods": [
+      "completed",
+      "getResults"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTDecodeEndpoint.java",
+    "methods": [
+      "decode"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTRefreshEndpoint.java",
+    "methods": [
+      "follow",
+      "createNewTokens",
+      "checkout",
+      "newToken"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWT.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTSecretKeyEndpoint.java",
+    "methods": [
+      "getSecretToken",
+      "login"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTVotesEndpoint.java",
+    "methods": [
+      "initVotes",
+      "login",
+      "getVotes",
+      "vote",
+      "resetVotes"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/claimmisuse/JWTHeaderKIDEndpoint.java",
+    "methods": [
+      "follow",
+      "resetVotes",
+      "resolveSigningKeyBytes"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/claimmisuse/JWTHeaderJKUEndpoint.java",
+    "methods": [
+      "follow",
+      "resetVotes"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/votes/Vote.java",
+    "methods": [
+      "incrementNumberOfVotes",
+      "reset",
+      "calculateStars"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/chromedevtools/NetworkDummy.java",
+    "methods": [
+      "completed"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/chromedevtools/NetworkLesson.java",
+    "methods": [
+      "completed",
+      "ok"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/chromedevtools/ChromeDevTools.java",
+    "methods": [
+      "getDefaultCategory",
+      "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/DatabaseConfiguration.java",
+    "methods": [
+      "dataSource",
+      "flyWayContainer",
+      "flywayLessons",
+      "lessonDataSource"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/WebWolfRedirect.java",
+    "methods": [
+      "openWebWolf"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/WebSecurityConfig.java",
+    "methods": [
+      "filterChain",
+      "configureGlobal",
+      "userDetailsServiceBean",
+      "authenticationManager",
+      "passwordEncoder"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/HammerHead.java",
+    "methods": [
+      "attack"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/UserInterceptor.java",
+    "methods": [
+      "preHandle",
+      "postHandle",
+      "afterCompletion"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/LessonResourceScanner.java",
+    "methods": [
+      "applyPattern"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/AjaxAuthenticationEntryPoint.java",
+    "methods": [
+      "super",
+      "commence"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/AsciiDoctorTemplateResolver.java",
+    "methods": [
+      "create",
+      "computeTemplateResource",
+      "getInputStream",
+      "computeResourceName",
+      "createAttributes",
+      "determineLanguage"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/MvcConfiguration.java",
+    "methods": [
+      "addViewControllers",
+      "viewResolver",
+      "lessonThymeleafTemplateResolver",
+      "computeTemplateResource",
+      "springThymeleafTemplateResolver",
+      "lessonTemplateResolver",
+      "asciiDoctorTemplateResolver",
+      "thymeleafTemplateEngine",
+      "addResourceHandlers",
+      "pluginMessages",
+      "language",
+      "localeResolver",
+      "localeChangeInterceptor",
+      "addInterceptors",
+      "messageSource",
+      "labelDebugger"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/LessonTemplateResolver.java",
+    "methods": [
+      "computeTemplateResource",
+      "loadAndCache"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/WebGoat.java",
+    "methods": [
+      "pluginTargetDirectory",
+      "userSessionData",
+      "restTemplate"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/LessonDataSource.java",
+    "methods": [
+      "getConnection",
+      "getConnection",
+      "getLogWriter",
+      "setLogWriter",
+      "setLoginTimeout",
+      "getLoginTimeout",
+      "getParentLogger",
+      "unwrap",
+      "isWrapperFor"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/controller/StartLesson.java",
+    "methods": [
+      "lessonPage"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/controller/Welcome.java",
+    "methods": [
+      "welcome"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/report/ReportCardController.java",
+    "methods": [
+      "reportCard",
+      "ReportCard",
+      "LessonStatistics"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/service/LabelDebugService.java",
+    "methods": [
+      "checkDebuggingStatus",
+      "setDebuggingStatus",
+      "createResponse"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/service/LabelService.java",
+    "methods": [
+      "fetchLabels"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/service/RestartLessonService.java",
+    "methods": [
+      "restartLesson"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/service/LessonProgressService.java",
+    "methods": [
+      "lessonOverview"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/service/HintService.java",
+    "methods": [
+      "getHints",
+      "createHint"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/service/EnvironmentService.java",
+    "methods": [
+      "homeDirectory"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/service/LessonMenuService.java",
+    "methods": [
+      "showLeftNav"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/service/LessonInfoService.java",
+    "methods": [
+      "getLessonInfo"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/service/SessionService.java",
+    "methods": [
+      "applySecurity"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/i18n/Messages.java",
+    "methods": [
+      "getMessages",
+      "getMessage",
+      "getMessage"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/i18n/Language.java",
+    "methods": [
+      "getLocale"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/i18n/PluginMessages.java",
+    "methods": [
+      "refreshProperties",
+      "getMessages",
+      "getMessage",
+      "getMessage"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/session/LessonSession.java",
+    "methods": [
+      "getValue",
+      "setValue"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/session/LabelDebugger.java",
+    "methods": [
+      "isEnabled",
+      "enable",
+      "disable",
+      "setEnabled"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/session/Course.java",
+    "methods": [
+      "getCategories",
+      "getFirstLesson",
+      "getLessons",
+      "getLessons",
+      "setLessons",
+      "getTotalOfLessons",
+      "getTotalOfAssignments",
+      "getLessonByName",
+      "getLessonByAssignment"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/users/UserValidator.java",
+    "methods": [
+      "supports",
+      "validate"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/users/UserService.java",
+    "methods": [
+      "loadUserByUsername",
+      "addUser",
+      "createLessonsForUser",
+      "getAllUsers"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/users/LessonProgress.java",
+    "methods": [
+      "getAssignment",
+      "assignmentSolved",
+      "isLessonSolved",
+      "incrementAttempts",
+      "getLessonOverview"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/users/UserProgress.java",
+    "methods": [
+      "getLessonProgress",
+      "assignmentSolved",
+      "assignmentFailed",
+      "reset",
+      "numberOfLessonsSolved",
+      "numberOfAssignmentsSolved"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/users/AssignmentProgress.java",
+    "methods": [
+      "hasSameName",
+      "solved",
+      "reset"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/users/WebGoatUser.java",
+    "methods": [
+      "this",
+      "createUser",
+      "getAuthorities",
+      "getRole",
+      "getUsername",
+      "getPassword",
+      "isAccountNonExpired",
+      "isAccountNonLocked",
+      "isCredentialsNonExpired",
+      "isEnabled",
+      "equals",
+      "hashCode"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/users/RegistrationController.java",
+    "methods": [
+      "showForm",
+      "registration",
+      "registrationOAUTH"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/asciidoc/WebGoatVersionMacro.java",
+    "methods": [
+      "super",
+      "super",
+      "process"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/asciidoc/EnvironmentExposure.java",
+    "methods": [
+      "getEnv",
+      "setApplicationContext"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/asciidoc/WebWolfMacro.java",
+    "methods": [
+      "super",
+      "super",
+      "process",
+      "displayCompleteLinkNoFormatting"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/asciidoc/WebWolfRootMacro.java",
+    "methods": [
+      "super",
+      "super"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/asciidoc/WebGoatTmpDirMacro.java",
+    "methods": [
+      "super",
+      "super",
+      "process"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/asciidoc/OperatingSystemMacro.java",
+    "methods": [
+      "super",
+      "super",
+      "process"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/asciidoc/UsernameMacro.java",
+    "methods": [
+      "super",
+      "super",
+      "process"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/assignments/LessonTrackerInterceptor.java",
+    "methods": [
+      "supports",
+      "beforeBodyWrite",
+      "trackProgress",
+      "realUsername"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/assignments/AttackResultBuilder.java",
+    "methods": [
+      "assignmentCompleted",
+      "feedbackArgs",
+      "feedback",
+      "output",
+      "outputArgs",
+      "attemptWasMade",
+      "build",
+      "assignment",
+      "success",
+      "failed",
+      "informationMessage"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/assignments/AttackResult.java",
+    "methods": [
+      "assignmentSolved",
+      "apply"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/assignments/AttackResultMessageResponseBodyAdvice.java",
+    "methods": [
+      "supports",
+      "beforeBodyWrite"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/lessons/Category.java",
+    "methods": [
+      "INTRODUCTION",
+      "Category",
+      "toString"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/lessons/LessonName.java",
+    "methods": [
+      "LessonName",
+      "toString"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/lessons/Lesson.java",
+    "methods": [
+      "addAssignment",
+      "getName",
+      "getCategory",
+      "getDefaultCategory",
+      "getTitle",
+      "getPath",
+      "getLink",
+      "toString",
+      "getId",
+      "getPackage"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/lessons/Hint.java",
+    "methods": [
+      "Hint"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/lessons/Assignment.java",
+    "methods": [
+      "this",
+      "if"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/lessons/LessonConnectionInvocationHandler.java",
+    "methods": [
+      "invoke"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/lessons/CourseConfiguration.java",
+    "methods": [
+      "attachToLessonInParentPackage",
+      "attachToLesson",
+      "toAssignment",
+      "course",
+      "findDiff",
+      "getPath",
+      "methodReturnTypeIsOfTypeAttackResult",
+      "getMapping",
+      "getHints"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/lessons/LessonMenuItem.java",
+    "methods": [
+      "getName",
+      "setName",
+      "getChildren",
+      "setChildren",
+      "getType",
+      "setType",
+      "addChild",
+      "toString",
+      "isComplete",
+      "setComplete",
+      "getLink",
+      "setLink",
+      "setRanking",
+      "getRanking"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/.mvn/wrapper/MavenWrapperDownloader.java",
+    "methods": [
+      "main",
+      "downloadFileFromURL",
+      "getPasswordAuthentication"
+    ]
+  }
+]
