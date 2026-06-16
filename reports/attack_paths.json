@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Secrets \u2192 RCE",
+    "impact": "Remote Code Execution",
+    "components": [
+      "Secret Exposure",
+      "CWE-321",
+      "CWE-78"
+    ]
+  },
+  {
+    "name": "SQL Injection",
+    "impact": "Database Compromise",
+    "components": [
+      "SQL Injection"
+    ]
+  },
+  {
+    "name": "Upload \u2192 RCE",
+    "impact": "Remote Code Execution",
+    "components": [
+      "CWE-434",
+      "CWE-78"
+    ]
+  },
+  {
+    "name": "SSRF \u2192 Internal Access",
+    "impact": "Internal Network Access",
+    "components": [
+      "CWE-918"
+    ]
+  },
+  {
+    "name": "Deserialization \u2192 RCE",
+    "impact": "Remote Code Execution",
+    "components": [
+      "CWE-502",
+      "CWE-94"
+    ]
+  }
+]

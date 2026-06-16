@@ -1,0 +1,39 @@
+{
+  "finding_id": "",
+  "tool": "",
+  "category": "",
+  "severity": "",
+  "confidence": "",
+
+  "title": "",
+  "description": "",
+
+  "cwe": [],
+  "owasp": [],
+  "cve": "",
+
+  "package": "",
+  "installed_version": "",
+  "fixed_version": "",
+
+  "cvss_score": 0.0,
+  "cvss_vector": "",
+
+  "secret_type": "",
+
+  "file": "",
+  "line": 0,
+
+  "likelihood": "",
+  "impact": "",
+
+  "vulnerability_class": [],
+
+  "status": "NEW",
+
+  "ai_analysis": null,
+
+  "references": [],
+
+  "raw_finding": {}
+}

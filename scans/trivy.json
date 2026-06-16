@@ -1,0 +1,3517 @@
+{
+  "SchemaVersion": 2,
+  "CreatedAt": "2026-06-16T10:33:10.17156625+05:30",
+  "ArtifactName": ".",
+  "ArtifactType": "filesystem",
+  "Metadata": {
+    "ImageConfig": {
+      "architecture": "",
+      "created": "0001-01-01T00:00:00Z",
+      "os": "",
+      "rootfs": {
+        "type": "",
+        "diff_ids": null
+      },
+      "config": {}
+    }
+  },
+  "Results": [
+    {
+      "Target": "pom.xml",
+      "Class": "lang-pkgs",
+      "Type": "pom",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2013-7285",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.7, 1.4.11",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2013-7285",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "XStream: remote code execution due to insecure XML deserialization",
+          "Description": "Xstream API versions up to 1.4.6 and version 1.4.10, if the security framework has not been initialized, may allow a remote attacker to run arbitrary shell commands by manipulating the processed input stream when unmarshaling XML or any supported format. e.g. JSON.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-78"
+          ],
+          "VendorSeverity": {
+            "ghsa": 4,
+            "nvd": 4,
+            "redhat": 3,
+            "ubuntu": 1
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V2Score": 6.8
+            }
+          },
+          "References": [
+            "http://blog.diniscruz.com/2013/12/xstream-remote-code-execution-exploit.html",
+            "http://markmail.org/message/kfqoqdfj5fnup5co?q=list:org.codehaus.xstream.dev\u0026page=3",
+            "http://seclists.org/oss-sec/2014/q1/69",
+            "http://web.archive.org/web/20140204133306/http://blog.diniscruz.com/2013/12/xstream-remote-code-execution-exploit.html",
+            "http://xstream.codehaus.org/security.html",
+            "https://access.redhat.com/security/cve/CVE-2013-7285",
+            "https://fisheye.codehaus.org/changelog/xstream?cs=2210",
+            "https://github.com/x-stream/xstream/commit/6344867dce6767af7d0fe34fb393271a6456672d",
+            "https://lists.apache.org/thread.html/6d3d34adcf3dfc48e36342aa1f18ce3c20bb8e4c458a97508d5bfed1%40%3Cissues.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/6d3d34adcf3dfc48e36342aa1f18ce3c20bb8e4c458a97508d5bfed1@%3Cissues.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/dcf8599b80e43a6b60482607adb76c64672772dc2d9209ae2170f369%40%3Cissues.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/dcf8599b80e43a6b60482607adb76c64672772dc2d9209ae2170f369@%3Cissues.activemq.apache.org%3E",
+            "https://nvd.nist.gov/vuln/detail/CVE-2013-7285",
+            "https://securityblog.redhat.com/2014/01/23/java-deserialization-flaws-part-2-xml-deserialization/",
+            "https://www.cve.org/CVERecord?id=CVE-2013-7285",
+            "https://www.mail-archive.com/user%40xstream.codehaus.org/msg00604.html",
+            "https://www.mail-archive.com/user%40xstream.codehaus.org/msg00607.html",
+            "https://www.mail-archive.com/user@xstream.codehaus.org/msg00604.html",
+            "https://www.mail-archive.com/user@xstream.codehaus.org/msg00607.html",
+            "https://www.oracle.com/security-alerts/cpuoct2020.html",
+            "https://x-stream.github.io/CVE-2013-7285.html"
+          ],
+          "PublishedDate": "2019-05-15T17:29:00.297Z",
+          "LastModifiedDate": "2025-05-23T16:54:47.33Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2016-3674",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.9",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2016-3674",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "XStream: enabled processing of external entities",
+          "Description": "Multiple XML external entity (XXE) vulnerabilities in the (1) Dom4JDriver, (2) DomDriver, (3) JDomDriver, (4) JDom2Driver, (5) SjsxpDriver, (6) StandardStaxDriver, and (7) WstxDriver drivers in XStream before 1.4.9 allow remote attackers to read arbitrary files via a crafted XML document.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-200"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "nvd": 3,
+            "redhat": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V2Score": 5,
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "http://lists.fedoraproject.org/pipermail/package-announce/2016-April/183180.html",
+            "http://lists.fedoraproject.org/pipermail/package-announce/2016-April/183208.html",
+            "http://rhn.redhat.com/errata/RHSA-2016-2822.html",
+            "http://rhn.redhat.com/errata/RHSA-2016-2823.html",
+            "http://www.debian.org/security/2016/dsa-3575",
+            "http://www.openwall.com/lists/oss-security/2016/03/25/8",
+            "http://www.openwall.com/lists/oss-security/2016/03/28/1",
+            "http://www.securityfocus.com/bid/85381",
+            "http://www.securitytracker.com/id/1036419",
+            "http://x-stream.github.io/changes.html#1.4.9",
+            "https://access.redhat.com/security/cve/CVE-2016-3674",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/issues/25",
+            "https://nvd.nist.gov/vuln/detail/CVE-2016-3674",
+            "https://snyk.io/vuln/SNYK-JAVA-COMTHOUGHTWORKSXSTREAM-30385",
+            "https://ubuntu.com/security/notices/USN-6978-1",
+            "https://www.cve.org/CVERecord?id=CVE-2016-3674"
+          ],
+          "PublishedDate": "2016-05-17T14:08:03.607Z",
+          "LastModifiedDate": "2025-05-23T17:54:18.25Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2017-7957",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.10",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-7957",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "XStream: DoS when unmarshalling void type",
+          "Description": "XStream through 1.4.9, when a certain denyTypes workaround is not used, mishandles attempts to create an instance of the primitive type 'void' during unmarshalling, leading to a remote application crash, as demonstrated by an xstream.fromXML(\"\u003cvoid/\u003e\") call.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "nvd": 3,
+            "redhat": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "http://www.debian.org/security/2017/dsa-3841",
+            "http://www.securityfocus.com/bid/100687",
+            "http://www.securitytracker.com/id/1039499",
+            "http://x-stream.github.io/CVE-2017-7957.html",
+            "https://access.redhat.com/errata/RHSA-2017:1832",
+            "https://access.redhat.com/errata/RHSA-2017:2888",
+            "https://access.redhat.com/errata/RHSA-2017:2889",
+            "https://access.redhat.com/security/cve/CVE-2017-7957",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/125800",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/commit/6e546ec366419158b1e393211be6d78ab9604ab",
+            "https://github.com/x-stream/xstream/commit/8542d02d9ac5d384c85f4b33d6c1888c53bd55d",
+            "https://github.com/x-stream/xstream/commit/b3570be",
+            "https://github.com/x-stream/xstream/commit/b3570be2f39234e61f99f9a20640756ea71b1b4",
+            "https://nvd.nist.gov/vuln/detail/CVE-2017-7957",
+            "https://www-prd-trops.events.ibm.com/node/715749",
+            "https://www.cve.org/CVERecord?id=CVE-2017-7957",
+            "https://x-stream.github.io/CVE-2017-7957.html"
+          ],
+          "PublishedDate": "2017-04-29T19:59:00.167Z",
+          "LastModifiedDate": "2025-05-23T17:54:30.91Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2020-26217",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.14-java7",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-26217",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "XStream: remote code execution due to insecure XML deserialization when relying on blocklists",
+          "Description": "XStream before version 1.4.14 is vulnerable to Remote Code Execution.The vulnerability may allow a remote attacker to run arbitrary shell commands only by manipulating the processed input stream. Only users who rely on blocklists are affected. Anyone using XStream's Security Framework allowlist is not affected. The linked advisory provides code workarounds for users who cannot upgrade. The issue is fixed in version 1.4.14.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-78"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 3,
+            "ghsa": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:H",
+              "V3Score": 8.1
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 9.3,
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2020-26217",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/commit/0fec095d534126931c99fd38e9c6d41f5c685c1a",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-mw36-7c6c-q4q2",
+            "https://linux.oracle.com/cve/CVE-2020-26217.html",
+            "https://linux.oracle.com/errata/ELSA-2021-0162.html",
+            "https://lists.apache.org/thread.html/r2de526726e7f4db4a7cb91b7355070779f51a84fd985c6529c2f4e9e%40%3Cissues.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r2de526726e7f4db4a7cb91b7355070779f51a84fd985c6529c2f4e9e@%3Cissues.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r7c9fc255edc0b9cd9567093d131f6d33fde4c662aaf912460ef630e9%40%3Ccommits.camel.apache.org%3E",
+            "https://lists.apache.org/thread.html/r7c9fc255edc0b9cd9567093d131f6d33fde4c662aaf912460ef630e9@%3Ccommits.camel.apache.org%3E",
+            "https://lists.apache.org/thread.html/r826a006fda71cc96fc87b6eca4b5d195f19a292ad36cea501682c38c%40%3Cissues.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r826a006fda71cc96fc87b6eca4b5d195f19a292ad36cea501682c38c@%3Cissues.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/redde3609b89b2a4ff18b536a06ef9a77deb93d47fda8ed28086fa8c3%40%3Cissues.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/redde3609b89b2a4ff18b536a06ef9a77deb93d47fda8ed28086fa8c3@%3Cissues.activemq.apache.org%3E",
+            "https://lists.debian.org/debian-lts-announce/2020/12/msg00001.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-26217",
+            "https://security.netapp.com/advisory/ntap-20210409-0004",
+            "https://security.netapp.com/advisory/ntap-20210409-0004/",
+            "https://ubuntu.com/security/notices/USN-4714-1",
+            "https://ubuntu.com/security/notices/USN-4943-1",
+            "https://ubuntu.com/security/notices/USN-6978-1",
+            "https://www.cve.org/CVERecord?id=CVE-2020-26217",
+            "https://www.debian.org/security/2020/dsa-4811",
+            "https://www.oracle.com//security-alerts/cpujul2021.html",
+            "https://www.oracle.com/security-alerts/cpuApr2021.html",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://x-stream.github.io/CVE-2020-26217.html"
+          ],
+          "PublishedDate": "2020-11-16T21:15:12.893Z",
+          "LastModifiedDate": "2025-05-23T16:54:19.697Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-21341",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.16",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-21341",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "XStream: allow a remote attacker to cause DoS only by manipulating the processed input stream",
+          "Description": "XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.16, there is vulnerability which may allow a remote attacker to allocate 100% CPU time on the target system depending on CPU type or parallel execution of such a payload resulting in a denial of service only by manipulating the processed input stream. No user is affected who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.16.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-400",
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 3,
+            "ghsa": 3,
+            "nvd": 3,
+            "redhat": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 7.1,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "http://x-stream.github.io/changes.html#1.4.16",
+            "https://access.redhat.com/security/cve/CVE-2021-21341",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-2p3x-qw9c-25hh",
+            "https://lists.apache.org/thread.html/r8244fd0831db894d5e89911ded9c72196d395a90ae655414d23ed0dd%40%3Cusers.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r8244fd0831db894d5e89911ded9c72196d395a90ae655414d23ed0dd@%3Cusers.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9ac71b047767205aa22e3a08cb33f3e0586de6b2fac48b425c6e16b0%40%3Cdev.jmeter.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9ac71b047767205aa22e3a08cb33f3e0586de6b2fac48b425c6e16b0@%3Cdev.jmeter.apache.org%3E",
+            "https://lists.debian.org/debian-lts-announce/2021/04/msg00002.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-21341",
+            "https://security.netapp.com/advisory/ntap-20210430-0002",
+            "https://security.netapp.com/advisory/ntap-20210430-0002/",
+            "https://ubuntu.com/security/notices/USN-4943-1",
+            "https://ubuntu.com/security/notices/USN-6978-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-21341",
+            "https://www.debian.org/security/2021/dsa-5004",
+            "https://www.oracle.com//security-alerts/cpujul2021.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://x-stream.github.io/CVE-2021-21341.html",
+            "https://x-stream.github.io/security.html#workaround"
+          ],
+          "PublishedDate": "2021-03-23T00:15:12.38Z",
+          "LastModifiedDate": "2025-05-23T17:38:30.48Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-29505",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.17",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-29505",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "XStream: remote command execution attack by manipulating the processed input stream",
+          "Description": "XStream is software for serializing Java objects to XML and back again. A vulnerability in XStream versions prior to 1.4.17 may allow a remote attacker has sufficient rights to execute commands of the host only by manipulating the processed input stream. No user who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types is affected. The vulnerability is patched in version 1.4.17.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-94",
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "ghsa": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.5,
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-29505",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/commit/24fac82191292c6ae25f94508d28b9823f83624f",
+            "https://github.com/x-stream/xstream/commit/f0c4a8d861b68ffc3119cfbbbd632deee624e227",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-7chv-rrw6-w6fc",
+            "https://linux.oracle.com/cve/CVE-2021-29505.html",
+            "https://linux.oracle.com/errata/ELSA-2021-2683.html",
+            "https://lists.apache.org/thread.html/r8ee51debf7fd184b6a6b020dc31df25118b0aa612885f12fbe77f04f%40%3Cdev.jmeter.apache.org%3E",
+            "https://lists.apache.org/thread.html/r8ee51debf7fd184b6a6b020dc31df25118b0aa612885f12fbe77f04f@%3Cdev.jmeter.apache.org%3E",
+            "https://lists.debian.org/debian-lts-announce/2021/07/msg00004.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-29505",
+            "https://security.netapp.com/advisory/ntap-20210708-0007",
+            "https://security.netapp.com/advisory/ntap-20210708-0007/",
+            "https://www.cve.org/CVERecord?id=CVE-2021-29505",
+            "https://www.debian.org/security/2021/dsa-5004",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://x-stream.github.io/CVE-2021-29505.html"
+          ],
+          "PublishedDate": "2021-05-28T21:15:08.713Z",
+          "LastModifiedDate": "2025-05-30T00:15:20.543Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-39139",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.18",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-39139",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "xstream: Arbitrary code execution via unsafe deserialization of Xalan xsltc.trax.TemplatesImpl",
+          "Description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. A user is only affected if using the version out of the box with JDK 1.7u21 or below. However, this scenario can be adjusted easily to an external Xalan that works regardless of the version of the Java runtime. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-434",
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "ghsa": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.6
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.5,
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-39139",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-64xx-cq4q-mf44",
+            "https://linux.oracle.com/cve/CVE-2021-39139.html",
+            "https://linux.oracle.com/errata/ELSA-2021-3956.html",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-39139",
+            "https://security.netapp.com/advisory/ntap-20210923-0003",
+            "https://security.netapp.com/advisory/ntap-20210923-0003/",
+            "https://ubuntu.com/security/notices/USN-5946-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-39139",
+            "https://www.debian.org/security/2021/dsa-5004",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html",
+            "https://x-stream.github.io/CVE-2021-39139.html"
+          ],
+          "PublishedDate": "2021-08-23T18:15:10.54Z",
+          "LastModifiedDate": "2025-05-23T16:52:49.707Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-39141",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.18",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-39141",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "xstream: Arbitrary code execution via unsafe deserialization of com.sun.xml.internal.ws.client.sei.*",
+          "Description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-434",
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "ghsa": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.6
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V2Score": 6,
+              "V3Score": 8.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-39141",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-g5w6-mrj7-75h2",
+            "https://linux.oracle.com/cve/CVE-2021-39141.html",
+            "https://linux.oracle.com/errata/ELSA-2021-3956.html",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-39141",
+            "https://security.netapp.com/advisory/ntap-20210923-0003",
+            "https://security.netapp.com/advisory/ntap-20210923-0003/",
+            "https://ubuntu.com/security/notices/USN-5946-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-39141",
+            "https://www.debian.org/security/2021/dsa-5004",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html",
+            "https://x-stream.github.io/CVE-2021-39141.html"
+          ],
+          "PublishedDate": "2021-08-23T18:15:12.01Z",
+          "LastModifiedDate": "2025-05-23T16:52:36.523Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-39144",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.18",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-39144",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "xstream: Arbitrary code execution via unsafe deserialization of sun.tracing.*",
+          "Description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker has sufficient rights to execute commands of the host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-94",
+            "CWE-502",
+            "CWE-306"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "ghsa": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H/E:H",
+              "V3Score": 8.6
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V2Score": 6,
+              "V3Score": 8.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.5
+            }
+          },
+          "References": [
+            "http://packetstormsecurity.com/files/169859/VMware-NSX-Manager-XStream-Unauthenticated-Remote-Code-Execution.html",
+            "https://access.redhat.com/security/cve/CVE-2021-39144",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-j9h8-phrw-h4fh",
+            "https://linux.oracle.com/cve/CVE-2021-39144.html",
+            "https://linux.oracle.com/errata/ELSA-2021-3956.html",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-39144",
+            "https://security.netapp.com/advisory/ntap-20210923-0003",
+            "https://security.netapp.com/advisory/ntap-20210923-0003/",
+            "https://ubuntu.com/security/notices/USN-5946-1",
+            "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+            "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-39144",
+            "https://www.cve.org/CVERecord?id=CVE-2021-39144",
+            "https://www.debian.org/security/2021/dsa-5004",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html",
+            "https://x-stream.github.io/CVE-2021-39144.html"
+          ],
+          "PublishedDate": "2021-08-23T18:15:12.087Z",
+          "LastModifiedDate": "2025-10-24T14:47:35.01Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-39145",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.18",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-39145",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "xstream: Arbitrary code execution via unsafe deserialization of com.sun.jndi.ldap.LdapBindingEnumeration",
+          "Description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-434",
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "ghsa": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.6
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V2Score": 6,
+              "V3Score": 8.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-39145",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-8jrj-525p-826v",
+            "https://linux.oracle.com/cve/CVE-2021-39145.html",
+            "https://linux.oracle.com/errata/ELSA-2021-3956.html",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-39145",
+            "https://security.netapp.com/advisory/ntap-20210923-0003",
+            "https://security.netapp.com/advisory/ntap-20210923-0003/",
+            "https://ubuntu.com/security/notices/USN-5946-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-39145",
+            "https://www.debian.org/security/2021/dsa-5004",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html",
+            "https://x-stream.github.io/CVE-2021-39145.html"
+          ],
+          "PublishedDate": "2021-08-23T18:15:12.337Z",
+          "LastModifiedDate": "2025-05-23T16:52:04.847Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-39146",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.18",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-39146",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "xstream: Arbitrary code execution via unsafe deserialization of javax.swing.UIDefaults$ProxyLazyValue",
+          "Description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-434",
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "ghsa": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.6
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V2Score": 6,
+              "V3Score": 8.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-39146",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-p8pq-r894-fm8f",
+            "https://linux.oracle.com/cve/CVE-2021-39146.html",
+            "https://linux.oracle.com/errata/ELSA-2021-3956.html",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-39146",
+            "https://security.netapp.com/advisory/ntap-20210923-0003",
+            "https://security.netapp.com/advisory/ntap-20210923-0003/",
+            "https://ubuntu.com/security/notices/USN-5946-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-39146",
+            "https://www.debian.org/security/2021/dsa-5004",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html",
+            "https://x-stream.github.io/CVE-2021-39146.html"
+          ],
+          "PublishedDate": "2021-08-23T18:15:12.443Z",
+          "LastModifiedDate": "2025-05-23T16:48:45.623Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-39147",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.18",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-39147",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "xstream: Arbitrary code execution via unsafe deserialization of com.sun.jndi.ldap.LdapSearchEnumeration",
+          "Description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-434",
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "ghsa": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.6
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V2Score": 6,
+              "V3Score": 8.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-39147",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-h7v4-7xg3-hxcc",
+            "https://linux.oracle.com/cve/CVE-2021-39147.html",
+            "https://linux.oracle.com/errata/ELSA-2021-3956.html",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-39147",
+            "https://security.netapp.com/advisory/ntap-20210923-0003",
+            "https://security.netapp.com/advisory/ntap-20210923-0003/",
+            "https://ubuntu.com/security/notices/USN-5946-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-39147",
+            "https://www.debian.org/security/2021/dsa-5004",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html",
+            "https://x-stream.github.io/CVE-2021-39147.html"
+          ],
+          "PublishedDate": "2021-08-23T18:15:12.563Z",
+          "LastModifiedDate": "2025-05-23T16:51:54.973Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-39148",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.18",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-39148",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "xstream: Arbitrary code execution via unsafe deserialization of com.sun.jndi.toolkit.dir.ContextEnumerator",
+          "Description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-434",
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "ghsa": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.6
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V2Score": 6,
+              "V3Score": 8.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-39148",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-qrx8-8545-4wg2",
+            "https://linux.oracle.com/cve/CVE-2021-39148.html",
+            "https://linux.oracle.com/errata/ELSA-2021-3956.html",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-39148",
+            "https://security.netapp.com/advisory/ntap-20210923-0003",
+            "https://security.netapp.com/advisory/ntap-20210923-0003/",
+            "https://ubuntu.com/security/notices/USN-5946-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-39148",
+            "https://www.debian.org/security/2021/dsa-5004",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html",
+            "https://x-stream.github.io/CVE-2021-39148.html"
+          ],
+          "PublishedDate": "2021-08-23T18:15:12.677Z",
+          "LastModifiedDate": "2025-05-23T16:48:30.677Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-39149",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.18",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-39149",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "xstream: Arbitrary code execution via unsafe deserialization of com.sun.corba.*",
+          "Description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-434",
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "ghsa": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.6
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V2Score": 6,
+              "V3Score": 8.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-39149",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-3ccq-5vw3-2p6x",
+            "https://linux.oracle.com/cve/CVE-2021-39149.html",
+            "https://linux.oracle.com/errata/ELSA-2021-3956.html",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-39149",
+            "https://security.netapp.com/advisory/ntap-20210923-0003",
+            "https://security.netapp.com/advisory/ntap-20210923-0003/",
+            "https://ubuntu.com/security/notices/USN-5946-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-39149",
+            "https://www.debian.org/security/2021/dsa-5004",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html",
+            "https://x-stream.github.io/CVE-2021-39149.html"
+          ],
+          "PublishedDate": "2021-08-23T18:15:12.79Z",
+          "LastModifiedDate": "2025-05-23T16:50:01.62Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-39150",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.18",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-39150",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "xstream: Server-side request forgery (SSRF) via unsafe deserialization of com.sun.xml.internal.ws.client.sei.*",
+          "Description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to request data from internal resources that are not publicly available only by manipulating the processed input stream with a Java runtime version 14 to 8. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the [Security Framework](https://x-stream.github.io/security.html#framework), you will have to use at least version 1.4.18.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-502",
+            "CWE-918"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "ghsa": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.6
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V2Score": 6,
+              "V3Score": 8.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-39150",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-cxfm-5m4g-x7xp",
+            "https://linux.oracle.com/cve/CVE-2021-39150.html",
+            "https://linux.oracle.com/errata/ELSA-2021-3956.html",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-39150",
+            "https://security.netapp.com/advisory/ntap-20210923-0003",
+            "https://security.netapp.com/advisory/ntap-20210923-0003/",
+            "https://ubuntu.com/security/notices/USN-5946-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-39150",
+            "https://www.debian.org/security/2021/dsa-5004",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html",
+            "https://x-stream.github.io/CVE-2021-39150.html"
+          ],
+          "PublishedDate": "2021-08-23T19:15:12.803Z",
+          "LastModifiedDate": "2025-05-23T16:48:02.757Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-39151",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.18",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-39151",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "xstream: Arbitrary code execution via unsafe deserialization of com.sun.jndi.ldap.LdapBindingEnumeration",
+          "Description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-434",
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "ghsa": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.6
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V2Score": 6,
+              "V3Score": 8.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-39151",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-hph2-m3g5-xxv4",
+            "https://linux.oracle.com/cve/CVE-2021-39151.html",
+            "https://linux.oracle.com/errata/ELSA-2021-3956.html",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-39151",
+            "https://security.netapp.com/advisory/ntap-20210923-0003",
+            "https://security.netapp.com/advisory/ntap-20210923-0003/",
+            "https://ubuntu.com/security/notices/USN-5946-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-39151",
+            "https://www.debian.org/security/2021/dsa-5004",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html",
+            "https://x-stream.github.io/CVE-2021-39151.html"
+          ],
+          "PublishedDate": "2021-08-23T18:15:12.867Z",
+          "LastModifiedDate": "2025-05-23T16:49:36.647Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-39152",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.18",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-39152",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "xstream: Server-side request forgery (SSRF) via unsafe deserialization of jdk.nashorn.internal.runtime.Source$URLData",
+          "Description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to request data from internal resources that are not publicly available only by manipulating the processed input stream with a Java runtime version 14 to 8. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the [Security Framework](https://x-stream.github.io/security.html#framework), you will have to use at least version 1.4.18.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-502",
+            "CWE-918"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "ghsa": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.6
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V2Score": 6,
+              "V3Score": 8.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-39152",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-xw4p-crpj-vjx2",
+            "https://linux.oracle.com/cve/CVE-2021-39152.html",
+            "https://linux.oracle.com/errata/ELSA-2021-3956.html",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-39152",
+            "https://security.netapp.com/advisory/ntap-20210923-0003",
+            "https://security.netapp.com/advisory/ntap-20210923-0003/",
+            "https://ubuntu.com/security/notices/USN-5946-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-39152",
+            "https://www.debian.org/security/2021/dsa-5004",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html",
+            "https://x-stream.github.io/CVE-2021-39152.html"
+          ],
+          "PublishedDate": "2021-08-23T19:15:13.247Z",
+          "LastModifiedDate": "2025-05-23T16:47:47.407Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-39153",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.18",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-39153",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "xstream: Arbitrary code execution via unsafe deserialization of Xalan xsltc.trax.TemplatesImpl",
+          "Description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream, if using the version out of the box with Java runtime version 14 to 8 or with JavaFX installed. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-434",
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "ghsa": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.6
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V2Score": 6,
+              "V3Score": 8.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-39153",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-2q8x-2p7f-574v",
+            "https://linux.oracle.com/cve/CVE-2021-39153.html",
+            "https://linux.oracle.com/errata/ELSA-2021-3956.html",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-39153",
+            "https://security.netapp.com/advisory/ntap-20210923-0003",
+            "https://security.netapp.com/advisory/ntap-20210923-0003/",
+            "https://ubuntu.com/security/notices/USN-5946-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-39153",
+            "https://www.debian.org/security/2021/dsa-5004",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html",
+            "https://x-stream.github.io/CVE-2021-39153.html"
+          ],
+          "PublishedDate": "2021-08-23T18:15:13.043Z",
+          "LastModifiedDate": "2025-05-23T16:50:17.6Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-39154",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.18",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-39154",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "xstream: Arbitrary code execution via unsafe deserialization of javax.swing.UIDefaults$ProxyLazyValue",
+          "Description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-434",
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "ghsa": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.6
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V2Score": 6,
+              "V3Score": 8.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-39154",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-6w62-hx7r-mw68",
+            "https://linux.oracle.com/cve/CVE-2021-39154.html",
+            "https://linux.oracle.com/errata/ELSA-2021-3956.html",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-39154",
+            "https://security.netapp.com/advisory/ntap-20210923-0003",
+            "https://security.netapp.com/advisory/ntap-20210923-0003/",
+            "https://ubuntu.com/security/notices/USN-5946-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-39154",
+            "https://www.debian.org/security/2021/dsa-5004",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html",
+            "https://x-stream.github.io/CVE-2021-39154.html"
+          ],
+          "PublishedDate": "2021-08-23T18:15:13.17Z",
+          "LastModifiedDate": "2025-05-23T16:47:35.3Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-43859",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.19",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-43859",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "xstream: Injecting highly recursive collections or maps can cause a DoS",
+          "Description": "XStream is an open source java library to serialize objects to XML and back again. Versions prior to 1.4.19 may allow a remote attacker to allocate 100% CPU time on the target system depending on CPU type or parallel execution of such a payload resulting in a denial of service only by manipulating the processed input stream. XStream 1.4.19 monitors and accumulates the time it takes to add elements to collections and throws an exception if a set threshold is exceeded. Users are advised to upgrade as soon as possible. Users unable to upgrade may set the NO_REFERENCE mode to prevent recursion. See GHSA-rmr5-cpv2-vgjf for further details on a workaround if an upgrade is not possible.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-400"
+          ],
+          "VendorSeverity": {
+            "bitnami": 3,
+            "ghsa": 3,
+            "nvd": 3,
+            "redhat": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2022/02/09/1",
+            "https://access.redhat.com/security/cve/CVE-2021-43859",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/commit/e8e88621ba1c85ac3b8620337dd672e0c0c3a846",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-rmr5-cpv2-vgjf",
+            "https://lists.debian.org/debian-lts-announce/2022/02/msg00018.html",
+            "https://lists.debian.org/debian-lts-announce/2024/12/msg00023.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/VACQYG356OHUTD5WQGAQ4L2TTFTAV3SJ",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/VACQYG356OHUTD5WQGAQ4L2TTFTAV3SJ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/XODFRE2ZL64FICBJDOPWOLPTSSAI4U7X",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/XODFRE2ZL64FICBJDOPWOLPTSSAI4U7X/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VACQYG356OHUTD5WQGAQ4L2TTFTAV3SJ",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XODFRE2ZL64FICBJDOPWOLPTSSAI4U7X",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-43859",
+            "https://www.cve.org/CVERecord?id=CVE-2021-43859",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html",
+            "https://x-stream.github.io/CVE-2021-43859.html"
+          ],
+          "PublishedDate": "2022-02-01T12:15:08.08Z",
+          "LastModifiedDate": "2025-11-03T22:15:52.883Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-40151",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.20",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-40151",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "xstream: Xstream to serialise XML data was vulnerable to Denial of Service attacks",
+          "Description": "Those using Xstream to seralize XML data may be vulnerable to Denial of Service attacks (DOS). If the parser is running on user supplied input, an attacker may supply content that causes the parser to crash by stackoverflow. This effect may support a denial of service attack.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-121",
+            "CWE-787"
+          ],
+          "VendorSeverity": {
+            "amazon": 2,
+            "ghsa": 3,
+            "nvd": 3,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-40151",
+            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47367",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/issues/304",
+            "https://github.com/x-stream/xstream/issues/314",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-f8cc-g7j8-xxpm",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-40151",
+            "https://www.cve.org/CVERecord?id=CVE-2022-40151",
+            "https://x-stream.github.io/CVE-2022-40151.html"
+          ],
+          "PublishedDate": "2022-09-16T10:15:09.817Z",
+          "LastModifiedDate": "2025-05-23T16:51:48.3Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-41966",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.20",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-41966",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "xstream: Denial of Service by injecting recursive collections or maps based on element's hash values raising a stack overflow",
+          "Description": "XStream serializes Java objects to XML and back again. Versions prior to 1.4.20 may allow a remote attacker to terminate the application with a stack overflow error, resulting in a denial of service only via manipulation the processed input stream. The attack uses the hash code implementation for collections and maps to force recursive hash calculation causing a stack overflow. This issue is patched in version 1.4.20 which handles the stack overflow and raises an InputManipulationException instead. A potential workaround for users who only use HashMap or HashSet and whose XML refers these only as default map or set, is to change the default implementation of java.util.Map and java.util per the code example in the referenced advisory. However, this implies that your application does not care about the implementation of the map and all elements are comparable.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-120",
+            "CWE-121",
+            "CWE-502",
+            "CWE-674"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "ghsa": 3,
+            "nvd": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
+              "V3Score": 8.2
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-41966",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-j563-grx4-pjpv",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-41966",
+            "https://security.netapp.com/advisory/ntap-20230216-0005/",
+            "https://ubuntu.com/security/notices/USN-5946-1",
+            "https://www.cve.org/CVERecord?id=CVE-2022-41966",
+            "https://x-stream.github.io/CVE-2022-41966.html"
+          ],
+          "PublishedDate": "2022-12-28T00:15:14.237Z",
+          "LastModifiedDate": "2025-05-23T16:51:10.27Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-47072",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.21",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-47072",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "com.thoughtworks.xstream: XStream is vulnerable to a Denial of Service attack due to stack overflow from a manipulated binary input stream",
+          "Description": "XStream is a simple library to serialize objects to XML and back again. This vulnerability may allow a remote attacker to terminate the application with a stack overflow error resulting in a denial of service only by manipulating the processed input stream when XStream is configured to use the BinaryStreamDriver. XStream 1.4.21 has been patched to detect the manipulation in the binary input stream causing the the stack overflow and raises an InputManipulationException instead. Users are advised to upgrade. Users unable to upgrade may catch the StackOverflowError in the client code calling XStream if XStream is configured to use the BinaryStreamDriver.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-121",
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "ghsa": 3,
+            "redhat": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-47072",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/commit/bb838ce2269cac47433e31c77b2b236466e9f266",
+            "https://github.com/x-stream/xstream/commit/fdd9f7d3de0d7ccf2f9979bcd09fbf3e6a0c881a",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-hfq9-hggm-c56q",
+            "https://lists.debian.org/debian-lts-announce/2024/12/msg00023.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-47072",
+            "https://www.cve.org/CVERecord?id=CVE-2024-47072",
+            "https://x-stream.github.io/CVE-2024-47072.html"
+          ],
+          "PublishedDate": "2024-11-08T00:15:14.937Z",
+          "LastModifiedDate": "2026-04-15T00:35:42.02Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2020-26258",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.15",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-26258",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "XStream: Server-Side Forgery Request vulnerability can be activated when unmarshalling",
+          "Description": "XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.15, a Server-Side Forgery Request vulnerability can be activated when unmarshalling. The vulnerability may allow a remote attacker to request data from internal resources that are not publicly available only by manipulating the processed input stream. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.15. The reported vulnerability does not exist if running Java 15 or higher. No user is affected who followed the recommendation to setup XStream's Security Framework with a whitelist! Anyone relying on XStream's default blacklist can immediately switch to a whilelist for the allowed types to avoid the vulnerability. Users of XStream 1.4.14 or below who still want to use XStream default blacklist can use a workaround described in more detailed in the referenced advisories.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-918"
+          ],
+          "VendorSeverity": {
+            "ghsa": 2,
+            "nvd": 3,
+            "redhat": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "V3Score": 6.3
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "V2Score": 5,
+              "V3Score": 7.7
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "V3Score": 7.7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2020-26258",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-4cch-wxpw-8p28",
+            "https://lists.apache.org/thread.html/r97993e3d78e1f5389b7b172ba9f308440830ce5f051ee62714a0aa34%40%3Ccommits.struts.apache.org%3E",
+            "https://lists.apache.org/thread.html/r97993e3d78e1f5389b7b172ba9f308440830ce5f051ee62714a0aa34@%3Ccommits.struts.apache.org%3E",
+            "https://lists.debian.org/debian-lts-announce/2020/12/msg00042.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-26258",
+            "https://security.netapp.com/advisory/ntap-20210409-0005",
+            "https://security.netapp.com/advisory/ntap-20210409-0005/",
+            "https://ubuntu.com/security/notices/USN-4714-1",
+            "https://ubuntu.com/security/notices/USN-4943-1",
+            "https://ubuntu.com/security/notices/USN-6978-1",
+            "https://www.cve.org/CVERecord?id=CVE-2020-26258",
+            "https://www.debian.org/security/2021/dsa-4828",
+            "https://x-stream.github.io/CVE-2020-26258.html"
+          ],
+          "PublishedDate": "2020-12-16T01:15:12.333Z",
+          "LastModifiedDate": "2025-05-23T16:53:23.9Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2020-26259",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.15",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-26259",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "XStream: arbitrary file deletion on the local host when unmarshalling",
+          "Description": "XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.15, is vulnerable to an Arbitrary File Deletion on the local host when unmarshalling. The vulnerability may allow a remote attacker to delete arbitrary know files on the host as log as the executing process has sufficient rights only by manipulating the processed input stream. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.15. The reported vulnerability does not exist running Java 15 or higher. No user is affected, who followed the recommendation to setup XStream's Security Framework with a whitelist! Anyone relying on XStream's default blacklist can immediately switch to a whilelist for the allowed types to avoid the vulnerability. Users of XStream 1.4.14 or below who still want to use XStream default blacklist can use a workaround described in more detailed in the referenced advisories.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-78"
+          ],
+          "VendorSeverity": {
+            "ghsa": 2,
+            "nvd": 2,
+            "redhat": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:H/A:N",
+              "V3Score": 6.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:H/A:N",
+              "V2Score": 6.4,
+              "V3Score": 6.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:H/A:N",
+              "V3Score": 6.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2020-26259",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-jfvx-7wrx-43fh",
+            "https://lists.apache.org/thread.html/r97993e3d78e1f5389b7b172ba9f308440830ce5f051ee62714a0aa34%40%3Ccommits.struts.apache.org%3E",
+            "https://lists.apache.org/thread.html/r97993e3d78e1f5389b7b172ba9f308440830ce5f051ee62714a0aa34@%3Ccommits.struts.apache.org%3E",
+            "https://lists.debian.org/debian-lts-announce/2020/12/msg00042.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-26259",
+            "https://security.netapp.com/advisory/ntap-20210409-0005",
+            "https://security.netapp.com/advisory/ntap-20210409-0005/",
+            "https://ubuntu.com/security/notices/USN-4714-1",
+            "https://ubuntu.com/security/notices/USN-4943-1",
+            "https://ubuntu.com/security/notices/USN-6978-1",
+            "https://www.cve.org/CVERecord?id=CVE-2020-26259",
+            "https://www.debian.org/security/2021/dsa-4828",
+            "https://x-stream.github.io/CVE-2020-26259.html"
+          ],
+          "PublishedDate": "2020-12-16T01:15:12.413Z",
+          "LastModifiedDate": "2025-05-23T16:54:02.297Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-21342",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.16",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-21342",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "XStream: SSRF via crafted input stream",
+          "Description": "XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.16, there is a vulnerability where the processed stream at unmarshalling time contains type information to recreate the formerly written objects. XStream creates therefore new instances based on these type information. An attacker can manipulate the processed input stream and replace or inject objects, that result in a server-side forgery request. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.16.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-502",
+            "CWE-918"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 4,
+            "ghsa": 2,
+            "nvd": 4,
+            "redhat": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 9.1
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V2Score": 5.8,
+              "V3Score": 9.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "http://x-stream.github.io/changes.html#1.4.16",
+            "https://access.redhat.com/security/cve/CVE-2021-21342",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-hvv8-336g-rx3m",
+            "https://lists.apache.org/thread.html/r8244fd0831db894d5e89911ded9c72196d395a90ae655414d23ed0dd%40%3Cusers.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r8244fd0831db894d5e89911ded9c72196d395a90ae655414d23ed0dd@%3Cusers.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9ac71b047767205aa22e3a08cb33f3e0586de6b2fac48b425c6e16b0%40%3Cdev.jmeter.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9ac71b047767205aa22e3a08cb33f3e0586de6b2fac48b425c6e16b0@%3Cdev.jmeter.apache.org%3E",
+            "https://lists.debian.org/debian-lts-announce/2021/04/msg00002.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-21342",
+            "https://security.netapp.com/advisory/ntap-20210430-0002",
+            "https://security.netapp.com/advisory/ntap-20210430-0002/",
+            "https://ubuntu.com/security/notices/USN-4943-1",
+            "https://ubuntu.com/security/notices/USN-6978-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-21342",
+            "https://www.debian.org/security/2021/dsa-5004",
+            "https://www.oracle.com//security-alerts/cpujul2021.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://x-stream.github.io/CVE-2021-21342.html",
+            "https://x-stream.github.io/security.html#workaround"
+          ],
+          "PublishedDate": "2021-03-23T00:15:12.49Z",
+          "LastModifiedDate": "2025-05-23T17:39:23.86Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-21343",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.16",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-21343",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "XStream: arbitrary file deletion on the local host via crafted input stream",
+          "Description": "XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.16, there is a vulnerability where the processed stream at unmarshalling time contains type information to recreate the formerly written objects. XStream creates therefore new instances based on these type information. An attacker can manipulate the processed input stream and replace or inject objects, that result in the deletion of a file on the local host. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.16.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-73",
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 3,
+            "ghsa": 2,
+            "nvd": 3,
+            "redhat": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "http://x-stream.github.io/changes.html#1.4.16",
+            "https://access.redhat.com/security/cve/CVE-2021-21343",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-74cv-f58x-f9wf",
+            "https://lists.apache.org/thread.html/r8244fd0831db894d5e89911ded9c72196d395a90ae655414d23ed0dd%40%3Cusers.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r8244fd0831db894d5e89911ded9c72196d395a90ae655414d23ed0dd@%3Cusers.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9ac71b047767205aa22e3a08cb33f3e0586de6b2fac48b425c6e16b0%40%3Cdev.jmeter.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9ac71b047767205aa22e3a08cb33f3e0586de6b2fac48b425c6e16b0@%3Cdev.jmeter.apache.org%3E",
+            "https://lists.debian.org/debian-lts-announce/2021/04/msg00002.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-21343",
+            "https://security.netapp.com/advisory/ntap-20210430-0002",
+            "https://security.netapp.com/advisory/ntap-20210430-0002/",
+            "https://ubuntu.com/security/notices/USN-4943-1",
+            "https://ubuntu.com/security/notices/USN-6978-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-21343",
+            "https://www.debian.org/security/2021/dsa-5004",
+            "https://www.oracle.com//security-alerts/cpujul2021.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://x-stream.github.io/CVE-2021-21343.html",
+            "https://x-stream.github.io/security.html#workaround"
+          ],
+          "PublishedDate": "2021-03-23T00:15:12.6Z",
+          "LastModifiedDate": "2025-05-23T17:40:13.823Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-21344",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.16",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-21344",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "XStream: Unsafe deserizaliation of javax.sql.rowset.BaseRowSet",
+          "Description": "XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.16, there is a vulnerability which may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.16.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-434",
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 4,
+            "ghsa": 2,
+            "nvd": 4,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+              "V3Score": 7.3
+            }
+          },
+          "References": [
+            "http://x-stream.github.io/changes.html#1.4.16",
+            "https://access.redhat.com/security/cve/CVE-2021-21344",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-59jw-jqf4-3wq3",
+            "https://linux.oracle.com/cve/CVE-2021-21344.html",
+            "https://linux.oracle.com/errata/ELSA-2021-1354.html",
+            "https://lists.apache.org/thread.html/r8244fd0831db894d5e89911ded9c72196d395a90ae655414d23ed0dd%40%3Cusers.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r8244fd0831db894d5e89911ded9c72196d395a90ae655414d23ed0dd@%3Cusers.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9ac71b047767205aa22e3a08cb33f3e0586de6b2fac48b425c6e16b0%40%3Cdev.jmeter.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9ac71b047767205aa22e3a08cb33f3e0586de6b2fac48b425c6e16b0@%3Cdev.jmeter.apache.org%3E",
+            "https://lists.debian.org/debian-lts-announce/2021/04/msg00002.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-21344",
+            "https://security.netapp.com/advisory/ntap-20210430-0002",
+            "https://security.netapp.com/advisory/ntap-20210430-0002/",
+            "https://ubuntu.com/security/notices/USN-4943-1",
+            "https://ubuntu.com/security/notices/USN-6978-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-21344",
+            "https://www.debian.org/security/2021/dsa-5004",
+            "https://www.oracle.com//security-alerts/cpujul2021.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://x-stream.github.io/CVE-2021-21344.html",
+            "https://x-stream.github.io/security.html#workaround"
+          ],
+          "PublishedDate": "2021-03-23T00:15:12.677Z",
+          "LastModifiedDate": "2025-05-23T17:40:53.26Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-21345",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.16",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-21345",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "XStream: Unsafe deserizaliation of com.sun.corba.se.impl.activation.ServerTableEntry",
+          "Description": "XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.16, there is a vulnerability which may allow a remote attacker who has sufficient rights to execute commands of the host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.16.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-94",
+            "CWE-502",
+            "CWE-78"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 4,
+            "ghsa": 2,
+            "nvd": 4,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 10
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:N/I:H/A:N",
+              "V3Score": 5.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V2Score": 6.5,
+              "V3Score": 9.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.5
+            }
+          },
+          "References": [
+            "http://x-stream.github.io/changes.html#1.4.16",
+            "https://access.redhat.com/security/cve/CVE-2021-21345",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-hwpc-8xqv-jvj4",
+            "https://linux.oracle.com/cve/CVE-2021-21345.html",
+            "https://linux.oracle.com/errata/ELSA-2021-1354.html",
+            "https://lists.apache.org/thread.html/r8244fd0831db894d5e89911ded9c72196d395a90ae655414d23ed0dd%40%3Cusers.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r8244fd0831db894d5e89911ded9c72196d395a90ae655414d23ed0dd@%3Cusers.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9ac71b047767205aa22e3a08cb33f3e0586de6b2fac48b425c6e16b0%40%3Cdev.jmeter.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9ac71b047767205aa22e3a08cb33f3e0586de6b2fac48b425c6e16b0@%3Cdev.jmeter.apache.org%3E",
+            "https://lists.debian.org/debian-lts-announce/2021/04/msg00002.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-21345",
+            "https://security.netapp.com/advisory/ntap-20210430-0002",
+            "https://security.netapp.com/advisory/ntap-20210430-0002/",
+            "https://ubuntu.com/security/notices/USN-4943-1",
+            "https://ubuntu.com/security/notices/USN-6978-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-21345",
+            "https://www.debian.org/security/2021/dsa-5004",
+            "https://www.oracle.com//security-alerts/cpujul2021.html",
+            "https://www.oracle.com/security-alerts/cpuApr2021.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://x-stream.github.io/CVE-2021-21345.html",
+            "https://x-stream.github.io/security.html#workaround"
+          ],
+          "PublishedDate": "2021-03-23T00:15:12.787Z",
+          "LastModifiedDate": "2025-05-23T17:41:10.117Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-21346",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.16",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-21346",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "XStream: Unsafe deserizaliation of sun.swing.SwingLazyValue",
+          "Description": "XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.16, there is a vulnerability which may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.16.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-434",
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 4,
+            "ghsa": 2,
+            "nvd": 4,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:N/I:H/A:N",
+              "V3Score": 6.1
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "http://x-stream.github.io/changes.html#1.4.16",
+            "https://access.redhat.com/security/cve/CVE-2021-21346",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-4hrm-m67v-5cxr",
+            "https://linux.oracle.com/cve/CVE-2021-21346.html",
+            "https://linux.oracle.com/errata/ELSA-2021-1354.html",
+            "https://lists.apache.org/thread.html/r8244fd0831db894d5e89911ded9c72196d395a90ae655414d23ed0dd%40%3Cusers.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r8244fd0831db894d5e89911ded9c72196d395a90ae655414d23ed0dd@%3Cusers.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9ac71b047767205aa22e3a08cb33f3e0586de6b2fac48b425c6e16b0%40%3Cdev.jmeter.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9ac71b047767205aa22e3a08cb33f3e0586de6b2fac48b425c6e16b0@%3Cdev.jmeter.apache.org%3E",
+            "https://lists.debian.org/debian-lts-announce/2021/04/msg00002.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-21346",
+            "https://security.netapp.com/advisory/ntap-20210430-0002",
+            "https://security.netapp.com/advisory/ntap-20210430-0002/",
+            "https://ubuntu.com/security/notices/USN-4943-1",
+            "https://ubuntu.com/security/notices/USN-6978-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-21346",
+            "https://www.debian.org/security/2021/dsa-5004",
+            "https://www.oracle.com//security-alerts/cpujul2021.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://x-stream.github.io/CVE-2021-21346.html",
+            "https://x-stream.github.io/security.html#workaround"
+          ],
+          "PublishedDate": "2021-03-23T00:15:12.897Z",
+          "LastModifiedDate": "2025-05-23T17:41:29.88Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-21347",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.16",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-21347",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "XStream: Unsafe deserizaliation of com.sun.tools.javac.processing.JavacProcessingEnvironment NameProcessIterator",
+          "Description": "XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.16, there is a vulnerability which may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.16.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-434",
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 4,
+            "ghsa": 2,
+            "nvd": 4,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:N/I:H/A:N",
+              "V3Score": 6.1
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "http://x-stream.github.io/changes.html#1.4.16",
+            "https://access.redhat.com/security/cve/CVE-2021-21347",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-qpfq-ph7r-qv6f",
+            "https://linux.oracle.com/cve/CVE-2021-21347.html",
+            "https://linux.oracle.com/errata/ELSA-2021-1354.html",
+            "https://lists.apache.org/thread.html/r8244fd0831db894d5e89911ded9c72196d395a90ae655414d23ed0dd%40%3Cusers.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r8244fd0831db894d5e89911ded9c72196d395a90ae655414d23ed0dd@%3Cusers.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9ac71b047767205aa22e3a08cb33f3e0586de6b2fac48b425c6e16b0%40%3Cdev.jmeter.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9ac71b047767205aa22e3a08cb33f3e0586de6b2fac48b425c6e16b0@%3Cdev.jmeter.apache.org%3E",
+            "https://lists.debian.org/debian-lts-announce/2021/04/msg00002.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-21347",
+            "https://security.netapp.com/advisory/ntap-20210430-0002",
+            "https://security.netapp.com/advisory/ntap-20210430-0002/",
+            "https://ubuntu.com/security/notices/USN-4943-1",
+            "https://ubuntu.com/security/notices/USN-6978-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-21347",
+            "https://www.debian.org/security/2021/dsa-5004",
+            "https://www.oracle.com//security-alerts/cpujul2021.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://x-stream.github.io/CVE-2021-21347.html",
+            "https://x-stream.github.io/security.html#workaround"
+          ],
+          "PublishedDate": "2021-03-23T00:15:13.023Z",
+          "LastModifiedDate": "2025-05-23T17:41:49.73Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-21348",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.16",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-21348",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "XStream: ReDoS vulnerability",
+          "Description": "XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.16, there is a vulnerability which may allow a remote attacker to occupy a thread that consumes maximum CPU time and will never return. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.16.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-400",
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 3,
+            "ghsa": 2,
+            "nvd": 3,
+            "redhat": 2,
+            "ubuntu": 1
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 7.8,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "http://x-stream.github.io/changes.html#1.4.16",
+            "https://access.redhat.com/security/cve/CVE-2021-21348",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-56p8-3fh9-4cvq",
+            "https://lists.apache.org/thread.html/r8244fd0831db894d5e89911ded9c72196d395a90ae655414d23ed0dd%40%3Cusers.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r8244fd0831db894d5e89911ded9c72196d395a90ae655414d23ed0dd@%3Cusers.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9ac71b047767205aa22e3a08cb33f3e0586de6b2fac48b425c6e16b0%40%3Cdev.jmeter.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9ac71b047767205aa22e3a08cb33f3e0586de6b2fac48b425c6e16b0@%3Cdev.jmeter.apache.org%3E",
+            "https://lists.debian.org/debian-lts-announce/2021/04/msg00002.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-21348",
+            "https://security.netapp.com/advisory/ntap-20210430-0002",
+            "https://security.netapp.com/advisory/ntap-20210430-0002/",
+            "https://ubuntu.com/security/notices/USN-4943-1",
+            "https://ubuntu.com/security/notices/USN-6978-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-21348",
+            "https://www.debian.org/security/2021/dsa-5004",
+            "https://www.oracle.com//security-alerts/cpujul2021.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://x-stream.github.io/CVE-2021-21348.html",
+            "https://x-stream.github.io/security.html#workaround"
+          ],
+          "PublishedDate": "2021-03-23T00:15:13.1Z",
+          "LastModifiedDate": "2025-05-23T17:42:08.603Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-21349",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.16",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-21349",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "XStream: SSRF can be activated unmarshalling with XStream to access data streams from an arbitrary URL referencing a resource in an intranet or the local host",
+          "Description": "XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.16, there is a vulnerability which may allow a remote attacker to request data from internal resources that are not publicly available only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.16.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-502",
+            "CWE-918"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 3,
+            "ghsa": 2,
+            "nvd": 3,
+            "redhat": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+              "V3Score": 8.6
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:N/I:H/A:N",
+              "V3Score": 6.1
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+              "V2Score": 5,
+              "V3Score": 8.6
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "http://x-stream.github.io/changes.html#1.4.16",
+            "https://access.redhat.com/security/cve/CVE-2021-21349",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-f6hm-88x3-mfjv",
+            "https://lists.apache.org/thread.html/r8244fd0831db894d5e89911ded9c72196d395a90ae655414d23ed0dd%40%3Cusers.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r8244fd0831db894d5e89911ded9c72196d395a90ae655414d23ed0dd@%3Cusers.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9ac71b047767205aa22e3a08cb33f3e0586de6b2fac48b425c6e16b0%40%3Cdev.jmeter.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9ac71b047767205aa22e3a08cb33f3e0586de6b2fac48b425c6e16b0@%3Cdev.jmeter.apache.org%3E",
+            "https://lists.debian.org/debian-lts-announce/2021/04/msg00002.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-21349",
+            "https://security.netapp.com/advisory/ntap-20210430-0002",
+            "https://security.netapp.com/advisory/ntap-20210430-0002/",
+            "https://ubuntu.com/security/notices/USN-4943-1",
+            "https://ubuntu.com/security/notices/USN-6978-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-21349",
+            "https://www.debian.org/security/2021/dsa-5004",
+            "https://www.oracle.com//security-alerts/cpujul2021.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://x-stream.github.io/CVE-2021-21349.html",
+            "https://x-stream.github.io/security.html#workaround"
+          ],
+          "PublishedDate": "2021-03-23T00:15:13.193Z",
+          "LastModifiedDate": "2025-05-23T17:42:48.9Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-21350",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.16",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-21350",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "XStream: Unsafe deserizaliation of com.sun.org.apache.bcel.internal.util.ClassLoader",
+          "Description": "XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.16, there is a vulnerability which may allow a remote attacker to execute arbitrary code only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.16.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-434",
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 4,
+            "ghsa": 2,
+            "nvd": 4,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "http://x-stream.github.io/changes.html#1.4.16",
+            "https://access.redhat.com/security/cve/CVE-2021-21350",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-43gc-mjxg-gvrq",
+            "https://linux.oracle.com/cve/CVE-2021-21350.html",
+            "https://linux.oracle.com/errata/ELSA-2021-1354.html",
+            "https://lists.apache.org/thread.html/r8244fd0831db894d5e89911ded9c72196d395a90ae655414d23ed0dd%40%3Cusers.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r8244fd0831db894d5e89911ded9c72196d395a90ae655414d23ed0dd@%3Cusers.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9ac71b047767205aa22e3a08cb33f3e0586de6b2fac48b425c6e16b0%40%3Cdev.jmeter.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9ac71b047767205aa22e3a08cb33f3e0586de6b2fac48b425c6e16b0@%3Cdev.jmeter.apache.org%3E",
+            "https://lists.debian.org/debian-lts-announce/2021/04/msg00002.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-21350",
+            "https://security.netapp.com/advisory/ntap-20210430-0002",
+            "https://security.netapp.com/advisory/ntap-20210430-0002/",
+            "https://ubuntu.com/security/notices/USN-4943-1",
+            "https://ubuntu.com/security/notices/USN-6978-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-21350",
+            "https://www.debian.org/security/2021/dsa-5004",
+            "https://www.oracle.com//security-alerts/cpujul2021.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://x-stream.github.io/CVE-2021-21350.html",
+            "https://x-stream.github.io/security.html#workaround"
+          ],
+          "PublishedDate": "2021-03-23T00:15:13.273Z",
+          "LastModifiedDate": "2025-05-23T17:43:08.217Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-21351",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.16",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-21351",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "XStream: allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream",
+          "Description": "XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.16, there is a vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.16.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-434",
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 4,
+            "ghsa": 2,
+            "nvd": 4,
+            "redhat": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 9.1
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:C/C:N/I:H/A:N",
+              "V3Score": 5.4
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+              "V2Score": 6.5,
+              "V3Score": 9.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8
+            }
+          },
+          "References": [
+            "http://x-stream.github.io/changes.html#1.4.16",
+            "https://access.redhat.com/security/cve/CVE-2021-21351",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-hrcp-8f3q-4w2c",
+            "https://lists.apache.org/thread.html/r8244fd0831db894d5e89911ded9c72196d395a90ae655414d23ed0dd%40%3Cusers.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r8244fd0831db894d5e89911ded9c72196d395a90ae655414d23ed0dd@%3Cusers.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9ac71b047767205aa22e3a08cb33f3e0586de6b2fac48b425c6e16b0%40%3Cdev.jmeter.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9ac71b047767205aa22e3a08cb33f3e0586de6b2fac48b425c6e16b0@%3Cdev.jmeter.apache.org%3E",
+            "https://lists.debian.org/debian-lts-announce/2021/04/msg00002.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-21351",
+            "https://security.netapp.com/advisory/ntap-20210430-0002",
+            "https://security.netapp.com/advisory/ntap-20210430-0002/",
+            "https://ubuntu.com/security/notices/USN-4943-1",
+            "https://ubuntu.com/security/notices/USN-6978-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-21351",
+            "https://www.debian.org/security/2021/dsa-5004",
+            "https://www.oracle.com//security-alerts/cpujul2021.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://x-stream.github.io/CVE-2021-21351.html",
+            "https://x-stream.github.io/security.html#workaround"
+          ],
+          "PublishedDate": "2021-03-23T00:15:13.367Z",
+          "LastModifiedDate": "2025-05-23T17:34:20.44Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-39140",
+          "PkgID": "com.thoughtworks.xstream:xstream:1.4.5",
+          "PkgName": "com.thoughtworks.xstream:xstream",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+            "UID": "28e4caa2554c3ee3"
+          },
+          "InstalledVersion": "1.4.5",
+          "FixedVersion": "1.4.18",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-39140",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "xstream: Infinite loop DoS via unsafe deserialization of sun.reflect.annotation.AnnotationInvocationHandler",
+          "Description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to allocate 100% CPU time on the target system depending on CPU type or parallel execution of such a payload resulting in a denial of service only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-502",
+            "CWE-835"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "ghsa": 2,
+            "nvd": 2,
+            "oracle-oval": 3,
+            "redhat": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:S/C:N/I:N/A:C",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:N/I:N/A:H",
+              "V2Score": 6.3,
+              "V3Score": 6.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-39140",
+            "https://github.com/x-stream/xstream",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-6wf9-jmg9-vxcc",
+            "https://linux.oracle.com/cve/CVE-2021-39140.html",
+            "https://linux.oracle.com/errata/ELSA-2021-3956.html",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-39140",
+            "https://security.netapp.com/advisory/ntap-20210923-0003",
+            "https://security.netapp.com/advisory/ntap-20210923-0003/",
+            "https://ubuntu.com/security/notices/USN-5946-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-39140",
+            "https://www.debian.org/security/2021/dsa-5004",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html",
+            "https://x-stream.github.io/CVE-2021-39140.html"
+          ],
+          "PublishedDate": "2021-08-23T19:15:10.44Z",
+          "LastModifiedDate": "2025-05-23T16:50:34.143Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-48924",
+          "PkgID": "org.apache.commons:commons-lang3:3.14.0",
+          "PkgName": "org.apache.commons:commons-lang3",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.apache.commons/commons-lang3@3.14.0",
+            "UID": "d48a756b0b71a35f"
+          },
+          "InstalledVersion": "3.14.0",
+          "FixedVersion": "3.18.0",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-48924",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "commons-lang/commons-lang: org.apache.commons/commons-lang3: Uncontrolled Recursion vulnerability in Apache Commons Lang",
+          "Description": "Uncontrolled Recursion vulnerability in Apache Commons Lang.\n\nThis issue affects Apache Commons Lang: Starting with commons-lang:commons-lang 2.0 to 2.6, and, from org.apache.commons:commons-lang3 3.0 before 3.18.0.\n\nThe methods ClassUtils.getClass(...) can throw StackOverflowError on very long inputs. Because an Error is usually not handled by applications and libraries, a \nStackOverflowError could cause an application to stop.\n\nUsers are recommended to upgrade to version 3.18.0, which fixes the issue.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-674"
+          ],
+          "VendorSeverity": {
+            "amazon": 1,
+            "azure": 2,
+            "cbl-mariner": 2,
+            "ghsa": 2,
+            "redhat": 1,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 3.7
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2025/07/11/1",
+            "https://access.redhat.com/security/cve/CVE-2025-48924",
+            "https://github.com/apache/commons-lang",
+            "https://github.com/apache/commons-lang/commit/b424803abdb2bec818e4fbcb251ce031c22aca53",
+            "https://lists.apache.org/thread/bgv0lpswokgol11tloxnjfzdl7yrc1g1",
+            "https://lists.debian.org/debian-lts-announce/2025/08/msg00000.html",
+            "https://lists.debian.org/debian-lts-announce/2025/08/msg00026.html",
+            "https://lists.debian.org/debian-lts-announce/2025/09/msg00032.html",
+            "https://lists.debian.org/debian-lts-announce/2025/09/msg00036.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-48924",
+            "https://ubuntu.com/security/notices/USN-8364-1",
+            "https://www.cve.org/CVERecord?id=CVE-2025-48924",
+            "https://www.openwall.com/lists/oss-security/2025/07/11/1"
+          ],
+          "PublishedDate": "2025-07-11T15:15:24.347Z",
+          "LastModifiedDate": "2025-11-04T22:16:17.823Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-40477",
+          "PkgID": "org.thymeleaf:thymeleaf-spring6:3.1.2.RELEASE",
+          "PkgName": "org.thymeleaf:thymeleaf-spring6",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.thymeleaf/thymeleaf-spring6@3.1.2.RELEASE",
+            "UID": "918623127bed38e0"
+          },
+          "InstalledVersion": "3.1.2.RELEASE",
+          "FixedVersion": "3.1.4.RELEASE",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-40477",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "thymeleaf: Thymeleaf: Server-Side Template Injection via security bypass in expression execution",
+          "Description": "Thymeleaf is a server-side Java template engine for web and standalone environments. Versions 3.1.3.RELEASE and prior contain a security bypass vulnerability in the expression execution mechanisms. Although the library provides mechanisms to prevent expression injection, it fails to properly restrict the scope of accessible objects, allowing specific potentially sensitive objects to be reached from within a template. If an application developer passes unvalidated user input directly to the template engine, an unauthenticated remote attacker can bypass the library's protections to achieve Server-Side Template Injection (SSTI). This issue has ben fixed in version 3.1.4.RELEASE.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-917",
+            "CWE-1336"
+          ],
+          "VendorSeverity": {
+            "ghsa": 4,
+            "redhat": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 9.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-40477",
+            "https://github.com/thymeleaf/thymeleaf",
+            "https://github.com/thymeleaf/thymeleaf/security/advisories/GHSA-r4v4-5mwr-2fwr",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-40477",
+            "https://www.cve.org/CVERecord?id=CVE-2026-40477"
+          ],
+          "PublishedDate": "2026-04-17T22:16:33.5Z",
+          "LastModifiedDate": "2026-04-24T16:58:57.837Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-40478",
+          "PkgID": "org.thymeleaf:thymeleaf-spring6:3.1.2.RELEASE",
+          "PkgName": "org.thymeleaf:thymeleaf-spring6",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.thymeleaf/thymeleaf-spring6@3.1.2.RELEASE",
+            "UID": "918623127bed38e0"
+          },
+          "InstalledVersion": "3.1.2.RELEASE",
+          "FixedVersion": "3.1.4.RELEASE",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-40478",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "thymeleaf: Thymeleaf: Server-Side Template Injection via expression execution bypass",
+          "Description": "Thymeleaf is a server-side Java template engine for web and standalone environments. Versions 3.1.3.RELEASE and prior contain a security bypass vulnerability in the the expression execution mechanisms. Although the library provides mechanisms to prevent expression injection, it fails to properly neutralize specific syntax patterns that allow for the execution of unauthorized expressions. If an application developer passes unvalidated user input directly to the template engine, an unauthenticated remote attacker can bypass the library's protections to achieve Server-Side Template Injection (SSTI). This issue has ben fixed in version 3.1.4.RELEASE.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-917",
+            "CWE-1336"
+          ],
+          "VendorSeverity": {
+            "ghsa": 4,
+            "redhat": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 9.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-40478",
+            "https://github.com/thymeleaf/thymeleaf",
+            "https://github.com/thymeleaf/thymeleaf/security/advisories/GHSA-xjw8-8c5c-9r79",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-40478",
+            "https://www.cve.org/CVERecord?id=CVE-2026-40478"
+          ],
+          "PublishedDate": "2026-04-17T22:16:33.65Z",
+          "LastModifiedDate": "2026-04-24T16:58:33.957Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-41901",
+          "PkgID": "org.thymeleaf:thymeleaf-spring6:3.1.2.RELEASE",
+          "PkgName": "org.thymeleaf:thymeleaf-spring6",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.thymeleaf/thymeleaf-spring6@3.1.2.RELEASE",
+            "UID": "918623127bed38e0"
+          },
+          "InstalledVersion": "3.1.2.RELEASE",
+          "FixedVersion": "3.1.5.RELEASE",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-41901",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "Sandboxed Thymeleaf expressions vulnerable to improper recognition of unauthorized syntax patterns",
+          "Description": "Thymeleaf is a server-side Java template engine for web and standalone environments. Prior to 3.1.5.RELEASE, a security bypass vulnerability exists in the expression execution mechanisms of Thymeleaf. Although the library provides mechanisms to avoid the execution of potentially dangerous expressions in some specific sandboxed (restricted) contexts, it fails to properly neutralize specific constructs that allow this kind of expressions to be executed. If an application developer passes to the template engine unsanitized variables that contain such expressions, and these values are used in sandboxed contexts inside the templates, these expressions can be executed achieving Server-Side Template Injection (SSTI). This vulnerability is fixed in 3.1.5.RELEASE.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-917",
+            "CWE-1336"
+          ],
+          "VendorSeverity": {
+            "ghsa": 4
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 9.1
+            }
+          },
+          "References": [
+            "https://github.com/thymeleaf/thymeleaf",
+            "https://github.com/thymeleaf/thymeleaf/security/advisories/GHSA-c9ph-gxww-7744",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-41901"
+          ],
+          "PublishedDate": "2026-05-12T23:16:17.06Z",
+          "LastModifiedDate": "2026-05-13T16:10:57.817Z"
+        }
+      ]
+    },
+    {
+      "Target": "src/main/resources/lessons/jwt/documentation/JWT_libraries.adoc",
+      "Class": "secret",
+      "Secrets": [
+        {
+          "RuleID": "jwt-token",
+          "Category": "JWT",
+          "Severity": "MEDIUM",
+          "Title": "JWT token",
+          "StartLine": 28,
+          "EndLine": 28,
+          "Code": {
+            "Lines": [
+              {
+                "Number": 26,
+                "Content": "[source]",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "[source]",
+                "FirstCause": false,
+                "LastCause": false
+              },
+              {
+                "Number": 27,
+                "Content": "----",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "----",
+                "FirstCause": false,
+                "LastCause": false
+              },
+              {
+                "Number": 28,
+                "Content": "var token = \"***********************************************************************************************************************************************************\";",
+                "IsCause": true,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "var token = \"***********************************************************************************************************************************************************\";",
+                "FirstCause": true,
+                "LastCause": true
+              },
+              {
+                "Number": 29,
+                "Content": "",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "FirstCause": false,
+                "LastCause": false
+              }
+            ]
+          },
+          "Match": "-\n\n[source]\n----\nvar token = \"***********************************************************************************************************************************************************\";\n\nJwts.parser().se",
+          "Layer": {}
+        },
+        {
+          "RuleID": "jwt-token",
+          "Category": "JWT",
+          "Severity": "MEDIUM",
+          "Title": "JWT token",
+          "StartLine": 40,
+          "EndLine": 40,
+          "Code": {
+            "Lines": [
+              {
+                "Number": 38,
+                "Content": "[source]",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "[source]",
+                "FirstCause": false,
+                "LastCause": false
+              },
+              {
+                "Number": 39,
+                "Content": "----",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "----",
+                "FirstCause": false,
+                "LastCause": false
+              },
+              {
+                "Number": 40,
+                "Content": "var token = \" **********************************************************************************************************************************************************\";",
+                "IsCause": true,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "var token = \" **********************************************************************************************************************************************************\";",
+                "FirstCause": true,
+                "LastCause": true
+              },
+              {
+                "Number": 41,
+                "Content": "",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "FirstCause": false,
+                "LastCause": false
+              }
+            ]
+          },
+          "Match": "\n\n[source]\n----\nvar token = \" **********************************************************************************************************************************************************\";\n\nJwts.parser().se",
+          "Layer": {}
+        },
+        {
+          "RuleID": "jwt-token",
+          "Category": "JWT",
+          "Severity": "MEDIUM",
+          "Title": "JWT token",
+          "StartLine": 56,
+          "EndLine": 56,
+          "Code": {
+            "Lines": [
+              {
+                "Number": 54,
+                "Content": "[source]",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "[source]",
+                "FirstCause": false,
+                "LastCause": false
+              },
+              {
+                "Number": 55,
+                "Content": "----",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "----",
+                "FirstCause": false,
+                "LastCause": false
+              },
+              {
+                "Number": 56,
+                "Content": "var token = \"***************************************************************************************************************\";",
+                "IsCause": true,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "var token = \"***************************************************************************************************************\";",
+                "FirstCause": true,
+                "LastCause": true
+              },
+              {
+                "Number": 57,
+                "Content": "",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "FirstCause": false,
+                "LastCause": false
+              }
+            ]
+          },
+          "Match": ")\n\n[source]\n----\nvar token = \"***************************************************************************************************************\";\n\nJwts.parser().se",
+          "Layer": {}
+        }
+      ]
+    },
+    {
+      "Target": "src/main/resources/lessons/jwt/documentation/JWT_libraries_assignment.adoc",
+      "Class": "secret",
+      "Secrets": [
+        {
+          "RuleID": "jwt-token",
+          "Category": "JWT",
+          "Severity": "MEDIUM",
+          "Title": "JWT token",
+          "StartLine": 7,
+          "EndLine": 7,
+          "Code": {
+            "Lines": [
+              {
+                "Number": 5,
+                "Content": "[source]",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "[source]",
+                "FirstCause": false,
+                "LastCause": false
+              },
+              {
+                "Number": 6,
+                "Content": "----",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "----",
+                "FirstCause": false,
+                "LastCause": false
+              },
+              {
+                "Number": 7,
+                "Content": "********************************************************************************************************************************",
+                "IsCause": true,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "********************************************************************************************************************************",
+                "FirstCause": true,
+                "LastCause": true
+              },
+              {
+                "Number": 8,
+                "Content": "----",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "----",
+                "FirstCause": false,
+                "LastCause": false
+              }
+            ]
+          },
+          "Match": "llowing token:\n\n[source]\n----\n********************************************************************************************************************************\n----\n\nwhich after d",
+          "Layer": {}
+        }
+      ]
+    },
+    {
+      "Target": "src/main/resources/lessons/jwt/documentation/JWT_signing_solution.adoc",
+      "Class": "secret",
+      "Secrets": [
+        {
+          "RuleID": "jwt-token",
+          "Category": "JWT",
+          "Severity": "MEDIUM",
+          "Title": "JWT token",
+          "StartLine": 35,
+          "EndLine": 35,
+          "Code": {
+            "Lines": [
+              {
+                "Number": 33,
+                "Content": "GET http://localhost:8080/WebGoat/JWT/votings/login?user=Tom HTTP/1.1",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "GET http://localhost:8080/WebGoat/JWT/votings/login?user=Tom HTTP/1.1",
+                "FirstCause": false,
+                "LastCause": false
+              },
+              {
+                "Number": 34,
+                "Content": "",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "FirstCause": false,
+                "LastCause": false
+              },
+              {
+                "Number": 35,
+                "Content": "access_token=***************************************************************************************************************************************************************************",
+                "IsCause": true,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "access_token=***************************************************************************************************************************************************************************",
+                "FirstCause": true,
+                "LastCause": true
+              },
+              {
+                "Number": 36,
+                "Content": "----",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "----",
+                "FirstCause": false,
+                "LastCause": false
+              }
+            ]
+          },
+          "Match": "er=Tom HTTP/1.1\n\naccess_token=***************************************************************************************************************************************************************************\n----\n\nDecoding the ",
+          "Layer": {}
+        }
+      ]
+    },
+    {
+      "Target": "src/main/resources/lessons/jwt/html/JWT.html",
+      "Class": "secret",
+      "Secrets": [
+        {
+          "RuleID": "jwt-token",
+          "Category": "JWT",
+          "Severity": "MEDIUM",
+          "Title": "JWT token",
+          "StartLine": 323,
+          "EndLine": 323,
+          "Code": {
+            "Lines": [
+              {
+                "Number": 321,
+                "Content": "        \u003cform class=\"attack-form\" accept-charset=\"UNKNOWN\"",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "        \u003cform class=\"attack-form\" accept-charset=\"UNKNOWN\"",
+                "FirstCause": false,
+                "LastCause": false
+              },
+              {
+                "Number": 322,
+                "Content": "              method=\"POST\"",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "              method=\"POST\"",
+                "FirstCause": false,
+                "LastCause": false
+              },
+              {
+                "Number": 323,
+                "Content": "              th:action=\"@{/JWT/jku/delete?token=*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************}\"\u003e",
+                "IsCause": true,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "              th:action=\"@{/JWT/jku/delete?token=*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************}\"\u003e",
+                "FirstCause": true,
+                "LastCause": true
+              },
+              {
+                "Number": 324,
+                "Content": "            \u003cdiv class=\"container-fluid\"\u003e",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "            \u003cdiv class=\"container-fluid\"\u003e",
+                "FirstCause": false,
+                "LastCause": false
+              }
+            ]
+          },
+          "Match": "tion=\"@{/JWT/jku/delete?token=*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************}\"\u003e\n            \u003cdiv",
+          "Layer": {}
+        }
+      ]
+    },
+    {
+      "Target": "src/main/resources/lessons/jwt/images/logs.txt",
+      "Class": "secret",
+      "Secrets": [
+        {
+          "RuleID": "jwt-token",
+          "Category": "JWT",
+          "Severity": "MEDIUM",
+          "Title": "JWT token",
+          "StartLine": 2,
+          "EndLine": 2,
+          "Code": {
+            "Lines": [
+              {
+                "Number": 1,
+                "Content": "",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "FirstCause": false,
+                "LastCause": false
+              },
+              {
+                "Number": 2,
+                "Content": "194.201.170.15 - - [28/Jan/2016:21:28:01 +0100] \"GET /JWT/refresh/checkout?token=************************************************************************************************************************************************************************************************** HTTP/1.1\" 401 242 \"-\" \"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0\" \"-\"",
+                "IsCause": true,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "194.201.170.15 - - [28/Jan/2016:21:28:01 +0100] \"GET /JWT/refresh/checkout?token=************************************************************************************************************************************************************************************************** HTTP/1.1\" 401 242 \"-\" \"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0\" \"-\"",
+                "FirstCause": true,
+                "LastCause": true
+              },
+              {
+                "Number": 3,
+                "Content": "194.201.170.15 - - [28/Jan/2016:21:28:01 +0100] \"POST /JWT/refresh/moveToCheckout HTTP/1.1\" 200 12783 \"-\" \"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0\" \"-\"",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "194.201.170.15 - - [28/Jan/2016:21:28:01 +0100] \"POST /JWT/refresh/moveToCheckout HTTP/1.1\" 200 12783 \"-\" \"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0\" \"-\"",
+                "FirstCause": false,
+                "LastCause": false
+              }
+            ]
+          },
+          "Match": "T /JWT/refresh/checkout?token=************************************************************************************************************************************************************************************************** HTTP/1.1\" 401 242 \"",
+          "Layer": {}
+        }
+      ]
+    },
+    {
+      "Target": "src/it/java/org/owasp/webgoat/playwright/webwolf/JwtUITest.java",
+      "Class": "secret",
+      "Secrets": [
+        {
+          "RuleID": "jwt-token",
+          "Category": "JWT",
+          "Severity": "MEDIUM",
+          "Title": "JWT token",
+          "StartLine": 31,
+          "EndLine": 31,
+          "Code": {
+            "Lines": [
+              {
+                "Number": 29,
+                "Content": "    var secretKey = \"test\";",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "    var secretKey = \"test\";",
+                "FirstCause": false,
+                "LastCause": false
+              },
+              {
+                "Number": 30,
+                "Content": "    var jwt =",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "    var jwt =",
+                "FirstCause": false,
+                "LastCause": false
+              },
+              {
+                "Number": 31,
+                "Content": "        \"***********************************************************************************************************************************************************\";",
+                "IsCause": true,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "        \"***********************************************************************************************************************************************************\";",
+                "FirstCause": true,
+                "LastCause": true
+              },
+              {
+                "Number": 32,
+                "Content": "",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "FirstCause": false,
+                "LastCause": false
+              }
+            ]
+          },
+          "Match": "test\";\n    var jwt =\n        \"***********************************************************************************************************************************************************\";\n\n    page.navigat",
+          "Layer": {}
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "CWE-78": {
+    "exploitability": 30,
+    "internet_exposed": true,
+    "description": "Command Injection"
+  },
+
+  "CWE-89": {
+    "exploitability": 25,
+    "internet_exposed": true,
+    "description": "SQL Injection"
+  },
+
+  "CWE-502": {
+    "exploitability": 25,
+    "internet_exposed": true,
+    "description": "Unsafe Deserialization"
+  },
+
+  "CWE-918": {
+    "exploitability": 20,
+    "internet_exposed": true,
+    "description": "SSRF"
+  },
+
+  "CWE-321": {
+    "exploitability": 20,
+    "secret_related": true,
+    "description": "Hardcoded Cryptographic Key"
+  },
+
+  "CWE-434": {
+    "exploitability": 15,
+    "internet_exposed": true,
+    "description": "Unrestricted File Upload"
+  },
+
+  "CWE-94": {
+    "exploitability": 30,
+    "internet_exposed": true,
+    "description": "Code Injection"
+  }
+}

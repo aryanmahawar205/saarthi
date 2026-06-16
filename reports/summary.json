@@ -1,0 +1,18 @@
+{
+  "total_findings": 320,
+  "by_tool": {
+    "Semgrep": 185,
+    "Trivy": 40,
+    "Gitleaks": 95
+  },
+  "by_category": {
+    "SAST": 185,
+    "SCA": 40,
+    "SECRETS": 95
+  },
+  "by_severity": {
+    "HIGH": 145,
+    "MEDIUM": 171,
+    "CRITICAL": 4
+  }
+}

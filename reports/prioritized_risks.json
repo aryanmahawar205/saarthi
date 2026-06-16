@@ -1,0 +1,924 @@
+[
+  {
+    "group_id": "GROUP-012",
+    "group_type": "CWE",
+    "group_key": "CWE-78",
+    "finding_count": 4,
+    "severity": "CRITICAL",
+    "findings": [
+      "a2d8732b-3059-422f-9d21-0158b7a93eef",
+      "0f146dbb-b6a1-4d83-9096-ecf6d5eb40a4",
+      "e18c2d1e-2624-43f7-8edf-85bbde3d6d94",
+      "2e67328b-4c30-4db4-9eb4-bcb61bafaa0f"
+    ],
+    "merged_groups": [
+      {
+        "group_id": "GROUP-012",
+        "group_type": "CWE",
+        "group_key": "CWE-78"
+      }
+    ],
+    "exploitability_bonus": 30,
+    "risk_score": 134,
+    "priority": "CRITICAL"
+  },
+  {
+    "group_id": "GROUP-014",
+    "group_type": "CWE",
+    "group_key": "CWE-502",
+    "finding_count": 28,
+    "severity": "HIGH",
+    "findings": [
+      "f2f6f95a-f733-4a08-a99c-8772efd991d7",
+      "f55b00e4-18ec-4016-8ea2-17893019ed69",
+      "88cdb6ac-3989-4fca-b9bb-d0b67acc51e6",
+      "ae50d55a-f94d-4803-b6dc-410faadc8650",
+      "4e1b2a9c-648c-4bf8-a6d5-832617a4bb3f",
+      "c991e705-5605-4d2a-bc3d-001afc2b651c",
+      "37500b5d-d3cb-4db3-b252-26a2c0fabd6d",
+      "571ea64a-71f0-4a15-9e58-4c40c0920c4e",
+      "96b05f2f-9da4-496e-986e-38d57def4d73",
+      "a0387d00-b9bb-49c3-ac3d-bed6c5f594e9",
+      "b6626a73-64a0-496f-a5a0-d72ac6c4fbc2",
+      "2673ac9c-9164-49d5-8255-e0b585a5c0b5",
+      "c173a246-08d2-4c87-9a99-10a5394f6feb",
+      "5740b10e-855d-41c8-8f95-27dbe5619afa",
+      "0cc99467-c1fb-4abf-993d-be0e3555a1ba",
+      "da83c87e-5864-4864-9b64-715225999bc0",
+      "458aae4f-297e-44f5-a5ca-acf595a4df95",
+      "f86e187d-a89c-4ce9-b8a7-92f639ffbd66",
+      "74582707-deaf-4c47-b4bd-82556759d88f",
+      "9c1e4183-44ad-4d68-b4bf-0977cf9b6f50",
+      "2e67328b-4c30-4db4-9eb4-bcb61bafaa0f",
+      "e7d03fcb-c135-4bf1-8825-fe30de7b12f8",
+      "45fd571d-a303-49ab-9c7e-bb2e5a5bd0d7",
+      "76174a38-9584-4f6e-87e9-c5bc7f8e4387",
+      "c9f22eba-dc02-4ce8-90ea-9ad1c273c44c",
+      "ed333c06-c428-460d-b9d7-6ede4a2ced55",
+      "dcd2ce0a-78b7-47bf-a480-5e37d1659e87",
+      "32532304-ac66-4ed3-b769-ed4dda2b2571"
+    ],
+    "merged_groups": [
+      {
+        "group_id": "GROUP-014",
+        "group_type": "CWE",
+        "group_key": "CWE-502"
+      }
+    ],
+    "exploitability_bonus": 25,
+    "risk_score": 120,
+    "priority": "CRITICAL"
+  },
+  {
+    "group_id": "GROUP-005",
+    "group_type": "CWE",
+    "group_key": "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
+    "finding_count": 18,
+    "severity": "HIGH",
+    "findings": [
+      "c55decd2-3c4a-430d-9a6c-9027228f8d1b",
+      "d72bbdb1-ca59-4c62-a1bc-f47a9ad004c1",
+      "2ca6b9a6-7998-4776-b000-e4ebb4767480",
+      "d0d7fac8-5b10-4b55-8baf-dcbf337b2825",
+      "abc93b40-c9af-4054-a04b-ee88d145d3ad",
+      "1a1f7f43-5afa-40ab-9366-0ecd8c242600",
+      "a7c532ab-9c22-45ab-9206-c9117efa0aa9",
+      "e7ae75c4-6133-428f-8378-8baa4e802170",
+      "bdd8f27b-d1ff-48d4-b58c-5eb436635358",
+      "b16c550b-41bf-4718-9512-66676e49fa10",
+      "b5fc9af5-4454-4b93-b6cc-33b0d9be8212",
+      "fb58ca0d-b1f1-434b-abd6-5a7913ebdef7",
+      "1bf37059-3097-4873-b22a-51a12610b87f",
+      "0c528047-b7b2-40b8-91e2-6b18f3a61381",
+      "b1f05c3f-202b-4b04-a4e0-1f6807b15889",
+      "5b11fde0-38b0-47f7-978d-117cbd6e1ea0",
+      "e1ffe7a6-00b8-42a6-b763-43a4f6e461d0",
+      "9cbec19a-8b4f-4521-a70c-e1b022b5bcb1"
+    ],
+    "merged_groups": [
+      {
+        "group_id": "GROUP-005",
+        "group_type": "CWE",
+        "group_key": "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"
+      },
+      {
+        "group_id": "GROUP-024",
+        "group_type": "VULNERABILITY_CLASS",
+        "group_key": "SQL Injection"
+      }
+    ],
+    "exploitability_bonus": 25,
+    "risk_score": 118,
+    "priority": "HIGH"
+  },
+  {
+    "group_id": "GROUP-002",
+    "group_type": "CWE",
+    "group_key": "CWE-321: Use of Hard-coded Cryptographic Key",
+    "finding_count": 13,
+    "severity": "HIGH",
+    "findings": [
+      "77c2914d-4293-484c-abd5-8534a4e2b374",
+      "f1895ab8-df1d-4c5e-aaa5-88f5ed1674d1",
+      "9575cb21-d84b-4786-b2bb-60b44adc5a03",
+      "254f9f9e-71af-471e-b7ee-3a5f7e595167",
+      "df23b16d-9f15-449e-9f31-fc22f3ce4f6d",
+      "1197ed87-e9a0-4584-8d24-a2576e53167a",
+      "dadec6d6-afd1-421f-9a9d-48d7b8bd9c2a",
+      "1e419ff8-2e61-4f33-8a06-62304d75811a",
+      "1826a757-6fc6-4db8-aa54-efd7d02f29f4",
+      "6733c41e-9ab2-4b07-ad99-7aa2e22c7539",
+      "5f7b796a-7258-4b51-ae03-6265c809c202",
+      "995f08ea-71fa-49a5-90f0-0633660beb43",
+      "5334029d-2628-4b79-b20a-40b89f0cbcf5"
+    ],
+    "merged_groups": [
+      {
+        "group_id": "GROUP-002",
+        "group_type": "CWE",
+        "group_key": "CWE-321: Use of Hard-coded Cryptographic Key"
+      }
+    ],
+    "exploitability_bonus": 20,
+    "risk_score": 108,
+    "priority": "HIGH"
+  },
+  {
+    "group_id": "GROUP-015",
+    "group_type": "CWE",
+    "group_key": "CWE-94",
+    "finding_count": 3,
+    "severity": "HIGH",
+    "findings": [
+      "f55b00e4-18ec-4016-8ea2-17893019ed69",
+      "4e1b2a9c-648c-4bf8-a6d5-832617a4bb3f",
+      "2e67328b-4c30-4db4-9eb4-bcb61bafaa0f"
+    ],
+    "merged_groups": [
+      {
+        "group_id": "GROUP-015",
+        "group_type": "CWE",
+        "group_key": "CWE-94"
+      }
+    ],
+    "exploitability_bonus": 30,
+    "risk_score": 108,
+    "priority": "HIGH"
+  },
+  {
+    "group_id": "GROUP-016",
+    "group_type": "CWE",
+    "group_key": "CWE-434",
+    "finding_count": 15,
+    "severity": "HIGH",
+    "findings": [
+      "88cdb6ac-3989-4fca-b9bb-d0b67acc51e6",
+      "ae50d55a-f94d-4803-b6dc-410faadc8650",
+      "c991e705-5605-4d2a-bc3d-001afc2b651c",
+      "37500b5d-d3cb-4db3-b252-26a2c0fabd6d",
+      "571ea64a-71f0-4a15-9e58-4c40c0920c4e",
+      "96b05f2f-9da4-496e-986e-38d57def4d73",
+      "a0387d00-b9bb-49c3-ac3d-bed6c5f594e9",
+      "2673ac9c-9164-49d5-8255-e0b585a5c0b5",
+      "5740b10e-855d-41c8-8f95-27dbe5619afa",
+      "0cc99467-c1fb-4abf-993d-be0e3555a1ba",
+      "9c1e4183-44ad-4d68-b4bf-0977cf9b6f50",
+      "e7d03fcb-c135-4bf1-8825-fe30de7b12f8",
+      "45fd571d-a303-49ab-9c7e-bb2e5a5bd0d7",
+      "ed333c06-c428-460d-b9d7-6ede4a2ced55",
+      "dcd2ce0a-78b7-47bf-a480-5e37d1659e87"
+    ],
+    "merged_groups": [
+      {
+        "group_id": "GROUP-016",
+        "group_type": "CWE",
+        "group_key": "CWE-434"
+      }
+    ],
+    "exploitability_bonus": 15,
+    "risk_score": 105,
+    "priority": "HIGH"
+  },
+  {
+    "group_id": "GROUP-020",
+    "group_type": "CWE",
+    "group_key": "CWE-1336",
+    "finding_count": 3,
+    "severity": "CRITICAL",
+    "findings": [
+      "64183ac0-4b20-4604-acb4-226cc4673837",
+      "caf82b17-316a-4551-b472-d5d0b5a69b9e",
+      "ba55c50e-c953-4a3a-8845-ee0c5c563dd6"
+    ],
+    "merged_groups": [
+      {
+        "group_id": "GROUP-020",
+        "group_type": "CWE",
+        "group_key": "CWE-1336"
+      },
+      {
+        "group_id": "GROUP-021",
+        "group_type": "CWE",
+        "group_key": "CWE-917"
+      },
+      {
+        "group_id": "GROUP-033",
+        "group_type": "PACKAGE",
+        "group_key": "org.thymeleaf:thymeleaf-spring6"
+      }
+    ],
+    "exploitability_bonus": 0,
+    "risk_score": 103,
+    "priority": "HIGH"
+  },
+  {
+    "group_id": "GROUP-017",
+    "group_type": "CWE",
+    "group_key": "CWE-918",
+    "finding_count": 5,
+    "severity": "HIGH",
+    "findings": [
+      "b6626a73-64a0-496f-a5a0-d72ac6c4fbc2",
+      "c173a246-08d2-4c87-9a99-10a5394f6feb",
+      "17628614-4abc-4b84-bbaa-e7f7d02cff91",
+      "f86e187d-a89c-4ce9-b8a7-92f639ffbd66",
+      "c9f22eba-dc02-4ce8-90ea-9ad1c273c44c"
+    ],
+    "merged_groups": [
+      {
+        "group_id": "GROUP-017",
+        "group_type": "CWE",
+        "group_key": "CWE-918"
+      }
+    ],
+    "exploitability_bonus": 20,
+    "risk_score": 100,
+    "priority": "HIGH"
+  },
+  {
+    "group_id": "GROUP-022",
+    "group_type": "VULNERABILITY_CLASS",
+    "group_key": "Cryptographic Issues",
+    "finding_count": 23,
+    "severity": "HIGH",
+    "findings": [
+      "fc35a4f3-865a-4992-ba8d-fcca5854a8c1",
+      "77c2914d-4293-484c-abd5-8534a4e2b374",
+      "68eced05-acb0-46ee-aabc-7405ab17a4a1",
+      "397077aa-8b61-4420-afb9-f7a09c6b475e",
+      "59a6da3d-93ef-467e-8959-196d543adc67",
+      "f51b6d1c-bf1f-46ad-979d-b84ec011b497",
+      "5313ef29-6f5b-4f0b-8e0a-9a03c06b79db",
+      "ce81ec83-3001-4bd2-8038-dca09dbd5342",
+      "451fc777-c85b-4980-ac2f-9771edf524f0",
+      "f1895ab8-df1d-4c5e-aaa5-88f5ed1674d1",
+      "9575cb21-d84b-4786-b2bb-60b44adc5a03",
+      "254f9f9e-71af-471e-b7ee-3a5f7e595167",
+      "df23b16d-9f15-449e-9f31-fc22f3ce4f6d",
+      "1197ed87-e9a0-4584-8d24-a2576e53167a",
+      "dadec6d6-afd1-421f-9a9d-48d7b8bd9c2a",
+      "1e419ff8-2e61-4f33-8a06-62304d75811a",
+      "1826a757-6fc6-4db8-aa54-efd7d02f29f4",
+      "6733c41e-9ab2-4b07-ad99-7aa2e22c7539",
+      "5f7b796a-7258-4b51-ae03-6265c809c202",
+      "995f08ea-71fa-49a5-90f0-0633660beb43",
+      "5334029d-2628-4b79-b20a-40b89f0cbcf5",
+      "80992353-9c23-4ea6-a269-928fbff177eb",
+      "90039301-261e-47e7-bee5-ff221d076eed"
+    ],
+    "merged_groups": [
+      {
+        "group_id": "GROUP-022",
+        "group_type": "VULNERABILITY_CLASS",
+        "group_key": "Cryptographic Issues"
+      }
+    ],
+    "exploitability_bonus": 0,
+    "risk_score": 85,
+    "priority": "MEDIUM"
+  },
+  {
+    "group_id": "GROUP-031",
+    "group_type": "VULNERABILITY_CLASS",
+    "group_key": "Secret Exposure",
+    "finding_count": 95,
+    "severity": "HIGH",
+    "findings": [
+      "a431ecc6-5af9-42f6-9440-a67a251fa1ea",
+      "a77e5023-e230-485c-b30b-d10674edf15c",
+      "83885638-f79e-49cd-be9c-96b5c1c3598b",
+      "c2c6d657-73b2-49f9-b956-d6a6c02cb150",
+      "da800518-e2d1-4af5-bb47-22a35957e4af",
+      "7c6a67c4-152f-4686-b2ad-06ebb2eca4dc",
+      "d1a8b245-3e76-4c0d-bb90-f4feeae73b71",
+      "b4a115ac-462a-46ba-9ad8-2c4ff662bd60",
+      "ad79a9d7-860b-4ab1-bbb7-0df5ce2463cf",
+      "3bdc799f-b8c6-47a4-81ca-dc2a3a26c842",
+      "b6bff310-e131-420f-bf75-aea1c2df632d",
+      "85f02b06-8893-4816-ab02-5f45b7caa181",
+      "f8c4c07b-e218-4ae6-b35b-2cc9a2e89161",
+      "6bb7ab77-a99f-4689-ab18-773fe96226ee",
+      "3630ba48-722f-4103-9937-0732273240de",
+      "61fabd05-66bd-47cc-a28a-99f749ce5880",
+      "f2651ee8-f850-4bfc-a1e1-12e230b9bba4",
+      "69ff0a52-dea5-414e-8d0b-d8e4cda324a3",
+      "11e113b6-fe73-4978-ada5-8c5e4fff54ff",
+      "6c0165e0-4738-49d3-a7a4-0458eb74e166",
+      "b9aebc93-7a32-4138-b2d6-8086d0044de4",
+      "fae62bed-f283-4e2f-937f-e16a62bc1d9b",
+      "75547ea2-ef1c-4c78-b464-dcf19cd962a9",
+      "caf9e0c2-9b50-4113-a8dd-288eb68aa316",
+      "d58f7f84-1df1-4320-881e-e52c30653c6d",
+      "44b2449d-6139-4757-bffa-432f2f666cb0",
+      "b4792da9-ef8c-4d4a-b6a5-b3c0c43dead7",
+      "252a723f-6f54-4cf6-837a-1c5677bd0b52",
+      "93f19017-5558-4a6b-9e52-5c0d7cff5044",
+      "eff4d1cd-626f-457b-adbe-c9cea5a54f4d",
+      "4a0c4d1c-0ada-42cd-8915-0774dc3b19e7",
+      "a1013a91-6f25-43dd-8bd0-0edfb82fb8b0",
+      "28f9a57d-417e-4bb0-bd89-be19eb8ea197",
+      "0e1a9911-c4f0-42e4-9df8-a6fa753dda37",
+      "a2025f94-25b9-4834-8add-ad13520385f4",
+      "2a294eea-4f68-40df-b6e6-5026d3427b54",
+      "2bb3f546-efbc-4d10-9e3f-0b1b77329e35",
+      "f3e7320c-054d-4339-a221-a2336a6d77d1",
+      "8656f682-24bd-4dfe-a536-997b8c4779f2",
+      "118c2ca3-bb13-472a-b684-703685d7509c",
+      "2bfca0e6-8750-4fd3-9408-50c04ffffe40",
+      "8780c75c-c13d-4d1c-9013-aa9b8c413420",
+      "6c4f3e36-1f52-45e8-8f06-7b59a4e6b805",
+      "31f9570e-7972-4f95-996b-28776b277c6b",
+      "90b8c28d-19f0-40f8-9e7a-e7c94b02bdd1",
+      "7ebb24fe-334e-4e25-92fa-058a1a5c7c4b",
+      "f142536c-5dfc-434b-b8c2-ce9d81226100",
+      "9c9adb6f-81ae-45c1-bf0d-dd534b378f5a",
+      "c5e006a1-83ba-44ba-a0e2-6991b225ae42",
+      "fecc2644-3f40-4cc2-a1cc-3b9656d4947a",
+      "63264898-2380-48e8-84e8-1de88329428f",
+      "511a2375-016b-45cc-bf70-6ca71dc6c2d1",
+      "b7ab4a83-8707-4588-a5b9-d00cc931b13c",
+      "50f059f0-6029-4a2d-b602-f246733ee4dd",
+      "17c4c424-431f-4dd9-bcd4-f649abf9a07a",
+      "a7788ede-260c-4833-9fea-53d807a42b8a",
+      "d5805e83-e7fb-481a-a0a2-289efae227f1",
+      "08cfc2b9-3a79-4de4-8ff4-cafba2176c69",
+      "7aa57693-05f6-4c13-8d1e-2121b705d4e5",
+      "9d5a0bb3-235d-45aa-93b3-f056cb93c3cf",
+      "ab9c0deb-ea49-4b31-94d1-951a75326b2f",
+      "238acf5f-8a93-42ee-adf4-889e2f1a68d1",
+      "679bcece-de13-43da-80de-71bbf6d436ae",
+      "3433e5ab-7deb-4f3b-8007-6e9019ea53f6",
+      "9ce76739-a009-481d-bd69-df6c77dd5ec0",
+      "b035e264-c11c-4b3c-b721-4fe4f8b43b8b",
+      "a2cea1ef-c686-4679-8381-516c51cf85e1",
+      "f402e908-0c7b-4163-aa3a-16b72567d8fa",
+      "23df5ad8-1397-48b8-869d-a2ecff90a01a",
+      "d61f91f2-121e-4ce5-9ee9-12f30fcd9b73",
+      "e042943e-ae19-44fb-b5c5-8c95d964f145",
+      "71739e93-7191-42a8-8e57-9647473d2e48",
+      "b251a8ea-ec91-470d-99ac-8bae7ed1835a",
+      "113c678c-ca59-4155-a1eb-669c6b2eb84e",
+      "c1830cc3-47be-4c33-92d0-38e1c04f30a2",
+      "88870985-e15f-4bc8-ba21-d8d684904b12",
+      "cbe68c89-a475-49b8-b9c6-f353d5ceac91",
+      "a15a7871-115e-4aad-9910-c48fd224459d",
+      "6d157aa6-2a98-4172-8338-bda9ac21ec9b",
+      "b4d0db0f-c8bc-4a29-8f4d-073ac9e44000",
+      "3e212cb1-18f0-4102-9870-9fda4986daf4",
+      "b6476db1-a5d4-4a3c-ac19-4418107f40b2",
+      "fe650540-c28e-45dd-8d3b-9e2b8f1bebfa",
+      "3ad7cdc7-a882-4f7b-8a04-787d14add9bc",
+      "5ee481e6-05fa-43d6-b2ad-bd71c83d9f86",
+      "3e9564e6-4331-4da7-9d15-03b3b0a424a0",
+      "27c6188a-6693-411d-a18e-4e89cc3f8722",
+      "53f5460c-3fff-4228-b308-4cbd1d2e5a37",
+      "0fc25149-9127-4bc8-a485-94ae41025dbd",
+      "50161aeb-7f94-4fd0-8862-f8b2bf72607c",
+      "35a5249d-3476-4203-8b16-50602dee74ee",
+      "1f9dfc91-ea23-465c-9921-5148e74d7192",
+      "60fe6f74-3dab-4117-a98b-223a429122f4",
+      "f6e49f18-2360-4922-8357-f643f5586c1b",
+      "c9dcb2b3-7382-4323-996d-a6fe2055f929"
+    ],
+    "merged_groups": [
+      {
+        "group_id": "GROUP-031",
+        "group_type": "VULNERABILITY_CLASS",
+        "group_key": "Secret Exposure"
+      }
+    ],
+    "exploitability_bonus": 0,
+    "risk_score": 85,
+    "priority": "MEDIUM"
+  },
+  {
+    "group_id": "GROUP-032",
+    "group_type": "PACKAGE",
+    "group_key": "com.thoughtworks.xstream:xstream",
+    "finding_count": 36,
+    "severity": "CRITICAL",
+    "findings": [
+      "a2d8732b-3059-422f-9d21-0158b7a93eef",
+      "eb984242-1400-439f-9cae-a2392d282940",
+      "74832468-3280-4d8f-957c-a5ac34ab4300",
+      "0f146dbb-b6a1-4d83-9096-ecf6d5eb40a4",
+      "f2f6f95a-f733-4a08-a99c-8772efd991d7",
+      "f55b00e4-18ec-4016-8ea2-17893019ed69",
+      "88cdb6ac-3989-4fca-b9bb-d0b67acc51e6",
+      "ae50d55a-f94d-4803-b6dc-410faadc8650",
+      "4e1b2a9c-648c-4bf8-a6d5-832617a4bb3f",
+      "c991e705-5605-4d2a-bc3d-001afc2b651c",
+      "37500b5d-d3cb-4db3-b252-26a2c0fabd6d",
+      "571ea64a-71f0-4a15-9e58-4c40c0920c4e",
+      "96b05f2f-9da4-496e-986e-38d57def4d73",
+      "a0387d00-b9bb-49c3-ac3d-bed6c5f594e9",
+      "b6626a73-64a0-496f-a5a0-d72ac6c4fbc2",
+      "2673ac9c-9164-49d5-8255-e0b585a5c0b5",
+      "c173a246-08d2-4c87-9a99-10a5394f6feb",
+      "5740b10e-855d-41c8-8f95-27dbe5619afa",
+      "0cc99467-c1fb-4abf-993d-be0e3555a1ba",
+      "1329ef06-0877-4343-bca7-0c7e4b7ece30",
+      "a804edbf-9f93-44fa-9bf6-4a86aad0c69e",
+      "da83c87e-5864-4864-9b64-715225999bc0",
+      "458aae4f-297e-44f5-a5ca-acf595a4df95",
+      "17628614-4abc-4b84-bbaa-e7f7d02cff91",
+      "e18c2d1e-2624-43f7-8edf-85bbde3d6d94",
+      "f86e187d-a89c-4ce9-b8a7-92f639ffbd66",
+      "74582707-deaf-4c47-b4bd-82556759d88f",
+      "9c1e4183-44ad-4d68-b4bf-0977cf9b6f50",
+      "2e67328b-4c30-4db4-9eb4-bcb61bafaa0f",
+      "e7d03fcb-c135-4bf1-8825-fe30de7b12f8",
+      "45fd571d-a303-49ab-9c7e-bb2e5a5bd0d7",
+      "76174a38-9584-4f6e-87e9-c5bc7f8e4387",
+      "c9f22eba-dc02-4ce8-90ea-9ad1c273c44c",
+      "ed333c06-c428-460d-b9d7-6ede4a2ced55",
+      "dcd2ce0a-78b7-47bf-a480-5e37d1659e87",
+      "32532304-ac66-4ed3-b769-ed4dda2b2571"
+    ],
+    "merged_groups": [
+      {
+        "group_id": "GROUP-032",
+        "group_type": "PACKAGE",
+        "group_key": "com.thoughtworks.xstream:xstream"
+      }
+    ],
+    "exploitability_bonus": 0,
+    "risk_score": 84,
+    "priority": "MEDIUM"
+  },
+  {
+    "group_id": "GROUP-013",
+    "group_type": "CWE",
+    "group_key": "CWE-400",
+    "finding_count": 3,
+    "severity": "HIGH",
+    "findings": [
+      "f2f6f95a-f733-4a08-a99c-8772efd991d7",
+      "1329ef06-0877-4343-bca7-0c7e4b7ece30",
+      "76174a38-9584-4f6e-87e9-c5bc7f8e4387"
+    ],
+    "merged_groups": [
+      {
+        "group_id": "GROUP-013",
+        "group_type": "CWE",
+        "group_key": "CWE-400"
+      }
+    ],
+    "exploitability_bonus": 0,
+    "risk_score": 78,
+    "priority": "MEDIUM"
+  },
+  {
+    "group_id": "GROUP-018",
+    "group_type": "CWE",
+    "group_key": "CWE-121",
+    "finding_count": 3,
+    "severity": "HIGH",
+    "findings": [
+      "a804edbf-9f93-44fa-9bf6-4a86aad0c69e",
+      "da83c87e-5864-4864-9b64-715225999bc0",
+      "458aae4f-297e-44f5-a5ca-acf595a4df95"
+    ],
+    "merged_groups": [
+      {
+        "group_id": "GROUP-018",
+        "group_type": "CWE",
+        "group_key": "CWE-121"
+      }
+    ],
+    "exploitability_bonus": 0,
+    "risk_score": 78,
+    "priority": "MEDIUM"
+  },
+  {
+    "group_id": "GROUP-006",
+    "group_type": "CWE",
+    "group_key": "CWE-502: Deserialization of Untrusted Data",
+    "finding_count": 2,
+    "severity": "MEDIUM",
+    "findings": [
+      "136e7c5b-436c-4795-acd9-1c50d9e3e8bd",
+      "ab4e8536-4522-4422-83c1-bcf751cded93"
+    ],
+    "merged_groups": [
+      {
+        "group_id": "GROUP-006",
+        "group_type": "CWE",
+        "group_key": "CWE-502: Deserialization of Untrusted Data"
+      },
+      {
+        "group_id": "GROUP-025",
+        "group_type": "VULNERABILITY_CLASS",
+        "group_key": "Insecure Deserialization "
+      }
+    ],
+    "exploitability_bonus": 25,
+    "risk_score": 77,
+    "priority": "MEDIUM"
+  },
+  {
+    "group_id": "GROUP-019",
+    "group_type": "CWE",
+    "group_key": "CWE-674",
+    "finding_count": 2,
+    "severity": "HIGH",
+    "findings": [
+      "da83c87e-5864-4864-9b64-715225999bc0",
+      "8f32b486-db06-4667-9f5c-d19f597de408"
+    ],
+    "merged_groups": [
+      {
+        "group_id": "GROUP-019",
+        "group_type": "CWE",
+        "group_key": "CWE-674"
+      }
+    ],
+    "exploitability_bonus": 0,
+    "risk_score": 77,
+    "priority": "MEDIUM"
+  },
+  {
+    "group_id": "GROUP-003",
+    "group_type": "CWE",
+    "group_key": "CWE-352: Cross-Site Request Forgery (CSRF)",
+    "finding_count": 95,
+    "severity": "MEDIUM",
+    "findings": [
+      "70dcf41b-0a2f-466c-9ce7-50ed7572b391",
+      "047344cb-1400-4d30-8b09-668893f3656d",
+      "6864315d-808a-4d7c-a671-28e41d4bf711",
+      "8f7e4096-c89a-477f-9277-af497a58f2b7",
+      "39ea8056-ad4e-4881-b400-43052e55b380",
+      "5b8cdf8d-e14a-4cca-9126-c18213f96936",
+      "3c2c88a5-07ec-4fc4-b283-a67b5be53e28",
+      "9bdc674f-aef6-40d2-9760-7685b2d7d054",
+      "f21e19ce-7ed1-4014-a6a1-50283b15378f",
+      "50c97223-d2bd-48f2-8dd3-5bb89aace062",
+      "264d70e5-6ffb-4cb2-8a28-08c439c1e18b",
+      "9f8030d5-6177-40e4-bc44-6464d649d8ea",
+      "d9195ddc-5ad7-425f-9553-c51b0d8a46ba",
+      "dca4b28e-9596-49a2-8d29-00d161bb4c19",
+      "01e8ccff-8a69-49be-aacf-00d8ad8f5784",
+      "e106b385-8b60-444f-8908-8e6a02cc25ba",
+      "330e71dc-ca8a-497c-b46f-c524f18b5224",
+      "0009fc31-3c63-47f7-bd5e-8a09390b8412",
+      "d68af73c-aa02-4259-ab8f-b55ce50bfd6f",
+      "e89960d6-ea0a-4b4c-b1d3-b58ddbc8cad0",
+      "33d6890b-2e2c-405e-8699-04c0dc2192b6",
+      "12e3dbe6-5c41-4e30-ac9f-86606364c964",
+      "47b59612-2b26-4f6c-8fe3-81a4b1434462",
+      "905a9c81-3c94-47e4-8bf6-7225d41845e8",
+      "4a4055fc-2d87-4d22-af8b-6381196e3986",
+      "91b1ca10-59fa-4ee3-b93d-4d0bc1ef2183",
+      "014b2d43-0877-41d4-91dc-f97e2ae7afd5",
+      "7fdb8934-4e00-4ab8-8ac8-4d19313aa488",
+      "160a10ac-ed97-48c9-acb7-b6efc7a01cca",
+      "5afd7465-c13c-4a1f-b29d-4e8847103fe4",
+      "7ada1583-5aa2-4313-b0a2-b89fa2176636",
+      "126ef2b0-2d45-465c-a084-6cd506a2de29",
+      "e0338b11-5526-4aab-9396-1cd428203428",
+      "9a5ecd1c-9449-4f83-8c31-11b1412c01a1",
+      "98884101-eb2b-4703-bb27-8615b9484f85",
+      "6c45dbf2-c23b-4735-9808-356bbb32d2b4",
+      "8d722485-e7d5-4fd6-94f5-dfca6cc81fa0",
+      "9fb88a3d-c287-4edc-93ce-7c2d8f63c7f2",
+      "811e204a-ae62-474f-a517-c9cbb1b84b11",
+      "f7a917d3-b286-4d45-bb37-fd3c827732f2",
+      "c0873033-7c65-40bb-9849-0a028186feaf",
+      "4f8718ac-d3ce-4730-a4d2-ee4b25961af3",
+      "2e2a97de-440e-4e6c-8672-c9d4cbfd7052",
+      "bd637707-0ec8-4402-8e15-f197123cc511",
+      "0ede2575-15ac-4e8c-8c1f-8d05628cda61",
+      "0647bbb0-1372-46e4-946a-4c213a906136",
+      "cc65c992-7a37-4494-a802-6972a124631f",
+      "3d7c2566-9c66-49fc-98cb-4826fdc55c8c",
+      "8b519467-5739-486b-84cd-07d36bb8ff32",
+      "5b6576dc-47e9-46cf-8a50-9cd9fff817d3",
+      "0ce8da84-05d9-4755-84fc-df8dff44ff07",
+      "369b9ea9-886a-4431-a2b8-cf02d100ab10",
+      "3a4c5933-cfdb-49a9-a510-c141e73da5bd",
+      "3ce4ced0-ac3d-442c-8b1a-9d5ce145c280",
+      "2f785709-c798-465f-9576-627158252419",
+      "4a6e44fd-4622-4388-a0a0-ba3c60a27bde",
+      "2be7cc02-ef87-4eac-8e06-e16aeeec345c",
+      "c703475c-18a8-459d-9c71-da9597a4b3ab",
+      "e03f8e0b-6c72-45ff-9af4-b3ab8e0db69f",
+      "6d77d370-4c54-42b3-8804-243e50086717",
+      "1618dd17-354e-40c6-b03e-13aa70fa23ec",
+      "021235d9-131e-47d6-bf3a-0876b3e09b1b",
+      "1be55bd4-e6fa-4b20-8722-f88704b6c58d",
+      "fb091ff6-4973-4f04-afa6-00b058969292",
+      "ec50b8f9-53ed-46f2-bb59-cffe4c2247c1",
+      "a413050d-878f-4aff-99b3-1431b6d78565",
+      "e74334d2-bfd8-4f5d-854c-ea076ccb8d59",
+      "e8889cf9-04af-4cf8-9f85-8f16b44c4926",
+      "313379d1-2c53-49cd-9ad1-71ca022c147a",
+      "e671a830-a79f-4968-a046-6e70e15ec8e8",
+      "d3353e56-b728-45eb-acac-ab457c993769",
+      "c672f331-a877-44e9-a263-4ba843e1c9d2",
+      "0d0387bb-67c2-4946-8fe5-0f2fb62a8ca6",
+      "b4981c1e-882f-4bdb-be06-ec91cbfbaa20",
+      "979b9296-5b8e-4a5c-a268-8bccc6e4bff9",
+      "45f04411-e720-46db-8032-a6d32433a4c1",
+      "58135754-6525-45bb-a995-fcdc896d21fc",
+      "dd3363e7-2fda-44b7-93a6-9ad408130cdd",
+      "5de221ac-a961-47ff-a77e-1a2e09253711",
+      "9fdd7706-a24c-41d4-a3af-052ee9f05d31",
+      "5daa6206-4d06-4d08-af9a-fe95a71de6b7",
+      "bb5b02ad-5561-4b8e-8888-af2b46b5e8d1",
+      "c37a0693-2626-4bcd-be7f-0134fb351eaf",
+      "c35f72af-06f1-49ac-8624-09c99084ecfd",
+      "67ce4bac-5ca9-4cea-af4d-c66543aa9c93",
+      "185c357c-2f42-42af-b44d-e3e9bb35b9b9",
+      "59646ba8-dc47-4d69-877d-c0e3e90e64ed",
+      "e0a20538-fc00-4853-a9d4-50aa26d9f018",
+      "8096c24c-8e4e-4b60-9245-d34dad59b8c2",
+      "f8b542ee-74c9-4665-bb97-27f58e375f5d",
+      "a8a8721f-c6f4-493a-a475-cc61dc8978f9",
+      "dc6405fe-f326-49c2-a87e-1d0644069223",
+      "974886e6-cdda-4a60-90e7-b84334465521",
+      "bd3f8f4f-968d-4925-b327-790b52bac5b7",
+      "bc05de34-b355-4091-8d5b-d0005eab1ed7"
+    ],
+    "merged_groups": [
+      {
+        "group_id": "GROUP-003",
+        "group_type": "CWE",
+        "group_key": "CWE-352: Cross-Site Request Forgery (CSRF)"
+      },
+      {
+        "group_id": "GROUP-023",
+        "group_type": "VULNERABILITY_CLASS",
+        "group_key": "Cross-Site Request Forgery (CSRF)"
+      }
+    ],
+    "exploitability_bonus": 0,
+    "risk_score": 70,
+    "priority": "MEDIUM"
+  },
+  {
+    "group_id": "GROUP-010",
+    "group_type": "CWE",
+    "group_key": "CWE-1333: Inefficient Regular Expression Complexity",
+    "finding_count": 24,
+    "severity": "MEDIUM",
+    "findings": [
+      "4ee4fc8f-24a4-4712-bec2-36cbb58686da",
+      "82adca2b-5b23-405e-bb0f-c91f0724c897",
+      "2fb51639-c631-49bb-9727-14df30bcdf5a",
+      "5f374474-e1cf-47b0-b37d-9cc9638ee39e",
+      "28b1ba3c-417e-409f-9b20-1b31163dbf11",
+      "50c76abe-ca54-4e77-a5bd-855644faf830",
+      "35c5d6b0-c6d1-4bf1-b6a2-7149bf64b897",
+      "3c0295af-ae4d-4f08-ab4d-c0b177a6659b",
+      "3403a025-eba2-44d3-b758-3528b7a74cd7",
+      "700a68a0-7c22-472f-9a98-7f6bfd09baf0",
+      "40760f8c-96c8-471c-a462-86ed7c1b5c98",
+      "6170787a-303e-444d-a896-0d3edbada8f0",
+      "29ca3779-367d-4c9d-92c9-3fa378a1233f",
+      "f8bc13e5-0d3e-44d8-91a0-281c558e3251",
+      "306842b8-9746-4905-a7cb-ce62d0900b67",
+      "4792bebb-2b01-4de8-888b-5f0459ef940c",
+      "21fcb557-7a3c-4d5c-acf1-0b52e6bd0c3e",
+      "11fd1bdd-3918-44ce-9fc8-773d7990ab3f",
+      "6c2c5f62-fcdb-48de-8fd0-d44638164e16",
+      "d4b2aec7-1fbd-406a-b135-a8c0642efb9e",
+      "9ff1ea9e-2605-44af-9b49-5283ed0d3227",
+      "c810fb50-7e41-4305-bbc8-659e8f6e6431",
+      "23b05cc5-2e22-4d3b-b31f-0931fff87131",
+      "beab056a-a417-47e6-9c4b-88b4fa1ef557"
+    ],
+    "merged_groups": [
+      {
+        "group_id": "GROUP-010",
+        "group_type": "CWE",
+        "group_key": "CWE-1333: Inefficient Regular Expression Complexity"
+      },
+      {
+        "group_id": "GROUP-029",
+        "group_type": "VULNERABILITY_CLASS",
+        "group_key": "Denial-of-Service (DoS)"
+      }
+    ],
+    "exploitability_bonus": 0,
+    "risk_score": 70,
+    "priority": "MEDIUM"
+  },
+  {
+    "group_id": "GROUP-028",
+    "group_type": "VULNERABILITY_CLASS",
+    "group_key": "Path Traversal",
+    "finding_count": 2,
+    "severity": "HIGH",
+    "findings": [
+      "fd7f8942-d6de-49fc-a74f-03cd2d1038da",
+      "41eae8c9-9a08-4387-a2d4-a9c9e5a50b95"
+    ],
+    "merged_groups": [
+      {
+        "group_id": "GROUP-028",
+        "group_type": "VULNERABILITY_CLASS",
+        "group_key": "Path Traversal"
+      }
+    ],
+    "exploitability_bonus": 0,
+    "risk_score": 69,
+    "priority": "MEDIUM"
+  },
+  {
+    "group_id": "GROUP-004",
+    "group_type": "CWE",
+    "group_key": "CWE-330: Use of Insufficiently Random Values",
+    "finding_count": 6,
+    "severity": "MEDIUM",
+    "findings": [
+      "68eced05-acb0-46ee-aabc-7405ab17a4a1",
+      "397077aa-8b61-4420-afb9-f7a09c6b475e",
+      "59a6da3d-93ef-467e-8959-196d543adc67",
+      "f51b6d1c-bf1f-46ad-979d-b84ec011b497",
+      "5313ef29-6f5b-4f0b-8e0a-9a03c06b79db",
+      "ce81ec83-3001-4bd2-8038-dca09dbd5342"
+    ],
+    "merged_groups": [
+      {
+        "group_id": "GROUP-004",
+        "group_type": "CWE",
+        "group_key": "CWE-330: Use of Insufficiently Random Values"
+      }
+    ],
+    "exploitability_bonus": 0,
+    "risk_score": 56,
+    "priority": "LOW"
+  },
+  {
+    "group_id": "GROUP-007",
+    "group_type": "CWE",
+    "group_key": "CWE-1004: Sensitive Cookie Without 'HttpOnly' Flag",
+    "finding_count": 5,
+    "severity": "MEDIUM",
+    "findings": [
+      "6b585f5f-418f-4218-b3c5-befd9ee8f921",
+      "4ab4f747-506c-4a7a-922a-d404af874dfd",
+      "27ff977a-3372-4d2d-9119-b01167abcac1",
+      "6134e08d-53c4-4ad0-8650-0d8ce61ae8c9",
+      "98d578d2-05d2-455e-8f49-17015b4dc81a"
+    ],
+    "merged_groups": [
+      {
+        "group_id": "GROUP-007",
+        "group_type": "CWE",
+        "group_key": "CWE-1004: Sensitive Cookie Without 'HttpOnly' Flag"
+      }
+    ],
+    "exploitability_bonus": 0,
+    "risk_score": 55,
+    "priority": "LOW"
+  },
+  {
+    "group_id": "GROUP-001",
+    "group_type": "CWE",
+    "group_key": "CWE-353: Missing Support for Integrity Check",
+    "finding_count": 4,
+    "severity": "MEDIUM",
+    "findings": [
+      "fc35a4f3-865a-4992-ba8d-fcca5854a8c1",
+      "451fc777-c85b-4980-ac2f-9771edf524f0",
+      "80992353-9c23-4ea6-a269-928fbff177eb",
+      "90039301-261e-47e7-bee5-ff221d076eed"
+    ],
+    "merged_groups": [
+      {
+        "group_id": "GROUP-001",
+        "group_type": "CWE",
+        "group_key": "CWE-353: Missing Support for Integrity Check"
+      }
+    ],
+    "exploitability_bonus": 0,
+    "risk_score": 54,
+    "priority": "LOW"
+  },
+  {
+    "group_id": "GROUP-008",
+    "group_type": "CWE",
+    "group_key": "CWE-319: Cleartext Transmission of Sensitive Information",
+    "finding_count": 4,
+    "severity": "MEDIUM",
+    "findings": [
+      "427cda9f-f37f-46f8-b4d3-f56f0bcbb9c5",
+      "e50ef585-0561-41be-90e5-41f0e76f6dd0",
+      "0b9baf48-9899-4e8f-b823-594b17f6048e",
+      "d776f706-c2bc-4a04-b981-64d2ce5b12ef"
+    ],
+    "merged_groups": [
+      {
+        "group_id": "GROUP-008",
+        "group_type": "CWE",
+        "group_key": "CWE-319: Cleartext Transmission of Sensitive Information"
+      },
+      {
+        "group_id": "GROUP-027",
+        "group_type": "VULNERABILITY_CLASS",
+        "group_key": "Mishandled Sensitive Information"
+      }
+    ],
+    "exploitability_bonus": 0,
+    "risk_score": 54,
+    "priority": "LOW"
+  },
+  {
+    "group_id": "GROUP-009",
+    "group_type": "CWE",
+    "group_key": "CWE-614: Sensitive Cookie in HTTPS Session Without 'Secure' Attribute",
+    "finding_count": 3,
+    "severity": "MEDIUM",
+    "findings": [
+      "fe5a1364-25db-417c-acf5-4a34baea5ec3",
+      "79f42cd2-bfdd-4dcc-ad2a-89649908a1ac",
+      "9cdff8e3-da74-4214-8aee-e2209087bae4"
+    ],
+    "merged_groups": [
+      {
+        "group_id": "GROUP-009",
+        "group_type": "CWE",
+        "group_key": "CWE-614: Sensitive Cookie in HTTPS Session Without 'Secure' Attribute"
+      }
+    ],
+    "exploitability_bonus": 0,
+    "risk_score": 53,
+    "priority": "LOW"
+  },
+  {
+    "group_id": "GROUP-011",
+    "group_type": "CWE",
+    "group_key": "CWE-915: Improperly Controlled Modification of Dynamically-Determined Object Attributes",
+    "finding_count": 3,
+    "severity": "MEDIUM",
+    "findings": [
+      "cc6bf931-a5de-42a1-84ee-0ce4f2a14b0e",
+      "4afac369-1e3d-4eda-9c58-0dfee68180d5",
+      "ce4ee423-5325-4c90-83a9-38f55d8832e3"
+    ],
+    "merged_groups": [
+      {
+        "group_id": "GROUP-011",
+        "group_type": "CWE",
+        "group_key": "CWE-915: Improperly Controlled Modification of Dynamically-Determined Object Attributes"
+      },
+      {
+        "group_id": "GROUP-030",
+        "group_type": "VULNERABILITY_CLASS",
+        "group_key": "Mass Assignment"
+      }
+    ],
+    "exploitability_bonus": 0,
+    "risk_score": 53,
+    "priority": "LOW"
+  },
+  {
+    "group_id": "GROUP-026",
+    "group_type": "VULNERABILITY_CLASS",
+    "group_key": "Cookie Security",
+    "finding_count": 8,
+    "severity": "MEDIUM",
+    "findings": [
+      "6b585f5f-418f-4218-b3c5-befd9ee8f921",
+      "4ab4f747-506c-4a7a-922a-d404af874dfd",
+      "fe5a1364-25db-417c-acf5-4a34baea5ec3",
+      "27ff977a-3372-4d2d-9119-b01167abcac1",
+      "79f42cd2-bfdd-4dcc-ad2a-89649908a1ac",
+      "6134e08d-53c4-4ad0-8650-0d8ce61ae8c9",
+      "9cdff8e3-da74-4214-8aee-e2209087bae4",
+      "98d578d2-05d2-455e-8f49-17015b4dc81a"
+    ],
+    "merged_groups": [
+      {
+        "group_id": "GROUP-026",
+        "group_type": "VULNERABILITY_CLASS",
+        "group_key": "Cookie Security"
+      }
+    ],
+    "exploitability_bonus": 0,
+    "risk_score": 52,
+    "priority": "LOW"
+  }
+]
