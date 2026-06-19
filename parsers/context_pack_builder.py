@@ -51,33 +51,18 @@ def main():
             ""
         )
 
-        context_pack = {
+        context_pack = dict(finding)
 
-            "finding_id":
-                finding["finding_id"],
+        context_pack["asset_type"] = (
+            finding["attack_surface"]["asset_type"]
+        )
 
-            "title":
-                finding["title"],
-
-            "severity":
-                finding["severity"],
-
-            "file":
+        context_pack["api_endpoints"] = (
+            get_api_context(
                 file_path,
-
-            "asset_type":
-                finding[
-                    "attack_surface"
-                ][
-                    "asset_type"
-                ],
-
-            "api_endpoints":
-                get_api_context(
-                    file_path,
-                    api_graph
-                )
-        }
+                api_graph
+            )
+        )
 
         context_packs.append(
             context_pack
