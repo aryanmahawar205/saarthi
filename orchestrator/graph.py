@@ -1,8 +1,10 @@
 from agents.planning_agent import run as planning_agent
+from agents.pipeline_agent import run as pipeline_agent
 from agents.context_agent import run as context_agent
 from agents.correlation_agent import run as correlation_agent
 from agents.explanation_agent import run as explanation_agent
 from agents.report_agent import run as report_agent
+from agents.recon_agent import run as recon_agent
 
 
 def print_state(stage, state):
@@ -22,8 +24,26 @@ def main():
 
     state = planning_agent(state)
 
+    state["target_url"] = (
+        "http://localhost:8080/WebGoat/"
+    )
+
+    state = recon_agent(state)
+
+    print_state(
+        "ReconAgent",
+        state
+    )
+
     print_state(
         "PlanningAgent",
+        state
+    )
+
+    state = pipeline_agent(state)
+
+    print_state(
+        "PipelineAgent",
         state
     )
 
