@@ -1,0 +1,14 @@
+[
+  {
+    "chain": "Stored XSS -> Session Theft -> Account Takeover",
+    "severity": "CRITICAL"
+  },
+  {
+    "chain": "CSRF -> Unauthorized Action -> Privilege Abuse",
+    "severity": "HIGH"
+  },
+  {
+    "chain": "Authentication Weakness -> Session Hijacking",
+    "severity": "HIGH"
+  }
+]

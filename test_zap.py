@@ -10,3 +10,5 @@ state = {
 }
 
 run(state)
+
+# java -jar target/webgoat-2026.2-SNAPSHOT.jar

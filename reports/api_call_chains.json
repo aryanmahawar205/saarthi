@@ -1,0 +1,1022 @@
+[
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/requests/LandingPage.java",
+    "endpoints": [
+      "/landing/**"
+    ],
+    "call_chain": [
+      {
+        "caller": "getPasswordResetLinkFromLandingPage",
+        "callee": "given"
+      },
+      {
+        "caller": "getPasswordResetLinkFromLandingPage",
+        "callee": "when"
+      },
+      {
+        "caller": "getPasswordResetLinkFromLandingPage",
+        "callee": "relaxedHTTPSValidation"
+      },
+      {
+        "caller": "getPasswordResetLinkFromLandingPage",
+        "callee": "cookie"
+      },
+      {
+        "caller": "getPasswordResetLinkFromLandingPage",
+        "callee": "getWebWolfCookie"
+      },
+      {
+        "caller": "getPasswordResetLinkFromLandingPage",
+        "callee": "get"
+      },
+      {
+        "caller": "getPasswordResetLinkFromLandingPage",
+        "callee": "url"
+      },
+      {
+        "caller": "getPasswordResetLinkFromLandingPage",
+        "callee": "then"
+      },
+      {
+        "caller": "getPasswordResetLinkFromLandingPage",
+        "callee": "extract"
+      },
+      {
+        "caller": "getPasswordResetLinkFromLandingPage",
+        "callee": "response"
+      },
+      {
+        "caller": "getPasswordResetLinkFromLandingPage",
+        "callee": "getBody"
+      },
+      {
+        "caller": "getPasswordResetLinkFromLandingPage",
+        "callee": "asString"
+      },
+      {
+        "caller": "getPasswordResetLinkFromLandingPage",
+        "callee": "lastIndexOf"
+      },
+      {
+        "caller": "getPasswordResetLinkFromLandingPage",
+        "callee": "substring"
+      },
+      {
+        "caller": "getPasswordResetLinkFromLandingPage",
+        "callee": "length"
+      },
+      {
+        "caller": "getPasswordResetLinkFromLandingPage",
+        "callee": "indexOf"
+      }
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/mailbox/MailboxController.java",
+    "endpoints": [
+      "/mail",
+      "/mail",
+      "/mail"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/jwt/JWTController.java",
+    "endpoints": [
+      "/jwt"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/logging/LogSpoofingTask.java",
+    "endpoints": [
+      "/LogSpoofing/log-spoofing"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/logging/LogBleedingTask.java",
+    "endpoints": [
+      "/LogSpoofing/log-bleeding"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/passwordreset/ResetLinkAssignmentForgotPassword.java",
+    "endpoints": [
+      "/PasswordReset/ForgotPassword/create-password-reset-link"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/passwordreset/SecurityQuestionAssignment.java",
+    "endpoints": [
+      "/PasswordReset/SecurityQuestions"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/passwordreset/ResetLinkAssignment.java",
+    "endpoints": [
+      "/PasswordReset/reset/reset-password/{link}",
+      "/PasswordReset/reset/login",
+      "/PasswordReset/reset/change-password"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/bypassrestrictions/BypassRestrictionsFieldRestrictions.java",
+    "endpoints": [
+      "/BypassRestrictions/FieldRestrictions"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/bypassrestrictions/BypassRestrictionsFrontendValidation.java",
+    "endpoints": [
+      "/BypassRestrictions/frontendValidation"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/lessontemplate/SampleAttack.java",
+    "endpoints": [
+      "lesson-template/shop/{user}",
+      "/lesson-template/sample-attack"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xxe/CommentsEndpoint.java",
+    "endpoints": [
+      "xxe/comments"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/IDORLogin.java",
+    "endpoints": [
+      "/IDOR/login"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/IDORViewOwnProfileAltUrl.java",
+    "endpoints": [
+      "/IDOR/profile/alt-path"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/IDORDiffAttributes.java",
+    "endpoints": [
+      "/IDOR/diff-attributes"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/insecurelogin/InsecureLoginTask.java",
+    "endpoints": [
+      "/InsecureLogin/task",
+      "/InsecureLogin/login"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/DOMCrossSiteScripting.java",
+    "endpoints": [
+      "/CrossSiteScripting/phone-home-xss"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/DOMCrossSiteScriptingVerifier.java",
+    "endpoints": [
+      "/CrossSiteScripting/dom-follow-up"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingLesson5a.java",
+    "endpoints": [
+      "/CrossSiteScripting/attack5a"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingLesson6a.java",
+    "endpoints": [
+      "/CrossSiteScripting/attack6a"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingLesson1.java",
+    "endpoints": [
+      "/CrossSiteScripting/attack1"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingQuiz.java",
+    "endpoints": [
+      "/CrossSiteScripting/quiz",
+      "/CrossSiteScripting/quiz"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/mitigation/CrossSiteScriptingLesson3.java",
+    "endpoints": [
+      "/CrossSiteScripting/attack3"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/mitigation/CrossSiteScriptingLesson4.java",
+    "endpoints": [
+      "/CrossSiteScripting/attack4"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/stored/StoredXssComments.java",
+    "endpoints": [
+      "/CrossSiteScriptingStored/stored-xss"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/stored/StoredCrossSiteScriptingVerifier.java",
+    "endpoints": [
+      "/CrossSiteScriptingStored/stored-xss-follow-up"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/vulnerablecomponents/VulnerableComponentsLesson.java",
+    "endpoints": [
+      "/VulnerableComponents/attack1"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileUploadFix.java",
+    "endpoints": [
+      "/PathTraversal/profile-picture-fix"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileUpload.java",
+    "endpoints": [
+      "/PathTraversal/profile-picture"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileUploadRetrieval.java",
+    "endpoints": [
+      "/PathTraversal/random-picture",
+      "/PathTraversal/random"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileZipSlip.java",
+    "endpoints": [
+      "/PathTraversal/zip-slip/",
+      "/PathTraversal/zip-slip/profile-image/{username}"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/htmltampering/HtmlTamperingTask.java",
+    "endpoints": [
+      "/HtmlTampering/task"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/csrf/ForgedReviews.java",
+    "endpoints": [
+      "/csrf/review"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/ClientSideFilteringAssignment.java",
+    "endpoints": [
+      "/clientSideFiltering/attack1"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/ClientSideFilteringFreeAssignment.java",
+    "endpoints": [
+      "/clientSideFiltering/getItForFree"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/ShopEndpoint.java",
+    "endpoints": [
+      "/clientSideFiltering/challenge-store"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/Salaries.java",
+    "endpoints": [
+      "clientSideFiltering/salaries"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask1.java",
+    "endpoints": [
+      "/OpenRedirect/task1"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectMitigationCheck.java",
+    "endpoints": [
+      "/OpenRedirect/mitigation"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectRealRedirect.java",
+    "endpoints": [
+      "/OpenRedirect/realRedirect"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask2.java",
+    "endpoints": [
+      "/OpenRedirect/task2"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask3.java",
+    "endpoints": [
+      "/OpenRedirect/task3"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectSecureController.java",
+    "endpoints": [
+      "/OpenRedirect/safe"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask4.java",
+    "endpoints": [
+      "/OpenRedirect/task4"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectQuiz.java",
+    "endpoints": [
+      "/OpenRedirect/quiz",
+      "/OpenRedirect/quiz"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/XOREncodingAssignment.java",
+    "endpoints": [
+      "/crypto/encoding/xor"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/SigningAssignment.java",
+    "endpoints": [
+      "/crypto/signing/verify"
+    ],
+    "call_chain": [
+      {
+        "caller": "testSigningAssignment",
+        "callee": "generateKeyPair"
+      },
+      {
+        "caller": "testSigningAssignment",
+        "callee": "getPublic"
+      },
+      {
+        "caller": "testSigningAssignment",
+        "callee": "getPrivateKeyFromPEM"
+      },
+      {
+        "caller": "testSigningAssignment",
+        "callee": "getPrivateKeyInPEM"
+      },
+      {
+        "caller": "testSigningAssignment",
+        "callee": "printHexBinary"
+      },
+      {
+        "caller": "testSigningAssignment",
+        "callee": "getModulus"
+      },
+      {
+        "caller": "testSigningAssignment",
+        "callee": "toByteArray"
+      },
+      {
+        "caller": "testSigningAssignment",
+        "callee": "signMessage"
+      },
+      {
+        "caller": "testSigningAssignment",
+        "callee": "debug"
+      },
+      {
+        "caller": "testSigningAssignment",
+        "callee": "getPublicExponent"
+      },
+      {
+        "caller": "testSigningAssignment",
+        "callee": "assertThat"
+      },
+      {
+        "caller": "testSigningAssignment",
+        "callee": "verifyAssignment"
+      },
+      {
+        "caller": "testSigningAssignment",
+        "callee": "isTrue"
+      },
+      {
+        "caller": "testSigningAssignment",
+        "callee": "fail"
+      }
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/SecureDefaultsAssignment.java",
+    "endpoints": [
+      "/crypto/secure/defaults"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/HashingAssignment.java",
+    "endpoints": [
+      "/crypto/hashing"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/EncodingAssignment.java",
+    "endpoints": [
+      "/crypto/encoding/basic-auth"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/ssrf/SSRFTask1.java",
+    "endpoints": [
+      "/SSRF/task1"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/ssrf/SSRFTask2.java",
+    "endpoints": [
+      "/SSRF/task2"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/securepasswords/SecurePasswordsAssignment.java",
+    "endpoints": [
+      "SecurePasswords/assignment"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cia/CIAQuiz.java",
+    "endpoints": [
+      "/cia/quiz",
+      "/cia/quiz"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/deserialization/InsecureDeserializationTask.java",
+    "endpoints": [
+      "/InsecureDeserialization/task"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson2.java",
+    "endpoints": [
+      "/SqlInjection/attack2"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5a.java",
+    "endpoints": [
+      "/SqlInjection/assignment5a"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson10.java",
+    "endpoints": [
+      "/SqlInjection/attack10"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5.java",
+    "endpoints": [
+      "/SqlInjection/attack5"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson3.java",
+    "endpoints": [
+      "/SqlInjection/attack3"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson8.java",
+    "endpoints": [
+      "/SqlInjection/attack8"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5b.java",
+    "endpoints": [
+      "/SqlInjection/assignment5b"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson9.java",
+    "endpoints": [
+      "/SqlInjection/attack9"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson4.java",
+    "endpoints": [
+      "/SqlInjection/attack4"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionQuiz.java",
+    "endpoints": [
+      "/SqlInjectionAdvanced/quiz",
+      "/SqlInjectionAdvanced/quiz"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionLesson6b.java",
+    "endpoints": [
+      "/SqlInjectionAdvanced/attack6b"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionChallenge.java",
+    "endpoints": [
+      "/SqlInjectionAdvanced/register"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionChallengeLogin.java",
+    "endpoints": [
+      "/SqlInjectionAdvanced/login"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionLesson6a.java",
+    "endpoints": [
+      "/SqlInjectionAdvanced/attack6a"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionLesson10a.java",
+    "endpoints": [
+      "/SqlInjectionMitigations/attack10a"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlOnlyInputValidationOnKeywords.java",
+    "endpoints": [
+      "/SqlOnlyInputValidationOnKeywords/attack"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlOnlyInputValidation.java",
+    "endpoints": [
+      "/SqlOnlyInputValidation/attack"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionLesson10b.java",
+    "endpoints": [
+      "/SqlInjectionMitigations/attack10b"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionLesson13.java",
+    "endpoints": [
+      "/SqlInjectionMitigations/attack12a"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/Servers.java",
+    "endpoints": [
+      "SqlInjectionMitigations/servers"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/webwolfintroduction/MailAssignment.java",
+    "endpoints": [
+      "/WebWolf/mail/send",
+      "/WebWolf/mail"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/webwolfintroduction/LandingAssignment.java",
+    "endpoints": [
+      "/WebWolf/landing/password-reset",
+      "/WebWolf/landing"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge8/Assignment8.java",
+    "endpoints": [
+      "/challenge/8/votes/",
+      "/challenge/8/votes/average",
+      "/challenge/8/notUsed"
+    ],
+    "call_chain": [
+      {
+        "caller": "checkAssignment8",
+        "callee": "registerCSRFUser"
+      },
+      {
+        "caller": "checkAssignment8",
+        "callee": "put"
+      },
+      {
+        "caller": "checkAssignment8",
+        "callee": "getUser"
+      },
+      {
+        "caller": "checkAssignment8",
+        "callee": "given"
+      },
+      {
+        "caller": "checkAssignment8",
+        "callee": "when"
+      },
+      {
+        "caller": "checkAssignment8",
+        "callee": "relaxedHTTPSValidation"
+      },
+      {
+        "caller": "checkAssignment8",
+        "callee": "cookie"
+      },
+      {
+        "caller": "checkAssignment8",
+        "callee": "getWebGoatCookie"
+      },
+      {
+        "caller": "checkAssignment8",
+        "callee": "header"
+      },
+      {
+        "caller": "checkAssignment8",
+        "callee": "url"
+      },
+      {
+        "caller": "checkAssignment8",
+        "callee": "params"
+      },
+      {
+        "caller": "checkAssignment8",
+        "callee": "post"
+      },
+      {
+        "caller": "checkAssignment8",
+        "callee": "then"
+      },
+      {
+        "caller": "checkAssignment8",
+        "callee": "extract"
+      },
+      {
+        "caller": "checkAssignment8",
+        "callee": "get"
+      },
+      {
+        "caller": "checkAssignment8",
+        "callee": "statusCode"
+      },
+      {
+        "caller": "checkAssignment8",
+        "callee": "path"
+      },
+      {
+        "caller": "checkAssignment8",
+        "callee": "assertThat"
+      },
+      {
+        "caller": "checkAssignment8",
+        "callee": "isTrue"
+      },
+      {
+        "caller": "checkAssignment8",
+        "callee": "login"
+      },
+      {
+        "caller": "checkAssignment8",
+        "callee": "startLesson"
+      },
+      {
+        "caller": "checkAssignment8",
+        "callee": "jsonPath"
+      },
+      {
+        "caller": "checkAssignment8",
+        "callee": "getObject"
+      },
+      {
+        "caller": "checkAssignment8",
+        "callee": "filteredOn"
+      },
+      {
+        "caller": "checkAssignment8",
+        "callee": "getAssignment"
+      },
+      {
+        "caller": "checkAssignment8",
+        "callee": "getName"
+      },
+      {
+        "caller": "checkAssignment8",
+        "callee": "equals"
+      },
+      {
+        "caller": "checkAssignment8",
+        "callee": "extracting"
+      },
+      {
+        "caller": "checkAssignment8",
+        "callee": "containsExactly"
+      }
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/Assignment7.java",
+    "endpoints": [
+      "/challenge/7/reset-password/{link}",
+      "/challenge/7"
+    ],
+    "call_chain": [
+      {
+        "caller": "checkAssignment7",
+        "callee": "put"
+      },
+      {
+        "caller": "checkAssignment7",
+        "callee": "given"
+      },
+      {
+        "caller": "checkAssignment7",
+        "callee": "when"
+      },
+      {
+        "caller": "checkAssignment7",
+        "callee": "relaxedHTTPSValidation"
+      },
+      {
+        "caller": "checkAssignment7",
+        "callee": "cookie"
+      },
+      {
+        "caller": "checkAssignment7",
+        "callee": "getWebGoatCookie"
+      },
+      {
+        "caller": "checkAssignment7",
+        "callee": "header"
+      },
+      {
+        "caller": "checkAssignment7",
+        "callee": "url"
+      },
+      {
+        "caller": "checkAssignment7",
+        "callee": "contentType"
+      },
+      {
+        "caller": "checkAssignment7",
+        "callee": "body"
+      },
+      {
+        "caller": "checkAssignment7",
+        "callee": "post"
+      },
+      {
+        "caller": "checkAssignment7",
+        "callee": "then"
+      },
+      {
+        "caller": "checkAssignment7",
+        "callee": "extract"
+      },
+      {
+        "caller": "checkAssignment7",
+        "callee": "asString"
+      },
+      {
+        "caller": "checkAssignment7",
+        "callee": "substring"
+      },
+      {
+        "caller": "checkAssignment7",
+        "callee": "indexOf"
+      },
+      {
+        "caller": "checkAssignment7",
+        "callee": "clear"
+      },
+      {
+        "caller": "checkAssignment7",
+        "callee": "checkAssignment"
+      }
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge1/Assignment1.java",
+    "endpoints": [
+      "/challenge/1"
+    ],
+    "call_chain": [
+      {
+        "caller": "assignment1",
+        "callee": "checkAssignment"
+      },
+      {
+        "caller": "assignment1",
+        "callee": "url"
+      }
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge5/Assignment5.java",
+    "endpoints": [
+      "/challenge/5"
+    ],
+    "call_chain": [
+      {
+        "caller": "assignment5",
+        "callee": "checkAssignment"
+      },
+      {
+        "caller": "assignment5",
+        "callee": "url"
+      }
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/httpbasics/HttpBasicsQuiz.java",
+    "endpoints": [
+      "/HttpBasics/attack2"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/httpbasics/HttpBasicsLesson.java",
+    "endpoints": [
+      "/HttpBasics/attack1"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTQuiz.java",
+    "endpoints": [
+      "/JWT/quiz",
+      "/JWT/quiz"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTDecodeEndpoint.java",
+    "endpoints": [
+      "/JWT/decode"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTRefreshEndpoint.java",
+    "endpoints": [
+      "/JWT/refresh/checkout",
+      "/JWT/refresh/newToken"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTSecretKeyEndpoint.java",
+    "endpoints": [
+      "/JWT/secret"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTVotesEndpoint.java",
+    "endpoints": [
+      "/JWT/votings/login",
+      "/JWT/votings",
+      "/JWT/votings"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/claimmisuse/JWTHeaderKIDEndpoint.java",
+    "endpoints": [
+      "/JWT/kid/follow/{user}",
+      "/JWT/kid/delete"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/claimmisuse/JWTHeaderJKUEndpoint.java",
+    "endpoints": [
+      "/JWT/jku/follow/{user}",
+      "/JWT/jku/delete"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/chromedevtools/NetworkDummy.java",
+    "endpoints": [
+      "/ChromeDevTools/dummy"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/WebWolfRedirect.java",
+    "endpoints": [
+      "/WebWolf"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/service/EnvironmentService.java",
+    "endpoints": [
+      "/server-directory"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/users/RegistrationController.java",
+    "endpoints": [
+      "/registration",
+      "/login-oauth.mvc",
+      "/register.mvc"
+    ],
+    "call_chain": []
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/lessons/CourseConfiguration.java",
+    "endpoints": [
+      "/attack"
+    ],
+    "call_chain": []
+  }
+]

@@ -13,9 +13,22 @@ from agents.context_agent import run as context_agent
 from agents.correlation_agent import run as correlation_agent
 from agents.explanation_agent import run as explanation_agent
 from agents.report_agent import run as report_agent
+
 from agents.runtime_reasoning_agent import run as runtime_reasoning_agent
 from agents.trust_boundary_agent import run as trust_boundary_agent
 from agents.api_call_chain_agent import run as api_call_chain_agent
+from agents.runtime_attack_graph_agent import run as runtime_attack_graph_agent
+
+from agents.exploitability_agent import run as exploitability_agent
+from agents.business_impact_agent import run as business_impact_agent
+from agents.llm_attack_reasoning_agent import run as llm_attack_reasoning_agent
+from agents.final_risk_agent import run as final_risk_agent
+
+from agents.attack_simulation_agent import run as attack_simulation_agent
+from agents.multi_step_attack_chain_agent import run as multi_step_attack_chain_agent
+from agents.attack_graph_agent import run as attack_graph_agent
+
+from agents.security_reasoning_agent import run as security_reasoning_agent
 
 
 def print_state(stage, state):
@@ -116,6 +129,62 @@ def main():
         state
     )
 
+    state = attack_simulation_agent(state)
+
+    print_state(
+        "AttackSimulationAgent",
+        state
+    )
+
+    state = multi_step_attack_chain_agent(state)
+
+    print_state(
+        "MultiStepAttackChainAgent",
+        state
+    )
+
+    state = attack_graph_agent(state)
+
+    print_state(
+        "AttackGraphAgent",
+        state
+    )
+
+    state = runtime_attack_graph_agent(state)
+
+    print_state(
+        "RuntimeAttackGraphAgent",
+        state
+    )
+
+    state = exploitability_agent(state)
+
+    print_state(
+        "ExploitabilityAgent",
+        state
+    )
+
+    state = business_impact_agent(state)
+
+    print_state(
+        "BusinessImpactAgent",
+        state
+    )
+
+    state = llm_attack_reasoning_agent(state)
+
+    print_state(
+        "LLMAttackReasoningAgent",
+        state
+    )
+
+    state = final_risk_agent(state)
+
+    print_state(
+        "FinalRiskAgent",
+        state
+    )
+
     state = attack_surface_agent(state)
 
     print_state(
@@ -127,6 +196,13 @@ def main():
 
     print_state(
         "RuntimeReasoningAgent",
+        state
+    )
+
+    state = security_reasoning_agent(state)
+
+    print_state(
+        "SecurityReasoningAgent",
         state
     )
 

@@ -1,0 +1,4712 @@
+[
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/landing/**"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/requests/LandingPage.java",
+    "call_depth": 16
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/mail",
+      "/mail",
+      "/mail"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/mailbox/MailboxController.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/jwt"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/jwt/JWTController.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/LogSpoofing/log-spoofing"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/logging/LogSpoofingTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/LogSpoofing/log-bleeding"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/logging/LogBleedingTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/PasswordReset/ForgotPassword/create-password-reset-link"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/passwordreset/ResetLinkAssignmentForgotPassword.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/PasswordReset/SecurityQuestions"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/passwordreset/SecurityQuestionAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/PasswordReset/reset/reset-password/{link}",
+      "/PasswordReset/reset/login",
+      "/PasswordReset/reset/change-password"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/passwordreset/ResetLinkAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/BypassRestrictions/FieldRestrictions"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/bypassrestrictions/BypassRestrictionsFieldRestrictions.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/BypassRestrictions/frontendValidation"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/bypassrestrictions/BypassRestrictionsFrontendValidation.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "lesson-template/shop/{user}",
+      "/lesson-template/sample-attack"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/lessontemplate/SampleAttack.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "xxe/comments"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xxe/CommentsEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/IDOR/login"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/IDORLogin.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/IDOR/profile/alt-path"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/IDORViewOwnProfileAltUrl.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/IDOR/diff-attributes"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/IDORDiffAttributes.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/InsecureLogin/task",
+      "/InsecureLogin/login"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/insecurelogin/InsecureLoginTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/CrossSiteScripting/phone-home-xss"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/DOMCrossSiteScripting.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/CrossSiteScripting/dom-follow-up"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/DOMCrossSiteScriptingVerifier.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/CrossSiteScripting/attack5a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingLesson5a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/CrossSiteScripting/attack6a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingLesson6a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/CrossSiteScripting/attack1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingLesson1.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/CrossSiteScripting/quiz",
+      "/CrossSiteScripting/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/CrossSiteScripting/attack3"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/mitigation/CrossSiteScriptingLesson3.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/CrossSiteScripting/attack4"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/mitigation/CrossSiteScriptingLesson4.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/CrossSiteScriptingStored/stored-xss"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/stored/StoredXssComments.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/CrossSiteScriptingStored/stored-xss-follow-up"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/stored/StoredCrossSiteScriptingVerifier.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/VulnerableComponents/attack1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/vulnerablecomponents/VulnerableComponentsLesson.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/PathTraversal/profile-picture-fix"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileUploadFix.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/PathTraversal/profile-picture"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileUpload.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/PathTraversal/random-picture",
+      "/PathTraversal/random"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileUploadRetrieval.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/PathTraversal/zip-slip/",
+      "/PathTraversal/zip-slip/profile-image/{username}"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileZipSlip.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/HtmlTampering/task"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/htmltampering/HtmlTamperingTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/csrf/review"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/csrf/ForgedReviews.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/clientSideFiltering/attack1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/ClientSideFilteringAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/clientSideFiltering/getItForFree"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/ClientSideFilteringFreeAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/clientSideFiltering/challenge-store"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/ShopEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "clientSideFiltering/salaries"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/Salaries.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/OpenRedirect/task1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask1.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/OpenRedirect/mitigation"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectMitigationCheck.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/OpenRedirect/realRedirect"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectRealRedirect.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/OpenRedirect/task2"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask2.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/OpenRedirect/task3"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask3.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/OpenRedirect/safe"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectSecureController.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/OpenRedirect/task4"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask4.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/OpenRedirect/quiz",
+      "/OpenRedirect/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/crypto/encoding/xor"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/XOREncodingAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/crypto/signing/verify"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/SigningAssignment.java",
+    "call_depth": 14
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/crypto/secure/defaults"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/SecureDefaultsAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/crypto/hashing"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/HashingAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/crypto/encoding/basic-auth"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/EncodingAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/SSRF/task1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/ssrf/SSRFTask1.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/SSRF/task2"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/ssrf/SSRFTask2.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "SecurePasswords/assignment"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/securepasswords/SecurePasswordsAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/cia/quiz",
+      "/cia/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cia/CIAQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/InsecureDeserialization/task"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/deserialization/InsecureDeserializationTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/SqlInjection/attack2"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson2.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/SqlInjection/assignment5a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/SqlInjection/attack10"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson10.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/SqlInjection/attack5"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/SqlInjection/attack3"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson3.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/SqlInjection/attack8"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson8.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/SqlInjection/assignment5b"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5b.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/SqlInjection/attack9"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson9.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/SqlInjection/attack4"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson4.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/SqlInjectionAdvanced/quiz",
+      "/SqlInjectionAdvanced/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/SqlInjectionAdvanced/attack6b"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionLesson6b.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/SqlInjectionAdvanced/register"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionChallenge.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/SqlInjectionAdvanced/login"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionChallengeLogin.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/SqlInjectionAdvanced/attack6a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionLesson6a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/SqlInjectionMitigations/attack10a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionLesson10a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/SqlOnlyInputValidationOnKeywords/attack"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlOnlyInputValidationOnKeywords.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/SqlOnlyInputValidation/attack"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlOnlyInputValidation.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/SqlInjectionMitigations/attack10b"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionLesson10b.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/SqlInjectionMitigations/attack12a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionLesson13.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "SqlInjectionMitigations/servers"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/Servers.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/WebWolf/mail/send",
+      "/WebWolf/mail"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/webwolfintroduction/MailAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/WebWolf/landing/password-reset",
+      "/WebWolf/landing"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/webwolfintroduction/LandingAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/challenge/8/votes/",
+      "/challenge/8/votes/average",
+      "/challenge/8/notUsed"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge8/Assignment8.java",
+    "call_depth": 29
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/challenge/7/reset-password/{link}",
+      "/challenge/7"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/Assignment7.java",
+    "call_depth": 18
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/challenge/1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge1/Assignment1.java",
+    "call_depth": 2
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/challenge/5"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge5/Assignment5.java",
+    "call_depth": 2
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/HttpBasics/attack2"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/httpbasics/HttpBasicsQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/HttpBasics/attack1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/httpbasics/HttpBasicsLesson.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/JWT/quiz",
+      "/JWT/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/JWT/decode"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTDecodeEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/JWT/refresh/checkout",
+      "/JWT/refresh/newToken"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTRefreshEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/JWT/secret"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTSecretKeyEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/JWT/votings/login",
+      "/JWT/votings",
+      "/JWT/votings"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTVotesEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/JWT/kid/follow/{user}",
+      "/JWT/kid/delete"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/claimmisuse/JWTHeaderKIDEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/JWT/jku/follow/{user}",
+      "/JWT/jku/delete"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/claimmisuse/JWTHeaderJKUEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/ChromeDevTools/dummy"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/chromedevtools/NetworkDummy.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/WebWolf"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/WebWolfRedirect.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/server-directory"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/service/EnvironmentService.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/registration",
+      "/login-oauth.mvc",
+      "/register.mvc"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/users/RegistrationController.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Weak Browser Security Controls",
+    "endpoint": [
+      "/attack"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/lessons/CourseConfiguration.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/landing/**"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/requests/LandingPage.java",
+    "call_depth": 16
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/mail",
+      "/mail",
+      "/mail"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/mailbox/MailboxController.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/jwt"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/jwt/JWTController.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/LogSpoofing/log-spoofing"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/logging/LogSpoofingTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/LogSpoofing/log-bleeding"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/logging/LogBleedingTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/PasswordReset/ForgotPassword/create-password-reset-link"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/passwordreset/ResetLinkAssignmentForgotPassword.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/PasswordReset/SecurityQuestions"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/passwordreset/SecurityQuestionAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/PasswordReset/reset/reset-password/{link}",
+      "/PasswordReset/reset/login",
+      "/PasswordReset/reset/change-password"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/passwordreset/ResetLinkAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/BypassRestrictions/FieldRestrictions"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/bypassrestrictions/BypassRestrictionsFieldRestrictions.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/BypassRestrictions/frontendValidation"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/bypassrestrictions/BypassRestrictionsFrontendValidation.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "lesson-template/shop/{user}",
+      "/lesson-template/sample-attack"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/lessontemplate/SampleAttack.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "xxe/comments"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xxe/CommentsEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/IDOR/login"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/IDORLogin.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/IDOR/profile/alt-path"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/IDORViewOwnProfileAltUrl.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/IDOR/diff-attributes"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/IDORDiffAttributes.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/InsecureLogin/task",
+      "/InsecureLogin/login"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/insecurelogin/InsecureLoginTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/CrossSiteScripting/phone-home-xss"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/DOMCrossSiteScripting.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/CrossSiteScripting/dom-follow-up"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/DOMCrossSiteScriptingVerifier.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/CrossSiteScripting/attack5a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingLesson5a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/CrossSiteScripting/attack6a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingLesson6a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/CrossSiteScripting/attack1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingLesson1.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/CrossSiteScripting/quiz",
+      "/CrossSiteScripting/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/CrossSiteScripting/attack3"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/mitigation/CrossSiteScriptingLesson3.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/CrossSiteScripting/attack4"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/mitigation/CrossSiteScriptingLesson4.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/CrossSiteScriptingStored/stored-xss"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/stored/StoredXssComments.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/CrossSiteScriptingStored/stored-xss-follow-up"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/stored/StoredCrossSiteScriptingVerifier.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/VulnerableComponents/attack1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/vulnerablecomponents/VulnerableComponentsLesson.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/PathTraversal/profile-picture-fix"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileUploadFix.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/PathTraversal/profile-picture"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileUpload.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/PathTraversal/random-picture",
+      "/PathTraversal/random"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileUploadRetrieval.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/PathTraversal/zip-slip/",
+      "/PathTraversal/zip-slip/profile-image/{username}"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileZipSlip.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/HtmlTampering/task"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/htmltampering/HtmlTamperingTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/csrf/review"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/csrf/ForgedReviews.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/clientSideFiltering/attack1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/ClientSideFilteringAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/clientSideFiltering/getItForFree"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/ClientSideFilteringFreeAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/clientSideFiltering/challenge-store"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/ShopEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "clientSideFiltering/salaries"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/Salaries.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/OpenRedirect/task1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask1.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/OpenRedirect/mitigation"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectMitigationCheck.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/OpenRedirect/realRedirect"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectRealRedirect.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/OpenRedirect/task2"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask2.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/OpenRedirect/task3"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask3.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/OpenRedirect/safe"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectSecureController.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/OpenRedirect/task4"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask4.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/OpenRedirect/quiz",
+      "/OpenRedirect/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/crypto/encoding/xor"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/XOREncodingAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/crypto/signing/verify"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/SigningAssignment.java",
+    "call_depth": 14
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/crypto/secure/defaults"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/SecureDefaultsAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/crypto/hashing"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/HashingAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/crypto/encoding/basic-auth"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/EncodingAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/SSRF/task1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/ssrf/SSRFTask1.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/SSRF/task2"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/ssrf/SSRFTask2.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "SecurePasswords/assignment"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/securepasswords/SecurePasswordsAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/cia/quiz",
+      "/cia/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cia/CIAQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/InsecureDeserialization/task"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/deserialization/InsecureDeserializationTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/SqlInjection/attack2"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson2.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/SqlInjection/assignment5a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/SqlInjection/attack10"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson10.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/SqlInjection/attack5"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/SqlInjection/attack3"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson3.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/SqlInjection/attack8"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson8.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/SqlInjection/assignment5b"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5b.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/SqlInjection/attack9"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson9.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/SqlInjection/attack4"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson4.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/SqlInjectionAdvanced/quiz",
+      "/SqlInjectionAdvanced/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/SqlInjectionAdvanced/attack6b"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionLesson6b.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/SqlInjectionAdvanced/register"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionChallenge.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/SqlInjectionAdvanced/login"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionChallengeLogin.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/SqlInjectionAdvanced/attack6a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionLesson6a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/SqlInjectionMitigations/attack10a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionLesson10a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/SqlOnlyInputValidationOnKeywords/attack"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlOnlyInputValidationOnKeywords.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/SqlOnlyInputValidation/attack"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlOnlyInputValidation.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/SqlInjectionMitigations/attack10b"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionLesson10b.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/SqlInjectionMitigations/attack12a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionLesson13.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "SqlInjectionMitigations/servers"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/Servers.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/WebWolf/mail/send",
+      "/WebWolf/mail"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/webwolfintroduction/MailAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/WebWolf/landing/password-reset",
+      "/WebWolf/landing"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/webwolfintroduction/LandingAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/challenge/8/votes/",
+      "/challenge/8/votes/average",
+      "/challenge/8/notUsed"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge8/Assignment8.java",
+    "call_depth": 29
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/challenge/7/reset-password/{link}",
+      "/challenge/7"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/Assignment7.java",
+    "call_depth": 18
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/challenge/1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge1/Assignment1.java",
+    "call_depth": 2
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/challenge/5"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge5/Assignment5.java",
+    "call_depth": 2
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/HttpBasics/attack2"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/httpbasics/HttpBasicsQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/HttpBasics/attack1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/httpbasics/HttpBasicsLesson.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/JWT/quiz",
+      "/JWT/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/JWT/decode"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTDecodeEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/JWT/refresh/checkout",
+      "/JWT/refresh/newToken"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTRefreshEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/JWT/secret"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTSecretKeyEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/JWT/votings/login",
+      "/JWT/votings",
+      "/JWT/votings"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTVotesEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/JWT/kid/follow/{user}",
+      "/JWT/kid/delete"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/claimmisuse/JWTHeaderKIDEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/JWT/jku/follow/{user}",
+      "/JWT/jku/delete"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/claimmisuse/JWTHeaderJKUEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/ChromeDevTools/dummy"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/chromedevtools/NetworkDummy.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/WebWolf"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/WebWolfRedirect.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/server-directory"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/service/EnvironmentService.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/registration",
+      "/login-oauth.mvc",
+      "/register.mvc"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/users/RegistrationController.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "CSRF Exposure",
+    "endpoint": [
+      "/attack"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/lessons/CourseConfiguration.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/landing/**"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/requests/LandingPage.java",
+    "call_depth": 16
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/mail",
+      "/mail",
+      "/mail"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/mailbox/MailboxController.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/jwt"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/jwt/JWTController.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/LogSpoofing/log-spoofing"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/logging/LogSpoofingTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/LogSpoofing/log-bleeding"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/logging/LogBleedingTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/PasswordReset/ForgotPassword/create-password-reset-link"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/passwordreset/ResetLinkAssignmentForgotPassword.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/PasswordReset/SecurityQuestions"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/passwordreset/SecurityQuestionAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/PasswordReset/reset/reset-password/{link}",
+      "/PasswordReset/reset/login",
+      "/PasswordReset/reset/change-password"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/passwordreset/ResetLinkAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/BypassRestrictions/FieldRestrictions"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/bypassrestrictions/BypassRestrictionsFieldRestrictions.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/BypassRestrictions/frontendValidation"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/bypassrestrictions/BypassRestrictionsFrontendValidation.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "lesson-template/shop/{user}",
+      "/lesson-template/sample-attack"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/lessontemplate/SampleAttack.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "xxe/comments"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xxe/CommentsEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/IDOR/login"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/IDORLogin.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/IDOR/profile/alt-path"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/IDORViewOwnProfileAltUrl.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/IDOR/diff-attributes"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/IDORDiffAttributes.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/InsecureLogin/task",
+      "/InsecureLogin/login"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/insecurelogin/InsecureLoginTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/CrossSiteScripting/phone-home-xss"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/DOMCrossSiteScripting.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/CrossSiteScripting/dom-follow-up"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/DOMCrossSiteScriptingVerifier.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/CrossSiteScripting/attack5a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingLesson5a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/CrossSiteScripting/attack6a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingLesson6a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/CrossSiteScripting/attack1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingLesson1.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/CrossSiteScripting/quiz",
+      "/CrossSiteScripting/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/CrossSiteScripting/attack3"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/mitigation/CrossSiteScriptingLesson3.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/CrossSiteScripting/attack4"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/mitigation/CrossSiteScriptingLesson4.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/CrossSiteScriptingStored/stored-xss"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/stored/StoredXssComments.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/CrossSiteScriptingStored/stored-xss-follow-up"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/stored/StoredCrossSiteScriptingVerifier.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/VulnerableComponents/attack1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/vulnerablecomponents/VulnerableComponentsLesson.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/PathTraversal/profile-picture-fix"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileUploadFix.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/PathTraversal/profile-picture"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileUpload.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/PathTraversal/random-picture",
+      "/PathTraversal/random"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileUploadRetrieval.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/PathTraversal/zip-slip/",
+      "/PathTraversal/zip-slip/profile-image/{username}"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileZipSlip.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/HtmlTampering/task"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/htmltampering/HtmlTamperingTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/csrf/review"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/csrf/ForgedReviews.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/clientSideFiltering/attack1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/ClientSideFilteringAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/clientSideFiltering/getItForFree"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/ClientSideFilteringFreeAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/clientSideFiltering/challenge-store"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/ShopEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "clientSideFiltering/salaries"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/Salaries.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/OpenRedirect/task1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask1.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/OpenRedirect/mitigation"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectMitigationCheck.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/OpenRedirect/realRedirect"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectRealRedirect.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/OpenRedirect/task2"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask2.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/OpenRedirect/task3"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask3.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/OpenRedirect/safe"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectSecureController.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/OpenRedirect/task4"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask4.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/OpenRedirect/quiz",
+      "/OpenRedirect/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/crypto/encoding/xor"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/XOREncodingAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/crypto/signing/verify"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/SigningAssignment.java",
+    "call_depth": 14
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/crypto/secure/defaults"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/SecureDefaultsAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/crypto/hashing"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/HashingAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/crypto/encoding/basic-auth"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/EncodingAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/SSRF/task1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/ssrf/SSRFTask1.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/SSRF/task2"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/ssrf/SSRFTask2.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "SecurePasswords/assignment"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/securepasswords/SecurePasswordsAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/cia/quiz",
+      "/cia/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cia/CIAQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/InsecureDeserialization/task"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/deserialization/InsecureDeserializationTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/SqlInjection/attack2"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson2.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/SqlInjection/assignment5a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/SqlInjection/attack10"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson10.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/SqlInjection/attack5"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/SqlInjection/attack3"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson3.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/SqlInjection/attack8"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson8.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/SqlInjection/assignment5b"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5b.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/SqlInjection/attack9"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson9.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/SqlInjection/attack4"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson4.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/SqlInjectionAdvanced/quiz",
+      "/SqlInjectionAdvanced/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/SqlInjectionAdvanced/attack6b"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionLesson6b.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/SqlInjectionAdvanced/register"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionChallenge.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/SqlInjectionAdvanced/login"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionChallengeLogin.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/SqlInjectionAdvanced/attack6a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionLesson6a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/SqlInjectionMitigations/attack10a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionLesson10a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/SqlOnlyInputValidationOnKeywords/attack"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlOnlyInputValidationOnKeywords.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/SqlOnlyInputValidation/attack"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlOnlyInputValidation.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/SqlInjectionMitigations/attack10b"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionLesson10b.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/SqlInjectionMitigations/attack12a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionLesson13.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "SqlInjectionMitigations/servers"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/Servers.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/WebWolf/mail/send",
+      "/WebWolf/mail"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/webwolfintroduction/MailAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/WebWolf/landing/password-reset",
+      "/WebWolf/landing"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/webwolfintroduction/LandingAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/challenge/8/votes/",
+      "/challenge/8/votes/average",
+      "/challenge/8/notUsed"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge8/Assignment8.java",
+    "call_depth": 29
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/challenge/7/reset-password/{link}",
+      "/challenge/7"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/Assignment7.java",
+    "call_depth": 18
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/challenge/1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge1/Assignment1.java",
+    "call_depth": 2
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/challenge/5"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge5/Assignment5.java",
+    "call_depth": 2
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/HttpBasics/attack2"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/httpbasics/HttpBasicsQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/HttpBasics/attack1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/httpbasics/HttpBasicsLesson.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/JWT/quiz",
+      "/JWT/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/JWT/decode"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTDecodeEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/JWT/refresh/checkout",
+      "/JWT/refresh/newToken"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTRefreshEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/JWT/secret"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTSecretKeyEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/JWT/votings/login",
+      "/JWT/votings",
+      "/JWT/votings"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTVotesEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/JWT/kid/follow/{user}",
+      "/JWT/kid/delete"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/claimmisuse/JWTHeaderKIDEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/JWT/jku/follow/{user}",
+      "/JWT/jku/delete"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/claimmisuse/JWTHeaderJKUEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/ChromeDevTools/dummy"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/chromedevtools/NetworkDummy.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/WebWolf"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/WebWolfRedirect.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/server-directory"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/service/EnvironmentService.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/registration",
+      "/login-oauth.mvc",
+      "/register.mvc"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/users/RegistrationController.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Authentication Surface",
+    "endpoint": [
+      "/attack"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/lessons/CourseConfiguration.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/landing/**"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/requests/LandingPage.java",
+    "call_depth": 16
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/mail",
+      "/mail",
+      "/mail"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/mailbox/MailboxController.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/jwt"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/jwt/JWTController.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/LogSpoofing/log-spoofing"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/logging/LogSpoofingTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/LogSpoofing/log-bleeding"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/logging/LogBleedingTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/PasswordReset/ForgotPassword/create-password-reset-link"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/passwordreset/ResetLinkAssignmentForgotPassword.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/PasswordReset/SecurityQuestions"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/passwordreset/SecurityQuestionAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/PasswordReset/reset/reset-password/{link}",
+      "/PasswordReset/reset/login",
+      "/PasswordReset/reset/change-password"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/passwordreset/ResetLinkAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/BypassRestrictions/FieldRestrictions"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/bypassrestrictions/BypassRestrictionsFieldRestrictions.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/BypassRestrictions/frontendValidation"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/bypassrestrictions/BypassRestrictionsFrontendValidation.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "lesson-template/shop/{user}",
+      "/lesson-template/sample-attack"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/lessontemplate/SampleAttack.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "xxe/comments"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xxe/CommentsEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/IDOR/login"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/IDORLogin.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/IDOR/profile/alt-path"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/IDORViewOwnProfileAltUrl.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/IDOR/diff-attributes"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/IDORDiffAttributes.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/InsecureLogin/task",
+      "/InsecureLogin/login"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/insecurelogin/InsecureLoginTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/CrossSiteScripting/phone-home-xss"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/DOMCrossSiteScripting.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/CrossSiteScripting/dom-follow-up"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/DOMCrossSiteScriptingVerifier.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/CrossSiteScripting/attack5a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingLesson5a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/CrossSiteScripting/attack6a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingLesson6a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/CrossSiteScripting/attack1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingLesson1.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/CrossSiteScripting/quiz",
+      "/CrossSiteScripting/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/CrossSiteScripting/attack3"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/mitigation/CrossSiteScriptingLesson3.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/CrossSiteScripting/attack4"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/mitigation/CrossSiteScriptingLesson4.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/CrossSiteScriptingStored/stored-xss"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/stored/StoredXssComments.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/CrossSiteScriptingStored/stored-xss-follow-up"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/stored/StoredCrossSiteScriptingVerifier.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/VulnerableComponents/attack1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/vulnerablecomponents/VulnerableComponentsLesson.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/PathTraversal/profile-picture-fix"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileUploadFix.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/PathTraversal/profile-picture"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileUpload.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/PathTraversal/random-picture",
+      "/PathTraversal/random"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileUploadRetrieval.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/PathTraversal/zip-slip/",
+      "/PathTraversal/zip-slip/profile-image/{username}"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileZipSlip.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/HtmlTampering/task"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/htmltampering/HtmlTamperingTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/csrf/review"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/csrf/ForgedReviews.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/clientSideFiltering/attack1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/ClientSideFilteringAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/clientSideFiltering/getItForFree"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/ClientSideFilteringFreeAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/clientSideFiltering/challenge-store"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/ShopEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "clientSideFiltering/salaries"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/Salaries.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/OpenRedirect/task1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask1.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/OpenRedirect/mitigation"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectMitigationCheck.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/OpenRedirect/realRedirect"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectRealRedirect.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/OpenRedirect/task2"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask2.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/OpenRedirect/task3"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask3.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/OpenRedirect/safe"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectSecureController.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/OpenRedirect/task4"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask4.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/OpenRedirect/quiz",
+      "/OpenRedirect/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/crypto/encoding/xor"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/XOREncodingAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/crypto/signing/verify"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/SigningAssignment.java",
+    "call_depth": 14
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/crypto/secure/defaults"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/SecureDefaultsAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/crypto/hashing"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/HashingAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/crypto/encoding/basic-auth"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/EncodingAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/SSRF/task1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/ssrf/SSRFTask1.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/SSRF/task2"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/ssrf/SSRFTask2.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "SecurePasswords/assignment"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/securepasswords/SecurePasswordsAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/cia/quiz",
+      "/cia/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cia/CIAQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/InsecureDeserialization/task"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/deserialization/InsecureDeserializationTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/SqlInjection/attack2"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson2.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/SqlInjection/assignment5a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/SqlInjection/attack10"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson10.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/SqlInjection/attack5"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/SqlInjection/attack3"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson3.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/SqlInjection/attack8"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson8.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/SqlInjection/assignment5b"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5b.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/SqlInjection/attack9"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson9.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/SqlInjection/attack4"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson4.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/SqlInjectionAdvanced/quiz",
+      "/SqlInjectionAdvanced/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/SqlInjectionAdvanced/attack6b"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionLesson6b.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/SqlInjectionAdvanced/register"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionChallenge.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/SqlInjectionAdvanced/login"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionChallengeLogin.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/SqlInjectionAdvanced/attack6a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionLesson6a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/SqlInjectionMitigations/attack10a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionLesson10a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/SqlOnlyInputValidationOnKeywords/attack"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlOnlyInputValidationOnKeywords.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/SqlOnlyInputValidation/attack"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlOnlyInputValidation.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/SqlInjectionMitigations/attack10b"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionLesson10b.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/SqlInjectionMitigations/attack12a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionLesson13.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "SqlInjectionMitigations/servers"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/Servers.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/WebWolf/mail/send",
+      "/WebWolf/mail"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/webwolfintroduction/MailAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/WebWolf/landing/password-reset",
+      "/WebWolf/landing"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/webwolfintroduction/LandingAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/challenge/8/votes/",
+      "/challenge/8/votes/average",
+      "/challenge/8/notUsed"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge8/Assignment8.java",
+    "call_depth": 29
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/challenge/7/reset-password/{link}",
+      "/challenge/7"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/Assignment7.java",
+    "call_depth": 18
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/challenge/1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge1/Assignment1.java",
+    "call_depth": 2
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/challenge/5"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge5/Assignment5.java",
+    "call_depth": 2
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/HttpBasics/attack2"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/httpbasics/HttpBasicsQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/HttpBasics/attack1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/httpbasics/HttpBasicsLesson.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/JWT/quiz",
+      "/JWT/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/JWT/decode"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTDecodeEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/JWT/refresh/checkout",
+      "/JWT/refresh/newToken"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTRefreshEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/JWT/secret"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTSecretKeyEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/JWT/votings/login",
+      "/JWT/votings",
+      "/JWT/votings"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTVotesEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/JWT/kid/follow/{user}",
+      "/JWT/kid/delete"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/claimmisuse/JWTHeaderKIDEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/JWT/jku/follow/{user}",
+      "/JWT/jku/delete"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/claimmisuse/JWTHeaderJKUEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/ChromeDevTools/dummy"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/chromedevtools/NetworkDummy.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/WebWolf"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/WebWolfRedirect.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/server-directory"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/service/EnvironmentService.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/registration",
+      "/login-oauth.mvc",
+      "/register.mvc"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/users/RegistrationController.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Non-Storable Content",
+    "endpoint": [
+      "/attack"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/lessons/CourseConfiguration.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/landing/**"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/requests/LandingPage.java",
+    "call_depth": 16
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/mail",
+      "/mail",
+      "/mail"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/mailbox/MailboxController.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/jwt"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/jwt/JWTController.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/LogSpoofing/log-spoofing"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/logging/LogSpoofingTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/LogSpoofing/log-bleeding"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/logging/LogBleedingTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/PasswordReset/ForgotPassword/create-password-reset-link"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/passwordreset/ResetLinkAssignmentForgotPassword.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/PasswordReset/SecurityQuestions"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/passwordreset/SecurityQuestionAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/PasswordReset/reset/reset-password/{link}",
+      "/PasswordReset/reset/login",
+      "/PasswordReset/reset/change-password"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/passwordreset/ResetLinkAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/BypassRestrictions/FieldRestrictions"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/bypassrestrictions/BypassRestrictionsFieldRestrictions.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/BypassRestrictions/frontendValidation"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/bypassrestrictions/BypassRestrictionsFrontendValidation.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "lesson-template/shop/{user}",
+      "/lesson-template/sample-attack"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/lessontemplate/SampleAttack.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "xxe/comments"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xxe/CommentsEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/IDOR/login"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/IDORLogin.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/IDOR/profile/alt-path"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/IDORViewOwnProfileAltUrl.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/IDOR/diff-attributes"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/IDORDiffAttributes.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/InsecureLogin/task",
+      "/InsecureLogin/login"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/insecurelogin/InsecureLoginTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/CrossSiteScripting/phone-home-xss"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/DOMCrossSiteScripting.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/CrossSiteScripting/dom-follow-up"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/DOMCrossSiteScriptingVerifier.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/CrossSiteScripting/attack5a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingLesson5a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/CrossSiteScripting/attack6a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingLesson6a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/CrossSiteScripting/attack1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingLesson1.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/CrossSiteScripting/quiz",
+      "/CrossSiteScripting/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/CrossSiteScripting/attack3"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/mitigation/CrossSiteScriptingLesson3.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/CrossSiteScripting/attack4"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/mitigation/CrossSiteScriptingLesson4.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/CrossSiteScriptingStored/stored-xss"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/stored/StoredXssComments.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/CrossSiteScriptingStored/stored-xss-follow-up"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/stored/StoredCrossSiteScriptingVerifier.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/VulnerableComponents/attack1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/vulnerablecomponents/VulnerableComponentsLesson.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/PathTraversal/profile-picture-fix"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileUploadFix.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/PathTraversal/profile-picture"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileUpload.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/PathTraversal/random-picture",
+      "/PathTraversal/random"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileUploadRetrieval.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/PathTraversal/zip-slip/",
+      "/PathTraversal/zip-slip/profile-image/{username}"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileZipSlip.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/HtmlTampering/task"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/htmltampering/HtmlTamperingTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/csrf/review"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/csrf/ForgedReviews.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/clientSideFiltering/attack1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/ClientSideFilteringAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/clientSideFiltering/getItForFree"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/ClientSideFilteringFreeAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/clientSideFiltering/challenge-store"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/ShopEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "clientSideFiltering/salaries"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/Salaries.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/OpenRedirect/task1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask1.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/OpenRedirect/mitigation"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectMitigationCheck.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/OpenRedirect/realRedirect"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectRealRedirect.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/OpenRedirect/task2"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask2.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/OpenRedirect/task3"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask3.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/OpenRedirect/safe"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectSecureController.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/OpenRedirect/task4"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask4.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/OpenRedirect/quiz",
+      "/OpenRedirect/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/crypto/encoding/xor"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/XOREncodingAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/crypto/signing/verify"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/SigningAssignment.java",
+    "call_depth": 14
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/crypto/secure/defaults"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/SecureDefaultsAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/crypto/hashing"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/HashingAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/crypto/encoding/basic-auth"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/EncodingAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/SSRF/task1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/ssrf/SSRFTask1.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/SSRF/task2"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/ssrf/SSRFTask2.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "SecurePasswords/assignment"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/securepasswords/SecurePasswordsAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/cia/quiz",
+      "/cia/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cia/CIAQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/InsecureDeserialization/task"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/deserialization/InsecureDeserializationTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/SqlInjection/attack2"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson2.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/SqlInjection/assignment5a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/SqlInjection/attack10"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson10.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/SqlInjection/attack5"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/SqlInjection/attack3"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson3.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/SqlInjection/attack8"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson8.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/SqlInjection/assignment5b"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5b.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/SqlInjection/attack9"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson9.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/SqlInjection/attack4"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson4.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/SqlInjectionAdvanced/quiz",
+      "/SqlInjectionAdvanced/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/SqlInjectionAdvanced/attack6b"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionLesson6b.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/SqlInjectionAdvanced/register"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionChallenge.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/SqlInjectionAdvanced/login"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionChallengeLogin.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/SqlInjectionAdvanced/attack6a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionLesson6a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/SqlInjectionMitigations/attack10a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionLesson10a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/SqlOnlyInputValidationOnKeywords/attack"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlOnlyInputValidationOnKeywords.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/SqlOnlyInputValidation/attack"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlOnlyInputValidation.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/SqlInjectionMitigations/attack10b"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionLesson10b.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/SqlInjectionMitigations/attack12a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionLesson13.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "SqlInjectionMitigations/servers"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/Servers.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/WebWolf/mail/send",
+      "/WebWolf/mail"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/webwolfintroduction/MailAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/WebWolf/landing/password-reset",
+      "/WebWolf/landing"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/webwolfintroduction/LandingAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/challenge/8/votes/",
+      "/challenge/8/votes/average",
+      "/challenge/8/notUsed"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge8/Assignment8.java",
+    "call_depth": 29
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/challenge/7/reset-password/{link}",
+      "/challenge/7"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/Assignment7.java",
+    "call_depth": 18
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/challenge/1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge1/Assignment1.java",
+    "call_depth": 2
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/challenge/5"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge5/Assignment5.java",
+    "call_depth": 2
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/HttpBasics/attack2"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/httpbasics/HttpBasicsQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/HttpBasics/attack1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/httpbasics/HttpBasicsLesson.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/JWT/quiz",
+      "/JWT/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/JWT/decode"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTDecodeEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/JWT/refresh/checkout",
+      "/JWT/refresh/newToken"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTRefreshEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/JWT/secret"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTSecretKeyEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/JWT/votings/login",
+      "/JWT/votings",
+      "/JWT/votings"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTVotesEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/JWT/kid/follow/{user}",
+      "/JWT/kid/delete"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/claimmisuse/JWTHeaderKIDEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/JWT/jku/follow/{user}",
+      "/JWT/jku/delete"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/claimmisuse/JWTHeaderJKUEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/ChromeDevTools/dummy"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/chromedevtools/NetworkDummy.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/WebWolf"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/WebWolfRedirect.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/server-directory"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/service/EnvironmentService.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/registration",
+      "/login-oauth.mvc",
+      "/register.mvc"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/users/RegistrationController.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "Storable and Cacheable Content",
+    "endpoint": [
+      "/attack"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/lessons/CourseConfiguration.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/landing/**"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/requests/LandingPage.java",
+    "call_depth": 16
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/mail",
+      "/mail",
+      "/mail"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/mailbox/MailboxController.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/jwt"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/jwt/JWTController.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/LogSpoofing/log-spoofing"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/logging/LogSpoofingTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/LogSpoofing/log-bleeding"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/logging/LogBleedingTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/PasswordReset/ForgotPassword/create-password-reset-link"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/passwordreset/ResetLinkAssignmentForgotPassword.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/PasswordReset/SecurityQuestions"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/passwordreset/SecurityQuestionAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/PasswordReset/reset/reset-password/{link}",
+      "/PasswordReset/reset/login",
+      "/PasswordReset/reset/change-password"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/passwordreset/ResetLinkAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/BypassRestrictions/FieldRestrictions"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/bypassrestrictions/BypassRestrictionsFieldRestrictions.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/BypassRestrictions/frontendValidation"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/bypassrestrictions/BypassRestrictionsFrontendValidation.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "lesson-template/shop/{user}",
+      "/lesson-template/sample-attack"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/lessontemplate/SampleAttack.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "xxe/comments"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xxe/CommentsEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/IDOR/login"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/IDORLogin.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/IDOR/profile/alt-path"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/IDORViewOwnProfileAltUrl.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/IDOR/diff-attributes"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/IDORDiffAttributes.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/InsecureLogin/task",
+      "/InsecureLogin/login"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/insecurelogin/InsecureLoginTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/CrossSiteScripting/phone-home-xss"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/DOMCrossSiteScripting.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/CrossSiteScripting/dom-follow-up"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/DOMCrossSiteScriptingVerifier.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/CrossSiteScripting/attack5a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingLesson5a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/CrossSiteScripting/attack6a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingLesson6a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/CrossSiteScripting/attack1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingLesson1.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/CrossSiteScripting/quiz",
+      "/CrossSiteScripting/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/CrossSiteScripting/attack3"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/mitigation/CrossSiteScriptingLesson3.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/CrossSiteScripting/attack4"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/mitigation/CrossSiteScriptingLesson4.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/CrossSiteScriptingStored/stored-xss"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/stored/StoredXssComments.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/CrossSiteScriptingStored/stored-xss-follow-up"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/xss/stored/StoredCrossSiteScriptingVerifier.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/VulnerableComponents/attack1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/vulnerablecomponents/VulnerableComponentsLesson.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/PathTraversal/profile-picture-fix"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileUploadFix.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/PathTraversal/profile-picture"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileUpload.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/PathTraversal/random-picture",
+      "/PathTraversal/random"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileUploadRetrieval.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/PathTraversal/zip-slip/",
+      "/PathTraversal/zip-slip/profile-image/{username}"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileZipSlip.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/HtmlTampering/task"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/htmltampering/HtmlTamperingTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/csrf/review"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/csrf/ForgedReviews.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/clientSideFiltering/attack1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/ClientSideFilteringAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/clientSideFiltering/getItForFree"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/ClientSideFilteringFreeAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/clientSideFiltering/challenge-store"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/ShopEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "clientSideFiltering/salaries"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/Salaries.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/OpenRedirect/task1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask1.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/OpenRedirect/mitigation"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectMitigationCheck.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/OpenRedirect/realRedirect"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectRealRedirect.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/OpenRedirect/task2"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask2.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/OpenRedirect/task3"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask3.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/OpenRedirect/safe"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectSecureController.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/OpenRedirect/task4"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectTask4.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/OpenRedirect/quiz",
+      "/OpenRedirect/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/openredirect/OpenRedirectQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/crypto/encoding/xor"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/XOREncodingAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/crypto/signing/verify"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/SigningAssignment.java",
+    "call_depth": 14
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/crypto/secure/defaults"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/SecureDefaultsAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/crypto/hashing"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/HashingAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/crypto/encoding/basic-auth"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cryptography/EncodingAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/SSRF/task1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/ssrf/SSRFTask1.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/SSRF/task2"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/ssrf/SSRFTask2.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "SecurePasswords/assignment"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/securepasswords/SecurePasswordsAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/cia/quiz",
+      "/cia/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/cia/CIAQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/InsecureDeserialization/task"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/deserialization/InsecureDeserializationTask.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/SqlInjection/attack2"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson2.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/SqlInjection/assignment5a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/SqlInjection/attack10"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson10.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/SqlInjection/attack5"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/SqlInjection/attack3"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson3.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/SqlInjection/attack8"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson8.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/SqlInjection/assignment5b"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5b.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/SqlInjection/attack9"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson9.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/SqlInjection/attack4"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson4.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/SqlInjectionAdvanced/quiz",
+      "/SqlInjectionAdvanced/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/SqlInjectionAdvanced/attack6b"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionLesson6b.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/SqlInjectionAdvanced/register"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionChallenge.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/SqlInjectionAdvanced/login"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionChallengeLogin.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/SqlInjectionAdvanced/attack6a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionLesson6a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/SqlInjectionMitigations/attack10a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionLesson10a.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/SqlOnlyInputValidationOnKeywords/attack"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlOnlyInputValidationOnKeywords.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/SqlOnlyInputValidation/attack"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlOnlyInputValidation.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/SqlInjectionMitigations/attack10b"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionLesson10b.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/SqlInjectionMitigations/attack12a"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionLesson13.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "SqlInjectionMitigations/servers"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/Servers.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/WebWolf/mail/send",
+      "/WebWolf/mail"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/webwolfintroduction/MailAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/WebWolf/landing/password-reset",
+      "/WebWolf/landing"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/webwolfintroduction/LandingAssignment.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/challenge/8/votes/",
+      "/challenge/8/votes/average",
+      "/challenge/8/notUsed"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge8/Assignment8.java",
+    "call_depth": 29
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/challenge/7/reset-password/{link}",
+      "/challenge/7"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/Assignment7.java",
+    "call_depth": 18
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/challenge/1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge1/Assignment1.java",
+    "call_depth": 2
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/challenge/5"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge5/Assignment5.java",
+    "call_depth": 2
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/HttpBasics/attack2"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/httpbasics/HttpBasicsQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/HttpBasics/attack1"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/httpbasics/HttpBasicsLesson.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/JWT/quiz",
+      "/JWT/quiz"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTQuiz.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/JWT/decode"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTDecodeEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/JWT/refresh/checkout",
+      "/JWT/refresh/newToken"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTRefreshEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/JWT/secret"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTSecretKeyEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/JWT/votings/login",
+      "/JWT/votings",
+      "/JWT/votings"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTVotesEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/JWT/kid/follow/{user}",
+      "/JWT/kid/delete"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/claimmisuse/JWTHeaderKIDEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/JWT/jku/follow/{user}",
+      "/JWT/jku/delete"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/claimmisuse/JWTHeaderJKUEndpoint.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/ChromeDevTools/dummy"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/chromedevtools/NetworkDummy.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/WebWolf"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/WebWolfRedirect.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/server-directory"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/service/EnvironmentService.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/registration",
+      "/login-oauth.mvc",
+      "/register.mvc"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/users/RegistrationController.java",
+    "call_depth": 0
+  },
+  {
+    "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+    "endpoint": [
+      "/attack"
+    ],
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/lessons/CourseConfiguration.java",
+    "call_depth": 0
+  }
+]

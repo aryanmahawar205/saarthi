@@ -1,0 +1,22 @@
+{
+  "nodes": [
+    "Browser Exploitation Chain",
+    "Cross Site Request Forgery",
+    "Authentication Abuse",
+    "Cross Site Scripting"
+  ],
+  "edges": [
+    {
+      "source": "Browser Exploitation Chain",
+      "target": "Cross Site Request Forgery"
+    },
+    {
+      "source": "Cross Site Request Forgery",
+      "target": "Authentication Abuse"
+    },
+    {
+      "source": "Authentication Abuse",
+      "target": "Cross Site Scripting"
+    }
+  ]
+}

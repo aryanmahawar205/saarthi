@@ -38270,7 +38270,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "72a21838-5e68-43b8-b8da-b000c4dda7a0",
+    "finding_id": "28169c73-c131-4c4b-a3f2-ae720f7753a1",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -38327,7 +38327,7 @@
           "otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"exampleInputEmail1\" \"exampleInputPassword1\" ]."
         },
         {
-          "id": "72",
+          "id": "55",
           "uri": "http://localhost:8080/WebGoat/login?error",
           "nodeName": "http://localhost:8080/WebGoat/login (error)",
           "method": "GET",
@@ -38337,7 +38337,7 @@
           "otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"exampleInputEmail1\" \"exampleInputPassword1\" ]."
         },
         {
-          "id": "40",
+          "id": "31",
           "uri": "http://localhost:8080/WebGoat/registration",
           "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
@@ -38347,7 +38347,7 @@
           "otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"agree\" \"matchingPassword\" \"password\" \"username\" ]."
         },
         {
-          "id": "55",
+          "id": "60",
           "uri": "http://localhost:8080/WebGoat/register.mvc",
           "nodeName": "http://localhost:8080/WebGoat/register.mvc ()(agree,matchingPassword,password,username)",
           "method": "POST",
@@ -38382,7 +38382,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "bd0db6db-b72f-4846-b7b6-f6b5d583baf1",
+    "finding_id": "fe97ecd5-a133-4312-8a3b-962876e12432",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -38439,7 +38439,7 @@
           "otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"exampleInputEmail1\" \"exampleInputPassword1\" ]."
         },
         {
-          "id": "72",
+          "id": "55",
           "uri": "http://localhost:8080/WebGoat/login?error",
           "nodeName": "http://localhost:8080/WebGoat/login (error)",
           "method": "GET",
@@ -38449,7 +38449,7 @@
           "otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"exampleInputEmail1\" \"exampleInputPassword1\" ]."
         },
         {
-          "id": "40",
+          "id": "31",
           "uri": "http://localhost:8080/WebGoat/registration",
           "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
@@ -38459,7 +38459,7 @@
           "otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"agree\" \"matchingPassword\" \"password\" \"username\" ]."
         },
         {
-          "id": "55",
+          "id": "60",
           "uri": "http://localhost:8080/WebGoat/register.mvc",
           "nodeName": "http://localhost:8080/WebGoat/register.mvc ()(agree,matchingPassword,password,username)",
           "method": "POST",
@@ -38494,7 +38494,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "6acdc4ce-0d79-4245-b0a3-1c311a6ce67e",
+    "finding_id": "807a6970-9c6f-435c-bd5b-516637d3b381",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -38551,7 +38551,7 @@
           "otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"exampleInputEmail1\" \"exampleInputPassword1\" ]."
         },
         {
-          "id": "72",
+          "id": "55",
           "uri": "http://localhost:8080/WebGoat/login?error",
           "nodeName": "http://localhost:8080/WebGoat/login (error)",
           "method": "GET",
@@ -38561,7 +38561,7 @@
           "otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"exampleInputEmail1\" \"exampleInputPassword1\" ]."
         },
         {
-          "id": "40",
+          "id": "31",
           "uri": "http://localhost:8080/WebGoat/registration",
           "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
@@ -38571,7 +38571,7 @@
           "otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"agree\" \"matchingPassword\" \"password\" \"username\" ]."
         },
         {
-          "id": "55",
+          "id": "60",
           "uri": "http://localhost:8080/WebGoat/register.mvc",
           "nodeName": "http://localhost:8080/WebGoat/register.mvc ()(agree,matchingPassword,password,username)",
           "method": "POST",
@@ -38606,7 +38606,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "4f282803-1394-4b45-853e-d0cc17bca67f",
+    "finding_id": "ea8d261f-5fdb-4155-9fdd-178934d035f5",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -38663,7 +38663,7 @@
           "otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"exampleInputEmail1\" \"exampleInputPassword1\" ]."
         },
         {
-          "id": "72",
+          "id": "55",
           "uri": "http://localhost:8080/WebGoat/login?error",
           "nodeName": "http://localhost:8080/WebGoat/login (error)",
           "method": "GET",
@@ -38673,7 +38673,7 @@
           "otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"exampleInputEmail1\" \"exampleInputPassword1\" ]."
         },
         {
-          "id": "40",
+          "id": "31",
           "uri": "http://localhost:8080/WebGoat/registration",
           "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
@@ -38683,7 +38683,7 @@
           "otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"agree\" \"matchingPassword\" \"password\" \"username\" ]."
         },
         {
-          "id": "55",
+          "id": "60",
           "uri": "http://localhost:8080/WebGoat/register.mvc",
           "nodeName": "http://localhost:8080/WebGoat/register.mvc ()(agree,matchingPassword,password,username)",
           "method": "POST",
@@ -38718,7 +38718,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "237e9418-846b-420f-924c-923cde77614c",
+    "finding_id": "5abb743e-5ef4-4fd2-bd2b-d8788a4b96a6",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -38775,7 +38775,7 @@
           "otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"exampleInputEmail1\" \"exampleInputPassword1\" ]."
         },
         {
-          "id": "72",
+          "id": "55",
           "uri": "http://localhost:8080/WebGoat/login?error",
           "nodeName": "http://localhost:8080/WebGoat/login (error)",
           "method": "GET",
@@ -38785,7 +38785,7 @@
           "otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"exampleInputEmail1\" \"exampleInputPassword1\" ]."
         },
         {
-          "id": "40",
+          "id": "31",
           "uri": "http://localhost:8080/WebGoat/registration",
           "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
@@ -38795,7 +38795,7 @@
           "otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"agree\" \"matchingPassword\" \"password\" \"username\" ]."
         },
         {
-          "id": "55",
+          "id": "60",
           "uri": "http://localhost:8080/WebGoat/register.mvc",
           "nodeName": "http://localhost:8080/WebGoat/register.mvc ()(agree,matchingPassword,password,username)",
           "method": "POST",
@@ -38830,7 +38830,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "ce1afa9b-01af-4820-98f4-ee5c1f2f5feb",
+    "finding_id": "cf12fc3e-42ad-417d-9f1c-29968c3e5845",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -38867,7 +38867,7 @@
       "desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
       "instances": [
         {
-          "id": "3",
+          "id": "0",
           "uri": "http://localhost:8080/",
           "nodeName": "http://localhost:8080/",
           "method": "GET",
@@ -38887,7 +38887,17 @@
           "otherinfo": ""
         },
         {
-          "id": "11",
+          "id": "25",
+          "uri": "http://localhost:8080/WebGoat/login",
+          "nodeName": "http://localhost:8080/WebGoat/login",
+          "method": "GET",
+          "param": "",
+          "attack": "",
+          "evidence": "",
+          "otherinfo": ""
+        },
+        {
+          "id": "16",
           "uri": "http://localhost:8080/sitemap.xml",
           "nodeName": "http://localhost:8080/sitemap.xml",
           "method": "GET",
@@ -38897,14 +38907,14 @@
           "otherinfo": ""
         }
       ],
-      "count": "3",
+      "count": "4",
       "systemic": true,
       "solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>",
       "otherinfo": "",
       "reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>https://www.w3.org/TR/CSP/</p><p>https://w3c.github.io/webappsec-csp/</p><p>https://web.dev/articles/csp</p><p>https://caniuse.com/#feat=contentsecuritypolicy</p><p>https://content-security-policy.com/</p>",
       "cweid": "693",
       "wascid": "15",
-      "sourceid": "4"
+      "sourceid": "9"
     },
     "original_severity": "MEDIUM",
     "repository_context": {
@@ -38922,7 +38932,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "967dfc92-9db0-433d-b9d4-285f0e01596f",
+    "finding_id": "957ccbd7-4df4-4374-8370-4fc4153e0da1",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -38959,7 +38969,7 @@
       "desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
       "instances": [
         {
-          "id": "3",
+          "id": "0",
           "uri": "http://localhost:8080/",
           "nodeName": "http://localhost:8080/",
           "method": "GET",
@@ -38979,7 +38989,17 @@
           "otherinfo": ""
         },
         {
-          "id": "11",
+          "id": "25",
+          "uri": "http://localhost:8080/WebGoat/login",
+          "nodeName": "http://localhost:8080/WebGoat/login",
+          "method": "GET",
+          "param": "",
+          "attack": "",
+          "evidence": "",
+          "otherinfo": ""
+        },
+        {
+          "id": "16",
           "uri": "http://localhost:8080/sitemap.xml",
           "nodeName": "http://localhost:8080/sitemap.xml",
           "method": "GET",
@@ -38989,14 +39009,14 @@
           "otherinfo": ""
         }
       ],
-      "count": "3",
+      "count": "4",
       "systemic": true,
       "solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>",
       "otherinfo": "",
       "reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>https://www.w3.org/TR/CSP/</p><p>https://w3c.github.io/webappsec-csp/</p><p>https://web.dev/articles/csp</p><p>https://caniuse.com/#feat=contentsecuritypolicy</p><p>https://content-security-policy.com/</p>",
       "cweid": "693",
       "wascid": "15",
-      "sourceid": "4"
+      "sourceid": "9"
     },
     "original_severity": "MEDIUM",
     "repository_context": {
@@ -39014,7 +39034,109 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "b04fac09-da89-4466-a71e-90cc23ffb244",
+    "finding_id": "b0bd729c-a984-46e4-96f6-46b03ffea4a6",
+    "tool": "ZAP",
+    "category": "DAST",
+    "severity": "MEDIUM",
+    "confidence": "MEDIUM",
+    "title": "Content Security Policy (CSP) Header Not Set",
+    "description": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
+    "cwe": [],
+    "owasp": [],
+    "cve": "",
+    "package": "",
+    "installed_version": "",
+    "fixed_version": "",
+    "cvss_score": 0.0,
+    "cvss_vector": "",
+    "secret_type": "",
+    "file": "http://localhost:8080/WebGoat/login",
+    "line": 0,
+    "likelihood": "",
+    "impact": "",
+    "vulnerability_class": [
+      "DAST"
+    ],
+    "status": "NEW",
+    "ai_analysis": null,
+    "references": [],
+    "raw_finding": {
+      "pluginid": "10038",
+      "alertRef": "10038-1",
+      "alert": "Content Security Policy (CSP) Header Not Set",
+      "name": "Content Security Policy (CSP) Header Not Set",
+      "riskcode": "2",
+      "confidence": "3",
+      "riskdesc": "Medium (High)",
+      "desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
+      "instances": [
+        {
+          "id": "0",
+          "uri": "http://localhost:8080/",
+          "nodeName": "http://localhost:8080/",
+          "method": "GET",
+          "param": "",
+          "attack": "",
+          "evidence": "",
+          "otherinfo": ""
+        },
+        {
+          "id": "4",
+          "uri": "http://localhost:8080/WebGoat/",
+          "nodeName": "http://localhost:8080/WebGoat/",
+          "method": "GET",
+          "param": "",
+          "attack": "",
+          "evidence": "",
+          "otherinfo": ""
+        },
+        {
+          "id": "25",
+          "uri": "http://localhost:8080/WebGoat/login",
+          "nodeName": "http://localhost:8080/WebGoat/login",
+          "method": "GET",
+          "param": "",
+          "attack": "",
+          "evidence": "",
+          "otherinfo": ""
+        },
+        {
+          "id": "16",
+          "uri": "http://localhost:8080/sitemap.xml",
+          "nodeName": "http://localhost:8080/sitemap.xml",
+          "method": "GET",
+          "param": "",
+          "attack": "",
+          "evidence": "",
+          "otherinfo": ""
+        }
+      ],
+      "count": "4",
+      "systemic": true,
+      "solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>",
+      "otherinfo": "",
+      "reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>https://www.w3.org/TR/CSP/</p><p>https://w3c.github.io/webappsec-csp/</p><p>https://web.dev/articles/csp</p><p>https://caniuse.com/#feat=contentsecuritypolicy</p><p>https://content-security-policy.com/</p>",
+      "cweid": "693",
+      "wascid": "15",
+      "sourceid": "9"
+    },
+    "original_severity": "MEDIUM",
+    "repository_context": {
+      "file": "login",
+      "api_endpoints": []
+    },
+    "attack_surface": {
+      "asset_type": "APPLICATION_CODE"
+    },
+    "asset_type": "APPLICATION_CODE",
+    "api_endpoints": [],
+    "methods": [],
+    "related_calls": [],
+    "reachability_score": 0,
+    "exposure": "LOW"
+  },
+  {
+    "finding_id": "65c75a48-1914-40fb-b0ac-f00d13d29074",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -39051,7 +39173,7 @@
       "desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
       "instances": [
         {
-          "id": "3",
+          "id": "0",
           "uri": "http://localhost:8080/",
           "nodeName": "http://localhost:8080/",
           "method": "GET",
@@ -39071,7 +39193,17 @@
           "otherinfo": ""
         },
         {
-          "id": "11",
+          "id": "25",
+          "uri": "http://localhost:8080/WebGoat/login",
+          "nodeName": "http://localhost:8080/WebGoat/login",
+          "method": "GET",
+          "param": "",
+          "attack": "",
+          "evidence": "",
+          "otherinfo": ""
+        },
+        {
+          "id": "16",
           "uri": "http://localhost:8080/sitemap.xml",
           "nodeName": "http://localhost:8080/sitemap.xml",
           "method": "GET",
@@ -39081,14 +39213,14 @@
           "otherinfo": ""
         }
       ],
-      "count": "3",
+      "count": "4",
       "systemic": true,
       "solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>",
       "otherinfo": "",
       "reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>https://www.w3.org/TR/CSP/</p><p>https://w3c.github.io/webappsec-csp/</p><p>https://web.dev/articles/csp</p><p>https://caniuse.com/#feat=contentsecuritypolicy</p><p>https://content-security-policy.com/</p>",
       "cweid": "693",
       "wascid": "15",
-      "sourceid": "4"
+      "sourceid": "9"
     },
     "original_severity": "MEDIUM",
     "repository_context": {
@@ -39106,7 +39238,119 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "32f8dc64-7869-47d3-a40a-e736e0cf26fa",
+    "finding_id": "4d6f84ab-42e6-4a0e-855b-f90e81d9bbfe",
+    "tool": "ZAP",
+    "category": "DAST",
+    "severity": "MEDIUM",
+    "confidence": "MEDIUM",
+    "title": "Missing Anti-clickjacking Header",
+    "description": "<p>The response does not protect against 'ClickJacking' attacks. It should include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options.</p>",
+    "cwe": [],
+    "owasp": [],
+    "cve": "",
+    "package": "",
+    "installed_version": "",
+    "fixed_version": "",
+    "cvss_score": 0.0,
+    "cvss_vector": "",
+    "secret_type": "",
+    "file": "http://localhost:8080/WebGoat/",
+    "line": 0,
+    "likelihood": "",
+    "impact": "",
+    "vulnerability_class": [
+      "DAST"
+    ],
+    "status": "NEW",
+    "ai_analysis": null,
+    "references": [],
+    "raw_finding": {
+      "pluginid": "10020",
+      "alertRef": "10020-1",
+      "alert": "Missing Anti-clickjacking Header",
+      "name": "Missing Anti-clickjacking Header",
+      "riskcode": "2",
+      "confidence": "2",
+      "riskdesc": "Medium (Medium)",
+      "desc": "<p>The response does not protect against 'ClickJacking' attacks. It should include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options.</p>",
+      "instances": [
+        {
+          "id": "3",
+          "uri": "http://localhost:8080/WebGoat/",
+          "nodeName": "http://localhost:8080/WebGoat/",
+          "method": "GET",
+          "param": "x-frame-options",
+          "attack": "",
+          "evidence": "",
+          "otherinfo": ""
+        },
+        {
+          "id": "23",
+          "uri": "http://localhost:8080/WebGoat/login",
+          "nodeName": "http://localhost:8080/WebGoat/login",
+          "method": "GET",
+          "param": "x-frame-options",
+          "attack": "",
+          "evidence": "",
+          "otherinfo": ""
+        },
+        {
+          "id": "53",
+          "uri": "http://localhost:8080/WebGoat/login?error",
+          "nodeName": "http://localhost:8080/WebGoat/login (error)",
+          "method": "GET",
+          "param": "x-frame-options",
+          "attack": "",
+          "evidence": "",
+          "otherinfo": ""
+        },
+        {
+          "id": "26",
+          "uri": "http://localhost:8080/WebGoat/registration",
+          "nodeName": "http://localhost:8080/WebGoat/registration",
+          "method": "GET",
+          "param": "x-frame-options",
+          "attack": "",
+          "evidence": "",
+          "otherinfo": ""
+        },
+        {
+          "id": "56",
+          "uri": "http://localhost:8080/WebGoat/register.mvc",
+          "nodeName": "http://localhost:8080/WebGoat/register.mvc ()(agree,matchingPassword,password,username)",
+          "method": "POST",
+          "param": "x-frame-options",
+          "attack": "",
+          "evidence": "",
+          "otherinfo": ""
+        }
+      ],
+      "count": "5",
+      "systemic": false,
+      "solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
+      "otherinfo": "",
+      "reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options</p>",
+      "cweid": "1021",
+      "wascid": "15",
+      "sourceid": "1"
+    },
+    "original_severity": "MEDIUM",
+    "repository_context": {
+      "file": "",
+      "api_endpoints": []
+    },
+    "attack_surface": {
+      "asset_type": "APPLICATION_CODE"
+    },
+    "asset_type": "APPLICATION_CODE",
+    "api_endpoints": [],
+    "methods": [],
+    "related_calls": [],
+    "reachability_score": 0,
+    "exposure": "LOW"
+  },
+  {
+    "finding_id": "da9a3361-d94b-40c2-8143-2c793a2e4dc1",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -39143,7 +39387,17 @@
       "desc": "<p>The response does not protect against 'ClickJacking' attacks. It should include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options.</p>",
       "instances": [
         {
-          "id": "21",
+          "id": "3",
+          "uri": "http://localhost:8080/WebGoat/",
+          "nodeName": "http://localhost:8080/WebGoat/",
+          "method": "GET",
+          "param": "x-frame-options",
+          "attack": "",
+          "evidence": "",
+          "otherinfo": ""
+        },
+        {
+          "id": "23",
           "uri": "http://localhost:8080/WebGoat/login",
           "nodeName": "http://localhost:8080/WebGoat/login",
           "method": "GET",
@@ -39153,7 +39407,7 @@
           "otherinfo": ""
         },
         {
-          "id": "60",
+          "id": "53",
           "uri": "http://localhost:8080/WebGoat/login?error",
           "nodeName": "http://localhost:8080/WebGoat/login (error)",
           "method": "GET",
@@ -39163,7 +39417,7 @@
           "otherinfo": ""
         },
         {
-          "id": "29",
+          "id": "26",
           "uri": "http://localhost:8080/WebGoat/registration",
           "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
@@ -39173,7 +39427,7 @@
           "otherinfo": ""
         },
         {
-          "id": "52",
+          "id": "56",
           "uri": "http://localhost:8080/WebGoat/register.mvc",
           "nodeName": "http://localhost:8080/WebGoat/register.mvc ()(agree,matchingPassword,password,username)",
           "method": "POST",
@@ -39183,14 +39437,14 @@
           "otherinfo": ""
         }
       ],
-      "count": "4",
+      "count": "5",
       "systemic": false,
       "solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
       "otherinfo": "",
       "reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options</p>",
       "cweid": "1021",
       "wascid": "15",
-      "sourceid": "16"
+      "sourceid": "1"
     },
     "original_severity": "MEDIUM",
     "repository_context": {
@@ -39208,7 +39462,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "a50774cc-c6a5-432a-a9d1-6a4888b4b305",
+    "finding_id": "86d6589f-2935-45e8-836f-32ae394b0f86",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -39245,7 +39499,17 @@
       "desc": "<p>The response does not protect against 'ClickJacking' attacks. It should include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options.</p>",
       "instances": [
         {
-          "id": "21",
+          "id": "3",
+          "uri": "http://localhost:8080/WebGoat/",
+          "nodeName": "http://localhost:8080/WebGoat/",
+          "method": "GET",
+          "param": "x-frame-options",
+          "attack": "",
+          "evidence": "",
+          "otherinfo": ""
+        },
+        {
+          "id": "23",
           "uri": "http://localhost:8080/WebGoat/login",
           "nodeName": "http://localhost:8080/WebGoat/login",
           "method": "GET",
@@ -39255,7 +39519,7 @@
           "otherinfo": ""
         },
         {
-          "id": "60",
+          "id": "53",
           "uri": "http://localhost:8080/WebGoat/login?error",
           "nodeName": "http://localhost:8080/WebGoat/login (error)",
           "method": "GET",
@@ -39265,7 +39529,7 @@
           "otherinfo": ""
         },
         {
-          "id": "29",
+          "id": "26",
           "uri": "http://localhost:8080/WebGoat/registration",
           "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
@@ -39275,7 +39539,7 @@
           "otherinfo": ""
         },
         {
-          "id": "52",
+          "id": "56",
           "uri": "http://localhost:8080/WebGoat/register.mvc",
           "nodeName": "http://localhost:8080/WebGoat/register.mvc ()(agree,matchingPassword,password,username)",
           "method": "POST",
@@ -39285,14 +39549,14 @@
           "otherinfo": ""
         }
       ],
-      "count": "4",
+      "count": "5",
       "systemic": false,
       "solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
       "otherinfo": "",
       "reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options</p>",
       "cweid": "1021",
       "wascid": "15",
-      "sourceid": "16"
+      "sourceid": "1"
     },
     "original_severity": "MEDIUM",
     "repository_context": {
@@ -39310,7 +39574,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "b27d06f0-705d-4a7c-943b-09f8575e7ea6",
+    "finding_id": "35db5418-268c-4eda-9982-f68de357b233",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -39347,7 +39611,17 @@
       "desc": "<p>The response does not protect against 'ClickJacking' attacks. It should include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options.</p>",
       "instances": [
         {
-          "id": "21",
+          "id": "3",
+          "uri": "http://localhost:8080/WebGoat/",
+          "nodeName": "http://localhost:8080/WebGoat/",
+          "method": "GET",
+          "param": "x-frame-options",
+          "attack": "",
+          "evidence": "",
+          "otherinfo": ""
+        },
+        {
+          "id": "23",
           "uri": "http://localhost:8080/WebGoat/login",
           "nodeName": "http://localhost:8080/WebGoat/login",
           "method": "GET",
@@ -39357,7 +39631,7 @@
           "otherinfo": ""
         },
         {
-          "id": "60",
+          "id": "53",
           "uri": "http://localhost:8080/WebGoat/login?error",
           "nodeName": "http://localhost:8080/WebGoat/login (error)",
           "method": "GET",
@@ -39367,7 +39641,7 @@
           "otherinfo": ""
         },
         {
-          "id": "29",
+          "id": "26",
           "uri": "http://localhost:8080/WebGoat/registration",
           "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
@@ -39377,7 +39651,7 @@
           "otherinfo": ""
         },
         {
-          "id": "52",
+          "id": "56",
           "uri": "http://localhost:8080/WebGoat/register.mvc",
           "nodeName": "http://localhost:8080/WebGoat/register.mvc ()(agree,matchingPassword,password,username)",
           "method": "POST",
@@ -39387,14 +39661,14 @@
           "otherinfo": ""
         }
       ],
-      "count": "4",
+      "count": "5",
       "systemic": false,
       "solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
       "otherinfo": "",
       "reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options</p>",
       "cweid": "1021",
       "wascid": "15",
-      "sourceid": "16"
+      "sourceid": "1"
     },
     "original_severity": "MEDIUM",
     "repository_context": {
@@ -39412,7 +39686,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "8212f827-0af4-43b7-872a-61e26eec1cc2",
+    "finding_id": "4f3c6007-6f22-48ec-8ff4-429974d8628f",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -39449,7 +39723,17 @@
       "desc": "<p>The response does not protect against 'ClickJacking' attacks. It should include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options.</p>",
       "instances": [
         {
-          "id": "21",
+          "id": "3",
+          "uri": "http://localhost:8080/WebGoat/",
+          "nodeName": "http://localhost:8080/WebGoat/",
+          "method": "GET",
+          "param": "x-frame-options",
+          "attack": "",
+          "evidence": "",
+          "otherinfo": ""
+        },
+        {
+          "id": "23",
           "uri": "http://localhost:8080/WebGoat/login",
           "nodeName": "http://localhost:8080/WebGoat/login",
           "method": "GET",
@@ -39459,7 +39743,7 @@
           "otherinfo": ""
         },
         {
-          "id": "60",
+          "id": "53",
           "uri": "http://localhost:8080/WebGoat/login?error",
           "nodeName": "http://localhost:8080/WebGoat/login (error)",
           "method": "GET",
@@ -39469,7 +39753,7 @@
           "otherinfo": ""
         },
         {
-          "id": "29",
+          "id": "26",
           "uri": "http://localhost:8080/WebGoat/registration",
           "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
@@ -39479,7 +39763,7 @@
           "otherinfo": ""
         },
         {
-          "id": "52",
+          "id": "56",
           "uri": "http://localhost:8080/WebGoat/register.mvc",
           "nodeName": "http://localhost:8080/WebGoat/register.mvc ()(agree,matchingPassword,password,username)",
           "method": "POST",
@@ -39489,14 +39773,14 @@
           "otherinfo": ""
         }
       ],
-      "count": "4",
+      "count": "5",
       "systemic": false,
       "solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
       "otherinfo": "",
       "reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options</p>",
       "cweid": "1021",
       "wascid": "15",
-      "sourceid": "16"
+      "sourceid": "1"
     },
     "original_severity": "MEDIUM",
     "repository_context": {
@@ -39514,7 +39798,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "263c94d2-5187-487e-b071-f24bc0dc3bea",
+    "finding_id": "2069a3d6-3e61-4a3b-94df-5a572c5eebbe",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -39551,7 +39835,7 @@
       "desc": "<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
       "instances": [
         {
-          "id": "20",
+          "id": "18",
           "uri": "http://localhost:8080/WebGoat/",
           "nodeName": "http://localhost:8080/WebGoat/",
           "method": "GET",
@@ -39568,7 +39852,7 @@
       "reference": "<p>https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site</p>",
       "cweid": "1275",
       "wascid": "13",
-      "sourceid": "14"
+      "sourceid": "13"
     },
     "original_severity": "LOW",
     "repository_context": {
@@ -39586,7 +39870,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "ddb62353-47a9-4bc6-b551-c48e345da375",
+    "finding_id": "057be0bb-2cfb-49f1-a0ab-297753b524b5",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -39623,7 +39907,7 @@
       "desc": "<p>Cross-Origin-Embedder-Policy header is a response header that prevents a document from loading any cross-origin resources that don't explicitly grant the document permission (using CORP or CORS).</p>",
       "instances": [
         {
-          "id": "17",
+          "id": "14",
           "uri": "http://localhost:8080/WebGoat/",
           "nodeName": "http://localhost:8080/WebGoat/",
           "method": "GET",
@@ -39633,7 +39917,7 @@
           "otherinfo": ""
         },
         {
-          "id": "35",
+          "id": "34",
           "uri": "http://localhost:8080/WebGoat/login",
           "nodeName": "http://localhost:8080/WebGoat/login",
           "method": "GET",
@@ -39643,7 +39927,7 @@
           "otherinfo": ""
         },
         {
-          "id": "49",
+          "id": "43",
           "uri": "http://localhost:8080/WebGoat/registration",
           "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
@@ -39678,7 +39962,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "f50d4cec-e854-4649-b951-b01631280d9c",
+    "finding_id": "5089abfe-7f3d-4d2b-a091-2c77e1b495c2",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -39715,7 +39999,7 @@
       "desc": "<p>Cross-Origin-Embedder-Policy header is a response header that prevents a document from loading any cross-origin resources that don't explicitly grant the document permission (using CORP or CORS).</p>",
       "instances": [
         {
-          "id": "17",
+          "id": "14",
           "uri": "http://localhost:8080/WebGoat/",
           "nodeName": "http://localhost:8080/WebGoat/",
           "method": "GET",
@@ -39725,7 +40009,7 @@
           "otherinfo": ""
         },
         {
-          "id": "35",
+          "id": "34",
           "uri": "http://localhost:8080/WebGoat/login",
           "nodeName": "http://localhost:8080/WebGoat/login",
           "method": "GET",
@@ -39735,7 +40019,7 @@
           "otherinfo": ""
         },
         {
-          "id": "49",
+          "id": "43",
           "uri": "http://localhost:8080/WebGoat/registration",
           "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
@@ -39770,7 +40054,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "3d189587-d47c-44cc-b393-f8ea11d667fc",
+    "finding_id": "a43cf9da-c138-49ac-a35a-79358fc1df5e",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -39807,7 +40091,7 @@
       "desc": "<p>Cross-Origin-Embedder-Policy header is a response header that prevents a document from loading any cross-origin resources that don't explicitly grant the document permission (using CORP or CORS).</p>",
       "instances": [
         {
-          "id": "17",
+          "id": "14",
           "uri": "http://localhost:8080/WebGoat/",
           "nodeName": "http://localhost:8080/WebGoat/",
           "method": "GET",
@@ -39817,7 +40101,7 @@
           "otherinfo": ""
         },
         {
-          "id": "35",
+          "id": "34",
           "uri": "http://localhost:8080/WebGoat/login",
           "nodeName": "http://localhost:8080/WebGoat/login",
           "method": "GET",
@@ -39827,7 +40111,7 @@
           "otherinfo": ""
         },
         {
-          "id": "49",
+          "id": "43",
           "uri": "http://localhost:8080/WebGoat/registration",
           "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
@@ -39862,7 +40146,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "4dc9d03a-d580-4e45-9e8d-cbfd7d529dca",
+    "finding_id": "8be40007-82c4-4b0a-83ec-109672c99663",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -39899,7 +40183,7 @@
       "desc": "<p>Cross-Origin-Opener-Policy header is a response header that allows a site to control if others included documents share the same browsing context. Sharing the same browsing context with untrusted documents might lead to data leak.</p>",
       "instances": [
         {
-          "id": "19",
+          "id": "15",
           "uri": "http://localhost:8080/WebGoat/",
           "nodeName": "http://localhost:8080/WebGoat/",
           "method": "GET",
@@ -39909,7 +40193,7 @@
           "otherinfo": ""
         },
         {
-          "id": "38",
+          "id": "36",
           "uri": "http://localhost:8080/WebGoat/login",
           "nodeName": "http://localhost:8080/WebGoat/login",
           "method": "GET",
@@ -39919,7 +40203,7 @@
           "otherinfo": ""
         },
         {
-          "id": "50",
+          "id": "44",
           "uri": "http://localhost:8080/WebGoat/registration",
           "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
@@ -39954,7 +40238,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "34c7d39f-c1a0-44ed-9fb5-232aaa9f37b2",
+    "finding_id": "11a72c50-d92d-48e5-aece-f975420df9f5",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -39991,7 +40275,7 @@
       "desc": "<p>Cross-Origin-Opener-Policy header is a response header that allows a site to control if others included documents share the same browsing context. Sharing the same browsing context with untrusted documents might lead to data leak.</p>",
       "instances": [
         {
-          "id": "19",
+          "id": "15",
           "uri": "http://localhost:8080/WebGoat/",
           "nodeName": "http://localhost:8080/WebGoat/",
           "method": "GET",
@@ -40001,7 +40285,7 @@
           "otherinfo": ""
         },
         {
-          "id": "38",
+          "id": "36",
           "uri": "http://localhost:8080/WebGoat/login",
           "nodeName": "http://localhost:8080/WebGoat/login",
           "method": "GET",
@@ -40011,7 +40295,7 @@
           "otherinfo": ""
         },
         {
-          "id": "50",
+          "id": "44",
           "uri": "http://localhost:8080/WebGoat/registration",
           "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
@@ -40046,7 +40330,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "c32f2e67-6654-42c7-b69e-dd53be43526c",
+    "finding_id": "cec863fe-f312-464c-aaba-fc7d93cb0e16",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -40083,7 +40367,7 @@
       "desc": "<p>Cross-Origin-Opener-Policy header is a response header that allows a site to control if others included documents share the same browsing context. Sharing the same browsing context with untrusted documents might lead to data leak.</p>",
       "instances": [
         {
-          "id": "19",
+          "id": "15",
           "uri": "http://localhost:8080/WebGoat/",
           "nodeName": "http://localhost:8080/WebGoat/",
           "method": "GET",
@@ -40093,7 +40377,7 @@
           "otherinfo": ""
         },
         {
-          "id": "38",
+          "id": "36",
           "uri": "http://localhost:8080/WebGoat/login",
           "nodeName": "http://localhost:8080/WebGoat/login",
           "method": "GET",
@@ -40103,7 +40387,7 @@
           "otherinfo": ""
         },
         {
-          "id": "50",
+          "id": "44",
           "uri": "http://localhost:8080/WebGoat/registration",
           "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
@@ -40138,7 +40422,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "43133aec-f1d6-4e76-96a3-94214f0842bb",
+    "finding_id": "dafcf3c4-5c83-4a95-b6d7-d6b8e027104f",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -40175,7 +40459,7 @@
       "desc": "<p>Cross-Origin-Resource-Policy header is an opt-in header designed to counter side-channels attacks like Spectre. Resource should be specifically set as shareable amongst different origins.</p>",
       "instances": [
         {
-          "id": "16",
+          "id": "13",
           "uri": "http://localhost:8080/WebGoat/",
           "nodeName": "http://localhost:8080/WebGoat/",
           "method": "GET",
@@ -40185,7 +40469,7 @@
           "otherinfo": ""
         },
         {
-          "id": "51",
+          "id": "47",
           "uri": "http://localhost:8080/WebGoat/css/font-awesome.min.css",
           "nodeName": "http://localhost:8080/WebGoat/css/font-awesome.min.css",
           "method": "GET",
@@ -40195,9 +40479,9 @@
           "otherinfo": ""
         },
         {
-          "id": "37",
-          "uri": "http://localhost:8080/WebGoat/css/img/favicon.ico",
-          "nodeName": "http://localhost:8080/WebGoat/css/img/favicon.ico",
+          "id": "40",
+          "uri": "http://localhost:8080/WebGoat/css/main.css",
+          "nodeName": "http://localhost:8080/WebGoat/css/main.css",
           "method": "GET",
           "param": "Cross-Origin-Resource-Policy",
           "attack": "",
@@ -40205,7 +40489,7 @@
           "otherinfo": ""
         },
         {
-          "id": "34",
+          "id": "33",
           "uri": "http://localhost:8080/WebGoat/login",
           "nodeName": "http://localhost:8080/WebGoat/login",
           "method": "GET",
@@ -40215,7 +40499,7 @@
           "otherinfo": ""
         },
         {
-          "id": "47",
+          "id": "42",
           "uri": "http://localhost:8080/WebGoat/registration",
           "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
@@ -40250,7 +40534,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "4a148d45-898f-47aa-b17d-e712e48076ae",
+    "finding_id": "b57c145a-9385-4ca9-a140-d8af5b0a7db4",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -40287,7 +40571,7 @@
       "desc": "<p>Cross-Origin-Resource-Policy header is an opt-in header designed to counter side-channels attacks like Spectre. Resource should be specifically set as shareable amongst different origins.</p>",
       "instances": [
         {
-          "id": "16",
+          "id": "13",
           "uri": "http://localhost:8080/WebGoat/",
           "nodeName": "http://localhost:8080/WebGoat/",
           "method": "GET",
@@ -40297,7 +40581,7 @@
           "otherinfo": ""
         },
         {
-          "id": "51",
+          "id": "47",
           "uri": "http://localhost:8080/WebGoat/css/font-awesome.min.css",
           "nodeName": "http://localhost:8080/WebGoat/css/font-awesome.min.css",
           "method": "GET",
@@ -40307,9 +40591,9 @@
           "otherinfo": ""
         },
         {
-          "id": "37",
-          "uri": "http://localhost:8080/WebGoat/css/img/favicon.ico",
-          "nodeName": "http://localhost:8080/WebGoat/css/img/favicon.ico",
+          "id": "40",
+          "uri": "http://localhost:8080/WebGoat/css/main.css",
+          "nodeName": "http://localhost:8080/WebGoat/css/main.css",
           "method": "GET",
           "param": "Cross-Origin-Resource-Policy",
           "attack": "",
@@ -40317,7 +40601,7 @@
           "otherinfo": ""
         },
         {
-          "id": "34",
+          "id": "33",
           "uri": "http://localhost:8080/WebGoat/login",
           "nodeName": "http://localhost:8080/WebGoat/login",
           "method": "GET",
@@ -40327,7 +40611,7 @@
           "otherinfo": ""
         },
         {
-          "id": "47",
+          "id": "42",
           "uri": "http://localhost:8080/WebGoat/registration",
           "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
@@ -40362,7 +40646,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "0d6f17da-e297-4bac-9958-27d51ac5c076",
+    "finding_id": "acc01f26-0d8f-416c-90cd-ee1bb0fc6c7e",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -40378,7 +40662,7 @@
     "cvss_score": 0.0,
     "cvss_vector": "",
     "secret_type": "",
-    "file": "http://localhost:8080/WebGoat/css/img/favicon.ico",
+    "file": "http://localhost:8080/WebGoat/css/main.css",
     "line": 0,
     "likelihood": "",
     "impact": "",
@@ -40399,7 +40683,7 @@
       "desc": "<p>Cross-Origin-Resource-Policy header is an opt-in header designed to counter side-channels attacks like Spectre. Resource should be specifically set as shareable amongst different origins.</p>",
       "instances": [
         {
-          "id": "16",
+          "id": "13",
           "uri": "http://localhost:8080/WebGoat/",
           "nodeName": "http://localhost:8080/WebGoat/",
           "method": "GET",
@@ -40409,7 +40693,7 @@
           "otherinfo": ""
         },
         {
-          "id": "51",
+          "id": "47",
           "uri": "http://localhost:8080/WebGoat/css/font-awesome.min.css",
           "nodeName": "http://localhost:8080/WebGoat/css/font-awesome.min.css",
           "method": "GET",
@@ -40419,9 +40703,9 @@
           "otherinfo": ""
         },
         {
-          "id": "37",
-          "uri": "http://localhost:8080/WebGoat/css/img/favicon.ico",
-          "nodeName": "http://localhost:8080/WebGoat/css/img/favicon.ico",
+          "id": "40",
+          "uri": "http://localhost:8080/WebGoat/css/main.css",
+          "nodeName": "http://localhost:8080/WebGoat/css/main.css",
           "method": "GET",
           "param": "Cross-Origin-Resource-Policy",
           "attack": "",
@@ -40429,7 +40713,7 @@
           "otherinfo": ""
         },
         {
-          "id": "34",
+          "id": "33",
           "uri": "http://localhost:8080/WebGoat/login",
           "nodeName": "http://localhost:8080/WebGoat/login",
           "method": "GET",
@@ -40439,7 +40723,7 @@
           "otherinfo": ""
         },
         {
-          "id": "47",
+          "id": "42",
           "uri": "http://localhost:8080/WebGoat/registration",
           "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
@@ -40460,7 +40744,7 @@
     },
     "original_severity": "LOW",
     "repository_context": {
-      "file": "favicon.ico",
+      "file": "main.css",
       "api_endpoints": []
     },
     "attack_surface": {
@@ -40474,7 +40758,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "9bffb2e8-9877-4316-8a40-a0a1263f59c0",
+    "finding_id": "29f0f560-8cd1-4dd3-bc1e-45c55d20b069",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -40511,7 +40795,7 @@
       "desc": "<p>Cross-Origin-Resource-Policy header is an opt-in header designed to counter side-channels attacks like Spectre. Resource should be specifically set as shareable amongst different origins.</p>",
       "instances": [
         {
-          "id": "16",
+          "id": "13",
           "uri": "http://localhost:8080/WebGoat/",
           "nodeName": "http://localhost:8080/WebGoat/",
           "method": "GET",
@@ -40521,7 +40805,7 @@
           "otherinfo": ""
         },
         {
-          "id": "51",
+          "id": "47",
           "uri": "http://localhost:8080/WebGoat/css/font-awesome.min.css",
           "nodeName": "http://localhost:8080/WebGoat/css/font-awesome.min.css",
           "method": "GET",
@@ -40531,9 +40815,9 @@
           "otherinfo": ""
         },
         {
-          "id": "37",
-          "uri": "http://localhost:8080/WebGoat/css/img/favicon.ico",
-          "nodeName": "http://localhost:8080/WebGoat/css/img/favicon.ico",
+          "id": "40",
+          "uri": "http://localhost:8080/WebGoat/css/main.css",
+          "nodeName": "http://localhost:8080/WebGoat/css/main.css",
           "method": "GET",
           "param": "Cross-Origin-Resource-Policy",
           "attack": "",
@@ -40541,7 +40825,7 @@
           "otherinfo": ""
         },
         {
-          "id": "34",
+          "id": "33",
           "uri": "http://localhost:8080/WebGoat/login",
           "nodeName": "http://localhost:8080/WebGoat/login",
           "method": "GET",
@@ -40551,7 +40835,7 @@
           "otherinfo": ""
         },
         {
-          "id": "47",
+          "id": "42",
           "uri": "http://localhost:8080/WebGoat/registration",
           "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
@@ -40586,7 +40870,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "194dd600-a4a0-428e-bfde-a5d800f4f7b3",
+    "finding_id": "7806eefe-7748-468f-a747-86736f2e2e8e",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -40623,7 +40907,7 @@
       "desc": "<p>Cross-Origin-Resource-Policy header is an opt-in header designed to counter side-channels attacks like Spectre. Resource should be specifically set as shareable amongst different origins.</p>",
       "instances": [
         {
-          "id": "16",
+          "id": "13",
           "uri": "http://localhost:8080/WebGoat/",
           "nodeName": "http://localhost:8080/WebGoat/",
           "method": "GET",
@@ -40633,7 +40917,7 @@
           "otherinfo": ""
         },
         {
-          "id": "51",
+          "id": "47",
           "uri": "http://localhost:8080/WebGoat/css/font-awesome.min.css",
           "nodeName": "http://localhost:8080/WebGoat/css/font-awesome.min.css",
           "method": "GET",
@@ -40643,9 +40927,9 @@
           "otherinfo": ""
         },
         {
-          "id": "37",
-          "uri": "http://localhost:8080/WebGoat/css/img/favicon.ico",
-          "nodeName": "http://localhost:8080/WebGoat/css/img/favicon.ico",
+          "id": "40",
+          "uri": "http://localhost:8080/WebGoat/css/main.css",
+          "nodeName": "http://localhost:8080/WebGoat/css/main.css",
           "method": "GET",
           "param": "Cross-Origin-Resource-Policy",
           "attack": "",
@@ -40653,7 +40937,7 @@
           "otherinfo": ""
         },
         {
-          "id": "34",
+          "id": "33",
           "uri": "http://localhost:8080/WebGoat/login",
           "nodeName": "http://localhost:8080/WebGoat/login",
           "method": "GET",
@@ -40663,7 +40947,7 @@
           "otherinfo": ""
         },
         {
-          "id": "47",
+          "id": "42",
           "uri": "http://localhost:8080/WebGoat/registration",
           "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
@@ -40698,7 +40982,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "bff6787e-3673-4319-8351-226e3fafa251",
+    "finding_id": "673808ea-39a6-494a-a38d-6e216ddddc7a",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -40745,7 +41029,7 @@
           "otherinfo": ""
         },
         {
-          "id": "15",
+          "id": "11",
           "uri": "http://localhost:8080/WebGoat/",
           "nodeName": "http://localhost:8080/WebGoat/",
           "method": "GET",
@@ -40755,7 +41039,7 @@
           "otherinfo": ""
         },
         {
-          "id": "33",
+          "id": "32",
           "uri": "http://localhost:8080/WebGoat/login",
           "nodeName": "http://localhost:8080/WebGoat/login",
           "method": "GET",
@@ -40765,9 +41049,9 @@
           "otherinfo": ""
         },
         {
-          "id": "13",
-          "uri": "http://localhost:8080/robots.txt",
-          "nodeName": "http://localhost:8080/robots.txt",
+          "id": "41",
+          "uri": "http://localhost:8080/WebGoat/registration",
+          "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
           "param": "",
           "attack": "",
@@ -40775,7 +41059,7 @@
           "otherinfo": ""
         },
         {
-          "id": "26",
+          "id": "22",
           "uri": "http://localhost:8080/sitemap.xml",
           "nodeName": "http://localhost:8080/sitemap.xml",
           "method": "GET",
@@ -40810,7 +41094,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "0c693a46-ccf9-4a38-8863-c5d74c570b0c",
+    "finding_id": "aed60e46-f984-4803-925a-a280be9d2100",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -40857,7 +41141,7 @@
           "otherinfo": ""
         },
         {
-          "id": "15",
+          "id": "11",
           "uri": "http://localhost:8080/WebGoat/",
           "nodeName": "http://localhost:8080/WebGoat/",
           "method": "GET",
@@ -40867,7 +41151,7 @@
           "otherinfo": ""
         },
         {
-          "id": "33",
+          "id": "32",
           "uri": "http://localhost:8080/WebGoat/login",
           "nodeName": "http://localhost:8080/WebGoat/login",
           "method": "GET",
@@ -40877,9 +41161,9 @@
           "otherinfo": ""
         },
         {
-          "id": "13",
-          "uri": "http://localhost:8080/robots.txt",
-          "nodeName": "http://localhost:8080/robots.txt",
+          "id": "41",
+          "uri": "http://localhost:8080/WebGoat/registration",
+          "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
           "param": "",
           "attack": "",
@@ -40887,7 +41171,7 @@
           "otherinfo": ""
         },
         {
-          "id": "26",
+          "id": "22",
           "uri": "http://localhost:8080/sitemap.xml",
           "nodeName": "http://localhost:8080/sitemap.xml",
           "method": "GET",
@@ -40922,7 +41206,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "a210520c-8e2a-48f0-a409-b7e2b4be4268",
+    "finding_id": "14e8c685-3191-4af5-91df-990af2bde012",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -40969,7 +41253,7 @@
           "otherinfo": ""
         },
         {
-          "id": "15",
+          "id": "11",
           "uri": "http://localhost:8080/WebGoat/",
           "nodeName": "http://localhost:8080/WebGoat/",
           "method": "GET",
@@ -40979,7 +41263,7 @@
           "otherinfo": ""
         },
         {
-          "id": "33",
+          "id": "32",
           "uri": "http://localhost:8080/WebGoat/login",
           "nodeName": "http://localhost:8080/WebGoat/login",
           "method": "GET",
@@ -40989,9 +41273,9 @@
           "otherinfo": ""
         },
         {
-          "id": "13",
-          "uri": "http://localhost:8080/robots.txt",
-          "nodeName": "http://localhost:8080/robots.txt",
+          "id": "41",
+          "uri": "http://localhost:8080/WebGoat/registration",
+          "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
           "param": "",
           "attack": "",
@@ -40999,7 +41283,7 @@
           "otherinfo": ""
         },
         {
-          "id": "26",
+          "id": "22",
           "uri": "http://localhost:8080/sitemap.xml",
           "nodeName": "http://localhost:8080/sitemap.xml",
           "method": "GET",
@@ -41034,7 +41318,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "badc4c87-1ceb-4e9e-83a3-df782fb0edba",
+    "finding_id": "07c82bd5-ca86-49c8-a18b-c3d83d24e51c",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -41050,7 +41334,7 @@
     "cvss_score": 0.0,
     "cvss_vector": "",
     "secret_type": "",
-    "file": "http://localhost:8080/robots.txt",
+    "file": "http://localhost:8080/WebGoat/registration",
     "line": 0,
     "likelihood": "",
     "impact": "",
@@ -41081,7 +41365,7 @@
           "otherinfo": ""
         },
         {
-          "id": "15",
+          "id": "11",
           "uri": "http://localhost:8080/WebGoat/",
           "nodeName": "http://localhost:8080/WebGoat/",
           "method": "GET",
@@ -41091,7 +41375,7 @@
           "otherinfo": ""
         },
         {
-          "id": "33",
+          "id": "32",
           "uri": "http://localhost:8080/WebGoat/login",
           "nodeName": "http://localhost:8080/WebGoat/login",
           "method": "GET",
@@ -41101,9 +41385,9 @@
           "otherinfo": ""
         },
         {
-          "id": "13",
-          "uri": "http://localhost:8080/robots.txt",
-          "nodeName": "http://localhost:8080/robots.txt",
+          "id": "41",
+          "uri": "http://localhost:8080/WebGoat/registration",
+          "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
           "param": "",
           "attack": "",
@@ -41111,7 +41395,7 @@
           "otherinfo": ""
         },
         {
-          "id": "26",
+          "id": "22",
           "uri": "http://localhost:8080/sitemap.xml",
           "nodeName": "http://localhost:8080/sitemap.xml",
           "method": "GET",
@@ -41132,7 +41416,7 @@
     },
     "original_severity": "LOW",
     "repository_context": {
-      "file": "robots.txt",
+      "file": "registration",
       "api_endpoints": []
     },
     "attack_surface": {
@@ -41146,7 +41430,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "66d41d3b-5114-499e-a669-2fc1c2b647ba",
+    "finding_id": "5a40ba64-01f9-4f18-82af-c9f736dcd990",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -41193,7 +41477,7 @@
           "otherinfo": ""
         },
         {
-          "id": "15",
+          "id": "11",
           "uri": "http://localhost:8080/WebGoat/",
           "nodeName": "http://localhost:8080/WebGoat/",
           "method": "GET",
@@ -41203,7 +41487,7 @@
           "otherinfo": ""
         },
         {
-          "id": "33",
+          "id": "32",
           "uri": "http://localhost:8080/WebGoat/login",
           "nodeName": "http://localhost:8080/WebGoat/login",
           "method": "GET",
@@ -41213,9 +41497,9 @@
           "otherinfo": ""
         },
         {
-          "id": "13",
-          "uri": "http://localhost:8080/robots.txt",
-          "nodeName": "http://localhost:8080/robots.txt",
+          "id": "41",
+          "uri": "http://localhost:8080/WebGoat/registration",
+          "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
           "param": "",
           "attack": "",
@@ -41223,7 +41507,7 @@
           "otherinfo": ""
         },
         {
-          "id": "26",
+          "id": "22",
           "uri": "http://localhost:8080/sitemap.xml",
           "nodeName": "http://localhost:8080/sitemap.xml",
           "method": "GET",
@@ -41258,7 +41542,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "66abe9dc-bd55-411f-ade5-4ec07ab82169",
+    "finding_id": "341493fc-401a-4b91-9639-81750125b8bd",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -41305,9 +41589,9 @@
           "otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
         },
         {
-          "id": "32",
-          "uri": "http://localhost:8080/WebGoat/css/img/favicon.ico",
-          "nodeName": "http://localhost:8080/WebGoat/css/img/favicon.ico",
+          "id": "45",
+          "uri": "http://localhost:8080/WebGoat/css/font-awesome.min.css",
+          "nodeName": "http://localhost:8080/WebGoat/css/font-awesome.min.css",
           "method": "GET",
           "param": "x-content-type-options",
           "attack": "",
@@ -41315,7 +41599,7 @@
           "otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
         },
         {
-          "id": "42",
+          "id": "35",
           "uri": "http://localhost:8080/WebGoat/css/main.css",
           "nodeName": "http://localhost:8080/WebGoat/css/main.css",
           "method": "GET",
@@ -41335,7 +41619,7 @@
           "otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
         },
         {
-          "id": "41",
+          "id": "37",
           "uri": "http://localhost:8080/WebGoat/registration",
           "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
@@ -41370,7 +41654,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "510c29bd-bd63-47e3-ab0c-faff631ebcc1",
+    "finding_id": "28b0d513-7e33-4301-aa6f-e0ae4fb53732",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -41386,7 +41670,7 @@
     "cvss_score": 0.0,
     "cvss_vector": "",
     "secret_type": "",
-    "file": "http://localhost:8080/WebGoat/css/img/favicon.ico",
+    "file": "http://localhost:8080/WebGoat/css/font-awesome.min.css",
     "line": 0,
     "likelihood": "",
     "impact": "",
@@ -41417,9 +41701,9 @@
           "otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
         },
         {
-          "id": "32",
-          "uri": "http://localhost:8080/WebGoat/css/img/favicon.ico",
-          "nodeName": "http://localhost:8080/WebGoat/css/img/favicon.ico",
+          "id": "45",
+          "uri": "http://localhost:8080/WebGoat/css/font-awesome.min.css",
+          "nodeName": "http://localhost:8080/WebGoat/css/font-awesome.min.css",
           "method": "GET",
           "param": "x-content-type-options",
           "attack": "",
@@ -41427,7 +41711,7 @@
           "otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
         },
         {
-          "id": "42",
+          "id": "35",
           "uri": "http://localhost:8080/WebGoat/css/main.css",
           "nodeName": "http://localhost:8080/WebGoat/css/main.css",
           "method": "GET",
@@ -41447,7 +41731,7 @@
           "otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
         },
         {
-          "id": "41",
+          "id": "37",
           "uri": "http://localhost:8080/WebGoat/registration",
           "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
@@ -41468,7 +41752,7 @@
     },
     "original_severity": "LOW",
     "repository_context": {
-      "file": "favicon.ico",
+      "file": "font-awesome.min.css",
       "api_endpoints": []
     },
     "attack_surface": {
@@ -41482,7 +41766,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "5c07a991-35a3-4fe0-9269-20afd2aa72cd",
+    "finding_id": "994596f0-8888-475f-9b64-fa4787b7a27a",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -41529,9 +41813,9 @@
           "otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
         },
         {
-          "id": "32",
-          "uri": "http://localhost:8080/WebGoat/css/img/favicon.ico",
-          "nodeName": "http://localhost:8080/WebGoat/css/img/favicon.ico",
+          "id": "45",
+          "uri": "http://localhost:8080/WebGoat/css/font-awesome.min.css",
+          "nodeName": "http://localhost:8080/WebGoat/css/font-awesome.min.css",
           "method": "GET",
           "param": "x-content-type-options",
           "attack": "",
@@ -41539,7 +41823,7 @@
           "otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
         },
         {
-          "id": "42",
+          "id": "35",
           "uri": "http://localhost:8080/WebGoat/css/main.css",
           "nodeName": "http://localhost:8080/WebGoat/css/main.css",
           "method": "GET",
@@ -41559,7 +41843,7 @@
           "otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
         },
         {
-          "id": "41",
+          "id": "37",
           "uri": "http://localhost:8080/WebGoat/registration",
           "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
@@ -41594,7 +41878,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "03058380-ddb7-48f8-a3d8-e5762e62fd2c",
+    "finding_id": "3b9cd66a-2b36-43bd-b3a9-063b6b4af5bc",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -41641,9 +41925,9 @@
           "otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
         },
         {
-          "id": "32",
-          "uri": "http://localhost:8080/WebGoat/css/img/favicon.ico",
-          "nodeName": "http://localhost:8080/WebGoat/css/img/favicon.ico",
+          "id": "45",
+          "uri": "http://localhost:8080/WebGoat/css/font-awesome.min.css",
+          "nodeName": "http://localhost:8080/WebGoat/css/font-awesome.min.css",
           "method": "GET",
           "param": "x-content-type-options",
           "attack": "",
@@ -41651,7 +41935,7 @@
           "otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
         },
         {
-          "id": "42",
+          "id": "35",
           "uri": "http://localhost:8080/WebGoat/css/main.css",
           "nodeName": "http://localhost:8080/WebGoat/css/main.css",
           "method": "GET",
@@ -41671,7 +41955,7 @@
           "otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
         },
         {
-          "id": "41",
+          "id": "37",
           "uri": "http://localhost:8080/WebGoat/registration",
           "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
@@ -41706,7 +41990,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "44518bff-6fff-4aa3-bfdd-347a81a89d8f",
+    "finding_id": "478e03fb-1386-40bb-b080-f5acd20c1301",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -41753,9 +42037,9 @@
           "otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
         },
         {
-          "id": "32",
-          "uri": "http://localhost:8080/WebGoat/css/img/favicon.ico",
-          "nodeName": "http://localhost:8080/WebGoat/css/img/favicon.ico",
+          "id": "45",
+          "uri": "http://localhost:8080/WebGoat/css/font-awesome.min.css",
+          "nodeName": "http://localhost:8080/WebGoat/css/font-awesome.min.css",
           "method": "GET",
           "param": "x-content-type-options",
           "attack": "",
@@ -41763,7 +42047,7 @@
           "otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
         },
         {
-          "id": "42",
+          "id": "35",
           "uri": "http://localhost:8080/WebGoat/css/main.css",
           "nodeName": "http://localhost:8080/WebGoat/css/main.css",
           "method": "GET",
@@ -41783,7 +42067,7 @@
           "otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
         },
         {
-          "id": "41",
+          "id": "37",
           "uri": "http://localhost:8080/WebGoat/registration",
           "nodeName": "http://localhost:8080/WebGoat/registration",
           "method": "GET",
@@ -41818,7 +42102,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "f7c164e7-cd0c-4e8f-9aae-0266a93384ce",
+    "finding_id": "95ac2dbe-af1c-42f8-aaee-8e275bc8cabb",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -41855,7 +42139,7 @@
       "desc": "<p>The given request has been identified as an authentication request. The 'Other Info' field contains a set of key=value lines which identify any relevant fields. If the request is in a context which has an Authentication Method set to \"Auto-Detect\" then this rule will change the authentication to match the request identified.</p>",
       "instances": [
         {
-          "id": "53",
+          "id": "51",
           "uri": "http://localhost:8080/WebGoat/login",
           "nodeName": "http://localhost:8080/WebGoat/login ()(password,username)",
           "method": "POST",
@@ -41872,7 +42156,7 @@
       "reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/</p>",
       "cweid": "-1",
       "wascid": "-1",
-      "sourceid": "39"
+      "sourceid": "37"
     },
     "original_severity": "LOW",
     "repository_context": {
@@ -41890,7 +42174,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "561415fb-376b-4672-98d8-a6c7797a2ff7",
+    "finding_id": "68d264d2-d7a1-4192-bc0c-343de6c98598",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -41927,7 +42211,7 @@
       "desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
       "instances": [
         {
-          "id": "23",
+          "id": "20",
           "uri": "http://localhost:8080/WebGoat",
           "nodeName": "http://localhost:8080/WebGoat",
           "method": "GET",
@@ -41937,7 +42221,7 @@
           "otherinfo": ""
         },
         {
-          "id": "22",
+          "id": "21",
           "uri": "http://localhost:8080/WebGoat/",
           "nodeName": "http://localhost:8080/WebGoat/",
           "method": "GET",
@@ -41947,7 +42231,7 @@
           "otherinfo": ""
         },
         {
-          "id": "30",
+          "id": "24",
           "uri": "http://localhost:8080/WebGoat/start.mvc",
           "nodeName": "http://localhost:8080/WebGoat/start.mvc",
           "method": "GET",
@@ -41982,7 +42266,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "5b16eb5e-794f-4de1-9c0c-29a7be61df2d",
+    "finding_id": "fa328891-43a0-4b08-8186-ed72c4965cf7",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -42019,7 +42303,7 @@
       "desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
       "instances": [
         {
-          "id": "23",
+          "id": "20",
           "uri": "http://localhost:8080/WebGoat",
           "nodeName": "http://localhost:8080/WebGoat",
           "method": "GET",
@@ -42029,7 +42313,7 @@
           "otherinfo": ""
         },
         {
-          "id": "22",
+          "id": "21",
           "uri": "http://localhost:8080/WebGoat/",
           "nodeName": "http://localhost:8080/WebGoat/",
           "method": "GET",
@@ -42039,7 +42323,7 @@
           "otherinfo": ""
         },
         {
-          "id": "30",
+          "id": "24",
           "uri": "http://localhost:8080/WebGoat/start.mvc",
           "nodeName": "http://localhost:8080/WebGoat/start.mvc",
           "method": "GET",
@@ -42074,7 +42358,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "96b99e38-f8ff-480d-b791-aaee03a1f00d",
+    "finding_id": "e27ac9fe-2ea0-450c-ad54-921ec3162141",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -42111,7 +42395,7 @@
       "desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
       "instances": [
         {
-          "id": "23",
+          "id": "20",
           "uri": "http://localhost:8080/WebGoat",
           "nodeName": "http://localhost:8080/WebGoat",
           "method": "GET",
@@ -42121,7 +42405,7 @@
           "otherinfo": ""
         },
         {
-          "id": "22",
+          "id": "21",
           "uri": "http://localhost:8080/WebGoat/",
           "nodeName": "http://localhost:8080/WebGoat/",
           "method": "GET",
@@ -42131,7 +42415,7 @@
           "otherinfo": ""
         },
         {
-          "id": "30",
+          "id": "24",
           "uri": "http://localhost:8080/WebGoat/start.mvc",
           "nodeName": "http://localhost:8080/WebGoat/start.mvc",
           "method": "GET",
@@ -42166,7 +42450,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "91e64431-9251-4b0e-bb2e-dfaacb2920c7",
+    "finding_id": "c88f55c2-5b08-43b3-9415-be4a9aebcfa9",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -42203,7 +42487,7 @@
       "desc": "<p>The given response has been identified as containing a session management token. The 'Other Info' field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to \"Auto-Detect\" then this rule will change the session management to use the tokens identified.</p>",
       "instances": [
         {
-          "id": "18",
+          "id": "17",
           "uri": "http://localhost:8080/WebGoat/",
           "nodeName": "http://localhost:8080/WebGoat/",
           "method": "GET",
@@ -42220,7 +42504,7 @@
       "reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id/</p>",
       "cweid": "-1",
       "wascid": "-1",
-      "sourceid": "14"
+      "sourceid": "13"
     },
     "original_severity": "LOW",
     "repository_context": {
@@ -42238,7 +42522,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "1ccafed1-8ba6-4200-a89b-537d50ea34c2",
+    "finding_id": "2516b1c4-bd2f-4a88-8d96-0b9075f7e20d",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -42285,7 +42569,7 @@
           "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
         },
         {
-          "id": "14",
+          "id": "9",
           "uri": "http://localhost:8080/WebGoat/",
           "nodeName": "http://localhost:8080/WebGoat/",
           "method": "GET",
@@ -42295,7 +42579,17 @@
           "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
         },
         {
-          "id": "31",
+          "id": "38",
+          "uri": "http://localhost:8080/WebGoat/css/main.css",
+          "nodeName": "http://localhost:8080/WebGoat/css/main.css",
+          "method": "GET",
+          "param": "",
+          "attack": "",
+          "evidence": "",
+          "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+        },
+        {
+          "id": "30",
           "uri": "http://localhost:8080/WebGoat/login",
           "nodeName": "http://localhost:8080/WebGoat/login",
           "method": "GET",
@@ -42305,17 +42599,7 @@
           "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
         },
         {
-          "id": "12",
-          "uri": "http://localhost:8080/robots.txt",
-          "nodeName": "http://localhost:8080/robots.txt",
-          "method": "GET",
-          "param": "",
-          "attack": "",
-          "evidence": "",
-          "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-        },
-        {
-          "id": "24",
+          "id": "19",
           "uri": "http://localhost:8080/sitemap.xml",
           "nodeName": "http://localhost:8080/sitemap.xml",
           "method": "GET",
@@ -42350,7 +42634,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "dffd8fd1-ba36-4918-8e07-fb332abd904b",
+    "finding_id": "1ad5b97d-2505-48f2-a93b-080d0e02feec",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -42397,7 +42681,7 @@
           "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
         },
         {
-          "id": "14",
+          "id": "9",
           "uri": "http://localhost:8080/WebGoat/",
           "nodeName": "http://localhost:8080/WebGoat/",
           "method": "GET",
@@ -42407,7 +42691,17 @@
           "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
         },
         {
-          "id": "31",
+          "id": "38",
+          "uri": "http://localhost:8080/WebGoat/css/main.css",
+          "nodeName": "http://localhost:8080/WebGoat/css/main.css",
+          "method": "GET",
+          "param": "",
+          "attack": "",
+          "evidence": "",
+          "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+        },
+        {
+          "id": "30",
           "uri": "http://localhost:8080/WebGoat/login",
           "nodeName": "http://localhost:8080/WebGoat/login",
           "method": "GET",
@@ -42417,17 +42711,7 @@
           "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
         },
         {
-          "id": "12",
-          "uri": "http://localhost:8080/robots.txt",
-          "nodeName": "http://localhost:8080/robots.txt",
-          "method": "GET",
-          "param": "",
-          "attack": "",
-          "evidence": "",
-          "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-        },
-        {
-          "id": "24",
+          "id": "19",
           "uri": "http://localhost:8080/sitemap.xml",
           "nodeName": "http://localhost:8080/sitemap.xml",
           "method": "GET",
@@ -42462,7 +42746,119 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "ac65662b-6835-46a0-9934-542fa136ad9d",
+    "finding_id": "94995f0f-452c-49c1-bcfc-5cde4ccbc7f3",
+    "tool": "ZAP",
+    "category": "DAST",
+    "severity": "LOW",
+    "confidence": "MEDIUM",
+    "title": "Storable and Cacheable Content",
+    "description": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
+    "cwe": [],
+    "owasp": [],
+    "cve": "",
+    "package": "",
+    "installed_version": "",
+    "fixed_version": "",
+    "cvss_score": 0.0,
+    "cvss_vector": "",
+    "secret_type": "",
+    "file": "http://localhost:8080/WebGoat/css/main.css",
+    "line": 0,
+    "likelihood": "",
+    "impact": "",
+    "vulnerability_class": [
+      "DAST"
+    ],
+    "status": "NEW",
+    "ai_analysis": null,
+    "references": [],
+    "raw_finding": {
+      "pluginid": "10049",
+      "alertRef": "10049-3",
+      "alert": "Storable and Cacheable Content",
+      "name": "Storable and Cacheable Content",
+      "riskcode": "0",
+      "confidence": "2",
+      "riskdesc": "Informational (Medium)",
+      "desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
+      "instances": [
+        {
+          "id": "7",
+          "uri": "http://localhost:8080/",
+          "nodeName": "http://localhost:8080/",
+          "method": "GET",
+          "param": "",
+          "attack": "",
+          "evidence": "",
+          "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+        },
+        {
+          "id": "9",
+          "uri": "http://localhost:8080/WebGoat/",
+          "nodeName": "http://localhost:8080/WebGoat/",
+          "method": "GET",
+          "param": "",
+          "attack": "",
+          "evidence": "",
+          "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+        },
+        {
+          "id": "38",
+          "uri": "http://localhost:8080/WebGoat/css/main.css",
+          "nodeName": "http://localhost:8080/WebGoat/css/main.css",
+          "method": "GET",
+          "param": "",
+          "attack": "",
+          "evidence": "",
+          "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+        },
+        {
+          "id": "30",
+          "uri": "http://localhost:8080/WebGoat/login",
+          "nodeName": "http://localhost:8080/WebGoat/login",
+          "method": "GET",
+          "param": "",
+          "attack": "",
+          "evidence": "",
+          "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+        },
+        {
+          "id": "19",
+          "uri": "http://localhost:8080/sitemap.xml",
+          "nodeName": "http://localhost:8080/sitemap.xml",
+          "method": "GET",
+          "param": "",
+          "attack": "",
+          "evidence": "",
+          "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+        }
+      ],
+      "count": "5",
+      "systemic": true,
+      "solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information. If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
+      "otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
+      "reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
+      "cweid": "524",
+      "wascid": "13",
+      "sourceid": "4"
+    },
+    "original_severity": "LOW",
+    "repository_context": {
+      "file": "main.css",
+      "api_endpoints": []
+    },
+    "attack_surface": {
+      "asset_type": "APPLICATION_CODE"
+    },
+    "asset_type": "APPLICATION_CODE",
+    "api_endpoints": [],
+    "methods": [],
+    "related_calls": [],
+    "reachability_score": 0,
+    "exposure": "LOW"
+  },
+  {
+    "finding_id": "83dd0e71-bd2e-41d5-a45d-6715da0fcf7d",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -42509,7 +42905,7 @@
           "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
         },
         {
-          "id": "14",
+          "id": "9",
           "uri": "http://localhost:8080/WebGoat/",
           "nodeName": "http://localhost:8080/WebGoat/",
           "method": "GET",
@@ -42519,7 +42915,17 @@
           "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
         },
         {
-          "id": "31",
+          "id": "38",
+          "uri": "http://localhost:8080/WebGoat/css/main.css",
+          "nodeName": "http://localhost:8080/WebGoat/css/main.css",
+          "method": "GET",
+          "param": "",
+          "attack": "",
+          "evidence": "",
+          "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+        },
+        {
+          "id": "30",
           "uri": "http://localhost:8080/WebGoat/login",
           "nodeName": "http://localhost:8080/WebGoat/login",
           "method": "GET",
@@ -42529,17 +42935,7 @@
           "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
         },
         {
-          "id": "12",
-          "uri": "http://localhost:8080/robots.txt",
-          "nodeName": "http://localhost:8080/robots.txt",
-          "method": "GET",
-          "param": "",
-          "attack": "",
-          "evidence": "",
-          "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-        },
-        {
-          "id": "24",
+          "id": "19",
           "uri": "http://localhost:8080/sitemap.xml",
           "nodeName": "http://localhost:8080/sitemap.xml",
           "method": "GET",
@@ -42574,119 +42970,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "38c05789-f4c2-4e55-aa9d-b41fb0ac814c",
-    "tool": "ZAP",
-    "category": "DAST",
-    "severity": "LOW",
-    "confidence": "MEDIUM",
-    "title": "Storable and Cacheable Content",
-    "description": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
-    "cwe": [],
-    "owasp": [],
-    "cve": "",
-    "package": "",
-    "installed_version": "",
-    "fixed_version": "",
-    "cvss_score": 0.0,
-    "cvss_vector": "",
-    "secret_type": "",
-    "file": "http://localhost:8080/robots.txt",
-    "line": 0,
-    "likelihood": "",
-    "impact": "",
-    "vulnerability_class": [
-      "DAST"
-    ],
-    "status": "NEW",
-    "ai_analysis": null,
-    "references": [],
-    "raw_finding": {
-      "pluginid": "10049",
-      "alertRef": "10049-3",
-      "alert": "Storable and Cacheable Content",
-      "name": "Storable and Cacheable Content",
-      "riskcode": "0",
-      "confidence": "2",
-      "riskdesc": "Informational (Medium)",
-      "desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
-      "instances": [
-        {
-          "id": "7",
-          "uri": "http://localhost:8080/",
-          "nodeName": "http://localhost:8080/",
-          "method": "GET",
-          "param": "",
-          "attack": "",
-          "evidence": "",
-          "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-        },
-        {
-          "id": "14",
-          "uri": "http://localhost:8080/WebGoat/",
-          "nodeName": "http://localhost:8080/WebGoat/",
-          "method": "GET",
-          "param": "",
-          "attack": "",
-          "evidence": "",
-          "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-        },
-        {
-          "id": "31",
-          "uri": "http://localhost:8080/WebGoat/login",
-          "nodeName": "http://localhost:8080/WebGoat/login",
-          "method": "GET",
-          "param": "",
-          "attack": "",
-          "evidence": "",
-          "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-        },
-        {
-          "id": "12",
-          "uri": "http://localhost:8080/robots.txt",
-          "nodeName": "http://localhost:8080/robots.txt",
-          "method": "GET",
-          "param": "",
-          "attack": "",
-          "evidence": "",
-          "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-        },
-        {
-          "id": "24",
-          "uri": "http://localhost:8080/sitemap.xml",
-          "nodeName": "http://localhost:8080/sitemap.xml",
-          "method": "GET",
-          "param": "",
-          "attack": "",
-          "evidence": "",
-          "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-        }
-      ],
-      "count": "5",
-      "systemic": true,
-      "solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information. If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
-      "otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
-      "reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
-      "cweid": "524",
-      "wascid": "13",
-      "sourceid": "4"
-    },
-    "original_severity": "LOW",
-    "repository_context": {
-      "file": "robots.txt",
-      "api_endpoints": []
-    },
-    "attack_surface": {
-      "asset_type": "APPLICATION_CODE"
-    },
-    "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [],
-    "methods": [],
-    "related_calls": [],
-    "reachability_score": 0,
-    "exposure": "LOW"
-  },
-  {
-    "finding_id": "37c20cbc-21bf-489f-9122-b96497013d09",
+    "finding_id": "969f2fba-154e-48ba-8dfa-1a84db99ca62",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -42733,7 +43017,7 @@
           "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
         },
         {
-          "id": "14",
+          "id": "9",
           "uri": "http://localhost:8080/WebGoat/",
           "nodeName": "http://localhost:8080/WebGoat/",
           "method": "GET",
@@ -42743,7 +43027,17 @@
           "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
         },
         {
-          "id": "31",
+          "id": "38",
+          "uri": "http://localhost:8080/WebGoat/css/main.css",
+          "nodeName": "http://localhost:8080/WebGoat/css/main.css",
+          "method": "GET",
+          "param": "",
+          "attack": "",
+          "evidence": "",
+          "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+        },
+        {
+          "id": "30",
           "uri": "http://localhost:8080/WebGoat/login",
           "nodeName": "http://localhost:8080/WebGoat/login",
           "method": "GET",
@@ -42753,17 +43047,7 @@
           "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
         },
         {
-          "id": "12",
-          "uri": "http://localhost:8080/robots.txt",
-          "nodeName": "http://localhost:8080/robots.txt",
-          "method": "GET",
-          "param": "",
-          "attack": "",
-          "evidence": "",
-          "otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-        },
-        {
-          "id": "24",
+          "id": "19",
           "uri": "http://localhost:8080/sitemap.xml",
           "nodeName": "http://localhost:8080/sitemap.xml",
           "method": "GET",
@@ -42798,7 +43082,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "9516d688-1626-450d-81f2-90db233c10ef",
+    "finding_id": "20a88c66-373a-4337-8ce5-18385f9de484",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -42835,7 +43119,7 @@
       "desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
       "instances": [
         {
-          "id": "67",
+          "id": "70",
           "uri": "http://localhost:8080/WebGoat/register.mvc",
           "nodeName": "http://localhost:8080/WebGoat/register.mvc ()(agree,matchingPassword,password,username)",
           "method": "POST",
@@ -42845,7 +43129,7 @@
           "otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:8080/WebGoat/register.mvc\n\nappears to include user input in:\na(n) [input] tag [name] attribute\n\nThe user input found was:\nagree=agree\n\nThe user-controlled value was:\nagree"
         },
         {
-          "id": "57",
+          "id": "61",
           "uri": "http://localhost:8080/WebGoat/register.mvc",
           "nodeName": "http://localhost:8080/WebGoat/register.mvc ()(agree,matchingPassword,password,username)",
           "method": "POST",
@@ -42855,7 +43139,7 @@
           "otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:8080/WebGoat/register.mvc\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\nmatchingPassword=ZAP\n\nThe user-controlled value was:\nzap"
         },
         {
-          "id": "58",
+          "id": "62",
           "uri": "http://localhost:8080/WebGoat/register.mvc",
           "nodeName": "http://localhost:8080/WebGoat/register.mvc ()(agree,matchingPassword,password,username)",
           "method": "POST",
@@ -42865,7 +43149,7 @@
           "otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:8080/WebGoat/register.mvc\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\npassword=ZAP\n\nThe user-controlled value was:\nzap"
         },
         {
-          "id": "59",
+          "id": "63",
           "uri": "http://localhost:8080/WebGoat/register.mvc",
           "nodeName": "http://localhost:8080/WebGoat/register.mvc ()(agree,matchingPassword,password,username)",
           "method": "POST",
@@ -42882,7 +43166,7 @@
       "reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</p>",
       "cweid": "20",
       "wascid": "20",
-      "sourceid": "38"
+      "sourceid": "41"
     },
     "original_severity": "LOW",
     "repository_context": {
@@ -42900,7 +43184,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "951f69b1-a214-41c7-a042-4fd76d50f56c",
+    "finding_id": "85f04982-a5ce-42f1-8287-86ffb6f419d4",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -42937,7 +43221,7 @@
       "desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
       "instances": [
         {
-          "id": "67",
+          "id": "70",
           "uri": "http://localhost:8080/WebGoat/register.mvc",
           "nodeName": "http://localhost:8080/WebGoat/register.mvc ()(agree,matchingPassword,password,username)",
           "method": "POST",
@@ -42947,7 +43231,7 @@
           "otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:8080/WebGoat/register.mvc\n\nappears to include user input in:\na(n) [input] tag [name] attribute\n\nThe user input found was:\nagree=agree\n\nThe user-controlled value was:\nagree"
         },
         {
-          "id": "57",
+          "id": "61",
           "uri": "http://localhost:8080/WebGoat/register.mvc",
           "nodeName": "http://localhost:8080/WebGoat/register.mvc ()(agree,matchingPassword,password,username)",
           "method": "POST",
@@ -42957,7 +43241,7 @@
           "otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:8080/WebGoat/register.mvc\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\nmatchingPassword=ZAP\n\nThe user-controlled value was:\nzap"
         },
         {
-          "id": "58",
+          "id": "62",
           "uri": "http://localhost:8080/WebGoat/register.mvc",
           "nodeName": "http://localhost:8080/WebGoat/register.mvc ()(agree,matchingPassword,password,username)",
           "method": "POST",
@@ -42967,7 +43251,7 @@
           "otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:8080/WebGoat/register.mvc\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\npassword=ZAP\n\nThe user-controlled value was:\nzap"
         },
         {
-          "id": "59",
+          "id": "63",
           "uri": "http://localhost:8080/WebGoat/register.mvc",
           "nodeName": "http://localhost:8080/WebGoat/register.mvc ()(agree,matchingPassword,password,username)",
           "method": "POST",
@@ -42984,7 +43268,7 @@
       "reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</p>",
       "cweid": "20",
       "wascid": "20",
-      "sourceid": "38"
+      "sourceid": "41"
     },
     "original_severity": "LOW",
     "repository_context": {
@@ -43002,7 +43286,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "7c6a2802-8722-4bd7-b19b-1f480c555147",
+    "finding_id": "21606f82-e8f5-4b31-aa80-f9179876ed4c",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -43039,7 +43323,7 @@
       "desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
       "instances": [
         {
-          "id": "67",
+          "id": "70",
           "uri": "http://localhost:8080/WebGoat/register.mvc",
           "nodeName": "http://localhost:8080/WebGoat/register.mvc ()(agree,matchingPassword,password,username)",
           "method": "POST",
@@ -43049,7 +43333,7 @@
           "otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:8080/WebGoat/register.mvc\n\nappears to include user input in:\na(n) [input] tag [name] attribute\n\nThe user input found was:\nagree=agree\n\nThe user-controlled value was:\nagree"
         },
         {
-          "id": "57",
+          "id": "61",
           "uri": "http://localhost:8080/WebGoat/register.mvc",
           "nodeName": "http://localhost:8080/WebGoat/register.mvc ()(agree,matchingPassword,password,username)",
           "method": "POST",
@@ -43059,7 +43343,7 @@
           "otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:8080/WebGoat/register.mvc\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\nmatchingPassword=ZAP\n\nThe user-controlled value was:\nzap"
         },
         {
-          "id": "58",
+          "id": "62",
           "uri": "http://localhost:8080/WebGoat/register.mvc",
           "nodeName": "http://localhost:8080/WebGoat/register.mvc ()(agree,matchingPassword,password,username)",
           "method": "POST",
@@ -43069,7 +43353,7 @@
           "otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:8080/WebGoat/register.mvc\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\npassword=ZAP\n\nThe user-controlled value was:\nzap"
         },
         {
-          "id": "59",
+          "id": "63",
           "uri": "http://localhost:8080/WebGoat/register.mvc",
           "nodeName": "http://localhost:8080/WebGoat/register.mvc ()(agree,matchingPassword,password,username)",
           "method": "POST",
@@ -43086,7 +43370,7 @@
       "reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</p>",
       "cweid": "20",
       "wascid": "20",
-      "sourceid": "38"
+      "sourceid": "41"
     },
     "original_severity": "LOW",
     "repository_context": {
@@ -43104,7 +43388,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "e656afb5-0327-4cb3-bb6a-4010579ffa53",
+    "finding_id": "4cebf75a-0e99-48b4-9b5f-aeaa40d182c7",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -43141,7 +43425,7 @@
       "desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
       "instances": [
         {
-          "id": "67",
+          "id": "70",
           "uri": "http://localhost:8080/WebGoat/register.mvc",
           "nodeName": "http://localhost:8080/WebGoat/register.mvc ()(agree,matchingPassword,password,username)",
           "method": "POST",
@@ -43151,7 +43435,7 @@
           "otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:8080/WebGoat/register.mvc\n\nappears to include user input in:\na(n) [input] tag [name] attribute\n\nThe user input found was:\nagree=agree\n\nThe user-controlled value was:\nagree"
         },
         {
-          "id": "57",
+          "id": "61",
           "uri": "http://localhost:8080/WebGoat/register.mvc",
           "nodeName": "http://localhost:8080/WebGoat/register.mvc ()(agree,matchingPassword,password,username)",
           "method": "POST",
@@ -43161,7 +43445,7 @@
           "otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:8080/WebGoat/register.mvc\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\nmatchingPassword=ZAP\n\nThe user-controlled value was:\nzap"
         },
         {
-          "id": "58",
+          "id": "62",
           "uri": "http://localhost:8080/WebGoat/register.mvc",
           "nodeName": "http://localhost:8080/WebGoat/register.mvc ()(agree,matchingPassword,password,username)",
           "method": "POST",
@@ -43171,7 +43455,7 @@
           "otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:8080/WebGoat/register.mvc\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\npassword=ZAP\n\nThe user-controlled value was:\nzap"
         },
         {
-          "id": "59",
+          "id": "63",
           "uri": "http://localhost:8080/WebGoat/register.mvc",
           "nodeName": "http://localhost:8080/WebGoat/register.mvc ()(agree,matchingPassword,password,username)",
           "method": "POST",
@@ -43188,7 +43472,7 @@
       "reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</p>",
       "cweid": "20",
       "wascid": "20",
-      "sourceid": "38"
+      "sourceid": "41"
     },
     "original_severity": "LOW",
     "repository_context": {
