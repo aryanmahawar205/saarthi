@@ -394,31 +394,28 @@ SAARTHI's orchestration layer is designed around LangGraph.
 ## Agent Workflow
 
 ```text
-Repository Submitted
+Repository & Runtime URL
           │
           ▼
-
-Planning Agent
-
+Discovery (Recon, Trust, APIs)
+          │
           ▼
-
-Context Analysis Agent
-
+SAST Pipeline (Scanners, Context)
+          │
           ▼
-
-Scanner Execution Agent
-
+DAST Pipeline (ZAP, Dynamic Analysis)
+          │
           ▼
-
-Findings Correlation Agent
-
+Security Knowledge Graph
+          │
           ▼
-
-Attack Path Agent
-
+Security Reasoning & Attack Paths
+          │
           ▼
-
-Reporting Agent
+Remediation Guidance
+          │
+          ▼
+Reporting
 ```
 
 Each agent specializes in a particular responsibility while sharing contextual information.
@@ -692,6 +689,7 @@ saarthi/
 ├── reporting/
 ├── integrations/
 ├── docs/
+├── reports/
 │
 ├── README.md
 ├── LICENSE
