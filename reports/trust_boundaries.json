@@ -1,10 +1,5 @@
 [
   {
-    "source": "Internet",
-    "target": "Web Application",
-    "boundary": "External Input"
-  },
-  {
     "source": "Web Application",
     "target": "Authentication Layer",
     "boundary": "Identity Boundary"
