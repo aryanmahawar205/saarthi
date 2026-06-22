@@ -24,31 +24,21 @@ to produce analyst-quality security reports.
 Implemented:
 
 * Semgrep Integration
-
 * Trivy Integration
-
 * Gitleaks Integration
-
 * OWASP ZAP Integration
-
 * Finding Normalization
-
 * Correlation Engine
-
 * Prioritization Engine
-
 * Runtime Discovery
-
 * Attack Surface Discovery
-
 * Trust Boundary Mapping
-
 * API Call Chain Mapping
-
 * DAST Correlation
-
 * Attack Path Generation
-
+* Centralized Security Knowledge Graph
+* Centralized AI Security Reasoning
+* Remediation Generation
 * AI Report Generation
 
 Current primary target:
@@ -79,30 +69,24 @@ before making architectural changes.
 ## Long-Term Architecture
 
 Collection Layer
-
 * ReconAgent
 * DiscoveryAgent
 * ZapAgent
 * PipelineAgent
 
 Knowledge Layer
-
 * TrustBoundaryAgent
 * APICallChainAgent
 * SecurityKnowledgeGraphAgent
 
 Reasoning Layer
-
 * AttackPathAgent
-* RuntimeReasoningAgent
 * SecurityReasoningAgent
 
 Remediation Layer
-
-* RemediationCodeAgent
+* RemediationAgent
 
 Reporting Layer
-
 * ReportAgent
 
 ---
@@ -112,13 +96,12 @@ Reporting Layer
 Prefer improving reasoning quality over adding more agents.
 
 Avoid duplicate:
-
 * Risk scoring
 * Business impact
 * Attack reasoning
 * Prioritization
 
-The project should converge toward a centralized SecurityReasoningAgent.
+The project converges toward a centralized SecurityReasoningAgent, fed by the SecurityKnowledgeGraphAgent.
 
 ---
 
