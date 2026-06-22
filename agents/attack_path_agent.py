@@ -1,15 +1,43 @@
+import json
+import os
+
+OUTPUT_FILE = "reports/attack_chains.json"
+
 def run(state):
     knowledge_graph = state.get("security_knowledge_graph", {})
+    nodes = knowledge_graph.get("nodes", [])
+    edges = knowledge_graph.get("edges", [])
 
-    dast_incidents = knowledge_graph.get("dast_incidents", [])
+    dast_incidents = []
+    sast_incidents = []
+    trust_boundaries = []
+    endpoints = []
 
-    # We will build realistic attack paths based on the incidents in the knowledge graph.
+    for node in nodes:
+        node_type = node.get("type")
+        if node_type == "finding" and node.get("source") == "DAST":
+            dast_incidents.append(node)
+        elif node_type == "finding" and node.get("source") == "SAST":
+            sast_incidents.append(node)
+        elif node_type == "trust_boundary":
+            trust_boundaries.append(node)
+        elif node_type == "endpoint":
+            endpoints.append(node)
+
     attack_paths = []
 
     for incident in dast_incidents:
-        name = incident.get("incident", "")
+        name = incident.get("label", "")
 
-        if name == "Weak Browser Security Controls":
+        # Determine if this finding crosses a trust boundary (look at edges)
+        related_boundaries = [
+            n for n in trust_boundaries
+            if any(e.get("source") == incident.get("id") and e.get("target") == n.get("id") for e in edges)
+        ]
+
+        boundary_info = related_boundaries[0].get("label") if related_boundaries else "Application Layer"
+
+        if "Browser Security" in name:
             attack_paths.append({
                 "name": "Browser Exploitation Chain",
                 "path": [
@@ -18,9 +46,10 @@ def run(state):
                     "Script Injection or Clickjacking",
                     "Session Theft or State Modification"
                 ],
-                "impact": "Account Takeover / Reputation Damage"
+                "impact": "Account Takeover / Reputation Damage",
+                "boundary_crossed": boundary_info
             })
-        elif name == "CSRF Exposure":
+        elif "CSRF" in name:
             attack_paths.append({
                 "name": "Cross Site Request Forgery",
                 "path": [
@@ -29,42 +58,68 @@ def run(state):
                     "State Change Execution",
                     "Privilege Abuse"
                 ],
-                "impact": "Unauthorized Actions / Privilege Escalation"
+                "impact": "Unauthorized Actions / Privilege Escalation",
+                "boundary_crossed": boundary_info
             })
-        elif name == "Authentication Surface":
+        elif "Authentication" in name or "Auth" in name:
             attack_paths.append({
                 "name": "Authentication Abuse",
                 "path": [
+                    "External Input",
                     "Exposed Login Endpoint",
                     "Weak Session Controls or Brute Force",
                     "Session Hijacking or Credential Compromise"
                 ],
-                "impact": "Account Compromise / Data Breach"
+                "impact": "Account Compromise / Data Breach",
+                "boundary_crossed": boundary_info
             })
-        elif "xss" in name.lower():
+        elif "xss" in name.lower() or "cross site scripting" in name.lower():
             attack_paths.append({
                 "name": "Cross Site Scripting",
                 "path": [
+                    "External Input",
                     "Unsanitized User Input",
                     "Script Injection into Web Page",
                     "Browser Execution by Victim",
                     "Credential Theft or Session Hijacking"
                 ],
-                "impact": "Account Takeover / Lateral Movement"
+                "impact": "Account Takeover / Lateral Movement",
+                "boundary_crossed": boundary_info
             })
         else:
-            # Generic path generation for other incidents
             attack_paths.append({
                 "name": f"Exploitation of {name}",
                 "path": [
+                    "External Input",
                     "Discovery of Vulnerability",
                     f"Exploitation of {name}",
                     "Impact Realization"
                 ],
-                "impact": "Variable based on context"
+                "impact": "Variable based on context",
+                "boundary_crossed": boundary_info
+            })
+
+    # Optional: Combine with SAST if we had SAST findings in graph
+    for incident in sast_incidents:
+        name = incident.get("label", "")
+        if "sql injection" in name.lower():
+             attack_paths.append({
+                "name": "SQL Injection Chain",
+                "path": [
+                    "External Input",
+                    "Malicious Payload Injection",
+                    "Database Access",
+                    "Sensitive Data Exposure"
+                ],
+                "impact": "Data Breach / Complete Compromise",
+                "boundary_crossed": "Data Access Boundary"
             })
 
     state["attack_paths"] = attack_paths
+
+    os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
+    with open(OUTPUT_FILE, "w") as f:
+        json.dump(attack_paths, f, indent=2)
 
     print(f"[AttackPathAgent] Generated {len(attack_paths)} attack paths derived from the knowledge graph.")
 

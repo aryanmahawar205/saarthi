@@ -1,4 +1,5 @@
 import json
+import os
 from langchain_ollama import ChatOllama
 
 OUTPUT_FILE = "reports/security_reasoning.json"
@@ -7,31 +8,46 @@ def run(state):
     knowledge_graph = state.get("security_knowledge_graph", {})
     attack_paths = state.get("attack_paths", [])
 
+    # We pass minimal structure to avoid blowing up context window
+    nodes_summary = [
+        {"id": n.get("id"), "type": n.get("type"), "label": n.get("label")}
+        for n in knowledge_graph.get("nodes", [])
+    ]
+    edges_summary = [
+        {"source": e.get("source"), "target": e.get("target"), "relationship": e.get("relationship")}
+        for e in knowledge_graph.get("edges", [])
+    ]
+
     prompt = f"""
 You are an expert Application Security Architect.
 
-Evaluate the consolidated Security Knowledge Graph and the identified Attack Paths:
+Evaluate the consolidated Security Knowledge Graph and the identified Attack Paths to provide a final security reasoning.
 
-KNOWLEDGE GRAPH:
-{json.dumps(knowledge_graph, indent=2)[:4000]}
+KNOWLEDGE GRAPH NODES (Summary):
+{json.dumps(nodes_summary, indent=2)[:3000]}
+
+KNOWLEDGE GRAPH EDGES (Summary):
+{json.dumps(edges_summary, indent=2)[:3000]}
 
 ATTACK PATHS:
-{json.dumps(attack_paths, indent=2)[:2000]}
+{json.dumps(attack_paths, indent=2)[:3000]}
 
 Synthesize a comprehensive security reasoning that addresses the following:
-1. Overall Risk Level (CRITICAL, HIGH, MEDIUM, LOW).
-2. Business Impact of the vulnerabilities if successfully exploited.
-3. Exploitability context based on trust boundaries and attack surface.
-4. Most dangerous attack chain / realistic attack scenario.
-5. High-level runtime reasoning (what happens if these paths are actively exploited in production).
+1. Overall Risk (CRITICAL, HIGH, MEDIUM, LOW).
+2. Most Likely Attack (Which attack path is the easiest for an attacker to execute).
+3. Most Dangerous Attack (Which attack path has the highest business impact).
+4. Business Impact (What happens to the business if these vulnerabilities are exploited).
+5. Prioritized Findings (List the top 3 findings that need immediate attention).
+6. Remediation Order (High-level order of operations for fixing the issues).
 
-Return ONLY valid JSON in the following format:
+Return ONLY valid JSON in exactly this format:
 {{
-  "overall_risk": "...",
-  "business_impact": "...",
-  "exploitability": "...",
-  "attack_scenario": "...",
-  "runtime_reasoning": "..."
+  "Overall Risk": "...",
+  "Most Likely Attack": "...",
+  "Most Dangerous Attack": "...",
+  "Business Impact": "...",
+  "Prioritized Findings": ["...", "...", "..."],
+  "Remediation Order": ["...", "...", "..."]
 }}
 """
     print("[SecurityReasoningAgent] Calling AI model for comprehensive reasoning...")
@@ -40,7 +56,6 @@ Return ONLY valid JSON in the following format:
         llm = ChatOllama(model="qwen2.5:7b", temperature=0)
         response = llm.invoke(prompt)
 
-        # We assume the model reliably outputs valid JSON when prompted correctly.
         try:
             result = json.loads(response.content)
         except json.JSONDecodeError:
@@ -51,13 +66,15 @@ Return ONLY valid JSON in the following format:
     except Exception as e:
         print(f"[SecurityReasoningAgent] Model invocation failed: {e}")
         result = {
-            "overall_risk": "UNKNOWN",
-            "business_impact": "Failed to generate business impact.",
-            "exploitability": "Failed to determine exploitability.",
-            "attack_scenario": "Failed to generate scenario.",
-            "runtime_reasoning": "Failed to analyze runtime aspects."
+            "Overall Risk": "UNKNOWN",
+            "Most Likely Attack": "Failed to determine.",
+            "Most Dangerous Attack": "Failed to determine.",
+            "Business Impact": "Failed to generate business impact.",
+            "Prioritized Findings": [],
+            "Remediation Order": []
         }
 
+    os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
     with open(OUTPUT_FILE, "w") as f:
         json.dump(result, f, indent=2)
 
