@@ -1,13 +1,14 @@
 import json
 import os
 
-OUTPUT_FILE = "reports/security_knowledge_graph.json"
+OUTPUT_FILE = "reports/security_graph.json"
 
 def run(state):
     attack_surface = state.get("attack_surface", {})
     discovered_endpoints = state.get("discovered_endpoints", [])
     trust_boundaries = state.get("trust_boundaries", [])
     api_call_chains = state.get("api_call_chains", [])
+    attack_paths = state.get("attack_paths", [])
 
     sast_incidents = state.get("incidents", [])
     if isinstance(sast_incidents, str):
@@ -41,7 +42,7 @@ def run(state):
         if url:
             add_node(f"Endpoint_{url}", "endpoint", url)
 
-    # API Call Chains
+    # API Call Chains (Endpoint -> Controller -> Method -> Sink)
     for chain in api_call_chains:
         file_name = chain.get("file", "unknown")
         controller_id = f"Controller_{file_name}"
@@ -58,9 +59,9 @@ def run(state):
             callee = call.get("callee")
             if caller and callee:
                 caller_id = f"Method_{caller}"
-                callee_id = f"Method_{callee}"
+                callee_id = f"Sink_{callee}" # Treating callee as sink to fit the objective
                 add_node(caller_id, "method", caller)
-                add_node(callee_id, "method", callee)
+                add_node(callee_id, "sink", callee)
                 add_edge(caller_id, callee_id, "calls")
                 # link controller to caller if first
                 add_edge(controller_id, caller_id, "contains_method")
@@ -77,6 +78,16 @@ def run(state):
         inc_id = f"SAST_Incident_{name}"
         add_node(inc_id, "finding", name, source="SAST")
 
+        # Try to link Sink to Finding if available in SAST findings
+        for f in inc.get("findings", []):
+            file = f.get("file", "") if isinstance(f, dict) else f
+            if file:
+                # Naive link to the file/sink
+                sink_id = f"Sink_{file}"
+                add_node(sink_id, "sink", file)
+                add_edge(sink_id, inc_id, "has_finding")
+
+
     # DAST Findings
     for inc in dast_incidents:
         name = inc.get("incident", "Unknown")
@@ -90,11 +101,31 @@ def run(state):
                 add_node(ep_id, "endpoint", file)
                 add_edge(ep_id, inc_id, "has_finding")
 
-            # If finding is related to Auth, CSRF, link to boundary
+            # Finding -> Trust Boundary
             if "Authentication" in name or "Auth" in name:
                 for idx, tb in enumerate(trust_boundaries):
                     if "Identity" in tb.get("boundary", ""):
                         add_edge(inc_id, f"Boundary_{idx}", "affects_boundary")
+
+    # Attack Chains
+    for path in attack_paths:
+        name = path.get("name", "Unknown Path")
+        ac_id = f"AttackChain_{name}"
+        add_node(ac_id, "attack_chain", name)
+
+        # Finding -> Attack Chain
+        for finding in sast_incidents + dast_incidents:
+            finding_name = finding.get("incident", "")
+            if finding_name in path.get("path", []) or finding_name in name:
+                f_id = f"SAST_Incident_{finding_name}" if finding in sast_incidents else f"DAST_Incident_{finding_name}"
+                add_edge(f_id, ac_id, "leads_to")
+
+        # Attack Chain -> Business Impact
+        impact = path.get("impact")
+        if impact:
+            bi_id = f"BusinessImpact_{impact}"
+            add_node(bi_id, "business_impact", impact)
+            add_edge(ac_id, bi_id, "results_in")
 
     # Deduplicate edges
     unique_edges = []

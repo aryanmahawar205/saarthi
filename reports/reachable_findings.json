@@ -875,17 +875,13 @@
     "original_severity": "ERROR",
     "repository_context": {
       "file": "Assignment5.java",
-      "api_endpoints": [
-        "/challenge/5"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/challenge/5"
-    ],
+    "api_endpoints": [],
     "methods": [
       "login"
     ],
@@ -1189,17 +1185,13 @@
     "original_severity": "ERROR",
     "repository_context": {
       "file": "Assignment5.java",
-      "api_endpoints": [
-        "/challenge/5"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/challenge/5"
-    ],
+    "api_endpoints": [],
     "methods": [
       "login"
     ],
@@ -1491,17 +1483,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "EncodingAssignment.java",
-      "api_endpoints": [
-        "/crypto/encoding/basic-auth"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/crypto/encoding/basic-auth"
-    ],
+    "api_endpoints": [],
     "methods": [
       "getBasicAuth",
       "getBasicAuth",
@@ -1793,17 +1781,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "EncodingAssignment.java",
-      "api_endpoints": [
-        "/crypto/encoding/basic-auth"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/crypto/encoding/basic-auth"
-    ],
+    "api_endpoints": [],
     "methods": [
       "getBasicAuth",
       "getBasicAuth",
@@ -2097,17 +2081,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "HashingAssignment.java",
-      "api_endpoints": [
-        "/crypto/hashing"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/crypto/hashing"
-    ],
+    "api_endpoints": [],
     "methods": [
       "getMd5",
       "getSha256",
@@ -2402,17 +2382,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "HashingAssignment.java",
-      "api_endpoints": [
-        "/crypto/hashing"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/crypto/hashing"
-    ],
+    "api_endpoints": [],
     "methods": [
       "getMd5",
       "getSha256",
@@ -2711,17 +2687,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "HashingAssignment.java",
-      "api_endpoints": [
-        "/crypto/hashing"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/crypto/hashing"
-    ],
+    "api_endpoints": [],
     "methods": [
       "getMd5",
       "getSha256",
@@ -3016,17 +2988,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "HashingAssignment.java",
-      "api_endpoints": [
-        "/crypto/hashing"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/crypto/hashing"
-    ],
+    "api_endpoints": [],
     "methods": [
       "getMd5",
       "getSha256",
@@ -3321,17 +3289,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "HashingAssignment.java",
-      "api_endpoints": [
-        "/crypto/hashing"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/crypto/hashing"
-    ],
+    "api_endpoints": [],
     "methods": [
       "getMd5",
       "getSha256",
@@ -3626,17 +3590,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "SigningAssignment.java",
-      "api_endpoints": [
-        "/crypto/signing/verify"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/crypto/signing/verify"
-    ],
+    "api_endpoints": [],
     "methods": [
       "getPrivateKey",
       "completed"
@@ -3933,17 +3893,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "InsecureDeserializationTask.java",
-      "api_endpoints": [
-        "/InsecureDeserialization/task"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/InsecureDeserialization/task"
-    ],
+    "api_endpoints": [],
     "methods": [
       "completed"
     ],
@@ -4949,17 +4905,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "JWTSecretKeyEndpoint.java",
-      "api_endpoints": [
-        "/JWT/secret"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/JWT/secret"
-    ],
+    "api_endpoints": [],
     "methods": [
       "getSecretToken",
       "login"
@@ -5252,17 +5204,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "JWTSecretKeyEndpoint.java",
-      "api_endpoints": [
-        "/JWT/secret"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/JWT/secret"
-    ],
+    "api_endpoints": [],
     "methods": [
       "getSecretToken",
       "login"
@@ -5559,21 +5507,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "JWTVotesEndpoint.java",
-      "api_endpoints": [
-        "/JWT/votings/login",
-        "/JWT/votings",
-        "/JWT/votings"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/JWT/votings/login",
-      "/JWT/votings",
-      "/JWT/votings"
-    ],
+    "api_endpoints": [],
     "methods": [
       "initVotes",
       "login",
@@ -5873,21 +5813,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "JWTVotesEndpoint.java",
-      "api_endpoints": [
-        "/JWT/votings/login",
-        "/JWT/votings",
-        "/JWT/votings"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/JWT/votings/login",
-      "/JWT/votings",
-      "/JWT/votings"
-    ],
+    "api_endpoints": [],
     "methods": [
       "initVotes",
       "login",
@@ -6187,21 +6119,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "JWTVotesEndpoint.java",
-      "api_endpoints": [
-        "/JWT/votings/login",
-        "/JWT/votings",
-        "/JWT/votings"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/JWT/votings/login",
-      "/JWT/votings",
-      "/JWT/votings"
-    ],
+    "api_endpoints": [],
     "methods": [
       "initVotes",
       "login",
@@ -6501,21 +6425,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "JWTVotesEndpoint.java",
-      "api_endpoints": [
-        "/JWT/votings/login",
-        "/JWT/votings",
-        "/JWT/votings"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/JWT/votings/login",
-      "/JWT/votings",
-      "/JWT/votings"
-    ],
+    "api_endpoints": [],
     "methods": [
       "initVotes",
       "login",
@@ -6815,21 +6731,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "JWTVotesEndpoint.java",
-      "api_endpoints": [
-        "/JWT/votings/login",
-        "/JWT/votings",
-        "/JWT/votings"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/JWT/votings/login",
-      "/JWT/votings",
-      "/JWT/votings"
-    ],
+    "api_endpoints": [],
     "methods": [
       "initVotes",
       "login",
@@ -7129,21 +7037,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "JWTVotesEndpoint.java",
-      "api_endpoints": [
-        "/JWT/votings/login",
-        "/JWT/votings",
-        "/JWT/votings"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/JWT/votings/login",
-      "/JWT/votings",
-      "/JWT/votings"
-    ],
+    "api_endpoints": [],
     "methods": [
       "initVotes",
       "login",
@@ -7440,19 +7340,13 @@
     "original_severity": "ERROR",
     "repository_context": {
       "file": "JWTHeaderJKUEndpoint.java",
-      "api_endpoints": [
-        "/JWT/jku/follow/{user}",
-        "/JWT/jku/delete"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/JWT/jku/follow/{user}",
-      "/JWT/jku/delete"
-    ],
+    "api_endpoints": [],
     "methods": [
       "follow",
       "resetVotes"
@@ -7542,17 +7436,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "OpenRedirectRealRedirect.java",
-      "api_endpoints": [
-        "/OpenRedirect/realRedirect"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/OpenRedirect/realRedirect"
-    ],
+    "api_endpoints": [],
     "methods": [
       "real"
     ],
@@ -7645,19 +7535,13 @@
     "original_severity": "ERROR",
     "repository_context": {
       "file": "ProfileUploadRetrieval.java",
-      "api_endpoints": [
-        "/PathTraversal/random-picture",
-        "/PathTraversal/random"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/PathTraversal/random-picture",
-      "/PathTraversal/random"
-    ],
+    "api_endpoints": [],
     "methods": [
       "initAssignment",
       "execute",
@@ -9173,17 +9057,13 @@
     "original_severity": "ERROR",
     "repository_context": {
       "file": "SqlInjectionChallenge.java",
-      "api_endpoints": [
-        "/SqlInjectionAdvanced/register"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjectionAdvanced/register"
-    ],
+    "api_endpoints": [],
     "methods": [
       "registerNewUser",
       "checkArguments"
@@ -9312,17 +9192,13 @@
     "original_severity": "ERROR",
     "repository_context": {
       "file": "SqlInjectionChallenge.java",
-      "api_endpoints": [
-        "/SqlInjectionAdvanced/register"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjectionAdvanced/register"
-    ],
+    "api_endpoints": [],
     "methods": [
       "registerNewUser",
       "checkArguments"
@@ -9440,17 +9316,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "SqlInjectionChallenge.java",
-      "api_endpoints": [
-        "/SqlInjectionAdvanced/register"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjectionAdvanced/register"
-    ],
+    "api_endpoints": [],
     "methods": [
       "registerNewUser",
       "checkArguments"
@@ -9579,17 +9451,13 @@
     "original_severity": "ERROR",
     "repository_context": {
       "file": "SqlInjectionLesson10.java",
-      "api_endpoints": [
-        "/SqlInjection/attack10"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjection/attack10"
-    ],
+    "api_endpoints": [],
     "methods": [
       "completed",
       "injectableQueryAvailability",
@@ -9884,17 +9752,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "SqlInjectionLesson10.java",
-      "api_endpoints": [
-        "/SqlInjection/attack10"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjection/attack10"
-    ],
+    "api_endpoints": [],
     "methods": [
       "completed",
       "injectableQueryAvailability",
@@ -10189,17 +10053,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "SqlInjectionLesson2.java",
-      "api_endpoints": [
-        "/SqlInjection/attack2"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjection/attack2"
-    ],
+    "api_endpoints": [],
     "methods": [
       "completed",
       "injectableQuery"
@@ -10504,17 +10364,13 @@
     "original_severity": "ERROR",
     "repository_context": {
       "file": "SqlInjectionLesson5a.java",
-      "api_endpoints": [
-        "/SqlInjection/assignment5a"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjection/assignment5a"
-    ],
+    "api_endpoints": [],
     "methods": [
       "completed",
       "injectableQuery",
@@ -10820,17 +10676,13 @@
     "original_severity": "ERROR",
     "repository_context": {
       "file": "SqlInjectionLesson5b.java",
-      "api_endpoints": [
-        "/SqlInjection/assignment5b"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjection/assignment5b"
-    ],
+    "api_endpoints": [],
     "methods": [
       "completed",
       "injectableQuery"
@@ -11135,17 +10987,13 @@
     "original_severity": "ERROR",
     "repository_context": {
       "file": "SqlInjectionLesson8.java",
-      "api_endpoints": [
-        "/SqlInjection/attack8"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjection/attack8"
-    ],
+    "api_endpoints": [],
     "methods": [
       "completed",
       "injectableQueryConfidentiality",
@@ -11441,17 +11289,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "SqlInjectionLesson8.java",
-      "api_endpoints": [
-        "/SqlInjection/attack8"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjection/attack8"
-    ],
+    "api_endpoints": [],
     "methods": [
       "completed",
       "injectableQueryConfidentiality",
@@ -11758,17 +11602,13 @@
     "original_severity": "ERROR",
     "repository_context": {
       "file": "SqlInjectionLesson8.java",
-      "api_endpoints": [
-        "/SqlInjection/attack8"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjection/attack8"
-    ],
+    "api_endpoints": [],
     "methods": [
       "completed",
       "injectableQueryConfidentiality",
@@ -12064,17 +11904,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "SqlInjectionLesson8.java",
-      "api_endpoints": [
-        "/SqlInjection/attack8"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjection/attack8"
-    ],
+    "api_endpoints": [],
     "methods": [
       "completed",
       "injectableQueryConfidentiality",
@@ -12381,17 +12217,13 @@
     "original_severity": "ERROR",
     "repository_context": {
       "file": "SqlInjectionLesson9.java",
-      "api_endpoints": [
-        "/SqlInjection/attack9"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjection/attack9"
-    ],
+    "api_endpoints": [],
     "methods": [
       "completed",
       "injectableQueryIntegrity",
@@ -12690,17 +12522,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "SqlInjectionLesson9.java",
-      "api_endpoints": [
-        "/SqlInjection/attack9"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjection/attack9"
-    ],
+    "api_endpoints": [],
     "methods": [
       "completed",
       "injectableQueryIntegrity",
@@ -12999,17 +12827,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "SqlInjectionLesson9.java",
-      "api_endpoints": [
-        "/SqlInjection/attack9"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjection/attack9"
-    ],
+    "api_endpoints": [],
     "methods": [
       "completed",
       "injectableQueryIntegrity",
@@ -13309,17 +13133,13 @@
     "original_severity": "ERROR",
     "repository_context": {
       "file": "Servers.java",
-      "api_endpoints": [
-        "SqlInjectionMitigations/servers"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "SqlInjectionMitigations/servers"
-    ],
+    "api_endpoints": [],
     "methods": [
       "sort"
     ],
@@ -31430,19 +31250,13 @@
     "original_severity": "HIGH",
     "repository_context": {
       "file": "Assignment7.java",
-      "api_endpoints": [
-        "/challenge/7/reset-password/{link}",
-        "/challenge/7"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/challenge/7/reset-password/{link}",
-      "/challenge/7"
-    ],
+    "api_endpoints": [],
     "methods": [
       "resetPassword",
       "sendPasswordResetLink",
@@ -31651,19 +31465,13 @@
     "original_severity": "HIGH",
     "repository_context": {
       "file": "JWTRefreshEndpoint.java",
-      "api_endpoints": [
-        "/JWT/refresh/checkout",
-        "/JWT/refresh/newToken"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/JWT/refresh/checkout",
-      "/JWT/refresh/newToken"
-    ],
+    "api_endpoints": [],
     "methods": [
       "follow",
       "createNewTokens",
@@ -31725,19 +31533,13 @@
     "original_severity": "HIGH",
     "repository_context": {
       "file": "JWTRefreshEndpoint.java",
-      "api_endpoints": [
-        "/JWT/refresh/checkout",
-        "/JWT/refresh/newToken"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/JWT/refresh/checkout",
-      "/JWT/refresh/newToken"
-    ],
+    "api_endpoints": [],
     "methods": [
       "follow",
       "createNewTokens",
@@ -35652,19 +35454,13 @@
     "original_severity": "HIGH",
     "repository_context": {
       "file": "JWTRefreshEndpoint.java",
-      "api_endpoints": [
-        "/JWT/refresh/checkout",
-        "/JWT/refresh/newToken"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/JWT/refresh/checkout",
-      "/JWT/refresh/newToken"
-    ],
+    "api_endpoints": [],
     "methods": [
       "follow",
       "createNewTokens",
@@ -35726,19 +35522,13 @@
     "original_severity": "HIGH",
     "repository_context": {
       "file": "JWTRefreshEndpoint.java",
-      "api_endpoints": [
-        "/JWT/refresh/checkout",
-        "/JWT/refresh/newToken"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/JWT/refresh/checkout",
-      "/JWT/refresh/newToken"
-    ],
+    "api_endpoints": [],
     "methods": [
       "follow",
       "createNewTokens",
@@ -38270,7 +38060,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "eaf13131-8066-48a9-b2eb-69099287d6d8",
+    "finding_id": "0c731669-9aa7-4533-86eb-6fc4d236d59f",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -38382,7 +38172,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "b482954b-6e83-4397-aa2b-73713913d9b6",
+    "finding_id": "2956f2f9-42dc-4fe9-8914-0d56016a33fd",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -38494,7 +38284,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "98be4fb3-da89-44d4-ad40-3cd8fe46387f",
+    "finding_id": "7208128d-3093-4c52-a1f7-ee97968f6dbc",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -38606,7 +38396,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "8029f145-85d3-4fff-936a-2bfe2b280218",
+    "finding_id": "d435f394-fa2a-4990-bbec-9a808b33e770",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -38718,7 +38508,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "86c7a01d-4263-430e-979f-1d739cb7e000",
+    "finding_id": "1646c933-8cc6-44e7-bd09-b435d7972d2e",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -38830,7 +38620,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "15771a24-c23a-4e79-9143-021ca1a68796",
+    "finding_id": "552c7226-22c3-43a6-802b-7841593a115d",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -38932,7 +38722,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "b683cda1-e055-4427-8514-3dfc9961e429",
+    "finding_id": "7d366151-2dde-457b-bfd9-a363a5f6bd76",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -39034,7 +38824,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "766562bc-0566-413a-8d55-783162541ec3",
+    "finding_id": "8e4aaad5-0bc2-4926-9b8c-b89be4e69aca",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -39136,7 +38926,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "c9931c9f-79b0-4d59-b8b6-4ebf53c3d669",
+    "finding_id": "3067004b-9ce2-4421-b0f7-9a1f9b15ec2e",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -39238,7 +39028,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "2185c3c7-7a4e-4f65-893d-364c9a261306",
+    "finding_id": "3e88fce9-d772-488f-b038-7d0af3fef7af",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -39350,7 +39140,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "d03a9e57-f7d6-412a-b449-a78c3107ea32",
+    "finding_id": "2b1a364c-18c8-41cf-8fcf-fc8fba44c209",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -39462,7 +39252,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "2b9bbdb3-2280-45f6-8b39-dabd0849ad8b",
+    "finding_id": "12efcb41-8de1-42d7-88a9-7cfc42c62b10",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -39574,7 +39364,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "590651ed-de7f-4b03-b82d-0337147aecc3",
+    "finding_id": "bef87545-db37-4170-8714-29333daaca6a",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -39686,7 +39476,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "0c43a9a6-f31b-4f53-9b2c-db0ea92524d1",
+    "finding_id": "486681c4-ee15-468c-9496-5dba25a2d1a3",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -39798,7 +39588,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "93982cdb-959a-47fd-9642-725779591c24",
+    "finding_id": "4bcfad89-4aad-4d85-ac8b-a1b6919b5b79",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -39870,7 +39660,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "0b627cc3-57b2-4c43-a6ab-7b6c7d69a0cc",
+    "finding_id": "c35b9576-fc3e-4847-a02e-adae26fc054f",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -39962,7 +39752,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "e2361db1-81bf-4646-90a6-821f71098fa4",
+    "finding_id": "96246ce3-6c6d-466b-81ce-a034d733e666",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -40054,7 +39844,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "8d6429ae-ffc3-43bd-9988-8b1821cd8ea6",
+    "finding_id": "371a8971-ea33-45a9-856d-bb1af6fab9c9",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -40146,7 +39936,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "6725c1e1-f6a1-4ba4-a603-db3485a01af9",
+    "finding_id": "99c42e36-6ce9-48e2-9dea-accf67ae0078",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -40238,7 +40028,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "1bd5e1e2-eff3-42e4-a0cf-b61c925e9e5a",
+    "finding_id": "2bdcb3c3-f81d-4a4d-8c55-6c0413b4263e",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -40330,7 +40120,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "f3da142b-7c14-4559-b626-68772b25e022",
+    "finding_id": "46c54c85-7497-41d7-964b-dd6013424e5e",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -40422,7 +40212,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "f7dc4e7e-bc0d-49a0-84e2-c266ad20cbf4",
+    "finding_id": "5b932fbe-490c-442a-bc2f-373baeed6e81",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -40534,7 +40324,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "3b4bcdab-8ba9-440c-8331-5cb097dd8a50",
+    "finding_id": "13275295-b664-4b42-8f5e-4754b429f059",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -40646,7 +40436,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "6128196b-4e28-4a0d-a573-6c414b909096",
+    "finding_id": "a5d6092c-4a5e-41a8-8fbf-761ae302e4ae",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -40758,7 +40548,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "cf1d5f1b-3c7c-4e8b-8d0f-38e0e3d640dd",
+    "finding_id": "328839f6-a73e-44bf-a6be-ffcaf3b44266",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -40870,7 +40660,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "7eb532e9-7178-4f2b-95d6-07f2fda0374f",
+    "finding_id": "bc7ca889-830f-4ff8-8c8d-348034c697cd",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -40982,7 +40772,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "2b85541f-4e1c-49b7-9d53-a26b100c924e",
+    "finding_id": "c76693bd-47d5-4152-baec-7e1f43447896",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -41094,7 +40884,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "8e185343-6c6c-4fe6-ab46-6878f4e38205",
+    "finding_id": "f7be6e5a-7740-4067-a295-83b6f0ab1d51",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -41206,7 +40996,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "7527e33d-7b23-4052-8f4c-bf72d9466535",
+    "finding_id": "74ae81ea-c3e3-4ca8-9cc6-1378db3f11ba",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -41318,7 +41108,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "bc3e1897-c01c-40a3-84b0-ff126ffef105",
+    "finding_id": "086ea7f1-9352-4383-8d77-52bbcaa3bf80",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -41430,7 +41220,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "30cc98af-a745-4ff1-9849-440a3a5785f2",
+    "finding_id": "f272759c-f227-4d7b-a671-02a0d3052da8",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -41542,7 +41332,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "91b92c09-9ba7-4e57-891d-3204cd0f2277",
+    "finding_id": "6b99f8bd-111e-48d5-9d4f-1776fed235bb",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -41654,7 +41444,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "75243294-e9a2-4ace-8540-638d503f07bd",
+    "finding_id": "a41eb2c3-2588-4e04-a5dd-1a916afe76d5",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -41766,7 +41556,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "c21c4385-fc65-4019-8d29-c64326ffa76c",
+    "finding_id": "87f08f59-a226-4607-a81d-3503e94a20fe",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -41878,7 +41668,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "3d5be7db-f23f-49a1-a888-4dcfe4c9a588",
+    "finding_id": "3a8d986a-d7f4-4e13-b13a-79379122339c",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -41990,7 +41780,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "4c6900a9-df64-40de-8aac-f323f1333300",
+    "finding_id": "11977946-31c8-4a87-82a1-a20c95907549",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -42102,7 +41892,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "1a6f0eee-7cd1-45a3-9787-3990687c42e5",
+    "finding_id": "8b70d88f-f9e1-492f-a814-8e22bccf1491",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -42174,7 +41964,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "de6a76f0-6136-4224-996a-87d425a6fb37",
+    "finding_id": "c972665c-8a64-49b8-a313-3fc71027226c",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -42266,7 +42056,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "ccc381c7-5b5a-4901-9381-7d2874815d9a",
+    "finding_id": "1032a253-7d6b-4e70-8fbb-e726009f2164",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -42358,7 +42148,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "636d4315-dc49-41b8-93a1-2880f4be6260",
+    "finding_id": "9fcf5802-104a-4f3e-ab15-4ba233285545",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -42450,7 +42240,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "55bf94b6-33bb-4f6e-93c0-fb21399a1b46",
+    "finding_id": "2608cf8f-497d-4f25-bd72-87840a008cd1",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -42562,7 +42352,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "732236cc-5e79-4cf6-85dc-f2591f377218",
+    "finding_id": "dbc20936-e936-4316-b180-ebc6f4668fb9",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -42674,7 +42464,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "970c5fa1-7b88-44ff-95bf-93d2ce327a93",
+    "finding_id": "7190fa57-95c0-4b2f-940c-6e96f26accf5",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -42786,7 +42576,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "0323cbe7-8686-47b7-a1c3-b6231cc2b38e",
+    "finding_id": "42eabdb2-c1b5-442b-a3d8-1059d928cc83",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -42898,7 +42688,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "4269ff1b-0afa-4929-958f-2ca3e7898a8b",
+    "finding_id": "bb82cf95-0c6a-4480-b1d4-48911f8bac66",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -43010,7 +42800,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "c3e94d4a-52f5-49c3-99c5-e27a470ded80",
+    "finding_id": "5863e3c6-e2bc-474a-b51f-d3a5499d261d",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -43112,7 +42902,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "1fa64f46-2906-4c69-a805-b19a358f4732",
+    "finding_id": "22c0374c-64d1-4770-97fa-c111e942054f",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -43214,7 +43004,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "24ce03b7-ebec-4cc3-b6f4-4b527a58fa50",
+    "finding_id": "fc90018e-c029-439c-ae73-ce179b9d8e4e",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -43316,7 +43106,7 @@
     "exposure": "LOW"
   },
   {
-    "finding_id": "be9299ef-34cf-43c8-ad18-7b4874896c00",
+    "finding_id": "5c1193a4-dfe8-49ca-b4ac-78df2ae742b5",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",

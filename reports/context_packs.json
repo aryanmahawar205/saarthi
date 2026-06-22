@@ -811,17 +811,13 @@
     "original_severity": "ERROR",
     "repository_context": {
       "file": "Assignment5.java",
-      "api_endpoints": [
-        "/challenge/5"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/challenge/5"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "d72bbdb1-ca59-4c62-a1bc-f47a9ad004c1",
@@ -918,17 +914,13 @@
     "original_severity": "ERROR",
     "repository_context": {
       "file": "Assignment5.java",
-      "api_endpoints": [
-        "/challenge/5"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/challenge/5"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "397077aa-8b61-4420-afb9-f7a09c6b475e",
@@ -1013,17 +1005,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "EncodingAssignment.java",
-      "api_endpoints": [
-        "/crypto/encoding/basic-auth"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/crypto/encoding/basic-auth"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "54466bd4-3ac7-469b-b2cb-5e33b558b339",
@@ -1106,17 +1094,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "EncodingAssignment.java",
-      "api_endpoints": [
-        "/crypto/encoding/basic-auth"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/crypto/encoding/basic-auth"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "39ea8056-ad4e-4881-b400-43052e55b380",
@@ -1201,17 +1185,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "HashingAssignment.java",
-      "api_endpoints": [
-        "/crypto/hashing"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/crypto/hashing"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "59a6da3d-93ef-467e-8959-196d543adc67",
@@ -1296,17 +1276,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "HashingAssignment.java",
-      "api_endpoints": [
-        "/crypto/hashing"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/crypto/hashing"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "47bae84a-43d5-4635-9d2e-d8e8132a178c",
@@ -1395,17 +1371,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "HashingAssignment.java",
-      "api_endpoints": [
-        "/crypto/hashing"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/crypto/hashing"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "5b8cdf8d-e14a-4cca-9126-c18213f96936",
@@ -1490,17 +1462,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "HashingAssignment.java",
-      "api_endpoints": [
-        "/crypto/hashing"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/crypto/hashing"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "f51b6d1c-bf1f-46ad-979d-b84ec011b497",
@@ -1585,17 +1553,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "HashingAssignment.java",
-      "api_endpoints": [
-        "/crypto/hashing"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/crypto/hashing"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "3c2c88a5-07ec-4fc4-b283-a67b5be53e28",
@@ -1680,17 +1644,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "SigningAssignment.java",
-      "api_endpoints": [
-        "/crypto/signing/verify"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/crypto/signing/verify"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "136e7c5b-436c-4795-acd9-1c50d9e3e8bd",
@@ -1779,17 +1739,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "InsecureDeserializationTask.java",
-      "api_endpoints": [
-        "/InsecureDeserialization/task"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/InsecureDeserialization/task"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "ab4e8536-4522-4422-83c1-bcf751cded93",
@@ -2155,17 +2111,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "JWTSecretKeyEndpoint.java",
-      "api_endpoints": [
-        "/JWT/secret"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/JWT/secret"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "9bdc674f-aef6-40d2-9760-7685b2d7d054",
@@ -2250,17 +2202,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "JWTSecretKeyEndpoint.java",
-      "api_endpoints": [
-        "/JWT/secret"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/JWT/secret"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "427cda9f-f37f-46f8-b4d3-f56f0bcbb9c5",
@@ -2349,21 +2297,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "JWTVotesEndpoint.java",
-      "api_endpoints": [
-        "/JWT/votings/login",
-        "/JWT/votings",
-        "/JWT/votings"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/JWT/votings/login",
-      "/JWT/votings",
-      "/JWT/votings"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "4ab4f747-506c-4a7a-922a-d404af874dfd",
@@ -2452,21 +2392,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "JWTVotesEndpoint.java",
-      "api_endpoints": [
-        "/JWT/votings/login",
-        "/JWT/votings",
-        "/JWT/votings"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/JWT/votings/login",
-      "/JWT/votings",
-      "/JWT/votings"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "fe5a1364-25db-417c-acf5-4a34baea5ec3",
@@ -2555,21 +2487,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "JWTVotesEndpoint.java",
-      "api_endpoints": [
-        "/JWT/votings/login",
-        "/JWT/votings",
-        "/JWT/votings"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/JWT/votings/login",
-      "/JWT/votings",
-      "/JWT/votings"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "e50ef585-0561-41be-90e5-41f0e76f6dd0",
@@ -2658,21 +2582,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "JWTVotesEndpoint.java",
-      "api_endpoints": [
-        "/JWT/votings/login",
-        "/JWT/votings",
-        "/JWT/votings"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/JWT/votings/login",
-      "/JWT/votings",
-      "/JWT/votings"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "27ff977a-3372-4d2d-9119-b01167abcac1",
@@ -2761,21 +2677,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "JWTVotesEndpoint.java",
-      "api_endpoints": [
-        "/JWT/votings/login",
-        "/JWT/votings",
-        "/JWT/votings"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/JWT/votings/login",
-      "/JWT/votings",
-      "/JWT/votings"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "79f42cd2-bfdd-4dcc-ad2a-89649908a1ac",
@@ -2864,21 +2772,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "JWTVotesEndpoint.java",
-      "api_endpoints": [
-        "/JWT/votings/login",
-        "/JWT/votings",
-        "/JWT/votings"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/JWT/votings/login",
-      "/JWT/votings",
-      "/JWT/votings"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "6a94e7cd-b7e1-4ec5-99e0-f909ebdbcb19",
@@ -2964,19 +2864,13 @@
     "original_severity": "ERROR",
     "repository_context": {
       "file": "JWTHeaderJKUEndpoint.java",
-      "api_endpoints": [
-        "/JWT/jku/follow/{user}",
-        "/JWT/jku/delete"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/JWT/jku/follow/{user}",
-      "/JWT/jku/delete"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "94ad6f4c-3ccc-4ef7-85ed-f3bbf53b9609",
@@ -3059,17 +2953,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "OpenRedirectRealRedirect.java",
-      "api_endpoints": [
-        "/OpenRedirect/realRedirect"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/OpenRedirect/realRedirect"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "fd7f8942-d6de-49fc-a74f-03cd2d1038da",
@@ -3156,19 +3046,13 @@
     "original_severity": "ERROR",
     "repository_context": {
       "file": "ProfileUploadRetrieval.java",
-      "api_endpoints": [
-        "/PathTraversal/random-picture",
-        "/PathTraversal/random"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/PathTraversal/random-picture",
-      "/PathTraversal/random"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "0b9baf48-9899-4e8f-b823-594b17f6048e",
@@ -3635,17 +3519,13 @@
     "original_severity": "ERROR",
     "repository_context": {
       "file": "SqlInjectionChallenge.java",
-      "api_endpoints": [
-        "/SqlInjectionAdvanced/register"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjectionAdvanced/register"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "d0d7fac8-5b10-4b55-8baf-dcbf337b2825",
@@ -3742,17 +3622,13 @@
     "original_severity": "ERROR",
     "repository_context": {
       "file": "SqlInjectionChallenge.java",
-      "api_endpoints": [
-        "/SqlInjectionAdvanced/register"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjectionAdvanced/register"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "abc93b40-c9af-4054-a04b-ee88d145d3ad",
@@ -3838,17 +3714,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "SqlInjectionChallenge.java",
-      "api_endpoints": [
-        "/SqlInjectionAdvanced/register"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjectionAdvanced/register"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "1a1f7f43-5afa-40ab-9366-0ecd8c242600",
@@ -3945,17 +3817,13 @@
     "original_severity": "ERROR",
     "repository_context": {
       "file": "SqlInjectionLesson10.java",
-      "api_endpoints": [
-        "/SqlInjection/attack10"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjection/attack10"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "a7c532ab-9c22-45ab-9206-c9117efa0aa9",
@@ -4041,17 +3909,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "SqlInjectionLesson10.java",
-      "api_endpoints": [
-        "/SqlInjection/attack10"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjection/attack10"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "e7ae75c4-6133-428f-8378-8baa4e802170",
@@ -4137,17 +4001,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "SqlInjectionLesson2.java",
-      "api_endpoints": [
-        "/SqlInjection/attack2"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjection/attack2"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "bdd8f27b-d1ff-48d4-b58c-5eb436635358",
@@ -4244,17 +4104,13 @@
     "original_severity": "ERROR",
     "repository_context": {
       "file": "SqlInjectionLesson5a.java",
-      "api_endpoints": [
-        "/SqlInjection/assignment5a"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjection/assignment5a"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "b16c550b-41bf-4718-9512-66676e49fa10",
@@ -4351,17 +4207,13 @@
     "original_severity": "ERROR",
     "repository_context": {
       "file": "SqlInjectionLesson5b.java",
-      "api_endpoints": [
-        "/SqlInjection/assignment5b"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjection/assignment5b"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "b5fc9af5-4454-4b93-b6cc-33b0d9be8212",
@@ -4458,17 +4310,13 @@
     "original_severity": "ERROR",
     "repository_context": {
       "file": "SqlInjectionLesson8.java",
-      "api_endpoints": [
-        "/SqlInjection/attack8"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjection/attack8"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "fb58ca0d-b1f1-434b-abd6-5a7913ebdef7",
@@ -4554,17 +4402,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "SqlInjectionLesson8.java",
-      "api_endpoints": [
-        "/SqlInjection/attack8"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjection/attack8"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "1bf37059-3097-4873-b22a-51a12610b87f",
@@ -4661,17 +4505,13 @@
     "original_severity": "ERROR",
     "repository_context": {
       "file": "SqlInjectionLesson8.java",
-      "api_endpoints": [
-        "/SqlInjection/attack8"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjection/attack8"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "0c528047-b7b2-40b8-91e2-6b18f3a61381",
@@ -4757,17 +4597,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "SqlInjectionLesson8.java",
-      "api_endpoints": [
-        "/SqlInjection/attack8"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjection/attack8"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "b1f05c3f-202b-4b04-a4e0-1f6807b15889",
@@ -4864,17 +4700,13 @@
     "original_severity": "ERROR",
     "repository_context": {
       "file": "SqlInjectionLesson9.java",
-      "api_endpoints": [
-        "/SqlInjection/attack9"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjection/attack9"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "5b11fde0-38b0-47f7-978d-117cbd6e1ea0",
@@ -4960,17 +4792,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "SqlInjectionLesson9.java",
-      "api_endpoints": [
-        "/SqlInjection/attack9"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjection/attack9"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "e1ffe7a6-00b8-42a6-b763-43a4f6e461d0",
@@ -5056,17 +4884,13 @@
     "original_severity": "WARNING",
     "repository_context": {
       "file": "SqlInjectionLesson9.java",
-      "api_endpoints": [
-        "/SqlInjection/attack9"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/SqlInjection/attack9"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "9cbec19a-8b4f-4521-a70c-e1b022b5bcb1",
@@ -5153,17 +4977,13 @@
     "original_severity": "ERROR",
     "repository_context": {
       "file": "Servers.java",
-      "api_endpoints": [
-        "SqlInjectionMitigations/servers"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "SqlInjectionMitigations/servers"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "f21e19ce-7ed1-4014-a6a1-50283b15378f",
@@ -22031,19 +21851,13 @@
     "original_severity": "HIGH",
     "repository_context": {
       "file": "Assignment7.java",
-      "api_endpoints": [
-        "/challenge/7/reset-password/{link}",
-        "/challenge/7"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/challenge/7/reset-password/{link}",
-      "/challenge/7"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "ad79a9d7-860b-4ab1-bbb7-0df5ce2463cf",
@@ -22155,19 +21969,13 @@
     "original_severity": "HIGH",
     "repository_context": {
       "file": "JWTRefreshEndpoint.java",
-      "api_endpoints": [
-        "/JWT/refresh/checkout",
-        "/JWT/refresh/newToken"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/JWT/refresh/checkout",
-      "/JWT/refresh/newToken"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "b6bff310-e131-420f-bf75-aea1c2df632d",
@@ -22220,19 +22028,13 @@
     "original_severity": "HIGH",
     "repository_context": {
       "file": "JWTRefreshEndpoint.java",
-      "api_endpoints": [
-        "/JWT/refresh/checkout",
-        "/JWT/refresh/newToken"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/JWT/refresh/checkout",
-      "/JWT/refresh/newToken"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "85f02b06-8893-4816-ab02-5f45b7caa181",
@@ -24763,19 +24565,13 @@
     "original_severity": "HIGH",
     "repository_context": {
       "file": "JWTRefreshEndpoint.java",
-      "api_endpoints": [
-        "/JWT/refresh/checkout",
-        "/JWT/refresh/newToken"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/JWT/refresh/checkout",
-      "/JWT/refresh/newToken"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "17c4c424-431f-4dd9-bcd4-f649abf9a07a",
@@ -24828,19 +24624,13 @@
     "original_severity": "HIGH",
     "repository_context": {
       "file": "JWTRefreshEndpoint.java",
-      "api_endpoints": [
-        "/JWT/refresh/checkout",
-        "/JWT/refresh/newToken"
-      ]
+      "api_endpoints": []
     },
     "attack_surface": {
       "asset_type": "APPLICATION_CODE"
     },
     "asset_type": "APPLICATION_CODE",
-    "api_endpoints": [
-      "/JWT/refresh/checkout",
-      "/JWT/refresh/newToken"
-    ]
+    "api_endpoints": []
   },
   {
     "finding_id": "a7788ede-260c-4833-9fea-53d807a42b8a",
@@ -27203,7 +26993,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "eaf13131-8066-48a9-b2eb-69099287d6d8",
+    "finding_id": "0c731669-9aa7-4533-86eb-6fc4d236d59f",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -27311,7 +27101,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "b482954b-6e83-4397-aa2b-73713913d9b6",
+    "finding_id": "2956f2f9-42dc-4fe9-8914-0d56016a33fd",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -27419,7 +27209,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "98be4fb3-da89-44d4-ad40-3cd8fe46387f",
+    "finding_id": "7208128d-3093-4c52-a1f7-ee97968f6dbc",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -27527,7 +27317,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "8029f145-85d3-4fff-936a-2bfe2b280218",
+    "finding_id": "d435f394-fa2a-4990-bbec-9a808b33e770",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -27635,7 +27425,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "86c7a01d-4263-430e-979f-1d739cb7e000",
+    "finding_id": "1646c933-8cc6-44e7-bd09-b435d7972d2e",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -27743,7 +27533,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "15771a24-c23a-4e79-9143-021ca1a68796",
+    "finding_id": "552c7226-22c3-43a6-802b-7841593a115d",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -27841,7 +27631,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "b683cda1-e055-4427-8514-3dfc9961e429",
+    "finding_id": "7d366151-2dde-457b-bfd9-a363a5f6bd76",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -27939,7 +27729,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "766562bc-0566-413a-8d55-783162541ec3",
+    "finding_id": "8e4aaad5-0bc2-4926-9b8c-b89be4e69aca",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -28037,7 +27827,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "c9931c9f-79b0-4d59-b8b6-4ebf53c3d669",
+    "finding_id": "3067004b-9ce2-4421-b0f7-9a1f9b15ec2e",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -28135,7 +27925,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "2185c3c7-7a4e-4f65-893d-364c9a261306",
+    "finding_id": "3e88fce9-d772-488f-b038-7d0af3fef7af",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -28243,7 +28033,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "d03a9e57-f7d6-412a-b449-a78c3107ea32",
+    "finding_id": "2b1a364c-18c8-41cf-8fcf-fc8fba44c209",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -28351,7 +28141,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "2b9bbdb3-2280-45f6-8b39-dabd0849ad8b",
+    "finding_id": "12efcb41-8de1-42d7-88a9-7cfc42c62b10",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -28459,7 +28249,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "590651ed-de7f-4b03-b82d-0337147aecc3",
+    "finding_id": "bef87545-db37-4170-8714-29333daaca6a",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -28567,7 +28357,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "0c43a9a6-f31b-4f53-9b2c-db0ea92524d1",
+    "finding_id": "486681c4-ee15-468c-9496-5dba25a2d1a3",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "MEDIUM",
@@ -28675,7 +28465,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "93982cdb-959a-47fd-9642-725779591c24",
+    "finding_id": "4bcfad89-4aad-4d85-ac8b-a1b6919b5b79",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -28743,7 +28533,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "0b627cc3-57b2-4c43-a6ab-7b6c7d69a0cc",
+    "finding_id": "c35b9576-fc3e-4847-a02e-adae26fc054f",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -28831,7 +28621,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "e2361db1-81bf-4646-90a6-821f71098fa4",
+    "finding_id": "96246ce3-6c6d-466b-81ce-a034d733e666",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -28919,7 +28709,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "8d6429ae-ffc3-43bd-9988-8b1821cd8ea6",
+    "finding_id": "371a8971-ea33-45a9-856d-bb1af6fab9c9",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -29007,7 +28797,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "6725c1e1-f6a1-4ba4-a603-db3485a01af9",
+    "finding_id": "99c42e36-6ce9-48e2-9dea-accf67ae0078",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -29095,7 +28885,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "1bd5e1e2-eff3-42e4-a0cf-b61c925e9e5a",
+    "finding_id": "2bdcb3c3-f81d-4a4d-8c55-6c0413b4263e",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -29183,7 +28973,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "f3da142b-7c14-4559-b626-68772b25e022",
+    "finding_id": "46c54c85-7497-41d7-964b-dd6013424e5e",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -29271,7 +29061,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "f7dc4e7e-bc0d-49a0-84e2-c266ad20cbf4",
+    "finding_id": "5b932fbe-490c-442a-bc2f-373baeed6e81",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -29379,7 +29169,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "3b4bcdab-8ba9-440c-8331-5cb097dd8a50",
+    "finding_id": "13275295-b664-4b42-8f5e-4754b429f059",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -29487,7 +29277,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "6128196b-4e28-4a0d-a573-6c414b909096",
+    "finding_id": "a5d6092c-4a5e-41a8-8fbf-761ae302e4ae",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -29595,7 +29385,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "cf1d5f1b-3c7c-4e8b-8d0f-38e0e3d640dd",
+    "finding_id": "328839f6-a73e-44bf-a6be-ffcaf3b44266",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -29703,7 +29493,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "7eb532e9-7178-4f2b-95d6-07f2fda0374f",
+    "finding_id": "bc7ca889-830f-4ff8-8c8d-348034c697cd",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -29811,7 +29601,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "2b85541f-4e1c-49b7-9d53-a26b100c924e",
+    "finding_id": "c76693bd-47d5-4152-baec-7e1f43447896",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -29919,7 +29709,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "8e185343-6c6c-4fe6-ab46-6878f4e38205",
+    "finding_id": "f7be6e5a-7740-4067-a295-83b6f0ab1d51",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -30027,7 +29817,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "7527e33d-7b23-4052-8f4c-bf72d9466535",
+    "finding_id": "74ae81ea-c3e3-4ca8-9cc6-1378db3f11ba",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -30135,7 +29925,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "bc3e1897-c01c-40a3-84b0-ff126ffef105",
+    "finding_id": "086ea7f1-9352-4383-8d77-52bbcaa3bf80",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -30243,7 +30033,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "30cc98af-a745-4ff1-9849-440a3a5785f2",
+    "finding_id": "f272759c-f227-4d7b-a671-02a0d3052da8",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -30351,7 +30141,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "91b92c09-9ba7-4e57-891d-3204cd0f2277",
+    "finding_id": "6b99f8bd-111e-48d5-9d4f-1776fed235bb",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -30459,7 +30249,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "75243294-e9a2-4ace-8540-638d503f07bd",
+    "finding_id": "a41eb2c3-2588-4e04-a5dd-1a916afe76d5",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -30567,7 +30357,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "c21c4385-fc65-4019-8d29-c64326ffa76c",
+    "finding_id": "87f08f59-a226-4607-a81d-3503e94a20fe",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -30675,7 +30465,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "3d5be7db-f23f-49a1-a888-4dcfe4c9a588",
+    "finding_id": "3a8d986a-d7f4-4e13-b13a-79379122339c",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -30783,7 +30573,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "4c6900a9-df64-40de-8aac-f323f1333300",
+    "finding_id": "11977946-31c8-4a87-82a1-a20c95907549",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -30891,7 +30681,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "1a6f0eee-7cd1-45a3-9787-3990687c42e5",
+    "finding_id": "8b70d88f-f9e1-492f-a814-8e22bccf1491",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -30959,7 +30749,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "de6a76f0-6136-4224-996a-87d425a6fb37",
+    "finding_id": "c972665c-8a64-49b8-a313-3fc71027226c",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -31047,7 +30837,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "ccc381c7-5b5a-4901-9381-7d2874815d9a",
+    "finding_id": "1032a253-7d6b-4e70-8fbb-e726009f2164",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -31135,7 +30925,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "636d4315-dc49-41b8-93a1-2880f4be6260",
+    "finding_id": "9fcf5802-104a-4f3e-ab15-4ba233285545",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -31223,7 +31013,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "55bf94b6-33bb-4f6e-93c0-fb21399a1b46",
+    "finding_id": "2608cf8f-497d-4f25-bd72-87840a008cd1",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -31331,7 +31121,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "732236cc-5e79-4cf6-85dc-f2591f377218",
+    "finding_id": "dbc20936-e936-4316-b180-ebc6f4668fb9",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -31439,7 +31229,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "970c5fa1-7b88-44ff-95bf-93d2ce327a93",
+    "finding_id": "7190fa57-95c0-4b2f-940c-6e96f26accf5",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -31547,7 +31337,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "0323cbe7-8686-47b7-a1c3-b6231cc2b38e",
+    "finding_id": "42eabdb2-c1b5-442b-a3d8-1059d928cc83",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -31655,7 +31445,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "4269ff1b-0afa-4929-958f-2ca3e7898a8b",
+    "finding_id": "bb82cf95-0c6a-4480-b1d4-48911f8bac66",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -31763,7 +31553,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "c3e94d4a-52f5-49c3-99c5-e27a470ded80",
+    "finding_id": "5863e3c6-e2bc-474a-b51f-d3a5499d261d",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -31861,7 +31651,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "1fa64f46-2906-4c69-a805-b19a358f4732",
+    "finding_id": "22c0374c-64d1-4770-97fa-c111e942054f",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -31959,7 +31749,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "24ce03b7-ebec-4cc3-b6f4-4b527a58fa50",
+    "finding_id": "fc90018e-c029-439c-ae73-ce179b9d8e4e",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
@@ -32057,7 +31847,7 @@
     "api_endpoints": []
   },
   {
-    "finding_id": "be9299ef-34cf-43c8-ad18-7b4874896c00",
+    "finding_id": "5c1193a4-dfe8-49ca-b4ac-78df2ae742b5",
     "tool": "ZAP",
     "category": "DAST",
     "severity": "LOW",
