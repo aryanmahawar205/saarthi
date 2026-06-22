@@ -1,12 +1,1 @@
-[
-  {
-    "source": "Web Application",
-    "target": "Authentication Layer",
-    "boundary": "Identity Boundary"
-  },
-  {
-    "source": "Application Layer",
-    "target": "Database",
-    "boundary": "Data Access Boundary"
-  }
-]
+[]

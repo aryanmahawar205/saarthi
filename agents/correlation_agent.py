@@ -1,31 +1,21 @@
 import json
-
 from langchain_ollama import ChatOllama
 
-
-llm = ChatOllama(
-    model="qwen2.5:7b",
-    temperature=0
-)
-
+try:
+    llm = ChatOllama(model="qwen2.5:7b", temperature=0)
+except Exception:
+    llm = None
 
 def run(state):
-
     findings = state["findings"]
 
     prompt = f"""
 You are a security analyst.
-
 Group these findings into incidents.
-
 Findings:
-
 {json.dumps(findings, indent=2)}
-
 Return ONLY valid JSON.
-
 Format:
-
 [
   {{
     "incident":"SQL Injection",
@@ -36,16 +26,18 @@ Format:
 ]
 """
 
-    print(
-        "[CorrelationAgent] Calling model"
-    )
+    print("[CorrelationAgent] Calling model")
 
-    result = llm.invoke(prompt)
+    try:
+        result = llm.invoke(prompt)
+        content = result.content
+    except Exception as e:
+        print(f"[CorrelationAgent] Model failed: {e}")
+        # dummy fallback
+        content = json.dumps([{"incident": "Dummy Incident", "findings": []}])
 
-    print(
-        "[CorrelationAgent] Complete"
-    )
+    print("[CorrelationAgent] Complete")
 
-    state["incidents"] = result.content
+    state["incidents"] = content
 
     return state

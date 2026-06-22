@@ -10,10 +10,16 @@ def run(state):
 
     # We will use raw inputs from the graph generation to get counts/details
     raw_inputs = knowledge_graph.get("raw_inputs", {})
-    attack_surface = raw_inputs.get("attack_surface", {})
-    trust_boundaries = raw_inputs.get("trust_boundaries", [])
-    sast_incidents = raw_inputs.get("sast_incidents", [])
-    dast_incidents = raw_inputs.get("dast_incidents", [])
+    attack_surface = state.get("attack_surface", raw_inputs.get("attack_surface", {}))
+    trust_boundaries = state.get("trust_boundaries", raw_inputs.get("trust_boundaries", []))
+    sast_incidents = state.get("incidents", raw_inputs.get("sast_incidents", []))
+    dast_incidents = state.get("dast_incidents", raw_inputs.get("dast_incidents", []))
+
+    if isinstance(sast_incidents, str):
+        try:
+            sast_incidents = json.loads(sast_incidents)
+        except:
+            sast_incidents = []
 
     endpoints_count = attack_surface.get("endpoint_count", 0) if isinstance(attack_surface, dict) else len(attack_surface)
     if endpoints_count == 0:
@@ -29,6 +35,13 @@ def run(state):
         f.write(f"The overall risk level for the application is assessed as **{reasoning.get('Overall Risk', 'UNKNOWN')}**. ")
         f.write("This report outlines the discovered attack surface, identifies trust boundaries, and highlights "
                 "the critical vulnerabilities that pose a risk to the business.\n\n")
+
+        # Assessment Scope
+        f.write("## Assessment Scope\n\n")
+        target_url = state.get('target_url', 'N/A')
+        project_root = state.get('project_root', 'N/A')
+        f.write(f"- **Target URL:** {target_url}\n")
+        f.write(f"- **Repository Path:** {project_root}\n\n")
 
         # Application Overview
         f.write("## Application Overview\n\n")
@@ -51,6 +64,15 @@ def run(state):
             f.write("No distinct trust boundaries were identified in the current context.\n")
         f.write("\n")
 
+        # Static Findings (SAST)
+        f.write("## Static Findings\n\n")
+        if sast_incidents:
+            for inc in sast_incidents:
+                f.write(f"- **{inc.get('incident', 'Unknown Finding')}**\n")
+        else:
+            f.write("No static findings were identified.\n")
+        f.write("\n")
+
         # Runtime Findings (DAST)
         f.write("## Runtime Findings\n\n")
         if dast_incidents:
@@ -60,14 +82,9 @@ def run(state):
             f.write("No runtime findings were identified.\n")
         f.write("\n")
 
-        # Static Findings (SAST)
-        f.write("## Static Findings\n\n")
-        if sast_incidents:
-            for inc in sast_incidents:
-                f.write(f"- **{inc.get('incident', 'Unknown Finding')}**\n")
-        else:
-            f.write("No static findings were identified.\n")
-        f.write("\n")
+        # Correlated Findings
+        f.write("## Correlated Findings\n\n")
+        f.write("Findings correlated across Static and Runtime analysis layers have been incorporated into the Security Knowledge Graph to uncover attack paths bridging the gap between static code issues and runtime execution context.\n\n")
 
         # Attack Chains
         f.write("## Attack Chains\n\n")

@@ -1,23 +1,13 @@
 {
-  "application_type": "Spring Boot",
-  "contains_api": true,
-  "contains_database": true,
-  "contains_authentication": true,
-  "contains_dependencies": true,
+  "application_type": "Unknown",
+  "contains_api": false,
+  "contains_database": false,
+  "contains_authentication": false,
+  "contains_dependencies": false,
   "recommended_scanners": [
     "semgrep",
-    "trivy",
-    "zap"
+    "trivy"
   ],
-  "critical_components": [
-    "API Layer",
-    "Database Layer",
-    "Authentication Layer"
-  ],
-  "reasoning": [
-    "REST endpoints detected",
-    "Database dependencies detected",
-    "Authentication components detected",
-    "Third-party dependencies detected"
-  ]
+  "critical_components": [],
+  "reasoning": []
 }

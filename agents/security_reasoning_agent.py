@@ -8,6 +8,18 @@ def run(state):
     knowledge_graph = state.get("security_knowledge_graph", {})
     attack_paths = state.get("attack_paths", [])
 
+    # Other context
+    sast_incidents = state.get("incidents", [])
+    if isinstance(sast_incidents, str):
+        try:
+            sast_incidents = json.loads(sast_incidents)
+        except:
+            sast_incidents = []
+
+    dast_incidents = state.get("dast_incidents", [])
+    attack_surface = state.get("attack_surface", {})
+    trust_boundaries = state.get("trust_boundaries", [])
+
     # We pass minimal structure to avoid blowing up context window
     nodes_summary = [
         {"id": n.get("id"), "type": n.get("type"), "label": n.get("label")}
@@ -21,16 +33,28 @@ def run(state):
     prompt = f"""
 You are an expert Application Security Architect.
 
-Evaluate the consolidated Security Knowledge Graph and the identified Attack Paths to provide a final security reasoning.
+Evaluate the consolidated Security Knowledge Graph, the identified Attack Paths, and other assessment data to provide a final security reasoning.
 
 KNOWLEDGE GRAPH NODES (Summary):
-{json.dumps(nodes_summary, indent=2)[:3000]}
+{json.dumps(nodes_summary, indent=2)[:2000]}
 
 KNOWLEDGE GRAPH EDGES (Summary):
-{json.dumps(edges_summary, indent=2)[:3000]}
+{json.dumps(edges_summary, indent=2)[:2000]}
 
 ATTACK PATHS:
-{json.dumps(attack_paths, indent=2)[:3000]}
+{json.dumps(attack_paths, indent=2)[:2000]}
+
+SAST FINDINGS:
+{json.dumps(sast_incidents, indent=2)[:2000]}
+
+DAST FINDINGS:
+{json.dumps(dast_incidents, indent=2)[:2000]}
+
+ATTACK SURFACE:
+{json.dumps(attack_surface, indent=2)[:1000]}
+
+TRUST BOUNDARIES:
+{json.dumps(trust_boundaries, indent=2)[:1000]}
 
 Synthesize a comprehensive security reasoning that addresses the following:
 1. Overall Risk (CRITICAL, HIGH, MEDIUM, LOW).

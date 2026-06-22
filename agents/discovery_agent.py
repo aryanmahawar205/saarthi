@@ -1,7 +1,8 @@
 import json
 import requests
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 from bs4 import BeautifulSoup
+import re
 
 
 OUTPUT_FILE = (
@@ -9,6 +10,17 @@ OUTPUT_FILE = (
 )
 
 MAX_PAGES = 50
+
+COMMON_PATHS = [
+    "/sitemap.xml",
+    "/robots.txt",
+    "/v3/api-docs",
+    "/openapi.json",
+    "/swagger-ui.html",
+    "/swagger.json"
+]
+
+JS_ENDPOINT_PATTERN = re.compile(r'["\'](/api/[^"\']+)["\']|["\'](/[a-zA-Z0-9_-]+/[a-zA-Z0-9_-]+)["\']')
 
 
 def crawl(start_url):
@@ -18,6 +30,14 @@ def crawl(start_url):
     queue = [start_url]
 
     endpoints = []
+
+    parsed_start = urlparse(start_url)
+    base_url = f"{parsed_start.scheme}://{parsed_start.netloc}"
+
+    for path in COMMON_PATHS:
+        full_url = urljoin(base_url, path)
+        if full_url not in visited:
+            queue.append(full_url)
 
     while queue and len(visited) < MAX_PAGES:
 
@@ -37,37 +57,56 @@ def crawl(start_url):
                 allow_redirects=True
             )
 
-            soup = BeautifulSoup(
-                response.text,
-                "html.parser"
-            )
-
             endpoints.append({
                 "url": current,
                 "status": response.status_code
             })
 
-            for link in soup.find_all("a"):
+            content_type = response.headers.get("Content-Type", "")
 
-                href = link.get(
-                    "href"
+            if "text/html" in content_type:
+                soup = BeautifulSoup(
+                    response.text,
+                    "html.parser"
                 )
 
-                if not href:
-                    continue
+                for link in soup.find_all("a"):
 
-                absolute = urljoin(
-                    current,
-                    href
-                )
+                    href = link.get(
+                        "href"
+                    )
 
-                if "localhost:8080" in absolute:
+                    if not href:
+                        continue
 
-                    if absolute not in visited:
+                    absolute = urljoin(
+                        current,
+                        href
+                    )
 
-                        queue.append(
-                            absolute
-                        )
+                    if "localhost:8080" in absolute:
+
+                        if absolute not in visited:
+
+                            queue.append(
+                                absolute
+                            )
+                for script in soup.find_all("script"):
+                    src = script.get("src")
+                    if src:
+                        absolute = urljoin(current, src)
+                        if "localhost:8080" in absolute and absolute not in visited:
+                            queue.append(absolute)
+
+            elif "application/javascript" in content_type or "text/javascript" in content_type or current.endswith(".js"):
+                # Extract endpoints from JS
+                matches = JS_ENDPOINT_PATTERN.findall(response.text)
+                for match in matches:
+                    for group in match:
+                        if group:
+                            absolute = urljoin(base_url, group)
+                            if "localhost:8080" in absolute and absolute not in visited:
+                                queue.append(absolute)
 
         except Exception as e:
 
