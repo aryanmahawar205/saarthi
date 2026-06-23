@@ -101,6 +101,8 @@ def main():
         subprocess.run(["python3", "parsers/context_builder.py"], check=False)
         subprocess.run(["python3", "parsers/api_graph_builder.py"], check=False)
         subprocess.run(["python3", "parsers/dependency_graph_builder.py"], check=False)
+        subprocess.run(["python3", "parsers/method_index_builder.py"], check=False)
+        subprocess.run(["python3", "parsers/call_graph_builder.py"], check=False)
 
         # Phase 2: SAST Pipeline
         state = pipeline_agent(state)

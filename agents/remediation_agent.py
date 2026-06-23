@@ -8,8 +8,24 @@ def run(state):
 
     remediation_guidance = []
 
+    # Get incidents from state or knowledge graph
+    dast_incidents = state.get("dast_incidents", [])
+    if not dast_incidents:
+        dast_incidents = knowledge_graph.get("raw_inputs", {}).get("dast_incidents", [])
+
+    sast_incidents = state.get("incidents", [])
+    if not sast_incidents:
+        sast_incidents = knowledge_graph.get("raw_inputs", {}).get("sast_incidents", [])
+
+    if isinstance(sast_incidents, str):
+        try:
+            clean_sast = sast_incidents.replace('```json', '').replace('```', '').strip()
+            sast_incidents = json.loads(clean_sast)
+        except:
+            sast_incidents = []
+
     # Analyze DAST incidents for remediation
-    for incident in knowledge_graph.get("dast_incidents", []):
+    for incident in dast_incidents:
         name = incident.get("incident", "").lower()
         if "browser" in name or "csp" in name:
             remediation_guidance.append({
@@ -39,6 +55,34 @@ def run(state):
             remediation_guidance.append({
                 "incident": incident.get("incident"),
                 "recommendation": "Review the specific vulnerability details and apply appropriate security patches or configuration changes.",
+                "priority": "Medium"
+            })
+
+    # Analyze SAST incidents for remediation
+    for incident in sast_incidents:
+        name = incident.get("incident", "").lower()
+        if "sql injection" in name:
+            remediation_guidance.append({
+                "incident": f"SAST: {incident.get('incident')}",
+                "recommendation": "Use parameterized queries or prepared statements. Avoid string concatenation for SQL queries.",
+                "priority": "Critical"
+            })
+        elif "cross-site scripting" in name or "xss" in name:
+            remediation_guidance.append({
+                "incident": f"SAST: {incident.get('incident')}",
+                "recommendation": "Implement context-aware output encoding and validate/sanitize all user-supplied data.",
+                "priority": "High"
+            })
+        elif "hardcoded" in name or "credential" in name or "secret" in name:
+            remediation_guidance.append({
+                "incident": f"SAST: {incident.get('incident')}",
+                "recommendation": "Remove hardcoded secrets and use a secure vault or environment variables for sensitive information.",
+                "priority": "Critical"
+            })
+        else:
+            remediation_guidance.append({
+                "incident": f"SAST: {incident.get('incident')}",
+                "recommendation": "Consult the SAST tool findings and apply secure coding best practices to mitigate this risk.",
                 "priority": "Medium"
             })
 

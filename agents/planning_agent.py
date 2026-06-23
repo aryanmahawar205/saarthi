@@ -39,36 +39,44 @@ def detect_application_type(
     api_graph,
     dependencies
 ):
+    # Check dependencies first for frameworks
+    for dep in dependencies:
+        artifact = dep.get("artifact", "").lower()
+        group = dep.get("group", "").lower()
 
-    if api_graph:
+        if "spring-boot" in artifact or "spring-boot" in group:
+            return "Spring Boot"
+        if "express" in artifact:
+            return "Express (Node.js)"
+        if "django" in artifact:
+            return "Django (Python)"
+        if "flask" in artifact:
+            return "Flask (Python)"
 
-        for dep in dependencies:
+    source_files = context.get("source_files", [])
 
-            artifact = dep.get(
-                "artifact",
-                ""
-            ).lower()
+    # Check for manifest files
+    file_names = [os.path.basename(f) for f in source_files]
 
-            if "spring" in artifact:
-                return "Spring Boot"
+    if "pom.xml" in file_names or "build.gradle" in file_names:
+        return "Java/Spring Application"
+    if "package.json" in file_names:
+        return "Node.js Application"
+    if "requirements.txt" in file_names or "manage.py" in file_names:
+        return "Python Application"
+    if "web.config" in file_names:
+        return "ASP.NET Application"
 
-    source_files = context.get(
-        "source_files",
-        []
-    )
-
-    for file_path in source_files:
-
-        lower = file_path.lower()
-
-        if lower.endswith(".py"):
-            return "Python Application"
-
-        if lower.endswith(".js"):
-            return "Node.js Application"
-
-        if lower.endswith(".java"):
-            return "Java Application"
+    # Fallback to extensions
+    extensions = {os.path.splitext(f)[1].lower() for f in source_files}
+    if ".java" in extensions:
+        return "Java Application"
+    if ".py" in extensions:
+        return "Python Application"
+    if ".js" in extensions or ".ts" in extensions:
+        return "Node.js/JavaScript Application"
+    if ".cs" in extensions:
+        return "C#/.NET Application"
 
     return "Unknown"
 
@@ -221,19 +229,20 @@ def reasoning(
     return reasons
 
 
+import os
+
 def build_assessment_plan():
+    context = {"source_files": []}
+    if os.path.exists(CONTEXT_FILE):
+        context = load_json(CONTEXT_FILE)
 
-    context = load_json(
-        CONTEXT_FILE
-    )
+    api_graph = []
+    if os.path.exists(API_GRAPH_FILE):
+        api_graph = load_json(API_GRAPH_FILE)
 
-    api_graph = load_json(
-        API_GRAPH_FILE
-    )
-
-    dependencies = load_json(
-        DEPENDENCY_FILE
-    )
+    dependencies = []
+    if os.path.exists(DEPENDENCY_FILE):
+        dependencies = load_json(DEPENDENCY_FILE)
 
     contains_api = len(
         api_graph

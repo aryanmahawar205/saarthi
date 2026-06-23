@@ -1,4 +1,10 @@
 {
   "strategic_advice": "Focus on the highest risk components identified. Address critical attack chains first to break the exploitation paths.",
-  "incident_remediation": []
+  "incident_remediation": [
+    {
+      "incident": "SAST: Dummy Incident",
+      "recommendation": "Consult the SAST tool findings and apply secure coding best practices to mitigate this risk.",
+      "priority": "Medium"
+    }
+  ]
 }

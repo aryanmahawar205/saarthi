@@ -14,11 +14,20 @@ def run(state):
     sast_incidents = state.get("incidents", [])
     if isinstance(sast_incidents, str):
         try:
-            sast_incidents = json.loads(sast_incidents)
+            # Handle potential markdown or garbage in LLM response
+            clean_incidents = sast_incidents.replace('```json', '').replace('```', '').strip()
+            sast_incidents = json.loads(clean_incidents)
         except:
             sast_incidents = []
 
     dast_incidents = state.get("dast_incidents", [])
+
+    # Validation: Ensure incidents are reaching the graph if findings exist
+    if not sast_incidents and state.get("findings"):
+        raise RuntimeError("[SecurityKnowledgeGraphAgent] SAST incidents failed to propagate to Knowledge Graph Agent despite findings being present.")
+
+    if not dast_incidents and state.get("dast_findings"):
+        raise RuntimeError("[SecurityKnowledgeGraphAgent] DAST incidents failed to propagate to Knowledge Graph Agent despite DAST findings being present.")
 
     # Load runtime observations
     runtime_observations = []
@@ -59,13 +68,16 @@ def run(state):
         req_id = f"Request_{idx}"
         resp_id = f"Response_{idx}"
 
-        add_node(req_id, "request", f"{obs.get('method')} {url}", method=obs.get("method"))
+        add_node(req_id, "request", f"{obs.get('method')} {url}", method=obs.get("method"), auth_flow=obs.get("auth_flow"))
         add_node(resp_id, "response", f"Status {obs.get('status_code')}", status=obs.get("status_code"))
         add_edge(req_id, resp_id, "generated_response")
 
         ep_id = f"Endpoint_{url}"
         add_node(ep_id, "endpoint", url)
         add_edge(req_id, ep_id, "targeted_at")
+
+        # Runtime Observation -> Endpoint
+        add_edge(f"Obs_{idx}", ep_id, "observed_at")
 
         # Cookies
         for cookie_name, cookie_val in obs.get("cookies", {}).items():
@@ -90,7 +102,7 @@ def run(state):
                 add_node(h_id, "header", h_name)
                 add_edge(req_id, h_id, "authenticated_by")
 
-    # API Call Chains (Endpoint -> Controller -> Method -> Sink)
+    # API Call Chains (Endpoint -> Controller -> Call Chain -> Finding)
     for chain in api_call_chains:
         file_name = chain.get("file", "unknown")
         controller_id = f"Controller_{file_name}"
@@ -99,7 +111,13 @@ def run(state):
         for ep in chain.get("endpoints", []):
             ep_id = f"Endpoint_{ep}"
             add_node(ep_id, "endpoint", ep)
-            add_edge(ep_id, controller_id, "handled_by")
+            # Endpoint -> Controller
+            add_edge(ep_id, controller_id, "points_to")
+
+        # Controller -> Call Chain
+        chain_id = f"Chain_{file_name}"
+        add_node(chain_id, "call_chain", f"Call Chain in {file_name}")
+        add_edge(controller_id, chain_id, "initiates")
 
         calls = chain.get("call_chain", [])
         for call in calls:
@@ -107,12 +125,10 @@ def run(state):
             callee = call.get("callee")
             if caller and callee:
                 caller_id = f"Method_{caller}"
-                callee_id = f"Sink_{callee}" # Treating callee as sink to fit the objective
+                callee_id = f"Method_{callee}"
                 add_node(caller_id, "method", caller)
-                add_node(callee_id, "sink", callee)
+                add_node(callee_id, "method", callee)
                 add_edge(caller_id, callee_id, "calls")
-                # link controller to caller if first
-                add_edge(controller_id, caller_id, "contains_method")
 
     # Trust Boundaries
     for idx, tb in enumerate(trust_boundaries):
@@ -124,16 +140,20 @@ def run(state):
     for inc in sast_incidents:
         name = inc.get("incident", "Unknown")
         inc_id = f"SAST_Incident_{name}"
-        add_node(inc_id, "finding", name, source="SAST")
+        add_node(inc_id, "finding", name, source="SAST", type="vulnerability")
 
-        # Try to link Sink to Finding if available in SAST findings
         for f in inc.get("findings", []):
             file = f.get("file", "") if isinstance(f, dict) else f
             if file:
-                # Naive link to the file/sink
-                sink_id = f"Sink_{file}"
-                add_node(sink_id, "sink", file)
-                add_edge(sink_id, inc_id, "has_finding")
+                # Call Chain -> Vulnerability
+                chain_id = f"Chain_{file}"
+                if chain_id in nodes:
+                    add_edge(chain_id, inc_id, "contains_vulnerability")
+
+                # Finding -> Trust Boundary
+                for idx, tb in enumerate(trust_boundaries):
+                    if "Data" in tb.get("boundary", ""):
+                         add_edge(inc_id, f"Boundary_{idx}", "crosses")
 
 
     # DAST Findings
@@ -161,6 +181,13 @@ def run(state):
         ac_id = f"AttackChain_{name}"
         add_node(ac_id, "attack_chain", name)
 
+        # Trust Boundary -> Attack Path
+        boundary_crossed = path.get("boundary_crossed")
+        if boundary_crossed:
+            for idx, tb in enumerate(trust_boundaries):
+                if tb.get("boundary") == boundary_crossed:
+                    add_edge(f"Boundary_{idx}", ac_id, "enables")
+
         # Finding -> Attack Chain
         for finding in sast_incidents + dast_incidents:
             finding_name = finding.get("incident", "")
@@ -173,7 +200,13 @@ def run(state):
         if impact:
             bi_id = f"BusinessImpact_{impact}"
             add_node(bi_id, "business_impact", impact)
-            add_edge(ac_id, bi_id, "results_in")
+            # Attack Path -> Business Impact
+            add_edge(ac_id, bi_id, "leads_to_impact")
+
+        # Runtime Observation -> Attack Path
+        for idx, obs in enumerate(runtime_observations):
+            if any(step in obs.get("url", "") for step in path.get("path", [])):
+                add_edge(f"Obs_{idx}", ac_id, "evidences")
 
     # Deduplicate edges
     unique_edges = []
@@ -184,9 +217,17 @@ def run(state):
             seen_edges.add(sig)
             unique_edges.append(e)
 
+    # Statistics
+    stats = {
+        "node_count": len(nodes),
+        "edge_count": len(unique_edges),
+        "edge_types": list(set(e["relationship"] for e in unique_edges))
+    }
+
     knowledge_graph = {
         "nodes": list(nodes.values()),
         "edges": unique_edges,
+        "statistics": stats,
         "raw_inputs": {
             "attack_surface": attack_surface,
             "trust_boundaries": trust_boundaries,

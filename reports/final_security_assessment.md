@@ -4,20 +4,29 @@
 
 **Overall Risk Level:** UNKNOWN (0/100)
 
-This report provides a comprehensive security assessment of the target application using AI-assisted runtime-aware analysis. By correlating static code analysis, dynamic scanning, and runtime observation, Saarthi has identified critical attack paths and business risks.
+### Summary of Findings
+Saarthi's analysis of the target application has identified a total of 1 SAST incidents and 0 DAST incidents. Through runtime observation, we've correlated these findings into 0 critical attack chains.
+
+The assessment highlights significant risks in the application's handling of external inputs and session management, particularly where they cross defined trust boundaries.
+
+## Architecture Overview
+
+**Application Type:** Unknown
+The application architecture was analyzed using a combination of repository parsing and runtime discovery.
 
 ## Assessment Scope
 
 - **Target URL:** http://localhost:8080/WebGoat/
-- **Repository Path:** /app
+- **Repository Path:** .
 - **Discovery Mode:** Hybrid
 
-## Runtime Attack Surface
+## Attack Surface
 
 - **Discovered Endpoints:** 12
 - **Observed Traffic Flows:** 12
+- **Detected Framework:** Unknown
 
-The runtime attack surface was mapped through deep crawling and traffic observation. This represents the externally reachable entry points and internal data flow patterns.
+The attack surface comprises all reachable endpoints identified during the discovery phase. Runtime evidence confirms that these endpoints are active and accessible under the current configuration.
 
 ## Trust Boundaries
 
@@ -40,83 +49,25 @@ The following significant runtime behaviours were observed during the assessment
 
 ## Static Findings (SAST)
 
-No static findings were identified.
+### Dummy Incident
+
 
 ## Dynamic Findings (DAST)
 
-- **Weak Browser Security Controls** (Instances: 8)
-- **CSRF Exposure** (Instances: 1)
-- **Authentication Surface** (Instances: 1)
-- **Non-Storable Content** (Instances: 1)
-- **Storable and Cacheable Content** (Instances: 1)
-- **User Controllable HTML Element Attribute (Potential XSS)** (Instances: 1)
+No runtime findings were identified.
 
 ## Correlated Findings
 
-Findings correlated across Static and Runtime analysis layers have been incorporated into the Security Knowledge Graph to uncover attack paths bridging the gap between static code issues and runtime execution context.
+Saarthi has correlated static code vulnerabilities with runtime execution evidence. This correlation reduces false positives and highlights vulnerabilities that are demonstrably reachable in the running environment.
+
+### Knowledge Graph Statistics
+- **Nodes:** 38
+- **Edges:** 36
+- **Relationship Types:** generated_response, observed_at, targeted_at
 
 ## Attack Chains
 
-### 1. Browser Exploitation Chain
-**Boundary Crossed:** Application Layer
-**Impact:** Account Takeover / Reputation Damage
-
-**Chain:**
-- Victim Browser
-- Missing CSP / Security Headers
-- Script Injection or Clickjacking
-- Session Theft or State Modification
-
-### 2. Cross Site Request Forgery
-**Boundary Crossed:** Application Layer
-**Impact:** Unauthorized Actions / Privilege Escalation
-
-**Chain:**
-- Victim Session
-- Forged Request via malicious link
-- State Change Execution
-- Privilege Abuse
-
-### 3. Authentication Abuse
-**Boundary Crossed:** Application Layer
-**Impact:** Account Compromise / Data Breach
-
-**Chain:**
-- External Input
-- Exposed Login Endpoint
-- Weak Session Controls or Brute Force
-- Session Hijacking or Credential Compromise
-
-### 4. Exploitation of Non-Storable Content
-**Boundary Crossed:** Application Layer
-**Impact:** Variable based on context
-
-**Chain:**
-- External Input
-- Discovery of Vulnerability
-- Exploitation of Non-Storable Content
-- Impact Realization
-
-### 5. Exploitation of Storable and Cacheable Content
-**Boundary Crossed:** Application Layer
-**Impact:** Variable based on context
-
-**Chain:**
-- External Input
-- Discovery of Vulnerability
-- Exploitation of Storable and Cacheable Content
-- Impact Realization
-
-### 6. Cross Site Scripting
-**Boundary Crossed:** Application Layer
-**Impact:** Account Takeover / Lateral Movement
-
-**Chain:**
-- External Input
-- Unsanitized User Input
-- Script Injection into Web Page
-- Browser Execution by Victim
-- Credential Theft or Session Hijacking
+No definitive attack chains were derived.
 
 ## AI-Assisted Reasoning
 

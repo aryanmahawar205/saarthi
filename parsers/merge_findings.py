@@ -8,9 +8,16 @@ GITLEAKS_FILE = "reports/normalized_gitleaks.json"
 OUTPUT_FILE = "reports/all_findings.json"
 
 
+import os
+
 def load_json(path):
-    with open(path, "r") as f:
-        return json.load(f)
+    if not os.path.exists(path):
+        return []
+    try:
+        with open(path, "r") as f:
+            return json.load(f)
+    except:
+        return []
 
 
 def main():

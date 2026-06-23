@@ -43,6 +43,21 @@ class TrafficLogger:
         key = self._get_flow_key(flow)
 
         with self.lock:
+            # Enhanced capture of security-relevant information
+            auth_type = "None"
+            auth_header = flow.request.headers.get("Authorization", "")
+            if auth_header:
+                if auth_header.lower().startswith("bearer "):
+                    auth_type = "Bearer Token"
+                elif auth_header.lower().startswith("basic "):
+                    auth_type = "Basic Auth"
+                else:
+                    auth_type = "Other"
+
+            # Check for trust boundary crossing (e.g., external -> internal)
+            # This is a simplified heuristic
+            is_external = "localhost" not in flow.request.host and "127.0.0.1" not in flow.request.host
+
             # Update or create observation
             observation = {
                 "url": flow.request.pretty_url,
@@ -54,9 +69,15 @@ class TrafficLogger:
                 "query_params": dict(flow.request.query),
                 "form_data": dict(flow.request.urlencoded_form),
                 "redirects": flow.response.headers.get("Location", None) if flow.response else None,
+                "auth_flow": {
+                    "type": auth_type,
+                    "present": auth_type != "None"
+                },
+                "trust_boundary_crossing": is_external,
                 "response_metadata": {
                     "content_type": flow.response.headers.get("Content-Type", "") if flow.response else "text/html",
-                    "length": len(flow.response.content) if flow.response and flow.response.content else 0
+                    "length": len(flow.response.content) if flow.response and flow.response.content else 0,
+                    "server": flow.response.headers.get("Server", "") if flow.response else ""
                 }
             }
 
