@@ -4,17 +4,65 @@ import os
 OUTPUT_FILE = "reports/final_security_assessment.md"
 
 def run(state):
-    reasoning = state.get("security_reasoning", {})
-    attack_paths = state.get("attack_paths", [])
-    knowledge_graph = state.get("security_knowledge_graph", {})
+
+    reasoning = state.get(
+        "security_reasoning",
+        {}
+    )
+
+    if not isinstance(reasoning, dict):
+        print(
+            "[ReportAgent] Invalid reasoning object, using empty dict"
+        )
+        reasoning = {}
+
+    attack_paths = state.get(
+        "attack_paths",
+        []
+    )
+
+    if not isinstance(attack_paths, list):
+        print(
+            "[ReportAgent] Invalid attack paths, using empty list"
+        )
+        attack_paths = []
+
+    knowledge_graph = state.get(
+        "security_knowledge_graph",
+        {}
+    )
+
+    if not isinstance(knowledge_graph, dict):
+        print(
+            "[ReportAgent] Invalid knowledge graph, using empty dict"
+        )
+        knowledge_graph = {}
 
     # We will use raw inputs from the graph generation to get counts/details
     raw_inputs = knowledge_graph.get("raw_inputs", {})
+    if not isinstance(raw_inputs, dict):
+        print(
+            "[ReportAgent] Invalid raw_inputs, using empty dict"
+        )
+        raw_inputs = {}
     attack_surface = state.get("attack_surface", raw_inputs.get("attack_surface", {}))
     trust_boundaries = state.get("trust_boundaries", raw_inputs.get("trust_boundaries", []))
     sast_incidents = state.get("incidents", raw_inputs.get("sast_incidents", []))
-    dast_incidents = state.get("dast_incidents", raw_inputs.get("dast_incidents", []))
-    runtime_observations = raw_inputs.get("runtime_observations", [])
+    dast_incidents = state.get(
+        "dast_incidents",
+        raw_inputs.get("dast_incidents", [])
+    )
+
+    runtime_observations = raw_inputs.get(
+        "runtime_observations",
+        []
+    )
+
+    if not isinstance(runtime_observations, list):
+        print(
+            "[ReportAgent] Invalid runtime observations, using empty list"
+        )
+        runtime_observations = []
     graph_stats = knowledge_graph.get("statistics", {})
     app_plan = state.get("assessment_plan", {})
     app_type = app_plan.get("application_type", "Unknown")
@@ -72,11 +120,25 @@ def run(state):
 
         # Trust Boundaries
         f.write("## Trust Boundaries\n\n")
+
         if trust_boundaries:
-            for idx, tb in enumerate(trust_boundaries):
-                f.write(f"- **{tb.get('boundary', 'Boundary')}**: {tb.get('source', 'Unknown')} -> {tb.get('target', 'Unknown')}\n")
+
+            for tb in trust_boundaries:
+
+                if not isinstance(tb, dict):
+                    continue
+
+                f.write(
+                    f"- **{tb.get('boundary', 'Boundary')}**: "
+                    f"{tb.get('source', 'Unknown')} -> "
+                    f"{tb.get('target', 'Unknown')}\n"
+                )
+
         else:
-            f.write("No distinct trust boundaries were identified in the current context.\n")
+            f.write(
+                "No distinct trust boundaries were identified in the current context.\n"
+            )
+
         f.write("\n")
 
         # Observed Runtime Behaviour
@@ -87,9 +149,18 @@ def run(state):
             unique_obs = []
             seen_urls = set()
             for obs in runtime_observations:
-                if obs['url'] not in seen_urls:
+
+                if not isinstance(obs, dict):
+                    continue
+
+                url = obs.get("url")
+
+                if not url:
+                    continue
+
+                if url not in seen_urls:
                     unique_obs.append(obs)
-                    seen_urls.add(obs['url'])
+                    seen_urls.add(url)
 
             for obs in unique_obs[:10]:
                 f.write(f"- **{obs.get('method')} {obs.get('url')}** (Status: {obs.get('status_code')})\n")
@@ -103,30 +174,101 @@ def run(state):
 
         # Static Findings (SAST)
         f.write("## Static Findings (SAST)\n\n")
+
+        print(
+            f"[ReportAgent] SAST incidents count: {len(sast_incidents)}"
+        )
+
         if sast_incidents:
+
             for inc in sast_incidents:
-                f.write(f"### {inc.get('incident', 'Unknown Finding')}\n")
-                findings = inc.get('findings', [])
+
+                if not isinstance(inc, dict):
+                    print(
+                        f"[ReportAgent] Skipping malformed incident: {inc}"
+                    )
+                    continue
+
+                f.write(
+                    f"### {inc.get('incident', 'Unknown Finding')}\n"
+                )
+
+                findings = inc.get("findings", [])
+
                 if findings:
+
                     f.write("| File | Priority | Reachability Score |\n")
                     f.write("| --- | --- | --- |\n")
+
                     for find in findings:
-                        file = find.get('file', find.get('location', 'N/A'))
-                        priority = find.get('priority', 'N/A')
-                        reachability = find.get('reachability_score', 'N/A')
-                        f.write(f"| `{file}` | {priority} | {reachability} |\n")
+
+                        if not isinstance(find, dict):
+                            print(
+                                f"[ReportAgent] Skipping malformed finding: {find}"
+                            )
+                            continue
+
+                        file = find.get(
+                            "file",
+                            find.get("location", "N/A")
+                        )
+
+                        priority = find.get(
+                            "priority",
+                            "N/A"
+                        )
+
+                        reachability = find.get(
+                            "reachability_score",
+                            "N/A"
+                        )
+
+                        f.write(
+                            f"| `{file}` | {priority} | {reachability} |\n"
+                        )
+
                 f.write("\n")
+
         else:
-            f.write("No static findings were identified.\n")
+            f.write(
+                "No static findings were identified.\n"
+            )
+
         f.write("\n")
+
+        if not isinstance(dast_incidents, list):
+            print(
+                "[ReportAgent] Invalid DAST incidents, using empty list"
+            )
+            dast_incidents = []
 
         # Dynamic Findings (DAST)
         f.write("## Dynamic Findings (DAST)\n\n")
+
+        print(
+            f"[ReportAgent] DAST incidents count: {len(dast_incidents)}"
+        )
+
         if dast_incidents:
+
             for inc in dast_incidents:
-                f.write(f"- **{inc.get('incident', 'Unknown Finding')}** (Instances: {len(inc.get('findings', []))})\n")
+
+                if not isinstance(inc, dict):
+                    print(
+                        f"[ReportAgent] Skipping malformed DAST incident: {inc}"
+                    )
+                    continue
+
+                f.write(
+                    f"- **{inc.get('incident', 'Unknown Finding')}** "
+                    f"(Instances: {len(inc.get('findings', []))})\n"
+                )
+
         else:
-            f.write("No runtime findings were identified.\n")
+            f.write(
+                "No runtime findings were identified.\n"
+            )
+
         f.write("\n")
 
         # Correlated Findings
@@ -143,17 +285,48 @@ def run(state):
 
         # Attack Chains
         f.write("## Attack Chains\n\n")
+
         if attack_paths:
+
             for idx, path in enumerate(attack_paths):
-                f.write(f"### {idx + 1}. {path.get('name', 'Unnamed Path')}\n")
-                f.write(f"**Boundary Crossed:** {path.get('boundary_crossed', 'N/A')}\n")
-                f.write(f"**Impact:** {path.get('impact', 'N/A')}\n\n")
+
+                if not isinstance(path, dict):
+                    continue
+
+                f.write(
+                    f"### {idx + 1}. {path.get('name', 'Unnamed Path')}\n"
+                )
+
+                f.write(
+                    f"**Boundary Crossed:** "
+                    f"{path.get('boundary_crossed', 'N/A')}\n"
+                )
+
+                f.write(
+                    f"**Impact:** "
+                    f"{path.get('impact', 'N/A')}\n\n"
+                )
+
                 f.write("**Chain:**\n")
-                for step in path.get("path", []):
-                    f.write(f"- {step}\n")
+
+                path_steps = path.get(
+                    "path",
+                    []
+                )
+
+                if not isinstance(path_steps, list):
+                    path_steps = []
+
+                for step in path_steps:
+                    f.write(
+                        f"- {step}\n"
+                    )
                 f.write("\n")
+
         else:
-            f.write("No definitive attack chains were derived.\n\n")
+            f.write(
+                "No definitive attack chains were derived.\n\n"
+            )
 
         # AI-Assisted Reasoning
         f.write("## AI-Assisted Reasoning\n\n")

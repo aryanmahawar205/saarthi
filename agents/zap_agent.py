@@ -1,57 +1,156 @@
 import subprocess
 import os
 
-OUTPUT_FILE = "scans/zap.json"
 
 def run(state):
     target = state.get("target_url")
+
+    if not target:
+        raise ValueError("target_url not found in state")
+
     print(f"[ZapAgent] {target}")
 
-    # Resolve absolute paths and ensure scans directory exists
-    project_root = os.path.abspath(state.get("project_root", os.getcwd()))
+    # --------------------------------------------------
+    # Resolve project root
+    # --------------------------------------------------
 
-    # If project_root is not writable or is problematic, fallback to current working directory
-    if not os.access(os.path.dirname(project_root) if os.path.dirname(project_root) else ".", os.W_OK):
-         project_root = os.getcwd()
+    project_root = os.path.abspath(
+        state.get("project_root", os.getcwd())
+    )
 
-    scans_dir = os.path.join(project_root, "scans")
+    if not os.path.isdir(project_root):
+        project_root = os.getcwd()
 
-    if not os.path.exists(scans_dir):
-        try:
-            os.makedirs(scans_dir, exist_ok=True)
-        except PermissionError:
-            # Fallback to local scans directory if project_root is not writable
-            scans_dir = os.path.abspath("scans")
-            os.makedirs(scans_dir, exist_ok=True)
+    # --------------------------------------------------
+    # Create scans directory
+    # --------------------------------------------------
 
-    # Ensure ZAP can write to the scans directory (fix AccessDenied)
+    scans_dir = os.path.join(
+        project_root,
+        "scans"
+    )
+
+    os.makedirs(
+        scans_dir,
+        exist_ok=True
+    )
+
+    # --------------------------------------------------
+    # Ensure permissions
+    # --------------------------------------------------
+
     try:
         os.chmod(scans_dir, 0o777)
     except Exception as e:
-        print(f"[ZapAgent] Warning: Could not set permissions on {scans_dir}: {e}")
+        print(
+            f"[ZapAgent] Warning: chmod failed: {e}"
+        )
+
+    # --------------------------------------------------
+    # Remove stale files
+    # --------------------------------------------------
+
+    report_path = os.path.join(
+        scans_dir,
+        "zap.json"
+    )
+
+    yaml_path = os.path.join(
+        scans_dir,
+        "zap.yaml"
+    )
+
+    for file_path in [report_path, yaml_path]:
+        try:
+            if os.path.exists(file_path):
+                os.remove(file_path)
+                print(
+                    f"[ZapAgent] Removed stale file: {file_path}"
+                )
+        except Exception as e:
+            print(
+                f"[ZapAgent] Warning removing {file_path}: {e}"
+            )
+
+    # --------------------------------------------------
+    # Launch ZAP
+    # --------------------------------------------------
 
     command = [
-        "docker", "run", "--rm",
-        "--network", "host",
-        "-v", f"{scans_dir}:/zap/wrk:rw",
+        "docker",
+        "run",
+        "--rm",
+        "--network",
+        "host",
+        "-v",
+        f"{scans_dir}:/zap/wrk:rw",
         "ghcr.io/zaproxy/zaproxy:stable",
-        "zap-baseline.py", "-t", target, "-J", "zap.json"
+        "zap-baseline.py",
+        "-t",
+        target,
+        "-J",
+        "zap.json"
     ]
 
-    result = subprocess.run(command, capture_output=False)
+    print(
+        f"[ZapAgent] Scans Directory: {scans_dir}"
+    )
 
-    # If docker fails in sandbox, let's create an empty/dummy valid JSON so the pipeline continues
-    if not os.path.exists(OUTPUT_FILE) or result.returncode != 0:
-        if not os.path.exists(OUTPUT_FILE):
-            with open(OUTPUT_FILE, "w") as f:
-                f.write('{"site": []}')
+    print(
+        f"[ZapAgent] Running ZAP..."
+    )
 
-    print("[ZapAgent] Scan Complete")
-    print(f"[ZapAgent] Exit Code: {result.returncode}")
+    result = subprocess.run(
+        command,
+        capture_output=False
+    )
 
-    state["zap_report"] = "scans/zap.json"
+    # --------------------------------------------------
+    # Validate output
+    # --------------------------------------------------
+
+    print(
+        f"[ZapAgent] Exit Code: {result.returncode}"
+    )
+
+    # ZAP baseline returns:
+    # 0 = success
+    # 1 = fail alerts
+    # 2 = warning alerts
+    # 3 = fail + warning alerts
+
+    if result.returncode not in [0, 1, 2, 3]:
+        raise RuntimeError(
+            f"ZAP execution failed with exit code {result.returncode}"
+        )
+
+    if not os.path.exists(report_path):
+        raise FileNotFoundError(
+            f"Expected ZAP report not found: {report_path}"
+        )
+
+    report_size = os.path.getsize(report_path)
+
+    if report_size < 100:
+        raise RuntimeError(
+            f"ZAP report appears invalid ({report_size} bytes)"
+        )
+
+    print(
+        f"[ZapAgent] Report Generated: {report_path}"
+    )
+
+    print(
+        f"[ZapAgent] Report Size: {report_size} bytes"
+    )
+
+    # --------------------------------------------------
+    # Update state
+    # --------------------------------------------------
+
+    state["zap_report"] = report_path
     state["zap_complete"] = True
 
-    print("[ZapAgent] Complete")
+    print("[ZapAgent] Scan Complete")
 
     return state

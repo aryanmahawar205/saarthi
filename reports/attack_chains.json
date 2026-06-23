@@ -1,1 +1,69 @@
-[]
+[
+  {
+    "name": "Browser Exploitation Chain",
+    "path": [
+      "Victim Browser",
+      "Missing CSP / Security Headers",
+      "Script Injection or Clickjacking",
+      "Session Theft or State Modification"
+    ],
+    "impact": "Account Takeover / Reputation Damage",
+    "boundary_crossed": "Application Layer"
+  },
+  {
+    "name": "Cross Site Request Forgery",
+    "path": [
+      "Victim Session",
+      "Forged Request via malicious link",
+      "State Change Execution",
+      "Privilege Abuse"
+    ],
+    "impact": "Unauthorized Actions / Privilege Escalation",
+    "boundary_crossed": "Application Layer"
+  },
+  {
+    "name": "Authentication Abuse",
+    "path": [
+      "External Input",
+      "Exposed Login Endpoint",
+      "Weak Session Controls or Brute Force",
+      "Session Hijacking or Credential Compromise"
+    ],
+    "impact": "Account Compromise / Data Breach",
+    "boundary_crossed": "Application Layer"
+  },
+  {
+    "name": "Exploitation of Non-Storable Content",
+    "path": [
+      "External Input",
+      "Discovery of Vulnerability",
+      "Exploitation of Non-Storable Content",
+      "Impact Realization"
+    ],
+    "impact": "Variable based on context",
+    "boundary_crossed": "Application Layer"
+  },
+  {
+    "name": "Exploitation of Storable and Cacheable Content",
+    "path": [
+      "External Input",
+      "Discovery of Vulnerability",
+      "Exploitation of Storable and Cacheable Content",
+      "Impact Realization"
+    ],
+    "impact": "Variable based on context",
+    "boundary_crossed": "Application Layer"
+  },
+  {
+    "name": "Cross Site Scripting",
+    "path": [
+      "External Input",
+      "Unsanitized User Input",
+      "Script Injection into Web Page",
+      "Browser Execution by Victim",
+      "Credential Theft or Session Hijacking"
+    ],
+    "impact": "Account Takeover / Lateral Movement",
+    "boundary_crossed": "Application Layer"
+  }
+]

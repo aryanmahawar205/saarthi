@@ -2,7 +2,57 @@
   "strategic_advice": "Focus on the highest risk components identified. Address critical attack chains first to break the exploitation paths.",
   "incident_remediation": [
     {
-      "incident": "SAST: Dummy Incident",
+      "incident": "Weak Browser Security Controls",
+      "recommendation": "Implement strict Content Security Policy (CSP), X-Frame-Options, and secure cookies.",
+      "priority": "High"
+    },
+    {
+      "incident": "CSRF Exposure",
+      "recommendation": "Implement anti-CSRF tokens for all state-changing requests and ensure SameSite cookie attributes are set.",
+      "priority": "High"
+    },
+    {
+      "incident": "Authentication Surface",
+      "recommendation": "Enforce strong password policies, implement MFA, ensure secure session token generation and expiration, and secure session transmission.",
+      "priority": "Critical"
+    },
+    {
+      "incident": "Non-Storable Content",
+      "recommendation": "Review the specific vulnerability details and apply appropriate security patches or configuration changes.",
+      "priority": "Medium"
+    },
+    {
+      "incident": "Storable and Cacheable Content",
+      "recommendation": "Review the specific vulnerability details and apply appropriate security patches or configuration changes.",
+      "priority": "Medium"
+    },
+    {
+      "incident": "User Controllable HTML Element Attribute (Potential XSS)",
+      "recommendation": "Implement context-aware output encoding, sanitize user inputs, and deploy a strict CSP.",
+      "priority": "Critical"
+    },
+    {
+      "incident": "SAST: Absence of Anti-CSRF Tokens",
+      "recommendation": "Consult the SAST tool findings and apply secure coding best practices to mitigate this risk.",
+      "priority": "Medium"
+    },
+    {
+      "incident": "SAST: Content Security Policy (CSP) Header Not Set",
+      "recommendation": "Consult the SAST tool findings and apply secure coding best practices to mitigate this risk.",
+      "priority": "Medium"
+    },
+    {
+      "incident": "SAST: Missing Anti-clickjacking Header",
+      "recommendation": "Consult the SAST tool findings and apply secure coding best practices to mitigate this risk.",
+      "priority": "Medium"
+    },
+    {
+      "incident": "SAST: Cookie without SameSite Attribute",
+      "recommendation": "Consult the SAST tool findings and apply secure coding best practices to mitigate this risk.",
+      "priority": "Medium"
+    },
+    {
+      "incident": "SAST: Cross-Origin-Embedder-Policy Header Missing or Invalid",
       "recommendation": "Consult the SAST tool findings and apply secure coding best practices to mitigate this risk.",
       "priority": "Medium"
     }
