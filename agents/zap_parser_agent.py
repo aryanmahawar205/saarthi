@@ -1,7 +1,11 @@
 import json
 
 
+import subprocess
+import os
+
 INPUT_FILE = "scans/zap.json"
+OUTPUT_FILE = "reports/normalized_zap.json"
 
 
 def severity(riskcode):
@@ -21,81 +25,28 @@ def severity(riskcode):
 
 
 def run(state):
+    print("[ZapParserAgent] Running parsers/zap_parser.py")
 
-    with open(INPUT_FILE) as f:
+    if not os.path.exists(INPUT_FILE):
+        print(f"[ZapParserAgent] {INPUT_FILE} not found. Skipping.")
+        state["dast_findings"] = []
+        return state
 
-        zap = json.load(f)
+    result = subprocess.run(["python3", "parsers/zap_parser.py"])
 
-    findings = []
+    if result.returncode != 0:
+        print("[ZapParserAgent] Error: parsers/zap_parser.py failed")
+        state["dast_findings"] = []
+        return state
 
-    sites = zap.get(
-        "site",
-        []
-    )
-
-    for site in sites:
-
-        alerts = site.get(
-            "alerts",
-            []
-        )
-
-        for alert in alerts:
-
-            findings.append({
-
-                "tool":
-                    "ZAP",
-
-                "title":
-                    alert.get(
-                        "alert",
-                        ""
-                    ),
-
-                "severity":
-                    severity(
-                        alert.get(
-                            "riskcode",
-                            "0"
-                        )
-                    ),
-
-                "description":
-                    alert.get(
-                        "desc",
-                        ""
-                    ),
-
-                "solution":
-                    alert.get(
-                        "solution",
-                        ""
-                    ),
-
-                "reference":
-                    alert.get(
-                        "reference",
-                        ""
-                    ),
-
-                "instances":
-                    len(
-                        alert.get(
-                            "instances",
-                            []
-                        )
-                    )
-            })
-
-    state[
-        "dast_findings"
-    ] = findings
-
-    print(
-        f"[ZapParserAgent] "
-        f"{len(findings)} findings"
-    )
+    if os.path.exists(OUTPUT_FILE):
+        with open(OUTPUT_FILE, "r") as f:
+            findings = json.load(f)
+            state["dast_findings"] = findings
+            print(f"[ZapParserAgent] Loaded {len(findings)} findings from {OUTPUT_FILE}")
+    else:
+        print(f"[ZapParserAgent] {OUTPUT_FILE} not found after parsing.")
+        state["dast_findings"] = []
 
     return state
 

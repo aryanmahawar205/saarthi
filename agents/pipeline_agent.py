@@ -3,8 +3,6 @@ import subprocess
 
 PIPELINE_STEPS = [
 
-    "parsers/zap_parser.py",
-
     "parsers/merge_findings.py",
 
     "parsers/severity_normalizer.py",

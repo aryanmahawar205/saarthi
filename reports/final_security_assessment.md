@@ -2,10 +2,10 @@
 
 ## Executive Summary
 
-**Overall Risk Level:** HIGH (75/100)
+**Overall Risk Level:** UNKNOWN (0/100)
 
 ### Summary of Findings
-Saarthi's analysis of the target application has identified a total of 5 SAST incidents and 6 DAST incidents. Through runtime observation, we've correlated these findings into 6 critical attack chains.
+Saarthi's analysis of the target application has identified a total of 0 SAST incidents and 0 DAST incidents. Through runtime observation, we've correlated these findings into 0 critical attack chains.
 
 The assessment highlights significant risks in the application's handling of external inputs and session management, particularly where they cross defined trust boundaries.
 
@@ -16,13 +16,13 @@ The application architecture was analyzed using a combination of repository pars
 
 ## Assessment Scope
 
-- **Target URL:** http://localhost:8080/WebGoat/
-- **Repository Path:** vulnerable_codebases/WebGoat
-- **Discovery Mode:** Hybrid
+- **Target URL:** N/A
+- **Repository Path:** .
+- **Discovery Mode:** Single-Mode
 
 ## Attack Surface
 
-- **Discovered Endpoints:** 16
+- **Discovered Endpoints:** 0
 - **Observed Traffic Flows:** 17
 - **Detected Framework:** Unknown
 
@@ -30,7 +30,7 @@ The attack surface comprises all reachable endpoints identified during the disco
 
 ## Trust Boundaries
 
-- **External Input**: Internet -> Web Application
+No distinct trust boundaries were identified in the current context.
 
 ## Observed Runtime Behaviour
 
@@ -50,6 +50,51 @@ The following significant runtime behaviours were observed during the assessment
 
 ## Static Findings (SAST)
 
-### Absence of Anti-CSRF Tokens
-| File | Priority | Reachability Score |
-| --- | --- | --- |
+No static findings were identified.
+
+## Dynamic Findings (DAST)
+
+No runtime findings were identified.
+
+## Correlated Findings
+
+Saarthi has correlated static code vulnerabilities with runtime execution evidence. This correlation reduces false positives and highlights vulnerabilities that are demonstrably reachable in the running environment.
+
+### Knowledge Graph Statistics
+- **Nodes:** 54
+- **Edges:** 55
+- **Relationship Types:** identifies, observed_at, targeted_at, generated_response, sent_cookie
+
+## Attack Chains
+
+No definitive attack chains were derived.
+
+## AI-Assisted Reasoning
+
+### Most Likely Attack
+Failed to determine.
+
+### Most Dangerous Attack
+Failed to determine.
+
+### Exploitability Assessment
+Failed to assess.
+
+### Business Impact
+Failed to generate business impact.
+
+## Risk Assessment
+
+**Priority:** Unknown
+
+### Top Risks
+
+No prioritized risks were provided.
+
+## Remediation Roadmap
+
+No remediation steps were provided.
+
+## Executive Recommendations
+
+It is highly recommended that the engineering teams prioritize the Top Risks identified in this report. The integration of runtime evidence proves that these vulnerabilities are not just theoretical but reachable in the application's current deployment. Following the Remediation Roadmap will systematically address the underlying structural vulnerabilities, reducing the overall risk exposure.

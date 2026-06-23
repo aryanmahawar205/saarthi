@@ -30,18 +30,27 @@ def build_method_lookup(index):
 
 
 def main():
+    if not os.path.exists(CONTEXT_PACKS):
+        print(f"[!] {CONTEXT_PACKS} not found. Skipping linking.")
+        with open(OUTPUT_FILE, "w") as f:
+            json.dump([], f)
+        return
 
     contexts = load_json(
         CONTEXT_PACKS
     )
 
-    method_index = load_json(
-        METHOD_INDEX
-    )
+    method_index = []
+    if os.path.exists(METHOD_INDEX):
+        method_index = load_json(
+            METHOD_INDEX
+        )
 
-    call_graph = load_json(
-        CALL_GRAPH
-    )
+    call_graph = []
+    if os.path.exists(CALL_GRAPH):
+        call_graph = load_json(
+            CALL_GRAPH
+        )
 
     method_lookup = build_method_lookup(
         method_index
