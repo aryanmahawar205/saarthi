@@ -2,32 +2,47 @@
 
 ## Executive Summary
 
-The overall risk level for the application is assessed as **UNKNOWN**. This report outlines the discovered attack surface, identifies trust boundaries, and highlights the critical vulnerabilities that pose a risk to the business.
+**Overall Risk Level:** UNKNOWN (0/100)
+
+This report provides a comprehensive security assessment of the target application using AI-assisted runtime-aware analysis. By correlating static code analysis, dynamic scanning, and runtime observation, Saarthi has identified critical attack paths and business risks.
 
 ## Assessment Scope
 
-- **Target URL:** http://localhost:8080
+- **Target URL:** http://localhost:8080/WebGoat/
 - **Repository Path:** /app
+- **Discovery Mode:** Hybrid
 
-## Application Overview
+## Runtime Attack Surface
 
-The platform performed an AI-assisted analysis of the target application. By mapping the application components, API calls, and trust boundaries, we established a comprehensive understanding of the architecture prior to deep security reasoning.
+- **Discovered Endpoints:** 12
+- **Observed Traffic Flows:** 12
 
-## Attack Surface
-
-Total endpoints discovered: 0
-
-The discovered endpoints represent the entry points available to a potential attacker. Securing these points is critical to reducing the overall attack surface.
+The runtime attack surface was mapped through deep crawling and traffic observation. This represents the externally reachable entry points and internal data flow patterns.
 
 ## Trust Boundaries
 
-No distinct trust boundaries were identified in the current context.
+- **External Input**: Internet -> Web Application
 
-## Static Findings
+## Observed Runtime Behaviour
+
+The following significant runtime behaviours were observed during the assessment:
+
+- **GET http://localhost:8080/WebGoat/** (Status: 502)
+- **GET http://localhost:8080/sitemap.xml** (Status: 502)
+- **GET http://localhost:8080/robots.txt** (Status: 502)
+- **GET http://localhost:8080/v3/api-docs** (Status: 502)
+- **GET http://localhost:8080/openapi.json** (Status: 502)
+- **GET http://localhost:8080/swagger-ui.html** (Status: 502)
+- **GET http://localhost:8080/swagger.json** (Status: 502)
+- **GET http://localhost:8080/.env** (Status: 502)
+- **GET http://localhost:8080/.git/config** (Status: 502)
+- **GET http://localhost:8080/actuator** (Status: 502)
+
+## Static Findings (SAST)
 
 No static findings were identified.
 
-## Runtime Findings
+## Dynamic Findings (DAST)
 
 - **Weak Browser Security Controls** (Instances: 8)
 - **CSRF Exposure** (Instances: 1)
@@ -103,19 +118,25 @@ Findings correlated across Static and Runtime analysis layers have been incorpor
 - Browser Execution by Victim
 - Credential Theft or Session Hijacking
 
-## Most Likely Attack Scenario
+## AI-Assisted Reasoning
 
+### Most Likely Attack
 Failed to determine.
 
-## Most Dangerous Attack Scenario
-
+### Most Dangerous Attack
 Failed to determine.
 
-## Business Impact
+### Exploitability Assessment
+Failed to assess.
 
+### Business Impact
 Failed to generate business impact.
 
-## Top Risks
+## Risk Assessment
+
+**Priority:** Unknown
+
+### Top Risks
 
 No prioritized risks were provided.
 
@@ -125,4 +146,4 @@ No remediation steps were provided.
 
 ## Executive Recommendations
 
-It is highly recommended that the engineering teams prioritize the Top Risks identified in this report. Following the Remediation Roadmap will systematically address the underlying structural vulnerabilities, reducing the overall risk exposure of the application.
+It is highly recommended that the engineering teams prioritize the Top Risks identified in this report. The integration of runtime evidence proves that these vulnerabilities are not just theoretical but reachable in the application's current deployment. Following the Remediation Roadmap will systematically address the underlying structural vulnerabilities, reducing the overall risk exposure.

@@ -2,6 +2,7 @@ import json
 import os
 
 OUTPUT_FILE = "reports/security_graph.json"
+OBSERVATIONS_FILE = "reports/runtime_observations.json"
 
 def run(state):
     attack_surface = state.get("attack_surface", {})
@@ -18,6 +19,15 @@ def run(state):
             sast_incidents = []
 
     dast_incidents = state.get("dast_incidents", [])
+
+    # Load runtime observations
+    runtime_observations = []
+    if os.path.exists(OBSERVATIONS_FILE):
+        try:
+            with open(OBSERVATIONS_FILE, "r") as f:
+                runtime_observations = json.load(f)
+        except:
+            pass
 
     nodes = {}
     edges = []
@@ -41,6 +51,44 @@ def run(state):
         url = ep.get("url") if isinstance(ep, dict) else ep
         if url:
             add_node(f"Endpoint_{url}", "endpoint", url)
+
+    # Runtime Observations Integration
+    for idx, obs in enumerate(runtime_observations):
+        url = obs.get("url")
+        obs_id = f"Obs_{idx}"
+        req_id = f"Request_{idx}"
+        resp_id = f"Response_{idx}"
+
+        add_node(req_id, "request", f"{obs.get('method')} {url}", method=obs.get("method"))
+        add_node(resp_id, "response", f"Status {obs.get('status_code')}", status=obs.get("status_code"))
+        add_edge(req_id, resp_id, "generated_response")
+
+        ep_id = f"Endpoint_{url}"
+        add_node(ep_id, "endpoint", url)
+        add_edge(req_id, ep_id, "targeted_at")
+
+        # Cookies
+        for cookie_name, cookie_val in obs.get("cookies", {}).items():
+            c_id = f"Cookie_{cookie_name}"
+            add_node(c_id, "cookie", cookie_name)
+            add_edge(req_id, c_id, "sent_cookie")
+            if "session" in cookie_name.lower() or "sid" in cookie_name.lower():
+                s_id = f"Session_{cookie_val[:8]}"
+                add_node(s_id, "session", "Active Session")
+                add_edge(c_id, s_id, "identifies")
+
+        # Forms
+        for field in obs.get("form_data", {}).keys():
+            f_id = f"Form_{field}"
+            add_node(f_id, "form", f"Form Field: {field}")
+            add_edge(req_id, f_id, "submitted_field")
+
+        # Headers (Focus on security relevant ones)
+        for h_name in obs.get("request_headers", {}).keys():
+            if h_name.lower() in ["authorization", "x-api-key", "token"]:
+                h_id = f"Header_{h_name}"
+                add_node(h_id, "header", h_name)
+                add_edge(req_id, h_id, "authenticated_by")
 
     # API Call Chains (Endpoint -> Controller -> Method -> Sink)
     for chain in api_call_chains:
@@ -144,7 +192,8 @@ def run(state):
             "trust_boundaries": trust_boundaries,
             "api_call_chains": api_call_chains,
             "sast_incidents": sast_incidents,
-            "dast_incidents": dast_incidents
+            "dast_incidents": dast_incidents,
+            "runtime_observations": runtime_observations
         }
     }
 

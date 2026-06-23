@@ -1,0 +1,33 @@
+[
+  {
+    "url": "http://google.com/",
+    "method": "GET",
+    "status_code": 301,
+    "request_headers": {
+      "Host": "google.com",
+      "User-Agent": "curl/8.5.0",
+      "Accept": "*/*",
+      "Proxy-Connection": "Keep-Alive"
+    },
+    "response_headers": {
+      "Location": "http://www.google.com/",
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Security-Policy-Report-Only": "object-src 'none';base-uri 'self';script-src 'nonce-k9jnz0v_xBqb7vqJxFnZpA' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp",
+      "Date": "Tue, 23 Jun 2026 05:03:45 GMT",
+      "Expires": "Thu, 23 Jul 2026 05:03:45 GMT",
+      "Cache-Control": "public, max-age=2592000",
+      "Server": "gws",
+      "Content-Length": "219",
+      "X-XSS-Protection": "0",
+      "X-Frame-Options": "SAMEORIGIN"
+    },
+    "cookies": {},
+    "query_params": {},
+    "form_data": {},
+    "redirects": "http://www.google.com/",
+    "response_metadata": {
+      "content_type": "text/html; charset=UTF-8",
+      "length": 219
+    }
+  }
+]

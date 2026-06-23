@@ -1,8 +1,11 @@
 {
+  "Risk Score": 0,
   "Overall Risk": "UNKNOWN",
   "Most Likely Attack": "Failed to determine.",
   "Most Dangerous Attack": "Failed to determine.",
+  "Exploitability Assessment": "Failed to assess.",
   "Business Impact": "Failed to generate business impact.",
   "Prioritized Findings": [],
+  "Remediation Priority": "Unknown",
   "Remediation Order": []
 }

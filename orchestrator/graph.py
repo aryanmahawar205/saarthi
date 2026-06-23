@@ -2,6 +2,10 @@ import argparse
 import os
 from agents.planning_agent import run as planning_agent
 
+# Runtime Observation
+from agents.runtime_observer_agent import start as start_runtime_observer
+from agents.runtime_observer_agent import stop as stop_runtime_observer
+
 # Discovery
 from agents.recon_agent import run as recon_agent
 from agents.discovery_agent import run as discovery_agent
@@ -59,6 +63,10 @@ def main():
     run_repo = args.repo is not None
 
     if run_url:
+        # Start Runtime Observer
+        state = start_runtime_observer(state)
+        print_state("RuntimeObserverStarted", state)
+
         # Phase 1: Discovery
         state = recon_agent(state)
         print_state("ReconAgent", state)
@@ -83,6 +91,10 @@ def main():
         state = dast_correlation_agent(state)
         print_state("DASTCorrelationAgent", state)
 
+        # Stop Runtime Observer after DAST
+        state = stop_runtime_observer(state)
+        print_state("RuntimeObserverStopped", state)
+
     if run_repo:
         # Parsers execution for context/dependency/api graphs
         print("\n[Orchestrator] Running Repository Parsers...")
@@ -94,6 +106,7 @@ def main():
         state = pipeline_agent(state)
         print_state("PipelineAgent", state)
 
+        # Context builder and correlation
         state = context_agent(state)
         print_state("ContextAgent", state)
 
@@ -132,4 +145,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\n[Orchestrator] Interrupted by user. Cleaning up...")
+        stop_runtime_observer({})

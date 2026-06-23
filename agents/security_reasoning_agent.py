@@ -20,6 +20,9 @@ def run(state):
     attack_surface = state.get("attack_surface", {})
     trust_boundaries = state.get("trust_boundaries", [])
 
+    # Runtime observations
+    runtime_observations = state.get("security_knowledge_graph", {}).get("raw_inputs", {}).get("runtime_observations", [])
+
     # We pass minimal structure to avoid blowing up context window
     nodes_summary = [
         {"id": n.get("id"), "type": n.get("type"), "label": n.get("label")}
@@ -31,15 +34,18 @@ def run(state):
     ]
 
     prompt = f"""
-You are an expert Application Security Architect.
+You are an expert AI Security Analyst.
 
-Evaluate the consolidated Security Knowledge Graph, the identified Attack Paths, and other assessment data to provide a final security reasoning.
+Evaluate the consolidated Security Knowledge Graph, Attack Paths, and Runtime Observations to provide deep security reasoning.
 
 KNOWLEDGE GRAPH NODES (Summary):
-{json.dumps(nodes_summary, indent=2)[:2000]}
+{json.dumps(nodes_summary, indent=2)[:3000]}
 
 KNOWLEDGE GRAPH EDGES (Summary):
-{json.dumps(edges_summary, indent=2)[:2000]}
+{json.dumps(edges_summary, indent=2)[:3000]}
+
+RUNTIME OBSERVATIONS:
+{json.dumps(runtime_observations, indent=2)[:2000]}
 
 ATTACK PATHS:
 {json.dumps(attack_paths, indent=2)[:2000]}
@@ -50,31 +56,34 @@ SAST FINDINGS:
 DAST FINDINGS:
 {json.dumps(dast_incidents, indent=2)[:2000]}
 
-ATTACK SURFACE:
-{json.dumps(attack_surface, indent=2)[:1000]}
-
 TRUST BOUNDARIES:
 {json.dumps(trust_boundaries, indent=2)[:1000]}
 
-Synthesize a comprehensive security reasoning that addresses the following:
-1. Overall Risk (CRITICAL, HIGH, MEDIUM, LOW).
-2. Most Likely Attack (Which attack path is the easiest for an attacker to execute).
-3. Most Dangerous Attack (Which attack path has the highest business impact).
-4. Business Impact (What happens to the business if these vulnerabilities are exploited).
-5. Prioritized Findings (List the top 3 findings that need immediate attention).
-6. Remediation Order (High-level order of operations for fixing the issues).
+Synthesize a comprehensive security reasoning that addresses:
+1. Risk Score (0-100).
+2. Overall Risk (CRITICAL, HIGH, MEDIUM, LOW).
+3. Most Likely Attack (Easiest to execute given runtime behavior).
+4. Most Dangerous Attack (Highest business impact).
+5. Exploitability Assessment (How easy are these to exploit in the real world).
+6. Business Impact (Impact on operations, data, reputation).
+7. Prioritized Findings (Top 3 immediate concerns).
+8. Remediation Priority (Which should be fixed first and why).
+9. Remediation Order (Step-by-step sequence).
 
 Return ONLY valid JSON in exactly this format:
 {{
+  "Risk Score": 0,
   "Overall Risk": "...",
   "Most Likely Attack": "...",
   "Most Dangerous Attack": "...",
+  "Exploitability Assessment": "...",
   "Business Impact": "...",
   "Prioritized Findings": ["...", "...", "..."],
+  "Remediation Priority": "...",
   "Remediation Order": ["...", "...", "..."]
 }}
 """
-    print("[SecurityReasoningAgent] Calling AI model for comprehensive reasoning...")
+    print("[SecurityReasoningAgent] Calling AI model for comprehensive runtime-aware reasoning...")
 
     try:
         llm = ChatOllama(model="qwen2.5:7b", temperature=0)
@@ -90,11 +99,14 @@ Return ONLY valid JSON in exactly this format:
     except Exception as e:
         print(f"[SecurityReasoningAgent] Model invocation failed: {e}")
         result = {
+            "Risk Score": 0,
             "Overall Risk": "UNKNOWN",
             "Most Likely Attack": "Failed to determine.",
             "Most Dangerous Attack": "Failed to determine.",
+            "Exploitability Assessment": "Failed to assess.",
             "Business Impact": "Failed to generate business impact.",
             "Prioritized Findings": [],
+            "Remediation Priority": "Unknown",
             "Remediation Order": []
         }
 
