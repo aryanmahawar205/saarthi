@@ -1,6 +1,217 @@
 {
   "nodes": [
     {
+      "id": "Endpoint_http://localhost:8080/WebGoat/",
+      "type": "endpoint",
+      "label": "http://localhost:8080/WebGoat/"
+    },
+    {
+      "id": "Endpoint_http://localhost:8080/sitemap.xml",
+      "type": "endpoint",
+      "label": "http://localhost:8080/sitemap.xml"
+    },
+    {
+      "id": "Endpoint_http://localhost:8080/robots.txt",
+      "type": "endpoint",
+      "label": "http://localhost:8080/robots.txt"
+    },
+    {
+      "id": "Endpoint_http://localhost:8080/v3/api-docs",
+      "type": "endpoint",
+      "label": "http://localhost:8080/v3/api-docs"
+    },
+    {
+      "id": "Endpoint_http://localhost:8080/openapi.json",
+      "type": "endpoint",
+      "label": "http://localhost:8080/openapi.json"
+    },
+    {
+      "id": "Endpoint_http://localhost:8080/swagger-ui.html",
+      "type": "endpoint",
+      "label": "http://localhost:8080/swagger-ui.html"
+    },
+    {
+      "id": "Endpoint_http://localhost:8080/swagger.json",
+      "type": "endpoint",
+      "label": "http://localhost:8080/swagger.json"
+    },
+    {
+      "id": "Endpoint_http://localhost:8080/.env",
+      "type": "endpoint",
+      "label": "http://localhost:8080/.env"
+    },
+    {
+      "id": "Endpoint_http://localhost:8080/.git/config",
+      "type": "endpoint",
+      "label": "http://localhost:8080/.git/config"
+    },
+    {
+      "id": "Endpoint_http://localhost:8080/actuator",
+      "type": "endpoint",
+      "label": "http://localhost:8080/actuator"
+    },
+    {
+      "id": "Endpoint_http://localhost:8080/api-docs",
+      "type": "endpoint",
+      "label": "http://localhost:8080/api-docs"
+    },
+    {
+      "id": "Endpoint_http://localhost:8080/v2/api-docs",
+      "type": "endpoint",
+      "label": "http://localhost:8080/v2/api-docs"
+    },
+    {
+      "id": "Request_0",
+      "type": "request",
+      "label": "GET http://localhost:8080/WebGoat/",
+      "method": "GET"
+    },
+    {
+      "id": "Response_0",
+      "type": "response",
+      "label": "Status 502",
+      "status": 502
+    },
+    {
+      "id": "Request_1",
+      "type": "request",
+      "label": "GET http://localhost:8080/sitemap.xml",
+      "method": "GET"
+    },
+    {
+      "id": "Response_1",
+      "type": "response",
+      "label": "Status 502",
+      "status": 502
+    },
+    {
+      "id": "Request_2",
+      "type": "request",
+      "label": "GET http://localhost:8080/robots.txt",
+      "method": "GET"
+    },
+    {
+      "id": "Response_2",
+      "type": "response",
+      "label": "Status 502",
+      "status": 502
+    },
+    {
+      "id": "Request_3",
+      "type": "request",
+      "label": "GET http://localhost:8080/v3/api-docs",
+      "method": "GET"
+    },
+    {
+      "id": "Response_3",
+      "type": "response",
+      "label": "Status 502",
+      "status": 502
+    },
+    {
+      "id": "Request_4",
+      "type": "request",
+      "label": "GET http://localhost:8080/openapi.json",
+      "method": "GET"
+    },
+    {
+      "id": "Response_4",
+      "type": "response",
+      "label": "Status 502",
+      "status": 502
+    },
+    {
+      "id": "Request_5",
+      "type": "request",
+      "label": "GET http://localhost:8080/swagger-ui.html",
+      "method": "GET"
+    },
+    {
+      "id": "Response_5",
+      "type": "response",
+      "label": "Status 502",
+      "status": 502
+    },
+    {
+      "id": "Request_6",
+      "type": "request",
+      "label": "GET http://localhost:8080/swagger.json",
+      "method": "GET"
+    },
+    {
+      "id": "Response_6",
+      "type": "response",
+      "label": "Status 502",
+      "status": 502
+    },
+    {
+      "id": "Request_7",
+      "type": "request",
+      "label": "GET http://localhost:8080/.env",
+      "method": "GET"
+    },
+    {
+      "id": "Response_7",
+      "type": "response",
+      "label": "Status 502",
+      "status": 502
+    },
+    {
+      "id": "Request_8",
+      "type": "request",
+      "label": "GET http://localhost:8080/.git/config",
+      "method": "GET"
+    },
+    {
+      "id": "Response_8",
+      "type": "response",
+      "label": "Status 502",
+      "status": 502
+    },
+    {
+      "id": "Request_9",
+      "type": "request",
+      "label": "GET http://localhost:8080/actuator",
+      "method": "GET"
+    },
+    {
+      "id": "Response_9",
+      "type": "response",
+      "label": "Status 502",
+      "status": 502
+    },
+    {
+      "id": "Request_10",
+      "type": "request",
+      "label": "GET http://localhost:8080/api-docs",
+      "method": "GET"
+    },
+    {
+      "id": "Response_10",
+      "type": "response",
+      "label": "Status 502",
+      "status": 502
+    },
+    {
+      "id": "Request_11",
+      "type": "request",
+      "label": "GET http://localhost:8080/v2/api-docs",
+      "method": "GET"
+    },
+    {
+      "id": "Response_11",
+      "type": "response",
+      "label": "Status 502",
+      "status": 502
+    },
+    {
+      "id": "Boundary_0",
+      "type": "trust_boundary",
+      "label": "External Input",
+      "source_zone": "Internet",
+      "target_zone": "Web Application"
+    },
+    {
       "id": "DAST_Incident_Weak Browser Security Controls",
       "type": "finding",
       "label": "Weak Browser Security Controls",
@@ -37,17 +248,205 @@
       "source": "DAST"
     }
   ],
-  "edges": [],
+  "edges": [
+    {
+      "source": "Request_0",
+      "target": "Response_0",
+      "relationship": "generated_response"
+    },
+    {
+      "source": "Request_0",
+      "target": "Endpoint_http://localhost:8080/WebGoat/",
+      "relationship": "targeted_at"
+    },
+    {
+      "source": "Request_1",
+      "target": "Response_1",
+      "relationship": "generated_response"
+    },
+    {
+      "source": "Request_1",
+      "target": "Endpoint_http://localhost:8080/sitemap.xml",
+      "relationship": "targeted_at"
+    },
+    {
+      "source": "Request_2",
+      "target": "Response_2",
+      "relationship": "generated_response"
+    },
+    {
+      "source": "Request_2",
+      "target": "Endpoint_http://localhost:8080/robots.txt",
+      "relationship": "targeted_at"
+    },
+    {
+      "source": "Request_3",
+      "target": "Response_3",
+      "relationship": "generated_response"
+    },
+    {
+      "source": "Request_3",
+      "target": "Endpoint_http://localhost:8080/v3/api-docs",
+      "relationship": "targeted_at"
+    },
+    {
+      "source": "Request_4",
+      "target": "Response_4",
+      "relationship": "generated_response"
+    },
+    {
+      "source": "Request_4",
+      "target": "Endpoint_http://localhost:8080/openapi.json",
+      "relationship": "targeted_at"
+    },
+    {
+      "source": "Request_5",
+      "target": "Response_5",
+      "relationship": "generated_response"
+    },
+    {
+      "source": "Request_5",
+      "target": "Endpoint_http://localhost:8080/swagger-ui.html",
+      "relationship": "targeted_at"
+    },
+    {
+      "source": "Request_6",
+      "target": "Response_6",
+      "relationship": "generated_response"
+    },
+    {
+      "source": "Request_6",
+      "target": "Endpoint_http://localhost:8080/swagger.json",
+      "relationship": "targeted_at"
+    },
+    {
+      "source": "Request_7",
+      "target": "Response_7",
+      "relationship": "generated_response"
+    },
+    {
+      "source": "Request_7",
+      "target": "Endpoint_http://localhost:8080/.env",
+      "relationship": "targeted_at"
+    },
+    {
+      "source": "Request_8",
+      "target": "Response_8",
+      "relationship": "generated_response"
+    },
+    {
+      "source": "Request_8",
+      "target": "Endpoint_http://localhost:8080/.git/config",
+      "relationship": "targeted_at"
+    },
+    {
+      "source": "Request_9",
+      "target": "Response_9",
+      "relationship": "generated_response"
+    },
+    {
+      "source": "Request_9",
+      "target": "Endpoint_http://localhost:8080/actuator",
+      "relationship": "targeted_at"
+    },
+    {
+      "source": "Request_10",
+      "target": "Response_10",
+      "relationship": "generated_response"
+    },
+    {
+      "source": "Request_10",
+      "target": "Endpoint_http://localhost:8080/api-docs",
+      "relationship": "targeted_at"
+    },
+    {
+      "source": "Request_11",
+      "target": "Response_11",
+      "relationship": "generated_response"
+    },
+    {
+      "source": "Request_11",
+      "target": "Endpoint_http://localhost:8080/v2/api-docs",
+      "relationship": "targeted_at"
+    }
+  ],
   "raw_inputs": {
     "attack_surface": {
       "application_type": "Unknown",
-      "endpoint_count": 0,
-      "endpoints": [],
+      "endpoint_count": 12,
+      "endpoints": [
+        {
+          "url": "http://localhost:8080/WebGoat/",
+          "status": 502,
+          "method": "GET"
+        },
+        {
+          "url": "http://localhost:8080/sitemap.xml",
+          "status": 502,
+          "method": "GET"
+        },
+        {
+          "url": "http://localhost:8080/robots.txt",
+          "status": 502,
+          "method": "GET"
+        },
+        {
+          "url": "http://localhost:8080/v3/api-docs",
+          "status": 502,
+          "method": "GET"
+        },
+        {
+          "url": "http://localhost:8080/openapi.json",
+          "status": 502,
+          "method": "GET"
+        },
+        {
+          "url": "http://localhost:8080/swagger-ui.html",
+          "status": 502,
+          "method": "GET"
+        },
+        {
+          "url": "http://localhost:8080/swagger.json",
+          "status": 502,
+          "method": "GET"
+        },
+        {
+          "url": "http://localhost:8080/.env",
+          "status": 502,
+          "method": "GET"
+        },
+        {
+          "url": "http://localhost:8080/.git/config",
+          "status": 502,
+          "method": "GET"
+        },
+        {
+          "url": "http://localhost:8080/actuator",
+          "status": 502,
+          "method": "GET"
+        },
+        {
+          "url": "http://localhost:8080/api-docs",
+          "status": 502,
+          "method": "GET"
+        },
+        {
+          "url": "http://localhost:8080/v2/api-docs",
+          "status": 502,
+          "method": "GET"
+        }
+      ],
       "dast_findings": 0,
       "incidents": 0,
       "attack_paths": 0
     },
-    "trust_boundaries": [],
+    "trust_boundaries": [
+      {
+        "source": "Internet",
+        "target": "Web Application",
+        "boundary": "External Input"
+      }
+    ],
     "api_call_chains": [],
     "sast_incidents": [],
     "dast_incidents": [
@@ -197,6 +596,260 @@
             "instances": 4
           }
         ]
+      }
+    ],
+    "runtime_observations": [
+      {
+        "url": "http://localhost:8080/WebGoat/",
+        "method": "GET",
+        "status_code": 502,
+        "request_headers": {
+          "Host": "localhost:8080",
+          "User-Agent": "python-requests/2.34.2",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Accept": "*/*",
+          "Connection": "keep-alive"
+        },
+        "response_headers": {},
+        "cookies": {},
+        "query_params": {},
+        "form_data": {},
+        "redirects": null,
+        "response_metadata": {
+          "content_type": "text/html",
+          "length": 0
+        }
+      },
+      {
+        "url": "http://localhost:8080/sitemap.xml",
+        "method": "GET",
+        "status_code": 502,
+        "request_headers": {
+          "Host": "localhost:8080",
+          "User-Agent": "python-requests/2.34.2",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Accept": "*/*",
+          "Connection": "keep-alive"
+        },
+        "response_headers": {},
+        "cookies": {},
+        "query_params": {},
+        "form_data": {},
+        "redirects": null,
+        "response_metadata": {
+          "content_type": "text/html",
+          "length": 0
+        }
+      },
+      {
+        "url": "http://localhost:8080/robots.txt",
+        "method": "GET",
+        "status_code": 502,
+        "request_headers": {
+          "Host": "localhost:8080",
+          "User-Agent": "python-requests/2.34.2",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Accept": "*/*",
+          "Connection": "keep-alive"
+        },
+        "response_headers": {},
+        "cookies": {},
+        "query_params": {},
+        "form_data": {},
+        "redirects": null,
+        "response_metadata": {
+          "content_type": "text/html",
+          "length": 0
+        }
+      },
+      {
+        "url": "http://localhost:8080/v3/api-docs",
+        "method": "GET",
+        "status_code": 502,
+        "request_headers": {
+          "Host": "localhost:8080",
+          "User-Agent": "python-requests/2.34.2",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Accept": "*/*",
+          "Connection": "keep-alive"
+        },
+        "response_headers": {},
+        "cookies": {},
+        "query_params": {},
+        "form_data": {},
+        "redirects": null,
+        "response_metadata": {
+          "content_type": "text/html",
+          "length": 0
+        }
+      },
+      {
+        "url": "http://localhost:8080/openapi.json",
+        "method": "GET",
+        "status_code": 502,
+        "request_headers": {
+          "Host": "localhost:8080",
+          "User-Agent": "python-requests/2.34.2",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Accept": "*/*",
+          "Connection": "keep-alive"
+        },
+        "response_headers": {},
+        "cookies": {},
+        "query_params": {},
+        "form_data": {},
+        "redirects": null,
+        "response_metadata": {
+          "content_type": "text/html",
+          "length": 0
+        }
+      },
+      {
+        "url": "http://localhost:8080/swagger-ui.html",
+        "method": "GET",
+        "status_code": 502,
+        "request_headers": {
+          "Host": "localhost:8080",
+          "User-Agent": "python-requests/2.34.2",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Accept": "*/*",
+          "Connection": "keep-alive"
+        },
+        "response_headers": {},
+        "cookies": {},
+        "query_params": {},
+        "form_data": {},
+        "redirects": null,
+        "response_metadata": {
+          "content_type": "text/html",
+          "length": 0
+        }
+      },
+      {
+        "url": "http://localhost:8080/swagger.json",
+        "method": "GET",
+        "status_code": 502,
+        "request_headers": {
+          "Host": "localhost:8080",
+          "User-Agent": "python-requests/2.34.2",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Accept": "*/*",
+          "Connection": "keep-alive"
+        },
+        "response_headers": {},
+        "cookies": {},
+        "query_params": {},
+        "form_data": {},
+        "redirects": null,
+        "response_metadata": {
+          "content_type": "text/html",
+          "length": 0
+        }
+      },
+      {
+        "url": "http://localhost:8080/.env",
+        "method": "GET",
+        "status_code": 502,
+        "request_headers": {
+          "Host": "localhost:8080",
+          "User-Agent": "python-requests/2.34.2",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Accept": "*/*",
+          "Connection": "keep-alive"
+        },
+        "response_headers": {},
+        "cookies": {},
+        "query_params": {},
+        "form_data": {},
+        "redirects": null,
+        "response_metadata": {
+          "content_type": "text/html",
+          "length": 0
+        }
+      },
+      {
+        "url": "http://localhost:8080/.git/config",
+        "method": "GET",
+        "status_code": 502,
+        "request_headers": {
+          "Host": "localhost:8080",
+          "User-Agent": "python-requests/2.34.2",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Accept": "*/*",
+          "Connection": "keep-alive"
+        },
+        "response_headers": {},
+        "cookies": {},
+        "query_params": {},
+        "form_data": {},
+        "redirects": null,
+        "response_metadata": {
+          "content_type": "text/html",
+          "length": 0
+        }
+      },
+      {
+        "url": "http://localhost:8080/actuator",
+        "method": "GET",
+        "status_code": 502,
+        "request_headers": {
+          "Host": "localhost:8080",
+          "User-Agent": "python-requests/2.34.2",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Accept": "*/*",
+          "Connection": "keep-alive"
+        },
+        "response_headers": {},
+        "cookies": {},
+        "query_params": {},
+        "form_data": {},
+        "redirects": null,
+        "response_metadata": {
+          "content_type": "text/html",
+          "length": 0
+        }
+      },
+      {
+        "url": "http://localhost:8080/api-docs",
+        "method": "GET",
+        "status_code": 502,
+        "request_headers": {
+          "Host": "localhost:8080",
+          "User-Agent": "python-requests/2.34.2",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Accept": "*/*",
+          "Connection": "keep-alive"
+        },
+        "response_headers": {},
+        "cookies": {},
+        "query_params": {},
+        "form_data": {},
+        "redirects": null,
+        "response_metadata": {
+          "content_type": "text/html",
+          "length": 0
+        }
+      },
+      {
+        "url": "http://localhost:8080/v2/api-docs",
+        "method": "GET",
+        "status_code": 502,
+        "request_headers": {
+          "Host": "localhost:8080",
+          "User-Agent": "python-requests/2.34.2",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Accept": "*/*",
+          "Connection": "keep-alive"
+        },
+        "response_headers": {},
+        "cookies": {},
+        "query_params": {},
+        "form_data": {},
+        "redirects": null,
+        "response_metadata": {
+          "content_type": "text/html",
+          "length": 0
+        }
       }
     ]
   }

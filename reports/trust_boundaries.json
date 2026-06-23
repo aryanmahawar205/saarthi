@@ -1,1 +1,7 @@
-[]
+[
+  {
+    "source": "Internet",
+    "target": "Web Application",
+    "boundary": "External Input"
+  }
+]

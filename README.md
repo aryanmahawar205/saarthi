@@ -4,9 +4,9 @@ Saarthi is an AI-Assisted Security Assessment Platform that shifts the paradigm 
 
 ## Architecture Diagram
 ```
-Collection Layer
+Runtime-Aware AI Analysis
        ↓
-Knowledge Layer
+Knowledge Layer (Graph)
        ↓
 Security Reasoning Layer
        ↓
@@ -15,15 +15,16 @@ Remediation Layer
 Reporting Layer
 ```
 
-For more detailed architecture information, please see [ARCHITECTURE.md](docs/ARCHITECTURE.md).
+For more detailed architecture information, please see [ARCHITECTURE.md](docs/ARCHITECTURE.md) and [RUNTIME_INTELLIGENCE.md](docs/RUNTIME_INTELLIGENCE.md).
 
 ## Agent Responsibilities
-- **Recon & Discovery Agents**: Map the application's attack surface and runtime behavior.
+- **Runtime Observer Agent**: Captures live application traffic using mitmproxy.
+- **Recon & Discovery Agents**: Map the application's attack surface and runtime behavior, utilizing the observer.
 - **Trust Boundary & API Chain Agents**: Identify data flow boundaries and endpoint logic.
 - **Scanner Agents (ZAP, Pipeline)**: Execute DAST and SAST tools.
 - **Security Knowledge Graph Agent**: Synthesizes findings, boundaries, and surfaces into a unified graph format (`nodes` and `edges`).
-- **Attack Path Agent**: Derives realistic attack chains from the knowledge graph.
-- **Security Reasoning Agent**: The central AI "brain". Computes overall risk, business impact, and prioritizes findings.
+- **Attack Path Agent**: Derives realistic attack chains from the knowledge graph and runtime evidence.
+- **Security Reasoning Agent**: The central AI "brain". Computes overall risk, business impact, exploitability, and prioritizes findings based on runtime awareness.
 - **Remediation Agent**: Formulates strategies to fix identified risks.
 - **Report Agent**: Generates the final, comprehensive Markdown assessment.
 
