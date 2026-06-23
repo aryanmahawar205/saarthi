@@ -8,6 +8,9 @@ def run(state):
     nodes = knowledge_graph.get("nodes", [])
     edges = knowledge_graph.get("edges", [])
 
+    # Ingest runtime observations for enrichment
+    runtime_observations = knowledge_graph.get("raw_inputs", {}).get("runtime_observations", [])
+
     dast_incidents = []
     sast_incidents = []
     trust_boundaries = []
@@ -28,6 +31,9 @@ def run(state):
 
     for incident in dast_incidents:
         name = incident.get("label", "")
+
+        # Check for matching runtime observations to enrich the path
+        matching_obs = [obs for obs in runtime_observations if obs.get("url") in incident.get("id", "")]
 
         # Determine if this finding crosses a trust boundary (look at edges)
         related_boundaries = [
@@ -87,14 +93,24 @@ def run(state):
                 "boundary_crossed": boundary_info
             })
         else:
+            path_steps = [
+                "External Input",
+                "Discovery of Vulnerability",
+                f"Exploitation of {name}",
+                "Impact Realization"
+            ]
+
+            # Enrich with runtime evidence if available
+            if matching_obs:
+                obs = matching_obs[0]
+                if obs.get("auth_flow", {}).get("present"):
+                    path_steps.insert(2, f"Acquire {obs['auth_flow']['type']}")
+                if obs.get("form_data"):
+                    path_steps.insert(1, f"Submit form with fields: {', '.join(obs['form_data'].keys())}")
+
             attack_paths.append({
                 "name": f"Exploitation of {name}",
-                "path": [
-                    "External Input",
-                    "Discovery of Vulnerability",
-                    f"Exploitation of {name}",
-                    "Impact Realization"
-                ],
+                "path": path_steps,
                 "impact": "Variable based on context",
                 "boundary_crossed": boundary_info
             })

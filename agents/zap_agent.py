@@ -7,15 +7,33 @@ def run(state):
     target = state.get("target_url")
     print(f"[ZapAgent] {target}")
 
-    # For testing in sandbox environment without full docker permission or if the image fails,
-    # we just generate a dummy zap.json or rely on the previous run's result if it fails.
-    if not os.path.exists("scans"):
-        os.makedirs("scans")
+    # Resolve absolute paths and ensure scans directory exists
+    project_root = os.path.abspath(state.get("project_root", os.getcwd()))
+
+    # If project_root is not writable or is problematic, fallback to current working directory
+    if not os.access(os.path.dirname(project_root) if os.path.dirname(project_root) else ".", os.W_OK):
+         project_root = os.getcwd()
+
+    scans_dir = os.path.join(project_root, "scans")
+
+    if not os.path.exists(scans_dir):
+        try:
+            os.makedirs(scans_dir, exist_ok=True)
+        except PermissionError:
+            # Fallback to local scans directory if project_root is not writable
+            scans_dir = os.path.abspath("scans")
+            os.makedirs(scans_dir, exist_ok=True)
+
+    # Ensure ZAP can write to the scans directory (fix AccessDenied)
+    try:
+        os.chmod(scans_dir, 0o777)
+    except Exception as e:
+        print(f"[ZapAgent] Warning: Could not set permissions on {scans_dir}: {e}")
 
     command = [
         "docker", "run", "--rm",
         "--network", "host",
-        "-v", f"{state['project_root']}/scans:/zap/wrk",
+        "-v", f"{scans_dir}:/zap/wrk:rw",
         "ghcr.io/zaproxy/zaproxy:stable",
         "zap-baseline.py", "-t", target, "-J", "zap.json"
     ]

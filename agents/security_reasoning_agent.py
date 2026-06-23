@@ -10,13 +10,23 @@ def run(state):
 
     # Other context
     sast_incidents = state.get("incidents", [])
+    if not sast_incidents:
+        sast_incidents = knowledge_graph.get("raw_inputs", {}).get("sast_incidents", [])
+
     if isinstance(sast_incidents, str):
         try:
-            sast_incidents = json.loads(sast_incidents)
+            clean_sast = sast_incidents.replace('```json', '').replace('```', '').strip()
+            sast_incidents = json.loads(clean_sast)
         except:
             sast_incidents = []
 
     dast_incidents = state.get("dast_incidents", [])
+    if not dast_incidents:
+        dast_incidents = knowledge_graph.get("raw_inputs", {}).get("dast_incidents", [])
+
+    # Validation
+    if not sast_incidents and not dast_incidents:
+        print("[SecurityReasoningAgent] Warning: No incidents (SAST or DAST) propagated to reasoning agent.")
     attack_surface = state.get("attack_surface", {})
     trust_boundaries = state.get("trust_boundaries", [])
 

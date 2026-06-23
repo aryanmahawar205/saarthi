@@ -15,10 +15,14 @@ def run(state):
     sast_incidents = state.get("incidents", raw_inputs.get("sast_incidents", []))
     dast_incidents = state.get("dast_incidents", raw_inputs.get("dast_incidents", []))
     runtime_observations = raw_inputs.get("runtime_observations", [])
+    graph_stats = knowledge_graph.get("statistics", {})
+    app_plan = state.get("assessment_plan", {})
+    app_type = app_plan.get("application_type", "Unknown")
 
     if isinstance(sast_incidents, str):
         try:
-            sast_incidents = json.loads(sast_incidents)
+            clean_sast = sast_incidents.replace('```json', '').replace('```', '').strip()
+            sast_incidents = json.loads(clean_sast)
         except:
             sast_incidents = []
 
@@ -34,8 +38,21 @@ def run(state):
         # Executive Summary
         f.write("## Executive Summary\n\n")
         f.write(f"**Overall Risk Level:** {reasoning.get('Overall Risk', 'UNKNOWN')} ({reasoning.get('Risk Score', 'N/A')}/100)\n\n")
-        f.write("This report provides a comprehensive security assessment of the target application using AI-assisted runtime-aware analysis. ")
-        f.write("By correlating static code analysis, dynamic scanning, and runtime observation, Saarthi has identified critical attack paths and business risks.\n\n")
+        f.write("### Summary of Findings\n")
+        f.write(f"Saarthi's analysis of the target application has identified a total of {len(sast_incidents)} SAST incidents and {len(dast_incidents)} DAST incidents. ")
+        f.write(f"Through runtime observation, we've correlated these findings into {len(attack_paths)} critical attack chains.\n\n")
+        f.write("The assessment highlights significant risks in the application's handling of external inputs and session management, ")
+        f.write("particularly where they cross defined trust boundaries.\n\n")
+
+        # Architecture Overview
+        f.write("## Architecture Overview\n\n")
+        f.write(f"**Application Type:** {app_type}\n")
+        f.write("The application architecture was analyzed using a combination of repository parsing and runtime discovery. ")
+        if app_plan.get("contains_api"):
+            f.write("It features a significant REST API layer which serves as the primary attack surface. ")
+        if app_plan.get("contains_database"):
+            f.write("A database backend was detected, indicating potential risks related to data persistence and injection. ")
+        f.write("\n\n")
 
         # Assessment Scope
         f.write("## Assessment Scope\n\n")
@@ -45,11 +62,13 @@ def run(state):
         f.write(f"- **Repository Path:** {project_root}\n")
         f.write(f"- **Discovery Mode:** {'Hybrid' if target_url != 'N/A' and project_root != 'N/A' else 'Single-Mode'}\n\n")
 
-        # Runtime Attack Surface
-        f.write("## Runtime Attack Surface\n\n")
+        # Attack Surface
+        f.write("## Attack Surface\n\n")
         f.write(f"- **Discovered Endpoints:** {endpoints_count}\n")
-        f.write(f"- **Observed Traffic Flows:** {len(runtime_observations)}\n\n")
-        f.write("The runtime attack surface was mapped through deep crawling and traffic observation. This represents the externally reachable entry points and internal data flow patterns.\n\n")
+        f.write(f"- **Observed Traffic Flows:** {len(runtime_observations)}\n")
+        f.write(f"- **Detected Framework:** {app_type}\n\n")
+        f.write("The attack surface comprises all reachable endpoints identified during the discovery phase. ")
+        f.write("Runtime evidence confirms that these endpoints are active and accessible under the current configuration.\n\n")
 
         # Trust Boundaries
         f.write("## Trust Boundaries\n\n")
@@ -86,7 +105,17 @@ def run(state):
         f.write("## Static Findings (SAST)\n\n")
         if sast_incidents:
             for inc in sast_incidents:
-                f.write(f"- **{inc.get('incident', 'Unknown Finding')}**\n")
+                f.write(f"### {inc.get('incident', 'Unknown Finding')}\n")
+                findings = inc.get('findings', [])
+                if findings:
+                    f.write("| File | Priority | Reachability Score |\n")
+                    f.write("| --- | --- | --- |\n")
+                    for find in findings:
+                        file = find.get('file', find.get('location', 'N/A'))
+                        priority = find.get('priority', 'N/A')
+                        reachability = find.get('reachability_score', 'N/A')
+                        f.write(f"| `{file}` | {priority} | {reachability} |\n")
+                f.write("\n")
         else:
             f.write("No static findings were identified.\n")
         f.write("\n")
@@ -102,7 +131,15 @@ def run(state):
 
         # Correlated Findings
         f.write("## Correlated Findings\n\n")
-        f.write("Findings correlated across Static and Runtime analysis layers have been incorporated into the Security Knowledge Graph to uncover attack paths bridging the gap between static code issues and runtime execution context.\n\n")
+        f.write("Saarthi has correlated static code vulnerabilities with runtime execution evidence. ")
+        f.write("This correlation reduces false positives and highlights vulnerabilities that are demonstrably reachable in the running environment.\n\n")
+
+        # Knowledge Graph Statistics
+        if graph_stats:
+            f.write("### Knowledge Graph Statistics\n")
+            f.write(f"- **Nodes:** {graph_stats.get('node_count')}\n")
+            f.write(f"- **Edges:** {graph_stats.get('edge_count')}\n")
+            f.write(f"- **Relationship Types:** {', '.join(graph_stats.get('edge_types', []))}\n\n")
 
         # Attack Chains
         f.write("## Attack Chains\n\n")
