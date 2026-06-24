@@ -2,6 +2,8 @@ import json
 import os
 from typing import List, Dict, Any
 from runtime.models.runtime_event import RuntimeEvent, RuntimeEvidence, EventType
+from runtime.dataflow.taint_tracker import TaintTracker
+from dataclasses import asdict
 
 class RuntimeCorrelator:
     def __init__(self):
@@ -131,6 +133,20 @@ def run_correlation(state):
 
     correlator = RuntimeCorrelator()
     evidence = correlator.correlate(all_findings, events)
+
+    # 3. Run Data Flow Analysis
+    print("[RuntimeCorrelator] Running Runtime Data Flow Analysis...")
+    taint_tracker = TaintTracker()
+    flow_evidence = taint_tracker.track_traces(events)
+
+    # Save Flow Evidence
+    flow_data = [asdict(e) for e in flow_evidence]
+    os.makedirs("reports", exist_ok=True)
+    with open("reports/runtime_flow_evidence.json", "w") as f:
+        json.dump(flow_data, f, indent=2)
+
+    state["runtime_flow_evidence"] = flow_data
+    print(f"[RuntimeCorrelator] Generated {len(flow_evidence)} pieces of runtime flow evidence.")
 
     correlator.save_evidence("reports/runtime_evidence.json")
     state["runtime_evidence"] = [

@@ -63,6 +63,11 @@ def run(state):
         []
     )
 
+    runtime_flow_evidence = raw_inputs.get(
+        "runtime_flow_evidence",
+        []
+    )
+
     if not isinstance(runtime_observations, list):
         print(
             "[ReportAgent] Invalid runtime observations, using empty list"
@@ -123,6 +128,28 @@ def run(state):
         f.write(f"- **Detected Framework:** {app_type}\n\n")
         f.write("The attack surface comprises all reachable endpoints identified during the discovery phase. ")
         f.write("Runtime evidence confirms that these endpoints are active and accessible under the current configuration.\n\n")
+
+        # Runtime Data Flows
+        f.write("## Runtime Data Flows\n\n")
+        if runtime_flow_evidence:
+            f.write("The following end-to-end data flows from user-controlled sources to sensitive sinks were observed:\n\n")
+            f.write("| Source | Sink | Trace ID | Boundary Crossed | Sanitization | Confidence |\n")
+            f.write("| --- | --- | --- | --- | --- | --- |\n")
+            for flow in runtime_flow_evidence:
+                f.write(f"| {flow['source']['source_type']} | {flow['sink']['sink_type']} | `{flow['trace_id']}` | {'✅' if flow['boundary_crossed'] else '❌'} | {'⚠️' if flow['sanitization_detected'] else '✅ None'} | {flow['confidence']:.2f} |\n")
+            f.write("\n")
+
+            f.write("### Observed Source-to-Sink Details\n\n")
+            for flow in runtime_flow_evidence:
+                f.write(f"#### Flow: {flow['source']['source_type']} -> {flow['sink']['sink_type']}\n")
+                f.write(f"- **Source Location:** `{flow['source']['location']}`\n")
+                f.write(f"- **Sink Location:** `{flow['sink']['location']}`\n")
+                f.write(f"- **Trace ID:** `{flow['trace_id']}`\n")
+                if flow.get("metadata", {}).get("path"):
+                    f.write("- **Execution Path:** " + " → ".join([str(p) for p in flow['metadata']['path']]) + "\n")
+                f.write("\n")
+        else:
+            f.write("No end-to-end runtime data flows were observed.\n\n")
 
         # Runtime Evidence
         f.write("## Runtime Evidence\n\n")

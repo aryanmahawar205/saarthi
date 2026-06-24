@@ -11,6 +11,7 @@ def run(state):
     # Ingest runtime observations for enrichment
     runtime_observations = knowledge_graph.get("raw_inputs", {}).get("runtime_observations", [])
     runtime_evidence = knowledge_graph.get("raw_inputs", {}).get("runtime_evidence", [])
+    runtime_flow_evidence = knowledge_graph.get("raw_inputs", {}).get("runtime_flow_evidence", [])
 
     dast_incidents = []
     sast_incidents = []
@@ -147,6 +148,34 @@ def run(state):
                 "impact": "Data Breach / Complete Compromise",
                 "boundary_crossed": "Data Access Boundary"
             })
+
+    # Integrate Runtime Flow Evidence into Attack Paths
+    for flow in runtime_flow_evidence:
+        flow_name = f"Runtime Confirmed Flow: {flow['source']['source_type']} -> {flow['sink']['sink_type']}"
+
+        path_steps = [
+            f"Source: {flow['source']['location']} ({flow['source']['source_type']})"
+        ]
+
+        if flow['boundary_crossed']:
+            path_steps.append("TRUST BOUNDARY CROSSED")
+
+        if flow['sanitization_detected']:
+            path_steps.append("Sanitization observed (reduced confidence)")
+
+        path_steps.append(f"Sink: {flow['sink']['location']} ({flow['sink']['sink_type']})")
+        path_steps.append("RUNTIME CONFIRMED: End-to-end data flow observed")
+
+        attack_paths.append({
+            "name": flow_name,
+            "path": path_steps,
+            "impact": "Direct exploitation of sensitive sink",
+            "boundary_crossed": "Various" if flow['boundary_crossed'] else "None",
+            "confidence": flow['confidence']
+        })
+
+    # Sort attack paths by confidence or runtime confirmation
+    attack_paths.sort(key=lambda x: x.get("confidence", 0.5) if "RUNTIME CONFIRMED" in "".join(x.get("path", [])) else 0.1, reverse=True)
 
     state["attack_paths"] = attack_paths
 
