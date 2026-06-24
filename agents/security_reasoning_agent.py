@@ -32,6 +32,7 @@ def run(state):
 
     # Runtime observations
     runtime_observations = state.get("security_knowledge_graph", {}).get("raw_inputs", {}).get("runtime_observations", [])
+    runtime_evidence = state.get("security_knowledge_graph", {}).get("raw_inputs", {}).get("runtime_evidence", [])
 
     # We pass minimal structure to avoid blowing up context window
     nodes_summary = [
@@ -60,6 +61,9 @@ RUNTIME OBSERVATIONS:
 ATTACK PATHS:
 {json.dumps(attack_paths, indent=2)[:2000]}
 
+RUNTIME EVIDENCE:
+{json.dumps(runtime_evidence, indent=2)[:2000]}
+
 SAST FINDINGS:
 {json.dumps(sast_incidents, indent=2)[:2000]}
 
@@ -70,7 +74,7 @@ TRUST BOUNDARIES:
 {json.dumps(trust_boundaries, indent=2)[:1000]}
 
 Synthesize a comprehensive security reasoning that addresses:
-1. Risk Score (0-100).
+1. Risk Score (0-100). If findings are RUNTIME CONFIRMED or reached a SINK, the score must be significantly higher.
 2. Overall Risk (CRITICAL, HIGH, MEDIUM, LOW).
 3. Most Likely Attack (Easiest to execute given runtime behavior).
 4. Most Dangerous Attack (Highest business impact).

@@ -1,0 +1,302 @@
+[
+  {
+    "evidence_id": "EV_Absence of Anti-CSRF Tokens_trace-123",
+    "finding_id": "Absence of Anti-CSRF Tokens",
+    "description": "Finding Absence of Anti-CSRF Tokens was executed at runtime. Trace reached a database sink.",
+    "confirmed": true,
+    "evidence_type": "sink_reached",
+    "timestamp": 1782278444.0326257,
+    "related_trace_ids": [
+      "trace-123"
+    ],
+    "metadata": {}
+  },
+  {
+    "evidence_id": "EV_Absence of Anti-CSRF Tokens_trace-123",
+    "finding_id": "Absence of Anti-CSRF Tokens",
+    "description": "Finding Absence of Anti-CSRF Tokens was executed at runtime. Trace reached a database sink.",
+    "confirmed": true,
+    "evidence_type": "sink_reached",
+    "timestamp": 1782278444.0326374,
+    "related_trace_ids": [
+      "trace-123"
+    ],
+    "metadata": {}
+  },
+  {
+    "evidence_id": "EV_Content Security Policy (CSP) Header Not Set_trace-123",
+    "finding_id": "Content Security Policy (CSP) Header Not Set",
+    "description": "Finding Content Security Policy (CSP) Header Not Set was executed at runtime. Trace reached a database sink.",
+    "confirmed": true,
+    "evidence_type": "sink_reached",
+    "timestamp": 1782278444.0326478,
+    "related_trace_ids": [
+      "trace-123"
+    ],
+    "metadata": {}
+  },
+  {
+    "evidence_id": "EV_Content Security Policy (CSP) Header Not Set_trace-123",
+    "finding_id": "Content Security Policy (CSP) Header Not Set",
+    "description": "Finding Content Security Policy (CSP) Header Not Set was executed at runtime. Trace reached a database sink.",
+    "confirmed": true,
+    "evidence_type": "sink_reached",
+    "timestamp": 1782278444.0326529,
+    "related_trace_ids": [
+      "trace-123"
+    ],
+    "metadata": {}
+  },
+  {
+    "evidence_id": "EV_Content Security Policy (CSP) Header Not Set_trace-123",
+    "finding_id": "Content Security Policy (CSP) Header Not Set",
+    "description": "Finding Content Security Policy (CSP) Header Not Set was executed at runtime. Trace reached a database sink.",
+    "confirmed": true,
+    "evidence_type": "sink_reached",
+    "timestamp": 1782278444.032657,
+    "related_trace_ids": [
+      "trace-123"
+    ],
+    "metadata": {}
+  },
+  {
+    "evidence_id": "EV_Missing Anti-clickjacking Header_trace-123",
+    "finding_id": "Missing Anti-clickjacking Header",
+    "description": "Finding Missing Anti-clickjacking Header was executed at runtime. Trace reached a database sink.",
+    "confirmed": true,
+    "evidence_type": "sink_reached",
+    "timestamp": 1782278444.0326633,
+    "related_trace_ids": [
+      "trace-123"
+    ],
+    "metadata": {}
+  },
+  {
+    "evidence_id": "EV_Missing Anti-clickjacking Header_trace-123",
+    "finding_id": "Missing Anti-clickjacking Header",
+    "description": "Finding Missing Anti-clickjacking Header was executed at runtime. Trace reached a database sink.",
+    "confirmed": true,
+    "evidence_type": "sink_reached",
+    "timestamp": 1782278444.0326672,
+    "related_trace_ids": [
+      "trace-123"
+    ],
+    "metadata": {}
+  },
+  {
+    "evidence_id": "EV_Cookie without SameSite Attribute_trace-123",
+    "finding_id": "Cookie without SameSite Attribute",
+    "description": "Finding Cookie without SameSite Attribute was executed at runtime. Trace reached a database sink.",
+    "confirmed": true,
+    "evidence_type": "sink_reached",
+    "timestamp": 1782278444.0326827,
+    "related_trace_ids": [
+      "trace-123"
+    ],
+    "metadata": {}
+  },
+  {
+    "evidence_id": "EV_Cross-Origin-Embedder-Policy Header Missing or Invalid_trace-123",
+    "finding_id": "Cross-Origin-Embedder-Policy Header Missing or Invalid",
+    "description": "Finding Cross-Origin-Embedder-Policy Header Missing or Invalid was executed at runtime. Trace reached a database sink.",
+    "confirmed": true,
+    "evidence_type": "sink_reached",
+    "timestamp": 1782278444.032687,
+    "related_trace_ids": [
+      "trace-123"
+    ],
+    "metadata": {}
+  },
+  {
+    "evidence_id": "EV_Cross-Origin-Embedder-Policy Header Missing or Invalid_trace-123",
+    "finding_id": "Cross-Origin-Embedder-Policy Header Missing or Invalid",
+    "description": "Finding Cross-Origin-Embedder-Policy Header Missing or Invalid was executed at runtime. Trace reached a database sink.",
+    "confirmed": true,
+    "evidence_type": "sink_reached",
+    "timestamp": 1782278444.032691,
+    "related_trace_ids": [
+      "trace-123"
+    ],
+    "metadata": {}
+  },
+  {
+    "evidence_id": "EV_Cross-Origin-Opener-Policy Header Missing or Invalid_trace-123",
+    "finding_id": "Cross-Origin-Opener-Policy Header Missing or Invalid",
+    "description": "Finding Cross-Origin-Opener-Policy Header Missing or Invalid was executed at runtime. Trace reached a database sink.",
+    "confirmed": true,
+    "evidence_type": "sink_reached",
+    "timestamp": 1782278444.0326967,
+    "related_trace_ids": [
+      "trace-123"
+    ],
+    "metadata": {}
+  },
+  {
+    "evidence_id": "EV_Cross-Origin-Opener-Policy Header Missing or Invalid_trace-123",
+    "finding_id": "Cross-Origin-Opener-Policy Header Missing or Invalid",
+    "description": "Finding Cross-Origin-Opener-Policy Header Missing or Invalid was executed at runtime. Trace reached a database sink.",
+    "confirmed": true,
+    "evidence_type": "sink_reached",
+    "timestamp": 1782278444.0327013,
+    "related_trace_ids": [
+      "trace-123"
+    ],
+    "metadata": {}
+  },
+  {
+    "evidence_id": "EV_Cross-Origin-Resource-Policy Header Missing or Invalid_trace-123",
+    "finding_id": "Cross-Origin-Resource-Policy Header Missing or Invalid",
+    "description": "Finding Cross-Origin-Resource-Policy Header Missing or Invalid was executed at runtime. Trace reached a database sink.",
+    "confirmed": true,
+    "evidence_type": "sink_reached",
+    "timestamp": 1782278444.032707,
+    "related_trace_ids": [
+      "trace-123"
+    ],
+    "metadata": {}
+  },
+  {
+    "evidence_id": "EV_Cross-Origin-Resource-Policy Header Missing or Invalid_trace-123",
+    "finding_id": "Cross-Origin-Resource-Policy Header Missing or Invalid",
+    "description": "Finding Cross-Origin-Resource-Policy Header Missing or Invalid was executed at runtime. Trace reached a database sink.",
+    "confirmed": true,
+    "evidence_type": "sink_reached",
+    "timestamp": 1782278444.032713,
+    "related_trace_ids": [
+      "trace-123"
+    ],
+    "metadata": {}
+  },
+  {
+    "evidence_id": "EV_Permissions Policy Header Not Set_trace-123",
+    "finding_id": "Permissions Policy Header Not Set",
+    "description": "Finding Permissions Policy Header Not Set was executed at runtime. Trace reached a database sink.",
+    "confirmed": true,
+    "evidence_type": "sink_reached",
+    "timestamp": 1782278444.032718,
+    "related_trace_ids": [
+      "trace-123"
+    ],
+    "metadata": {}
+  },
+  {
+    "evidence_id": "EV_Permissions Policy Header Not Set_trace-123",
+    "finding_id": "Permissions Policy Header Not Set",
+    "description": "Finding Permissions Policy Header Not Set was executed at runtime. Trace reached a database sink.",
+    "confirmed": true,
+    "evidence_type": "sink_reached",
+    "timestamp": 1782278444.0327218,
+    "related_trace_ids": [
+      "trace-123"
+    ],
+    "metadata": {}
+  },
+  {
+    "evidence_id": "EV_X-Content-Type-Options Header Missing_trace-123",
+    "finding_id": "X-Content-Type-Options Header Missing",
+    "description": "Finding X-Content-Type-Options Header Missing was executed at runtime. Trace reached a database sink.",
+    "confirmed": true,
+    "evidence_type": "sink_reached",
+    "timestamp": 1782278444.0327287,
+    "related_trace_ids": [
+      "trace-123"
+    ],
+    "metadata": {}
+  },
+  {
+    "evidence_id": "EV_X-Content-Type-Options Header Missing_trace-123",
+    "finding_id": "X-Content-Type-Options Header Missing",
+    "description": "Finding X-Content-Type-Options Header Missing was executed at runtime. Trace reached a database sink.",
+    "confirmed": true,
+    "evidence_type": "sink_reached",
+    "timestamp": 1782278444.0327356,
+    "related_trace_ids": [
+      "trace-123"
+    ],
+    "metadata": {}
+  },
+  {
+    "evidence_id": "EV_Authentication Request Identified_trace-123",
+    "finding_id": "Authentication Request Identified",
+    "description": "Finding Authentication Request Identified was executed at runtime. Trace reached a database sink.",
+    "confirmed": true,
+    "evidence_type": "sink_reached",
+    "timestamp": 1782278444.0327394,
+    "related_trace_ids": [
+      "trace-123"
+    ],
+    "metadata": {}
+  },
+  {
+    "evidence_id": "EV_Non-Storable Content_trace-123",
+    "finding_id": "Non-Storable Content",
+    "description": "Finding Non-Storable Content was executed at runtime. Trace reached a database sink.",
+    "confirmed": true,
+    "evidence_type": "sink_reached",
+    "timestamp": 1782278444.0327435,
+    "related_trace_ids": [
+      "trace-123"
+    ],
+    "metadata": {}
+  },
+  {
+    "evidence_id": "EV_Non-Storable Content_trace-123",
+    "finding_id": "Non-Storable Content",
+    "description": "Finding Non-Storable Content was executed at runtime. Trace reached a database sink.",
+    "confirmed": true,
+    "evidence_type": "sink_reached",
+    "timestamp": 1782278444.0327475,
+    "related_trace_ids": [
+      "trace-123"
+    ],
+    "metadata": {}
+  },
+  {
+    "evidence_id": "EV_Non-Storable Content_trace-123",
+    "finding_id": "Non-Storable Content",
+    "description": "Finding Non-Storable Content was executed at runtime. Trace reached a database sink.",
+    "confirmed": true,
+    "evidence_type": "sink_reached",
+    "timestamp": 1782278444.0327528,
+    "related_trace_ids": [
+      "trace-123"
+    ],
+    "metadata": {}
+  },
+  {
+    "evidence_id": "EV_Session Management Response Identified_trace-123",
+    "finding_id": "Session Management Response Identified",
+    "description": "Finding Session Management Response Identified was executed at runtime. Trace reached a database sink.",
+    "confirmed": true,
+    "evidence_type": "sink_reached",
+    "timestamp": 1782278444.0327566,
+    "related_trace_ids": [
+      "trace-123"
+    ],
+    "metadata": {}
+  },
+  {
+    "evidence_id": "EV_Session Management Response Identified_trace-123",
+    "finding_id": "Session Management Response Identified",
+    "description": "Finding Session Management Response Identified was executed at runtime. Trace reached a database sink.",
+    "confirmed": true,
+    "evidence_type": "sink_reached",
+    "timestamp": 1782278444.0327604,
+    "related_trace_ids": [
+      "trace-123"
+    ],
+    "metadata": {}
+  },
+  {
+    "evidence_id": "EV_Storable and Cacheable Content_trace-123",
+    "finding_id": "Storable and Cacheable Content",
+    "description": "Finding Storable and Cacheable Content was executed at runtime. Trace reached a database sink.",
+    "confirmed": true,
+    "evidence_type": "sink_reached",
+    "timestamp": 1782278444.0327642,
+    "related_trace_ids": [
+      "trace-123"
+    ],
+    "metadata": {}
+  }
+]

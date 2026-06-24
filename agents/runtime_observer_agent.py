@@ -34,12 +34,16 @@ class RuntimeObserverAgent:
         if sys.platform != "win32":
             kwargs["preexec_fn"] = os.setsid
 
-        self.process = subprocess.Popen(
-            ["mitmdump", "-s", "agents/mitm_logger.py", "-p", str(PROXY_PORT)],
-            stdout=subprocess.DEVNULL,
-            stderr=subprocess.DEVNULL,
-            **kwargs
-        )
+        try:
+            self.process = subprocess.Popen(
+                ["mitmdump", "-s", "agents/mitm_logger.py", "-p", str(PROXY_PORT)],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+                **kwargs
+            )
+        except FileNotFoundError:
+            print("[RuntimeObserverAgent] WARNING: mitmdump not found. Network observation will be skipped.")
+            self.process = None
         # Give it a moment to initialize
         time.sleep(3)
         print("[RuntimeObserverAgent] Runtime Observer is active and logging to reports/runtime_observations.json")
