@@ -18,12 +18,21 @@ def ensure_list(value):
     return [str(value)]
 
 
+import os
+
+if not os.path.exists(INPUT_FILE):
+    print(f"[!] {INPUT_FILE} not found. Skipping Semgrep parsing.")
+    with open(OUTPUT_FILE, "w") as f:
+        json.dump([], f)
+    import sys
+    sys.exit(0)
+
 with open(INPUT_FILE, "r") as f:
     data = json.load(f)
 
 normalized = []
 
-for finding in data["results"]:
+for finding in data.get("results", []):
 
     meta = finding.get("extra", {}).get("metadata", {})
     extra = finding.get("extra", {})

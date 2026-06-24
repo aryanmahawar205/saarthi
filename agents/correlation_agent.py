@@ -34,7 +34,7 @@ Format:
     except Exception as e:
         print(f"[CorrelationAgent] Model failed: {e}")
         # dummy fallback
-        content = json.dumps([{"incident": "Dummy Incident", "findings": []}])
+        content = json.dumps([])
 
     print("[CorrelationAgent] Complete")
 

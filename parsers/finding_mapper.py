@@ -61,14 +61,21 @@ def enrich_finding(
 
 
 def main():
+    if not os.path.exists(FINDINGS_FILE):
+        print(f"[!] {FINDINGS_FILE} not found. Skipping mapping.")
+        with open(OUTPUT_FILE, "w") as f:
+            json.dump([], f)
+        return
 
     findings = load_json(
         FINDINGS_FILE
     )
 
-    api_graph = load_json(
-        API_FILE
-    )
+    api_graph = []
+    if os.path.exists(API_FILE):
+        api_graph = load_json(
+            API_FILE
+        )
 
     api_lookup = \
         build_api_lookup(

@@ -55,12 +55,21 @@ def main():
     else:
         state["project_root"] = os.getcwd() # default project root for things like zap
 
+    run_url = args.url is not None
+    run_repo = args.repo is not None
+
+    if run_repo:
+        # Parsers execution for context/dependency/api graphs
+        print("\n[Orchestrator] Running Repository Parsers...")
+        subprocess.run(["python3", "parsers/context_builder.py"], check=False)
+        subprocess.run(["python3", "parsers/api_graph_builder.py"], check=False)
+        subprocess.run(["python3", "parsers/dependency_graph_builder.py"], check=False)
+        subprocess.run(["python3", "parsers/method_index_builder.py"], check=False)
+        subprocess.run(["python3", "parsers/call_graph_builder.py"], check=False)
+
     # Planning
     state = planning_agent(state)
     print_state("PlanningAgent", state)
-
-    run_url = args.url is not None
-    run_repo = args.repo is not None
 
     if run_url:
         # Start Runtime Observer
@@ -96,24 +105,23 @@ def main():
         print_state("RuntimeObserverStopped", state)
 
     if run_repo:
-        # Parsers execution for context/dependency/api graphs
-        print("\n[Orchestrator] Running Repository Parsers...")
-        subprocess.run(["python3", "parsers/context_builder.py"], check=False)
-        subprocess.run(["python3", "parsers/api_graph_builder.py"], check=False)
-        subprocess.run(["python3", "parsers/dependency_graph_builder.py"], check=False)
-        subprocess.run(["python3", "parsers/method_index_builder.py"], check=False)
-        subprocess.run(["python3", "parsers/call_graph_builder.py"], check=False)
-
         # Phase 2: SAST Pipeline
         state = pipeline_agent(state)
         print_state("PipelineAgent", state)
 
+    if run_repo or run_url:
         # Context builder and correlation
-        state = context_agent(state)
-        print_state("ContextAgent", state)
+        try:
+            state = context_agent(state)
+            print_state("ContextAgent", state)
+        except Exception as e:
+            print(f"[Orchestrator] Warning: ContextAgent failed: {e}")
 
-        state = correlation_agent(state)
-        print_state("CorrelationAgent", state)
+        try:
+            state = correlation_agent(state)
+            print_state("CorrelationAgent", state)
+        except Exception as e:
+            print(f"[Orchestrator] Warning: CorrelationAgent failed: {e}")
 
         if not run_url:
             # If we didn't run URL discovery, we might need these agents for repo endpoints

@@ -21,6 +21,11 @@ def load_json(path):
 
 
 def run(state):
+    import os
+    if not os.path.exists(API_GRAPH) or not os.path.exists(CALL_GRAPH):
+        print("[APICallChainAgent] API or Call graph not found. Skipping.")
+        state["api_call_chains"] = []
+        return state
 
     apis = load_json(
         API_GRAPH

@@ -132,6 +132,12 @@ def normalize_trivy(trivy_json):
 
 
 def main():
+    import os
+    if not os.path.exists(INPUT_FILE):
+        print(f"[!] {INPUT_FILE} not found. Skipping Trivy parsing.")
+        with open(OUTPUT_FILE, "w") as f:
+            json.dump([], f)
+        return
 
     with open(INPUT_FILE, "r") as f:
         trivy_json = json.load(f)

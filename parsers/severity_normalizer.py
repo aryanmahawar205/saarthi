@@ -50,6 +50,12 @@ def normalize_severity(finding):
 
 
 def main():
+    import os
+    if not os.path.exists(INPUT_FILE):
+        print(f"[!] {INPUT_FILE} not found. Skipping normalization.")
+        with open(OUTPUT_FILE, "w") as f:
+            json.dump([], f)
+        return
 
     with open(INPUT_FILE, "r") as f:
         findings = json.load(f)

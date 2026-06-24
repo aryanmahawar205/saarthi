@@ -1,19 +1,11 @@
 {
-  "Risk Score": 75,
-  "Overall Risk": "HIGH",
-  "Most Likely Attack": "Cross Site Request Forgery (CSRF)",
-  "Most Dangerous Attack": "Cross Site Scripting (XSS)",
-  "Exploitability Assessment": "Moderate to High",
-  "Business Impact": "High impact on operations, data integrity, and reputation. Potential for unauthorized actions and account takeovers.",
-  "Prioritized Findings": [
-    "Absence of Anti-CSRF Tokens",
-    "Content Security Policy (CSP) Header Not Set",
-    "Missing Anti-clickjacking Header"
-  ],
-  "Remediation Priority": "Fixing the absence of anti-CSRF tokens should be prioritized as it directly addresses a critical security vulnerability that can lead to unauthorized actions. Followed by implementing CSP headers and ensuring proper clickjacking protection.",
-  "Remediation Order": [
-    "Implement Anti-CSRF Tokens",
-    "Set Content Security Policy (CSP) Headers",
-    "Ensure Proper X-Frame-Options or Content-Security-Policy with frame-ancestors directive"
-  ]
+  "Risk Score": 0,
+  "Overall Risk": "UNKNOWN",
+  "Most Likely Attack": "Failed to determine.",
+  "Most Dangerous Attack": "Failed to determine.",
+  "Exploitability Assessment": "Failed to assess.",
+  "Business Impact": "Failed to generate business impact.",
+  "Prioritized Findings": [],
+  "Remediation Priority": "Unknown",
+  "Remediation Order": []
 }

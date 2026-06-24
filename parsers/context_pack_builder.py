@@ -33,14 +33,21 @@ def get_api_context(file_path, api_graph):
 
 
 def main():
+    if not os.path.exists(FINDINGS_FILE):
+        print(f"[!] {FINDINGS_FILE} not found. Skipping context pack building.")
+        with open(OUTPUT_FILE, "w") as f:
+            json.dump([], f)
+        return
 
     findings = load_json(
         FINDINGS_FILE
     )
 
-    api_graph = load_json(
-        API_FILE
-    )
+    api_graph = []
+    if os.path.exists(API_FILE):
+        api_graph = load_json(
+            API_FILE
+        )
 
     context_packs = []
 
