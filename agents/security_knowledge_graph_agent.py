@@ -46,6 +46,7 @@ def run(state):
 
     # Load runtime evidence
     runtime_evidence = state.get("runtime_evidence", [])
+    runtime_flow_evidence = state.get("runtime_flow_evidence", [])
     if not runtime_evidence and os.path.exists(EVIDENCE_FILE):
         try:
             with open(EVIDENCE_FILE, "r") as f:
@@ -247,6 +248,43 @@ def run(state):
             add_node(t_node_id, "runtime_trace", f"Trace {trace_id}")
             add_edge(ev_id, t_node_id, "derived_from")
 
+    # Integrate Runtime Flow Evidence
+    for flow in runtime_flow_evidence:
+        flow_id = f"Flow_{flow['evidence_id']}"
+        add_node(flow_id, "runtime_flow", f"Flow: {flow['source']['source_type']} -> {flow['sink']['sink_type']}",
+                 confidence=flow["confidence"],
+                 boundary_crossed=flow["boundary_crossed"],
+                 sanitization_detected=flow["sanitization_detected"])
+
+        # Source
+        src = flow["source"]
+        src_id = f"Source_{src['source_id']}"
+        add_node(src_id, "taint_source", src["location"], source_type=src["source_type"])
+        add_edge(src_id, flow_id, "starts_flow")
+
+        # Sink
+        snk = flow["sink"]
+        snk_id = f"Sink_{snk['sink_id']}"
+        add_node(snk_id, "taint_sink", snk["location"], sink_type=snk["sink_type"])
+        add_edge(flow_id, snk_id, "ends_at")
+
+        # Flow Relationships
+        add_edge(src_id, snk_id, "FLOWS_TO")
+        if flow["boundary_crossed"]:
+            # Find a boundary to link to if possible
+            for idx, tb in enumerate(trust_boundaries):
+                add_edge(flow_id, f"Boundary_{idx}", "CROSSES_BOUNDARY")
+
+        if flow["sanitization_detected"]:
+            san_id = f"Sanitizer_{flow['evidence_id']}"
+            add_node(san_id, "sanitizer", "Detected Sanitizer")
+            add_edge(flow_id, san_id, "SANITIZED_BY")
+
+        # Link to trace
+        t_node_id = f"Trace_{flow['trace_id']}"
+        add_node(t_node_id, "runtime_trace", f"Trace {flow['trace_id']}")
+        add_edge(flow_id, t_node_id, "observed_in")
+
     # Integrate Runtime Events
     for event in runtime_events:
         # Assuming event is a RuntimeEvent object or dict
@@ -301,7 +339,8 @@ def run(state):
             "sast_incidents": sast_incidents,
             "dast_incidents": dast_incidents,
             "runtime_observations": runtime_observations,
-            "runtime_evidence": runtime_evidence
+            "runtime_evidence": runtime_evidence,
+            "runtime_flow_evidence": runtime_flow_evidence
         }
     }
 

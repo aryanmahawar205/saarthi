@@ -33,6 +33,7 @@ def run(state):
     # Runtime observations
     runtime_observations = state.get("security_knowledge_graph", {}).get("raw_inputs", {}).get("runtime_observations", [])
     runtime_evidence = state.get("security_knowledge_graph", {}).get("raw_inputs", {}).get("runtime_evidence", [])
+    runtime_flow_evidence = state.get("security_knowledge_graph", {}).get("raw_inputs", {}).get("runtime_flow_evidence", [])
 
     # We pass minimal structure to avoid blowing up context window
     nodes_summary = [
@@ -64,6 +65,9 @@ ATTACK PATHS:
 RUNTIME EVIDENCE:
 {json.dumps(runtime_evidence, indent=2)[:2000]}
 
+RUNTIME FLOW EVIDENCE (DATA FLOW):
+{json.dumps(runtime_flow_evidence, indent=2)[:2000]}
+
 SAST FINDINGS:
 {json.dumps(sast_incidents, indent=2)[:2000]}
 
@@ -75,6 +79,7 @@ TRUST BOUNDARIES:
 
 Synthesize a comprehensive security reasoning that addresses:
 1. Risk Score (0-100). If findings are RUNTIME CONFIRMED or reached a SINK, the score must be significantly higher.
+   If RUNTIME FLOW EVIDENCE (Source-to-Sink) is present, the risk should be considered CRITICAL.
 2. Overall Risk (CRITICAL, HIGH, MEDIUM, LOW).
 3. Most Likely Attack (Easiest to execute given runtime behavior).
 4. Most Dangerous Attack (Highest business impact).
