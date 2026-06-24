@@ -23,6 +23,10 @@ from agents.zap_agent import run as zap_agent
 from agents.zap_parser_agent import run as zap_parser_agent
 from agents.dast_correlation_agent import run as dast_correlation_agent
 
+# Runtime Intelligence
+from runtime.collector.otel_collector import OTelFileCollector
+from runtime.correlation.runtime_correlator import run_correlation as runtime_correlation
+
 # Knowledge Graph
 from agents.security_knowledge_graph_agent import run as security_knowledge_graph_agent
 
@@ -44,6 +48,7 @@ def main():
     parser = argparse.ArgumentParser(description="Saarthi Security Orchestrator")
     parser.add_argument("--url", type=str, help="Target URL for DAST/Discovery")
     parser.add_argument("--repo", type=str, help="Target Repository Path for SAST")
+    parser.add_argument("--runtime", type=str, help="Path to runtime intelligence feed (e.g., otel_spans.json)")
     args = parser.parse_args()
 
     state = {}
@@ -57,6 +62,20 @@ def main():
 
     run_url = args.url is not None
     run_repo = args.repo is not None
+    run_runtime = args.runtime is not None
+
+    # Determine Orchestration Mode
+    mode = "Unknown"
+    if run_repo and not run_url and not run_runtime:
+        mode = "Mode 1 (SAST Only)"
+    elif run_url and not run_repo and not run_runtime:
+        mode = "Mode 2 (DAST Only)"
+    elif run_repo and run_url and not run_runtime:
+        mode = "Mode 3 (Hybrid SAST + DAST)"
+    elif run_repo and run_url and run_runtime:
+        mode = "Mode 4 (Full Spectrum: SAST + DAST + Runtime Intelligence)"
+
+    print(f"\n[Orchestrator] Starting Saarthi in {mode}")
 
     if run_repo:
         # Parsers execution for context/dependency/api graphs
@@ -91,14 +110,17 @@ def main():
         print_state("AttackSurfaceAgent", state)
 
         # Phase 3: DAST Pipeline
-        state = zap_agent(state)
-        print_state("ZapAgent", state)
+        try:
+            state = zap_agent(state)
+            print_state("ZapAgent", state)
 
-        state = zap_parser_agent(state)
-        print_state("ZapParserAgent", state)
+            state = zap_parser_agent(state)
+            print_state("ZapParserAgent", state)
 
-        state = dast_correlation_agent(state)
-        print_state("DASTCorrelationAgent", state)
+            state = dast_correlation_agent(state)
+            print_state("DASTCorrelationAgent", state)
+        except Exception as e:
+            print(f"[Orchestrator] Warning: DAST Pipeline failed: {e}")
 
         # Stop Runtime Observer after DAST
         state = stop_runtime_observer(state)
@@ -106,8 +128,11 @@ def main():
 
     if run_repo:
         # Phase 2: SAST Pipeline
-        state = pipeline_agent(state)
-        print_state("PipelineAgent", state)
+        try:
+            state = pipeline_agent(state)
+            print_state("PipelineAgent", state)
+        except Exception as e:
+            print(f"[Orchestrator] Warning: PipelineAgent (SAST) failed: {e}")
 
     if run_repo or run_url:
         # Context builder and correlation
@@ -132,6 +157,20 @@ def main():
 
         state = api_call_chain_agent(state)
         print_state("APICallChainAgent", state)
+
+    if run_runtime:
+        print("\n[Orchestrator] Phase 3.5: Runtime Intelligence...")
+        # 1. Collect and Normalize
+        collector = OTelFileCollector(args.runtime)
+        collector.start()
+        events = collector.collect()
+        state["runtime_events"] = events
+        print(f"[Orchestrator] Collected {len(events)} normalized runtime events.")
+        collector.stop()
+
+        # 2. Correlate
+        state = runtime_correlation(state)
+        print_state("RuntimeCorrelator", state)
 
 
     # Phase 4: Knowledge Graph

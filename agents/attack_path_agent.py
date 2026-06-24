@@ -10,6 +10,7 @@ def run(state):
 
     # Ingest runtime observations for enrichment
     runtime_observations = knowledge_graph.get("raw_inputs", {}).get("runtime_observations", [])
+    runtime_evidence = knowledge_graph.get("raw_inputs", {}).get("runtime_evidence", [])
 
     dast_incidents = []
     sast_incidents = []
@@ -93,12 +94,20 @@ def run(state):
                 "boundary_crossed": boundary_info
             })
         else:
+            # Check for runtime confirmation
+            matching_evidence = [e for e in runtime_evidence if e.get("finding_id") == incident.get("label")]
+
             path_steps = [
                 "External Input",
                 "Discovery of Vulnerability",
                 f"Exploitation of {name}",
                 "Impact Realization"
             ]
+
+            if matching_evidence:
+                path_steps.insert(2, "RUNTIME CONFIRMED: Execution path observed")
+                if any(e.get("evidence_type") == "sink_reached" for e in matching_evidence):
+                     path_steps.insert(3, "RUNTIME CONFIRMED: Sensitive sink reached")
 
             # Enrich with runtime evidence if available
             if matching_obs:
@@ -118,15 +127,23 @@ def run(state):
     # Optional: Combine with SAST if we had SAST findings in graph
     for incident in sast_incidents:
         name = incident.get("label", "")
+        matching_evidence = [e for e in runtime_evidence if e.get("finding_id") == name]
+
         if "sql injection" in name.lower():
-             attack_paths.append({
-                "name": "SQL Injection Chain",
-                "path": [
+             path_steps = [
                     "External Input",
                     "Malicious Payload Injection",
                     "Database Access",
                     "Sensitive Data Exposure"
-                ],
+             ]
+             if matching_evidence:
+                 path_steps.insert(2, "RUNTIME CONFIRMED: Vulnerable code path executed")
+                 if any(e.get("evidence_type") == "sink_reached" for e in matching_evidence):
+                     path_steps.insert(3, "RUNTIME CONFIRMED: Database sink reached")
+
+             attack_paths.append({
+                "name": "SQL Injection Chain",
+                "path": path_steps,
                 "impact": "Data Breach / Complete Compromise",
                 "boundary_crossed": "Data Access Boundary"
             })

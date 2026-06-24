@@ -1,26 +1,39 @@
-# Codebase Analysis
+# Saarthi Codebase Analysis
 
-## Current Architecture
-The current orchestrator (`orchestrator/graph.py`) invokes numerous agents in a sequential, mostly DAST-focused pipeline, followed by a separate SAST pipeline:
-- **Planning & Discovery:** `planning_agent`, `recon_agent`, `discovery_agent`, `trust_boundary_agent`, `api_call_chain_agent`
-- **DAST:** `zap_agent`, `zap_parser_agent`, `dast_correlation_agent`, `attack_path_agent`, `attack_simulation_agent`, `multi_step_attack_chain_agent`, `attack_graph_agent`, `runtime_attack_graph_agent`
-- **Reasoning/Scoring (Duplicated):** `exploitability_agent`, `business_impact_agent`, `llm_attack_reasoning_agent`, `final_risk_agent`, `attack_surface_agent`, `runtime_reasoning_agent`, `security_reasoning_agent`
-- **SAST:** `pipeline_agent`, `context_agent`, `correlation_agent`, `explanation_agent`, `report_agent`
+## Overview
+Saarthi is an AI-assisted security assessment platform that integrates SAST, DAST, and runtime discovery. It uses a graph-based approach to represent the application's security state and employs AI to reason about attack paths and risks.
 
-## Observations
-1. **Scattered and Duplicated Reasoning:** The agents calculating risk, business impact, and exploitability are highly fragmented (`exploitability_agent.py`, `business_impact_agent.py`, `final_risk_agent.py`, `llm_attack_reasoning_agent.py`, etc.). This violates the principle of consolidating reasoning.
-2. **DAST & SAST Disconnect:** The orchestrator executes DAST and its reasoning separately from SAST. Both streams should feed into a central Knowledge Graph to allow cross-correlation before reasoning.
-3. **Redundant Graphs:** Multiple agents build partial attack graphs (`attack_graph_agent.py`, `runtime_attack_graph_agent.py`, `multi_step_attack_chain_agent.py`). A unified `SecurityKnowledgeGraphAgent` should consolidate this structure.
-4. **Agent Bloat:** There are too many single-purpose agents that perform basic heuristic loops instead of utilizing combined AI reasoning on a single, rich context.
+## Core Components
 
-## Target Architecture
-The goal is to streamline the execution into the following distinct phases as defined in the architectural direction:
-1. **Discovery:** `recon_agent`, `discovery_agent`, `trust_boundary_agent`, `api_call_chain_agent`, `attack_surface_agent`
-2. **SAST:** `pipeline_agent`, `context_agent`, `correlation_agent`
-3. **DAST:** `zap_agent`, `zap_parser_agent`, `dast_correlation_agent`
-4. **Knowledge Graph:** A new `security_knowledge_graph_agent` to synthesize Discovery, SAST, and DAST findings.
-5. **AI Security Reasoning:** A revamped `security_reasoning_agent` replacing all the fragmented reasoning and scoring agents.
-6. **Remediation:** A new `remediation_agent` for generating remediation guidance.
-7. **Reporting:** A comprehensive `report_agent`.
+### Orchestrator
+- `orchestrator/graph.py`: The central execution engine. It manages the state and sequences the execution of various agents based on the target (URL and/or Repository). It currently supports three modes: SAST only, DAST only, and SAST + DAST.
 
-This shift transitions the application from a "Scanner Collection" approach to a context-aware "AI-Assisted Security Assessment Platform".
+### Agents (`agents/`)
+- **Discovery & Recon**: `recon_agent.py`, `discovery_agent.py`, `attack_surface_agent.py`.
+- **Static Analysis (SAST)**: `pipeline_agent.py` (integrates Semgrep, Trivy, Gitleaks).
+- **Dynamic Analysis (DAST)**: `zap_agent.py`, `zap_parser_agent.py`, `dast_correlation_agent.py`.
+- **Knowledge Layer**: `security_knowledge_graph_agent.py`, `trust_boundary_agent.py`, `api_call_chain_agent.py`.
+- **Reasoning Layer**: `attack_path_agent.py`, `security_reasoning_agent.py`.
+- **Remediation & Reporting**: `remediation_agent.py`, `report_agent.py`.
+- **Runtime Observation**: `runtime_observer_agent.py` and `mitm_logger.py` (using `mitmproxy`).
+
+### Parsers (`parsers/`)
+- A variety of parsers for tool outputs (Semgrep, Trivy, ZAP, etc.) and for building structural models (API graphs, call graphs, dependency graphs).
+
+### Schemas (`schemas/`)
+- Defines the data models used across the platform.
+
+## Current Runtime Implementation
+The existing runtime observation is performed at the network level using `mitmproxy`. It captures HTTP requests and responses, which are then stored in `reports/runtime_observations.json` and ingested into the `SecurityKnowledgeGraphAgent`.
+
+## Identified Gaps for Runtime Intelligence Initiative
+1. **Lack of Code-Level Visibility**: Current observation is limited to the network layer. It doesn't see internal function calls, database queries, or execution flows within the application.
+2. **Missing Normalization**: While HTTP traffic is captured, there's no unified model for different types of runtime events (e.g., internal spans vs. network traffic).
+3. **Implicit Correlation**: Correlation between runtime data and findings is relatively shallow.
+4. **Monolithic Observation**: The current `RuntimeObserverAgent` is tightly coupled with `mitmproxy`.
+
+## Proposed Architectural Enhancements
+- **Abstraction-First Design**: Introduce `RuntimeEvent`, `RuntimeTrace`, and `RuntimeEvidence` models.
+- **Pluggable Adapters**: Support multiple providers (OpenTelemetry, language-specific agents, eBPF).
+- **Dedicated Correlation**: A `RuntimeCorrelator` to bridge the gap between static/dynamic findings and runtime execution evidence.
+- **Runtime-Aware Reasoning**: Enhance AI agents to prioritize and reason based on confirmed runtime execution.

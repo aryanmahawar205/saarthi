@@ -58,6 +58,11 @@ def run(state):
         []
     )
 
+    runtime_evidence = raw_inputs.get(
+        "runtime_evidence",
+        []
+    )
+
     if not isinstance(runtime_observations, list):
         print(
             "[ReportAgent] Invalid runtime observations, using empty list"
@@ -114,9 +119,22 @@ def run(state):
         f.write("## Attack Surface\n\n")
         f.write(f"- **Discovered Endpoints:** {endpoints_count}\n")
         f.write(f"- **Observed Traffic Flows:** {len(runtime_observations)}\n")
+        f.write(f"- **Runtime Confirmed Vulnerabilities:** {len([e for e in runtime_evidence if e.get('confirmed')])}\n")
         f.write(f"- **Detected Framework:** {app_type}\n\n")
         f.write("The attack surface comprises all reachable endpoints identified during the discovery phase. ")
         f.write("Runtime evidence confirms that these endpoints are active and accessible under the current configuration.\n\n")
+
+        # Runtime Evidence
+        f.write("## Runtime Evidence\n\n")
+        if runtime_evidence:
+            f.write("The following findings have been confirmed through runtime code execution and data flow analysis:\n\n")
+            f.write("| Finding | Evidence | Type | Confirmed |\n")
+            f.write("| --- | --- | --- | --- |\n")
+            for ev in runtime_evidence:
+                f.write(f"| {ev.get('finding_id')} | {ev.get('description')} | {ev.get('evidence_type')} | {'✅ Yes' if ev.get('confirmed') else '❌ No'} |\n")
+        else:
+            f.write("No direct runtime evidence was collected for specific vulnerabilities. Reasoning is based on static analysis and network observation.\n")
+        f.write("\n")
 
         # Trust Boundaries
         f.write("## Trust Boundaries\n\n")

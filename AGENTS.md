@@ -40,6 +40,7 @@ Implemented:
 * Centralized AI Security Reasoning
 * Remediation Generation
 * AI Report Generation
+* Runtime Intelligence (OpenTelemetry & Abstraction Layer)
 
 Current primary target:
 
@@ -73,6 +74,7 @@ Collection Layer
 * DiscoveryAgent
 * ZapAgent
 * PipelineAgent
+* Runtime Intelligence (Collector & Adapters)
 
 Knowledge Layer
 * TrustBoundaryAgent
@@ -112,6 +114,8 @@ Input:
 Repository Path
 +
 Running Application URL
++
+Runtime Intelligence Feed (Optional)
 
 Output:
 
@@ -123,6 +127,12 @@ Output:
 * Risk Assessment
 * Remediation Guidance
 * Executive Security Report
+
+Modes:
+- Mode 1: SAST Only
+- Mode 2: DAST Only
+- Mode 3: SAST + DAST
+- Mode 4: SAST + DAST + Runtime Intelligence
 
 The entire flow should run through:
 

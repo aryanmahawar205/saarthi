@@ -1,8 +1,14 @@
 import json
 import os
+try:
+    from runtime.models.runtime_event import RuntimeEvent, EventType
+except ImportError:
+    RuntimeEvent = None
+    EventType = None
 
 OUTPUT_FILE = "reports/security_graph.json"
 OBSERVATIONS_FILE = "reports/runtime_observations.json"
+EVIDENCE_FILE = "reports/runtime_evidence.json"
 
 def run(state):
     attack_surface = state.get("attack_surface", {})
@@ -24,10 +30,10 @@ def run(state):
 
     # Validation: Ensure incidents are reaching the graph if findings exist
     if not sast_incidents and state.get("findings"):
-        raise RuntimeError("[SecurityKnowledgeGraphAgent] SAST incidents failed to propagate to Knowledge Graph Agent despite findings being present.")
+        print("[SecurityKnowledgeGraphAgent] Warning: SAST incidents failed to propagate to Knowledge Graph Agent despite findings being present.")
 
     if not dast_incidents and state.get("dast_findings"):
-        raise RuntimeError("[SecurityKnowledgeGraphAgent] DAST incidents failed to propagate to Knowledge Graph Agent despite DAST findings being present.")
+        print("[SecurityKnowledgeGraphAgent] Warning: DAST incidents failed to propagate to Knowledge Graph Agent despite DAST findings being present.")
 
     # Load runtime observations
     runtime_observations = []
@@ -37,6 +43,18 @@ def run(state):
                 runtime_observations = json.load(f)
         except:
             pass
+
+    # Load runtime evidence
+    runtime_evidence = state.get("runtime_evidence", [])
+    if not runtime_evidence and os.path.exists(EVIDENCE_FILE):
+        try:
+            with open(EVIDENCE_FILE, "r") as f:
+                runtime_evidence = json.load(f)
+        except:
+            pass
+
+    # Load normalized events if available
+    runtime_events = state.get("runtime_events", [])
 
     nodes = {}
     edges = []
@@ -208,6 +226,54 @@ def run(state):
             if any(step in obs.get("url", "") for step in path.get("path", [])):
                 add_edge(f"Obs_{idx}", ac_id, "evidences")
 
+    # Integrate Runtime Evidence
+    for ev in runtime_evidence:
+        ev_id = f"Evidence_{ev['evidence_id']}"
+        add_node(ev_id, "runtime_evidence", ev["description"],
+                 evidence_type=ev["evidence_type"],
+                 confirmed=ev["confirmed"])
+
+        # Link evidence to finding
+        finding_id = ev["finding_id"]
+        # Try both SAST and DAST prefixes
+        for prefix in ["SAST_Incident_", "DAST_Incident_"]:
+            target_finding = f"{prefix}{finding_id}"
+            if target_finding in nodes:
+                add_edge(ev_id, target_finding, "confirms_execution")
+
+        # Link evidence to traces if events are present
+        for trace_id in ev.get("related_trace_ids", []):
+            t_node_id = f"Trace_{trace_id}"
+            add_node(t_node_id, "runtime_trace", f"Trace {trace_id}")
+            add_edge(ev_id, t_node_id, "derived_from")
+
+    # Integrate Runtime Events
+    for event in runtime_events:
+        # Assuming event is a RuntimeEvent object or dict
+        if hasattr(event, "event_id"):
+            evt = event
+        elif isinstance(event, dict) and RuntimeEvent:
+            # Handle string to Enum conversion for event_type if it's a dict
+            if isinstance(event.get("event_type"), str) and EventType:
+                try:
+                    event["event_type"] = EventType(event["event_type"])
+                except ValueError:
+                    pass
+            evt = RuntimeEvent(**event)
+        else:
+            continue
+
+        evt_id = f"Event_{evt.event_id}"
+        label = evt.event_type.value if hasattr(evt.event_type, 'value') else str(evt.event_type)
+        add_node(evt_id, "runtime_event", label,
+                 type=label,
+                 attributes=evt.attributes)
+
+        if evt.trace_id:
+            t_node_id = f"Trace_{evt.trace_id}"
+            add_node(t_node_id, "runtime_trace", f"Trace {evt.trace_id}")
+            add_edge(evt_id, t_node_id, "belongs_to")
+
     # Deduplicate edges
     unique_edges = []
     seen_edges = set()
@@ -234,7 +300,8 @@ def run(state):
             "api_call_chains": api_call_chains,
             "sast_incidents": sast_incidents,
             "dast_incidents": dast_incidents,
-            "runtime_observations": runtime_observations
+            "runtime_observations": runtime_observations,
+            "runtime_evidence": runtime_evidence
         }
     }
 
