@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: Maven JAR Plugin 3.5.0
+Java-Version: 11
+Build-Jdk-Spec: 25
+Agent-Class: com.saarthi.agent.SaarthiAgent
+Can-Redefine-Classes: true
+Can-Retransform-Classes: true
+Premain-Class: com.saarthi.agent.SaarthiAgent
+
