@@ -85,3 +85,44 @@ The `SecurityKnowledgeGraphAgent` incorporates `RuntimeEvidence` and `RuntimeEve
 - **Context:** The AI understands the application's state (e.g., active sessions, auth headers).
 - **Reduced False Positives:** Runtime evidence helps confirm if an endpoint is reachable and how it behaves.
 - **Deeper Reasoning:** Attack chains can now include specific steps like "Submit login form" -> "Receive session cookie" -> "Access protected endpoint".
+
+## Runtime Instrumentation Platform
+
+The **Runtime Instrumentation Platform** provides true in-process visibility. It is designed to be completely passive (never blocking or mutating requests, avoiding WAF/RASP behaviors) and focuses exclusively on tracking application execution paths.
+
+### Providers
+
+The platform architecture relies on **Providers**. These are agents that plug directly into the application process.
+
+1.  **Java Provider (Reference Implementation)**
+    - Built using ByteBuddy and the standard Java Instrumentation API.
+    - Observes `HttpServletRequest`, JDBC Statements/PreparedStatements, and `ProcessBuilder`.
+    - Automatically collects variable state and context without perfect taint tracking.
+    - Emits normalized JSON events locally to the Python adapter over HTTP.
+2.  **OpenTelemetry**
+    - Supported as a general-purpose APM collector.
+3.  **Future Providers**
+    - Python, Node.js, Go, .NET, eBPF skeletons are ready for implementation in `runtime_agent/adapters`.
+
+### Using the Java Provider
+
+To trace an application such as OWASP WebGoat, you load the Java agent at JVM startup.
+
+```bash
+# Build the agent
+cd runtime_agent/adapters/java/agent
+mvn clean package
+
+# Run WebGoat with the agent attached
+java -javaagent:target/saarthi-java-agent-1.0-SNAPSHOT.jar \
+     -jar webgoat.jar
+```
+
+The agent will seamlessly begin forwarding `RuntimeEvent`s (such as `process_execution`, `database_query`, etc.) to the `RuntimeManager` inside the Saarthi orchestration pipeline, which then feeds the `RuntimeCorrelator` for flow and vulnerability analysis.
+
+### RuntimeManager Lifecycle
+
+1. **Session Creation**: Orchestrator commands the `RuntimeManager` to spin up a new `RuntimeSession` for a given target app.
+2. **Adapter Initialization**: The correct language adapter (e.g. `JavaAdapter`) starts listening on a local socket or port.
+3. **Execution Tracking**: The in-process agent sends observations as JSON. The adapter translates them into generic `RuntimeEvent` objects.
+4. **Correlation Delivery**: `RuntimeManager.forward_events()` passes the batch of events to the `RuntimeCorrelator`, enriching SAST/DAST data with execution proof without duplicating reasoning logic.
