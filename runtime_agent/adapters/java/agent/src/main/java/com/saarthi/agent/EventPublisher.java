@@ -13,7 +13,17 @@ import java.util.HashMap;
 
 public class EventPublisher {
 
-    private static final String ADAPTER_URL = "http://localhost:8081/events";
+    private static String adapterUrl = "http://localhost:8081/events";
+
+    public static void setAdapterUrl(String url) {
+        if (url != null && !url.trim().isEmpty()) {
+            adapterUrl = url.trim();
+        }
+    }
+
+    public static String getAdapterUrl() {
+        return adapterUrl;
+    }
 
     // Bounded queue to prevent OOM on high throughput. Drops events if saturated.
     private static final ExecutorService executor = new ThreadPoolExecutor(
@@ -34,7 +44,7 @@ public class EventPublisher {
 
         executor.submit(() -> {
             try {
-                URL url = new URL(ADAPTER_URL);
+                URL url = new URL(adapterUrl);
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                 conn.setDoOutput(true);
                 conn.setRequestMethod("POST");
