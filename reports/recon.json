@@ -1,8 +1,23 @@
 {
   "target": "http://localhost:8080/WebGoat",
-  "headers": {},
+  "headers": {
+    "Content-Type": "text/html;charset=UTF-8",
+    "Content-Language": "en-US",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sun, 28 Jun 2026 15:52:37 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  },
   "cookies": [],
-  "forms": [],
-  "links": [],
+  "forms": [
+    {
+      "action": "/WebGoat/login",
+      "method": "POST"
+    }
+  ],
+  "links": [
+    "/WebGoat/start.mvc",
+    "/WebGoat/registration"
+  ],
   "technologies": []
 }

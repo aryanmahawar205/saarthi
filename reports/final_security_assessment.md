@@ -2,131 +2,197 @@
 
 ## Executive Summary
 
-**Overall Risk Level:** UNKNOWN (0/100)
+**Overall Risk Level:** CRITICAL (85/100)
 
 ### Summary of Findings
-Saarthi's analysis of the target application has identified a total of 0 SAST incidents and 0 DAST incidents. Through runtime observation, we've correlated these findings into 0 critical attack chains.
+Saarthi's analysis of the target application has identified a total of 6 SAST incidents and 15 DAST incidents. Through runtime observation, we've correlated these findings into 6 critical attack chains.
 
 The assessment highlights significant risks in the application's handling of external inputs and session management, particularly where they cross defined trust boundaries.
 
 ## Architecture Overview
 
-**Application Type:** Unknown
-The application architecture was analyzed using a combination of repository parsing and runtime discovery. 
+**Application Type:** Spring Boot
+The application architecture was analyzed using a combination of repository parsing and runtime discovery. It features a significant REST API layer which serves as the primary attack surface. A database backend was detected, indicating potential risks related to data persistence and injection. 
 
 ## Assessment Scope
 
 - **Target URL:** http://localhost:8080/WebGoat
-- **Repository Path:** .
+- **Repository Path:** /home/codespace/WebGoat
 - **Discovery Mode:** Hybrid
 
 ## Attack Surface
 
 - **Discovered Endpoints:** 0
-- **Observed Traffic Flows:** 17
-- **Runtime Confirmed Vulnerabilities:** 25
-- **Detected Framework:** Unknown
+- **Observed Traffic Flows:** 0
+- **Runtime Confirmed Vulnerabilities:** 0
+- **Detected Framework:** Spring Boot
 
 The attack surface comprises all reachable endpoints identified during the discovery phase. Runtime evidence confirms that these endpoints are active and accessible under the current configuration.
 
+## Runtime Data Flows
+
+No end-to-end runtime data flows were observed.
+
 ## Runtime Evidence
 
-The following findings have been confirmed through runtime code execution and data flow analysis:
-
-| Finding | Evidence | Type | Confirmed |
-| --- | --- | --- | --- |
-| Absence of Anti-CSRF Tokens | Finding Absence of Anti-CSRF Tokens was executed at runtime. Trace reached a database sink. | sink_reached | ✅ Yes |
-| Absence of Anti-CSRF Tokens | Finding Absence of Anti-CSRF Tokens was executed at runtime. Trace reached a database sink. | sink_reached | ✅ Yes |
-| Content Security Policy (CSP) Header Not Set | Finding Content Security Policy (CSP) Header Not Set was executed at runtime. Trace reached a database sink. | sink_reached | ✅ Yes |
-| Content Security Policy (CSP) Header Not Set | Finding Content Security Policy (CSP) Header Not Set was executed at runtime. Trace reached a database sink. | sink_reached | ✅ Yes |
-| Content Security Policy (CSP) Header Not Set | Finding Content Security Policy (CSP) Header Not Set was executed at runtime. Trace reached a database sink. | sink_reached | ✅ Yes |
-| Missing Anti-clickjacking Header | Finding Missing Anti-clickjacking Header was executed at runtime. Trace reached a database sink. | sink_reached | ✅ Yes |
-| Missing Anti-clickjacking Header | Finding Missing Anti-clickjacking Header was executed at runtime. Trace reached a database sink. | sink_reached | ✅ Yes |
-| Cookie without SameSite Attribute | Finding Cookie without SameSite Attribute was executed at runtime. Trace reached a database sink. | sink_reached | ✅ Yes |
-| Cross-Origin-Embedder-Policy Header Missing or Invalid | Finding Cross-Origin-Embedder-Policy Header Missing or Invalid was executed at runtime. Trace reached a database sink. | sink_reached | ✅ Yes |
-| Cross-Origin-Embedder-Policy Header Missing or Invalid | Finding Cross-Origin-Embedder-Policy Header Missing or Invalid was executed at runtime. Trace reached a database sink. | sink_reached | ✅ Yes |
-| Cross-Origin-Opener-Policy Header Missing or Invalid | Finding Cross-Origin-Opener-Policy Header Missing or Invalid was executed at runtime. Trace reached a database sink. | sink_reached | ✅ Yes |
-| Cross-Origin-Opener-Policy Header Missing or Invalid | Finding Cross-Origin-Opener-Policy Header Missing or Invalid was executed at runtime. Trace reached a database sink. | sink_reached | ✅ Yes |
-| Cross-Origin-Resource-Policy Header Missing or Invalid | Finding Cross-Origin-Resource-Policy Header Missing or Invalid was executed at runtime. Trace reached a database sink. | sink_reached | ✅ Yes |
-| Cross-Origin-Resource-Policy Header Missing or Invalid | Finding Cross-Origin-Resource-Policy Header Missing or Invalid was executed at runtime. Trace reached a database sink. | sink_reached | ✅ Yes |
-| Permissions Policy Header Not Set | Finding Permissions Policy Header Not Set was executed at runtime. Trace reached a database sink. | sink_reached | ✅ Yes |
-| Permissions Policy Header Not Set | Finding Permissions Policy Header Not Set was executed at runtime. Trace reached a database sink. | sink_reached | ✅ Yes |
-| X-Content-Type-Options Header Missing | Finding X-Content-Type-Options Header Missing was executed at runtime. Trace reached a database sink. | sink_reached | ✅ Yes |
-| X-Content-Type-Options Header Missing | Finding X-Content-Type-Options Header Missing was executed at runtime. Trace reached a database sink. | sink_reached | ✅ Yes |
-| Authentication Request Identified | Finding Authentication Request Identified was executed at runtime. Trace reached a database sink. | sink_reached | ✅ Yes |
-| Non-Storable Content | Finding Non-Storable Content was executed at runtime. Trace reached a database sink. | sink_reached | ✅ Yes |
-| Non-Storable Content | Finding Non-Storable Content was executed at runtime. Trace reached a database sink. | sink_reached | ✅ Yes |
-| Non-Storable Content | Finding Non-Storable Content was executed at runtime. Trace reached a database sink. | sink_reached | ✅ Yes |
-| Session Management Response Identified | Finding Session Management Response Identified was executed at runtime. Trace reached a database sink. | sink_reached | ✅ Yes |
-| Session Management Response Identified | Finding Session Management Response Identified was executed at runtime. Trace reached a database sink. | sink_reached | ✅ Yes |
-| Storable and Cacheable Content | Finding Storable and Cacheable Content was executed at runtime. Trace reached a database sink. | sink_reached | ✅ Yes |
+No direct runtime evidence was collected for specific vulnerabilities. Reasoning is based on static analysis and network observation.
 
 ## Trust Boundaries
 
-No distinct trust boundaries were identified in the current context.
+- **Identity Boundary**: Web Application -> Authentication Layer
+- **Data Access Boundary**: Application Layer -> Database
 
 ## Observed Runtime Behaviour
 
-The following significant runtime behaviours were observed during the assessment:
-
-- **GET http://localhost:8080/WebGoat/** (Status: 302)
-- **GET http://localhost:8080/WebGoat/login** (Status: 200)
-  - Cookies: JSESSIONID
-- **GET http://localhost:8080/sitemap.xml** (Status: 404)
-- **GET http://localhost:8080/robots.txt** (Status: 404)
-- **GET http://localhost:8080/v3/api-docs** (Status: 404)
-- **GET http://localhost:8080/openapi.json** (Status: 404)
-- **GET http://localhost:8080/swagger-ui.html** (Status: 404)
-- **GET http://localhost:8080/swagger.json** (Status: 404)
-- **GET http://localhost:8080/.env** (Status: 404)
-- **GET http://localhost:8080/.git/config** (Status: 404)
+No runtime traffic was observed.
 
 ## Static Findings (SAST)
 
-No static findings were identified.
+### Absence of Anti-CSRF Tokens
+| File | Priority | Reachability Score |
+| --- | --- | --- |
+
+### Content Security Policy (CSP) Header Not Set
+| File | Priority | Reachability Score |
+| --- | --- | --- |
+
+### Missing Anti-clickjacking Header
+| File | Priority | Reachability Score |
+| --- | --- | --- |
+
+### Cookie without SameSite Attribute
+| File | Priority | Reachability Score |
+| --- | --- | --- |
+
+### Cross-Origin-Embedder-Policy Header Missing or Invalid
+| File | Priority | Reachability Score |
+| --- | --- | --- |
+
+### Cross-Origin-Opener-Policy Header Missing or Invalid
+| File | Priority | Reachability Score |
+| --- | --- | --- |
+
 
 ## Dynamic Findings (DAST)
 
-No runtime findings were identified.
+- **Weak Browser Security Controls** (Instances: 31)
+- **CSRF Exposure** (Instances: 5)
+- **Authentication Surface** (Instances: 2)
+- **Non-Storable Content** (Instances: 1)
+- **Non-Storable Content** (Instances: 1)
+- **Non-Storable Content** (Instances: 1)
+- **Storable and Cacheable Content** (Instances: 1)
+- **Storable and Cacheable Content** (Instances: 1)
+- **Storable and Cacheable Content** (Instances: 1)
+- **Storable and Cacheable Content** (Instances: 1)
+- **Storable and Cacheable Content** (Instances: 1)
+- **User Controllable HTML Element Attribute (Potential XSS)** (Instances: 1)
+- **User Controllable HTML Element Attribute (Potential XSS)** (Instances: 1)
+- **User Controllable HTML Element Attribute (Potential XSS)** (Instances: 1)
+- **User Controllable HTML Element Attribute (Potential XSS)** (Instances: 1)
 
 ## Correlated Findings
 
 Saarthi has correlated static code vulnerabilities with runtime execution evidence. This correlation reduces false positives and highlights vulnerabilities that are demonstrably reachable in the running environment.
 
 ### Knowledge Graph Statistics
-- **Nodes:** 71
-- **Edges:** 71
-- **Relationship Types:** targeted_at, belongs_to, sent_cookie, derived_from, identifies, generated_response, observed_at
+- **Nodes:** 395
+- **Edges:** 328
+- **Relationship Types:** points_to, has_finding, calls, crosses, affects_boundary, initiates
 
 ## Attack Chains
 
-No definitive attack chains were derived.
+### 1. Browser Exploitation Chain
+**Boundary Crossed:** Application Layer
+**Impact:** Account Takeover / Reputation Damage
+
+**Chain:**
+- Victim Browser
+- Missing CSP / Security Headers
+- Script Injection or Clickjacking
+- Session Theft or State Modification
+
+### 2. Cross Site Request Forgery
+**Boundary Crossed:** Application Layer
+**Impact:** Unauthorized Actions / Privilege Escalation
+
+**Chain:**
+- Victim Session
+- Forged Request via malicious link
+- State Change Execution
+- Privilege Abuse
+
+### 3. Authentication Abuse
+**Boundary Crossed:** Identity Boundary
+**Impact:** Account Compromise / Data Breach
+
+**Chain:**
+- External Input
+- Exposed Login Endpoint
+- Weak Session Controls or Brute Force
+- Session Hijacking or Credential Compromise
+
+### 4. Exploitation of Non-Storable Content
+**Boundary Crossed:** Application Layer
+**Impact:** Variable based on context
+
+**Chain:**
+- External Input
+- Discovery of Vulnerability
+- Exploitation of Non-Storable Content
+- Impact Realization
+
+### 5. Exploitation of Storable and Cacheable Content
+**Boundary Crossed:** Application Layer
+**Impact:** Variable based on context
+
+**Chain:**
+- External Input
+- Discovery of Vulnerability
+- Exploitation of Storable and Cacheable Content
+- Impact Realization
+
+### 6. Cross Site Scripting
+**Boundary Crossed:** Application Layer
+**Impact:** Account Takeover / Lateral Movement
+
+**Chain:**
+- External Input
+- Unsanitized User Input
+- Script Injection into Web Page
+- Browser Execution by Victim
+- Credential Theft or Session Hijacking
 
 ## AI-Assisted Reasoning
 
 ### Most Likely Attack
-Failed to determine.
+Cross Site Scripting (XSS)
 
 ### Most Dangerous Attack
-Failed to determine.
+Authentication Abuse
 
 ### Exploitability Assessment
-Failed to assess.
+High - These vulnerabilities are well-documented and can be easily exploited by attackers.
 
 ### Business Impact
-Failed to generate business impact.
+Critical - Potential for data breaches, account takeovers, and reputational damage. Could lead to loss of customer trust and legal liabilities.
 
 ## Risk Assessment
 
-**Priority:** Unknown
+**Priority:** Fix vulnerabilities that directly impact security controls, such as missing headers and anti-CSRF tokens.
 
 ### Top Risks
 
-No prioritized risks were provided.
+- Absence of Anti-CSRF Tokens
+- Content Security Policy (CSP) Header Not Set
+- Missing Anti-clickjacking Header
 
 ## Remediation Roadmap
 
-No remediation steps were provided.
+1. Implement Content Security Policy (CSP) header to mitigate XSS attacks.
+1. Add Anti-CSRF Tokens to prevent state changes via forged requests.
+1. Ensure all cookies have the SameSite attribute set to restrict cross-site access.
+1. Configure Cross-Origin-Embedder-Policy and Cross-Origin-Opener-Policy headers for additional security.
 
 ## Executive Recommendations
 
