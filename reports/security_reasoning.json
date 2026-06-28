@@ -1,20 +1,11 @@
 {
-  "Risk Score": 85,
-  "Overall Risk": "CRITICAL",
-  "Most Likely Attack": "Cross Site Scripting (XSS)",
-  "Most Dangerous Attack": "Authentication Abuse",
-  "Exploitability Assessment": "High - These vulnerabilities are well-documented and can be easily exploited by attackers.",
-  "Business Impact": "Critical - Potential for data breaches, account takeovers, and reputational damage. Could lead to loss of customer trust and legal liabilities.",
-  "Prioritized Findings": [
-    "Absence of Anti-CSRF Tokens",
-    "Content Security Policy (CSP) Header Not Set",
-    "Missing Anti-clickjacking Header"
-  ],
-  "Remediation Priority": "Fix vulnerabilities that directly impact security controls, such as missing headers and anti-CSRF tokens.",
-  "Remediation Order": [
-    "Implement Content Security Policy (CSP) header to mitigate XSS attacks.",
-    "Add Anti-CSRF Tokens to prevent state changes via forged requests.",
-    "Ensure all cookies have the SameSite attribute set to restrict cross-site access.",
-    "Configure Cross-Origin-Embedder-Policy and Cross-Origin-Opener-Policy headers for additional security."
-  ]
+  "Risk Score": 0,
+  "Overall Risk": "UNKNOWN",
+  "Most Likely Attack": "Failed to determine.",
+  "Most Dangerous Attack": "Failed to determine.",
+  "Exploitability Assessment": "Failed to assess.",
+  "Business Impact": "Failed to generate business impact.",
+  "Prioritized Findings": [],
+  "Remediation Priority": "Unknown",
+  "Remediation Order": []
 }
