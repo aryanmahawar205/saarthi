@@ -72,6 +72,7 @@
                                         <Agent-Class>com.saarthi.agent.SaarthiAgent</Agent-Class>
                                         <Can-Redefine-Classes>true</Can-Redefine-Classes>
                                         <Can-Retransform-Classes>true</Can-Retransform-Classes>
+                                        <Boot-Class-Path>saarthi-java-agent-1.0-SNAPSHOT.jar</Boot-Class-Path>
                                     </manifestEntries>
                                 </transformer>
                             </transformers>

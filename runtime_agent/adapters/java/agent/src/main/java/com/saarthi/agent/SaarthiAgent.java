@@ -12,6 +12,20 @@ import java.util.HashMap;
 public class SaarthiAgent {
 
     public static void premain(String agentArgs, Instrumentation inst) {
+        System.out.println("[SaarthiAgent] Java agent loaded successfully.");
+
+        String endpoint = "http://localhost:8081/events";
+        if (agentArgs != null && !agentArgs.trim().isEmpty()) {
+            String[] args = agentArgs.split(",");
+            for (String arg : args) {
+                if (arg.startsWith("endpoint=")) {
+                    endpoint = arg.substring("endpoint=".length());
+                }
+            }
+        }
+        EventPublisher.setAdapterUrl(endpoint);
+
+        System.out.println("[SaarthiAgent] Configured event endpoint: " + EventPublisher.getAdapterUrl());
         System.out.println("[SaarthiAgent] Initializing Java Instrumentation Provider...");
 
         new AgentBuilder.Default()
@@ -48,7 +62,7 @@ public class SaarthiAgent {
 
             .installOn(inst);
 
-        System.out.println("[SaarthiAgent] Instrumentation Provider Initialized.");
+        System.out.println("[SaarthiAgent] Instrumentation initialized successfully.");
     }
 
     public static class HttpAdvice {
