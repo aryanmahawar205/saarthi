@@ -186,7 +186,9 @@ public class SaarthiAgent {
                 attrs.put("method", method);
                 attrs.put("uri", uri);
                 EventPublisher.publish("http_request", attrs);
-            } catch (Throwable t) {}
+            } catch (Throwable t) {
+                // Silently swallow errors to remain passive
+            }
         }
 
         @Advice.OnMethodExit(onThrowable = Throwable.class)
@@ -198,7 +200,9 @@ public class SaarthiAgent {
                 Map<String, Object> attrs = new HashMap<>();
                 attrs.put("status", status);
                 EventPublisher.publish("http_response", attrs);
-            } catch (Throwable t) {}
+            } catch (Throwable t) {
+                // Silently swallow errors to remain passive
+            }
         }
     }
 
@@ -216,7 +220,9 @@ public class SaarthiAgent {
                 attrs.put("method", method);
                 attrs.put("uri", uri);
                 EventPublisher.publish("http_request", attrs);
-            } catch (Throwable t) {}
+            } catch (Throwable t) {
+                // Silently swallow errors to remain passive
+            }
         }
     }
 
