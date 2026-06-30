@@ -13,6 +13,7 @@ class JavaAgentHandler(BaseHTTPRequestHandler):
 
         try:
             event_data = json.loads(post_data.decode('utf-8'))
+            print(f"[JavaAdapter] Received event: {event_data.get('event_type')}")
             self.server.adapter.handle_event(event_data)
 
             self.send_response(200)
@@ -20,9 +21,32 @@ class JavaAgentHandler(BaseHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(b'{"status": "ok"}')
         except Exception as e:
+            print(f"[JavaAdapter] Error processing POST: {e}")
             self.send_response(500)
             self.end_headers()
             self.wfile.write(f"Error: {e}".encode())
+
+    def do_GET(self):
+        if self.path == '/health':
+            self.send_response(200)
+            self.end_headers()
+            self.wfile.write(b'OK')
+        elif self.path == '/events':
+            events = self.server.adapter.collect_events()
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/json')
+            self.end_headers()
+            # Simple conversion for verification
+            event_dicts = []
+            for e in events:
+                event_dicts.append({
+                    "event_type": e.event_type.value,
+                    "attributes": e.attributes
+                })
+            self.wfile.write(json.dumps(event_dicts).encode())
+        else:
+            self.send_response(404)
+            self.end_headers()
 
 class JavaAdapterServer(HTTPServer):
     def __init__(self, server_address, RequestHandlerClass, adapter):
@@ -36,6 +60,7 @@ class JavaAdapter(RuntimeAdapter):
         self.server = None
         self.server_thread = None
         self.is_running = False
+        self.server_address = ('localhost', 8081) # Default address
 
     def initialize(self) -> None:
         pass
@@ -44,12 +69,12 @@ class JavaAdapter(RuntimeAdapter):
         if self.is_running:
             return
 
-        self.server = JavaAdapterServer(('localhost', 8081), JavaAgentHandler, self)
+        self.server = JavaAdapterServer(self.server_address, JavaAgentHandler, self)
         self.server_thread = threading.Thread(target=self.server.serve_forever)
         self.server_thread.daemon = True
         self.server_thread.start()
         self.is_running = True
-        print("[JavaAdapter] Started event receiver on port 8081")
+        print(f"[JavaAdapter] Started event receiver on {self.server_address}")
 
     def stop(self) -> None:
         if not self.is_running:
