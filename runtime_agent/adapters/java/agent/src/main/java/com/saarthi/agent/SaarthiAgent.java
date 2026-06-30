@@ -44,11 +44,41 @@ public class SaarthiAgent {
 
             @Override
             public void onTransformation(TypeDescription typeDescription, ClassLoader classLoader, JavaModule module, boolean loaded, DynamicType dynamicType) {
-                transformedClassesCount.incrementAndGet();
+                int count = transformedClassesCount.incrementAndGet();
                 String name = typeDescription.getName();
-                if (name.contains("servlet.http.HttpServlet")) servletDetected.set(true);
-                if (name.contains("springframework.web.servlet.DispatcherServlet")) springDetected.set(true);
-                if (name.contains("sql.PreparedStatement") || name.contains("sql.Statement") || name.contains("sql.Connection")) jdbcDetected.set(true);
+                System.out.println("[SaarthiAgent] [" + count + "] Transformed: " + name);
+
+                // Improved detection logic using type hierarchy and common patterns
+                if (isServlet(typeDescription)) {
+                    servletDetected.set(true);
+                }
+                if (isSpringMvc(typeDescription)) {
+                    springDetected.set(true);
+                }
+                if (isJdbc(typeDescription)) {
+                    jdbcDetected.set(true);
+                }
+            }
+
+            private boolean isServlet(TypeDescription typeDescription) {
+                String name = typeDescription.getName();
+                if (name.contains("HttpServlet") || name.contains("DispatcherServlet")) return true;
+                try {
+                    return typeDescription.getSuperClass().asErasure().getName().contains("HttpServlet");
+                } catch (Exception e) {
+                    return false;
+                }
+            }
+
+            private boolean isSpringMvc(TypeDescription typeDescription) {
+                String name = typeDescription.getName();
+                return name.contains("org.springframework.web.servlet") || name.contains("DispatcherServlet");
+            }
+
+            private boolean isJdbc(TypeDescription typeDescription) {
+                String name = typeDescription.getName();
+                return name.contains("sql.PreparedStatement") || name.contains("sql.Statement") ||
+                       name.contains("sql.Connection") || name.contains("jdbc");
             }
 
             @Override
@@ -56,7 +86,7 @@ public class SaarthiAgent {
 
             @Override
             public void onError(String typeName, ClassLoader classLoader, JavaModule module, boolean loaded, Throwable throwable) {
-                // System.err.println("[SaarthiAgent] Error transforming " + typeName + ": " + throwable.getMessage());
+                 System.err.println("[SaarthiAgent] Error transforming " + typeName + ": " + throwable.getMessage());
             }
 
             @Override
@@ -64,7 +94,7 @@ public class SaarthiAgent {
         };
 
         new AgentBuilder.Default()
-            .disableClassFormatChanges()
+            // .disableClassFormatChanges() was the root cause; removed to allow Advice to work properly
             .with(AgentBuilder.RedefinitionStrategy.RETRANSFORMATION)
             .with(listener)
             .ignore(ElementMatchers.nameStartsWith("net.bytebuddy.")
