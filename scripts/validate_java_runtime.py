@@ -12,7 +12,7 @@ JAVA_AGENT_JAR = "runtime_agent/adapters/java/agent/target/saarthi-java-agent-1.
 WEBGOAT_JAR_URL = "https://github.com/WebGoat/WebGoat/releases/download/v2023.8/webgoat-2023.8.jar"
 WEBGOAT_JAR = "/tmp/webgoat.jar"
 ADAPTER_PORT = 8082
-WEBGOAT_PORT = 8083
+WEBGOAT_PORT = 8080
 WEBGOAT_URL = f"http://localhost:{WEBGOAT_PORT}/WebGoat"
 
 processes = []
@@ -52,13 +52,13 @@ def download_webgoat():
         print(f"[Validation] WebGoat JAR already exists at {WEBGOAT_JAR}.")
 
 def run_webgoat():
-    print(f"[Validation] Starting WebGoat on port {WEBGOAT_PORT} with Java Agent {JAVA_AGENT_JAR}...")
+    # We remove --server.port to avoid conflicting WebGoat and WebWolf starting on the same port
+    print(f"[Validation] Starting WebGoat with Java Agent {JAVA_AGENT_JAR}...")
     cmd = [
         "java",
         f"-javaagent:{JAVA_AGENT_JAR}=endpoint=http://localhost:{ADAPTER_PORT}/events",
-        f"-Dserver.port={WEBGOAT_PORT}",
-        "-Dserver.address=127.0.0.1",
-        "-jar", WEBGOAT_JAR
+        "-jar", WEBGOAT_JAR,
+        "--server.address=127.0.0.1"
     ]
     p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, preexec_fn=os.setsid, text=True, bufsize=1)
     processes.append(p)
@@ -82,7 +82,7 @@ def run_webgoat():
 
         if "Saarthi Runtime Instrumentation" in line:
             instrumentation_detected = True
-        if "Started WebGoat" in line:
+        if "Started StartWebGoat" in line or "Started WebGoat" in line:
             webgoat_started = True
             print("  [WebGoat] Started successfully.")
             break
