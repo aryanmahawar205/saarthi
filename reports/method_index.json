@@ -55,7 +55,7 @@
       "assignment4",
       "assignment5",
       "solveAssignment",
-      "sendEmailShouldBeAvailableInWebWolf",
+      "sendEmailShouldBeAvailableInMailbox",
       "shutdown",
       "changePassword",
       "getPasswordResetLinkFromLandingPage",
@@ -89,7 +89,8 @@
       "checkAssignmentWithGet",
       "getWebWolfFileServerLocation",
       "webGoatServerDirectory",
-      "cleanMailbox"
+      "cleanMailbox",
+      "readMailbox"
     ]
   },
   {
@@ -102,6 +103,12 @@
   },
   {
     "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/integration/SSRFIntegrationTest.java",
+    "methods": [
+      "runTests"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/it/java/org/owasp/webgoat/integration/WebGoatIntegrationTest.java",
     "methods": [
       "runTests"
     ]
@@ -341,7 +348,8 @@
   {
     "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/WebWolf.java",
     "methods": [
-      "traceRepository"
+      "traceRepository",
+      "objectMapper"
     ]
   },
   {
@@ -395,23 +403,6 @@
       "isAccountNonLocked",
       "isCredentialsNonExpired",
       "isEnabled"
-    ]
-  },
-  {
-    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/mailbox/Email.java",
-    "methods": [
-      "getSummary",
-      "getTimestamp",
-      "getTime",
-      "getShortSender"
-    ]
-  },
-  {
-    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/mailbox/MailboxController.java",
-    "methods": [
-      "mail",
-      "sendEmail",
-      "deleteAllMail"
     ]
   },
   {
@@ -499,7 +490,8 @@
       "localeChangeInterceptor",
       "addInterceptors",
       "messageSource",
-      "labelDebugger"
+      "labelDebugger",
+      "objectMapper"
     ]
   },
   {
@@ -640,6 +632,7 @@
     "methods": [
       "loadUserByUsername",
       "addUser",
+      "sendWelcomeEmail",
       "createLessonsForUser",
       "getAllUsers"
     ]
@@ -776,6 +769,24 @@
       "getMessages",
       "getMessage",
       "getMessage"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/mailbox/Email.java",
+    "methods": [
+      "getSummary",
+      "getTimestamp",
+      "getTime",
+      "getShortSender"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/mailbox/MailboxController.java",
+    "methods": [
+      "mail",
+      "count",
+      "sendEmail",
+      "deleteAllMail"
     ]
   },
   {
@@ -1165,13 +1176,6 @@
     ]
   },
   {
-    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/webwolfintroduction/MailAssignment.java",
-    "methods": [
-      "sendEmail",
-      "completed"
-    ]
-  },
-  {
     "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/Flag.java",
     "methods": [
       "Flag",
@@ -1471,6 +1475,13 @@
     "methods": [
       "getDefaultCategory",
       "getTitle"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/webgoatintroduction/MailAssignment.java",
+    "methods": [
+      "sendEmail",
+      "completed"
     ]
   },
   {
@@ -2290,15 +2301,6 @@
     ]
   },
   {
-    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/webwolf/mailbox/MailboxControllerTest.java",
-    "methods": [
-      "setup",
-      "sendingMailShouldStoreIt",
-      "userShouldBeAbleToReadOwnEmail",
-      "differentUserShouldNotBeAbleToReadOwnEmail"
-    ]
-  },
-  {
     "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/webwolf/jwt/JWTTokenTest.java",
     "methods": [
       "toString"
@@ -2310,6 +2312,19 @@
       "getDefaultCategory",
       "getTitle",
       "getAssignments"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/test/java/org/owasp/webgoat/container/mailbox/MailboxControllerTest.java",
+    "methods": [
+      "ObjectMapper",
+      "user",
+      "setupMixIn",
+      "sendingMailShouldStoreIt",
+      "userShouldBeAbleToReadOwnEmail",
+      "countShouldReturnNumberOfUnreadEmailsForCurrentUser",
+      "openingMailboxMarksEmailsAsRead",
+      "differentUserShouldNotBeAbleToReadOwnEmail"
     ]
   },
   {

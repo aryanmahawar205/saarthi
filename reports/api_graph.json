@@ -6,14 +6,6 @@
     ]
   },
   {
-    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/mailbox/MailboxController.java",
-    "endpoints": [
-      "/mail",
-      "/mail",
-      "/mail"
-    ]
-  },
-  {
     "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/webwolf/jwt/JWTController.java",
     "endpoints": [
       "/jwt"
@@ -31,6 +23,15 @@
       "/registration",
       "/login-oauth.mvc",
       "/register.mvc"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/container/mailbox/MailboxController.java",
+    "endpoints": [
+      "/mail",
+      "/mail/count",
+      "/mail",
+      "/mail"
     ]
   },
   {
@@ -138,13 +139,6 @@
     ]
   },
   {
-    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/webwolfintroduction/MailAssignment.java",
-    "endpoints": [
-      "/WebWolf/mail/send",
-      "/WebWolf/mail"
-    ]
-  },
-  {
     "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/Assignment7.java",
     "endpoints": [
       "/challenge/7/reset-password/{link}",
@@ -220,6 +214,13 @@
     "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/idor/IDORLogin.java",
     "endpoints": [
       "/IDOR/login"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/lessons/webgoatintroduction/MailAssignment.java",
+    "endpoints": [
+      "/WebGoat/mail/send",
+      "/WebGoat/mail"
     ]
   },
   {

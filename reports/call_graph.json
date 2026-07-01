@@ -221,7 +221,7 @@
   },
   {
     "caller": "init",
-    "callee": "sendEmailShouldBeAvailableInWebWolf"
+    "callee": "sendEmailShouldBeAvailableInMailbox"
   },
   {
     "caller": "init",
@@ -292,67 +292,23 @@
     "callee": "url"
   },
   {
-    "caller": "sendEmailShouldBeAvailableInWebWolf",
+    "caller": "sendEmailShouldBeAvailableInMailbox",
     "callee": "clickForgotEmailLink"
   },
   {
-    "caller": "sendEmailShouldBeAvailableInWebWolf",
+    "caller": "sendEmailShouldBeAvailableInMailbox",
     "callee": "getUser"
   },
   {
-    "caller": "sendEmailShouldBeAvailableInWebWolf",
-    "callee": "given"
+    "caller": "sendEmailShouldBeAvailableInMailbox",
+    "callee": "readMailbox"
   },
   {
-    "caller": "sendEmailShouldBeAvailableInWebWolf",
-    "callee": "when"
-  },
-  {
-    "caller": "sendEmailShouldBeAvailableInWebWolf",
-    "callee": "relaxedHTTPSValidation"
-  },
-  {
-    "caller": "sendEmailShouldBeAvailableInWebWolf",
-    "callee": "cookie"
-  },
-  {
-    "caller": "sendEmailShouldBeAvailableInWebWolf",
-    "callee": "getWebWolfCookie"
-  },
-  {
-    "caller": "sendEmailShouldBeAvailableInWebWolf",
-    "callee": "get"
-  },
-  {
-    "caller": "sendEmailShouldBeAvailableInWebWolf",
-    "callee": "url"
-  },
-  {
-    "caller": "sendEmailShouldBeAvailableInWebWolf",
-    "callee": "then"
-  },
-  {
-    "caller": "sendEmailShouldBeAvailableInWebWolf",
-    "callee": "extract"
-  },
-  {
-    "caller": "sendEmailShouldBeAvailableInWebWolf",
-    "callee": "response"
-  },
-  {
-    "caller": "sendEmailShouldBeAvailableInWebWolf",
-    "callee": "getBody"
-  },
-  {
-    "caller": "sendEmailShouldBeAvailableInWebWolf",
-    "callee": "asString"
-  },
-  {
-    "caller": "sendEmailShouldBeAvailableInWebWolf",
+    "caller": "sendEmailShouldBeAvailableInMailbox",
     "callee": "assertThat"
   },
   {
-    "caller": "sendEmailShouldBeAvailableInWebWolf",
+    "caller": "sendEmailShouldBeAvailableInMailbox",
     "callee": "contains"
   },
   {
@@ -1265,7 +1221,7 @@
   },
   {
     "caller": "cleanMailbox",
-    "callee": "getWebWolfCookie"
+    "callee": "getWebGoatCookie"
   },
   {
     "caller": "cleanMailbox",
@@ -1286,6 +1242,54 @@
   {
     "caller": "cleanMailbox",
     "callee": "value"
+  },
+  {
+    "caller": "readMailbox",
+    "callee": "given"
+  },
+  {
+    "caller": "readMailbox",
+    "callee": "when"
+  },
+  {
+    "caller": "readMailbox",
+    "callee": "relaxedHTTPSValidation"
+  },
+  {
+    "caller": "readMailbox",
+    "callee": "cookie"
+  },
+  {
+    "caller": "readMailbox",
+    "callee": "getWebGoatCookie"
+  },
+  {
+    "caller": "readMailbox",
+    "callee": "get"
+  },
+  {
+    "caller": "readMailbox",
+    "callee": "url"
+  },
+  {
+    "caller": "readMailbox",
+    "callee": "then"
+  },
+  {
+    "caller": "readMailbox",
+    "callee": "extract"
+  },
+  {
+    "caller": "readMailbox",
+    "callee": "response"
+  },
+  {
+    "caller": "readMailbox",
+    "callee": "getBody"
+  },
+  {
+    "caller": "readMailbox",
+    "callee": "asString"
   },
   {
     "caller": "assignment3",
@@ -1434,6 +1438,54 @@
   {
     "caller": "runTests",
     "callee": "url"
+  },
+  {
+    "caller": "runTests",
+    "callee": "checkResults"
+  },
+  {
+    "caller": "runTests",
+    "callee": "startLesson"
+  },
+  {
+    "caller": "runTests",
+    "callee": "put"
+  },
+  {
+    "caller": "runTests",
+    "callee": "getUser"
+  },
+  {
+    "caller": "runTests",
+    "callee": "checkAssignment"
+  },
+  {
+    "caller": "runTests",
+    "callee": "url"
+  },
+  {
+    "caller": "runTests",
+    "callee": "readMailbox"
+  },
+  {
+    "caller": "runTests",
+    "callee": "replace"
+  },
+  {
+    "caller": "runTests",
+    "callee": "substring"
+  },
+  {
+    "caller": "runTests",
+    "callee": "lastIndexOf"
+  },
+  {
+    "caller": "runTests",
+    "callee": "length"
+  },
+  {
+    "caller": "runTests",
+    "callee": "clear"
   },
   {
     "caller": "runTests",
@@ -3657,7 +3709,7 @@
   },
   {
     "caller": "runTests",
-    "callee": "put"
+    "callee": "reverse"
   },
   {
     "caller": "runTests",
@@ -3665,11 +3717,7 @@
   },
   {
     "caller": "runTests",
-    "callee": "checkAssignment"
-  },
-  {
-    "caller": "runTests",
-    "callee": "url"
+    "callee": "put"
   },
   {
     "caller": "runTests",
@@ -3689,7 +3737,11 @@
   },
   {
     "caller": "runTests",
-    "callee": "getWebWolfCookie"
+    "callee": "getWebGoatCookie"
+  },
+  {
+    "caller": "runTests",
+    "callee": "queryParams"
   },
   {
     "caller": "runTests",
@@ -3697,7 +3749,19 @@
   },
   {
     "caller": "runTests",
+    "callee": "url"
+  },
+  {
+    "caller": "runTests",
     "callee": "then"
+  },
+  {
+    "caller": "runTests",
+    "callee": "statusCode"
+  },
+  {
+    "caller": "runTests",
+    "callee": "getWebWolfCookie"
   },
   {
     "caller": "runTests",
@@ -3717,19 +3781,11 @@
   },
   {
     "caller": "runTests",
-    "callee": "replace"
+    "callee": "assertTrue"
   },
   {
     "caller": "runTests",
-    "callee": "substring"
-  },
-  {
-    "caller": "runTests",
-    "callee": "lastIndexOf"
-  },
-  {
-    "caller": "runTests",
-    "callee": "length"
+    "callee": "contains"
   },
   {
     "caller": "runTests",
@@ -3737,23 +3793,7 @@
   },
   {
     "caller": "runTests",
-    "callee": "getWebGoatCookie"
-  },
-  {
-    "caller": "runTests",
-    "callee": "queryParams"
-  },
-  {
-    "caller": "runTests",
-    "callee": "statusCode"
-  },
-  {
-    "caller": "runTests",
-    "callee": "assertTrue"
-  },
-  {
-    "caller": "runTests",
-    "callee": "contains"
+    "callee": "checkAssignment"
   },
   {
     "caller": "runTests",
@@ -4900,6 +4940,26 @@
     "callee": "WebWolfTraceRepository"
   },
   {
+    "caller": "traceRepository",
+    "callee": "directly"
+  },
+  {
+    "caller": "objectMapper",
+    "callee": "ObjectMapper"
+  },
+  {
+    "caller": "objectMapper",
+    "callee": "findAndRegisterModules"
+  },
+  {
+    "caller": "objectMapper",
+    "callee": "enable"
+  },
+  {
+    "caller": "objectMapper",
+    "callee": "disable"
+  },
+  {
     "caller": "getFileLocation",
     "callee": "PostMapping"
   },
@@ -5248,90 +5308,6 @@
     "callee": "emptyList"
   },
   {
-    "caller": "getSummary",
-    "callee": "substring"
-  },
-  {
-    "caller": "getSummary",
-    "callee": "min"
-  },
-  {
-    "caller": "getSummary",
-    "callee": "length"
-  },
-  {
-    "caller": "getTime",
-    "callee": "ofPattern"
-  },
-  {
-    "caller": "getTime",
-    "callee": "format"
-  },
-  {
-    "caller": "getShortSender",
-    "callee": "substring"
-  },
-  {
-    "caller": "getShortSender",
-    "callee": "indexOf"
-  },
-  {
-    "caller": "mail",
-    "callee": "getName"
-  },
-  {
-    "caller": "mail",
-    "callee": "ModelAndView"
-  },
-  {
-    "caller": "mail",
-    "callee": "findByRecipientOrderByTimeDesc"
-  },
-  {
-    "caller": "mail",
-    "callee": "isEmpty"
-  },
-  {
-    "caller": "mail",
-    "callee": "addObject"
-  },
-  {
-    "caller": "mail",
-    "callee": "size"
-  },
-  {
-    "caller": "mail",
-    "callee": "setViewName"
-  },
-  {
-    "caller": "mail",
-    "callee": "addAttribute"
-  },
-  {
-    "caller": "mail",
-    "callee": "PostMapping"
-  },
-  {
-    "caller": "mail",
-    "callee": "ResponseStatus"
-  },
-  {
-    "caller": "sendEmail",
-    "callee": "save"
-  },
-  {
-    "caller": "sendEmail",
-    "callee": "DeleteMapping"
-  },
-  {
-    "caller": "sendEmail",
-    "callee": "ResponseStatus"
-  },
-  {
-    "caller": "deleteAllMail",
-    "callee": "deleteAll"
-  },
-  {
     "caller": "jwt",
     "callee": "ModelAndView"
   },
@@ -5662,6 +5638,22 @@
   {
     "caller": "labelDebugger",
     "callee": "LabelDebugger"
+  },
+  {
+    "caller": "objectMapper",
+    "callee": "ObjectMapper"
+  },
+  {
+    "caller": "objectMapper",
+    "callee": "findAndRegisterModules"
+  },
+  {
+    "caller": "objectMapper",
+    "callee": "enable"
+  },
+  {
+    "caller": "objectMapper",
+    "callee": "disable"
   },
   {
     "caller": "computeTemplateResource",
@@ -6268,6 +6260,50 @@
     "callee": "createLessonsForUser"
   },
   {
+    "caller": "addUser",
+    "callee": "sendWelcomeEmail"
+  },
+  {
+    "caller": "sendWelcomeEmail",
+    "callee": "builder"
+  },
+  {
+    "caller": "sendWelcomeEmail",
+    "callee": "time"
+  },
+  {
+    "caller": "sendWelcomeEmail",
+    "callee": "now"
+  },
+  {
+    "caller": "sendWelcomeEmail",
+    "callee": "recipient"
+  },
+  {
+    "caller": "sendWelcomeEmail",
+    "callee": "sender"
+  },
+  {
+    "caller": "sendWelcomeEmail",
+    "callee": "title"
+  },
+  {
+    "caller": "sendWelcomeEmail",
+    "callee": "contents"
+  },
+  {
+    "caller": "sendWelcomeEmail",
+    "callee": "mail"
+  },
+  {
+    "caller": "sendWelcomeEmail",
+    "callee": "build"
+  },
+  {
+    "caller": "sendWelcomeEmail",
+    "callee": "save"
+  },
+  {
     "caller": "createLessonsForUser",
     "callee": "execute"
   },
@@ -6786,6 +6822,138 @@
   {
     "caller": "getMessage",
     "callee": "getLocale"
+  },
+  {
+    "caller": "getSummary",
+    "callee": "substring"
+  },
+  {
+    "caller": "getSummary",
+    "callee": "min"
+  },
+  {
+    "caller": "getSummary",
+    "callee": "length"
+  },
+  {
+    "caller": "getTime",
+    "callee": "ofPattern"
+  },
+  {
+    "caller": "getTime",
+    "callee": "format"
+  },
+  {
+    "caller": "getShortSender",
+    "callee": "substring"
+  },
+  {
+    "caller": "getShortSender",
+    "callee": "indexOf"
+  },
+  {
+    "caller": "mail",
+    "callee": "getName"
+  },
+  {
+    "caller": "mail",
+    "callee": "ModelAndView"
+  },
+  {
+    "caller": "mail",
+    "callee": "findByRecipientOrderByTimeDesc"
+  },
+  {
+    "caller": "mail",
+    "callee": "isEmpty"
+  },
+  {
+    "caller": "mail",
+    "callee": "addObject"
+  },
+  {
+    "caller": "mail",
+    "callee": "size"
+  },
+  {
+    "caller": "mail",
+    "callee": "stream"
+  },
+  {
+    "caller": "mail",
+    "callee": "filter"
+  },
+  {
+    "caller": "mail",
+    "callee": "isRead"
+  },
+  {
+    "caller": "mail",
+    "callee": "forEach"
+  },
+  {
+    "caller": "mail",
+    "callee": "setRead"
+  },
+  {
+    "caller": "mail",
+    "callee": "saveAll"
+  },
+  {
+    "caller": "mail",
+    "callee": "setViewName"
+  },
+  {
+    "caller": "mail",
+    "callee": "addAttribute"
+  },
+  {
+    "caller": "mail",
+    "callee": "GetMapping"
+  },
+  {
+    "caller": "mail",
+    "callee": "count"
+  },
+  {
+    "caller": "mail",
+    "callee": "countByRecipientAndReadFalse"
+  },
+  {
+    "caller": "mail",
+    "callee": "PostMapping"
+  },
+  {
+    "caller": "mail",
+    "callee": "ResponseStatus"
+  },
+  {
+    "caller": "sendEmail",
+    "callee": "JsonIgnore"
+  },
+  {
+    "caller": "sendEmail",
+    "callee": "setTime"
+  },
+  {
+    "caller": "sendEmail",
+    "callee": "now"
+  },
+  {
+    "caller": "sendEmail",
+    "callee": "save"
+  },
+  {
+    "caller": "sendEmail",
+    "callee": "DeleteMapping"
+  },
+  {
+    "caller": "sendEmail",
+    "callee": "ResponseStatus"
+  },
+  {
+    "caller": "deleteAllMail",
+    "callee": "deleteAll"
   },
   {
     "caller": "createHint",
@@ -8144,98 +8312,6 @@
     "callee": "setViewName"
   },
   {
-    "caller": "sendEmail",
-    "callee": "substring"
-  },
-  {
-    "caller": "sendEmail",
-    "callee": "indexOf"
-  },
-  {
-    "caller": "sendEmail",
-    "callee": "equalsIgnoreCase"
-  },
-  {
-    "caller": "sendEmail",
-    "callee": "builder"
-  },
-  {
-    "caller": "sendEmail",
-    "callee": "recipient"
-  },
-  {
-    "caller": "sendEmail",
-    "callee": "title"
-  },
-  {
-    "caller": "sendEmail",
-    "callee": "contents"
-  },
-  {
-    "caller": "sendEmail",
-    "callee": "reverse"
-  },
-  {
-    "caller": "sendEmail",
-    "callee": "sender"
-  },
-  {
-    "caller": "sendEmail",
-    "callee": "build"
-  },
-  {
-    "caller": "sendEmail",
-    "callee": "postForEntity"
-  },
-  {
-    "caller": "sendEmail",
-    "callee": "informationMessage"
-  },
-  {
-    "caller": "sendEmail",
-    "callee": "feedback"
-  },
-  {
-    "caller": "sendEmail",
-    "callee": "output"
-  },
-  {
-    "caller": "sendEmail",
-    "callee": "getMessage"
-  },
-  {
-    "caller": "sendEmail",
-    "callee": "feedbackArgs"
-  },
-  {
-    "caller": "sendEmail",
-    "callee": "PostMapping"
-  },
-  {
-    "caller": "completed",
-    "callee": "equals"
-  },
-  {
-    "caller": "completed",
-    "callee": "reverse"
-  },
-  {
-    "caller": "completed",
-    "callee": "success"
-  },
-  {
-    "caller": "completed",
-    "callee": "build"
-  },
-  {
-    "caller": "completed",
-    "callee": "failed"
-  },
-  {
-    "caller": "completed",
-    "callee": "feedbackArgs"
-  },
-  {
     "caller": "isCorrect",
     "callee": "equals"
   },
@@ -9104,6 +9180,98 @@
     "callee": "failed"
   },
   {
+    "caller": "sendEmail",
+    "callee": "substring"
+  },
+  {
+    "caller": "sendEmail",
+    "callee": "indexOf"
+  },
+  {
+    "caller": "sendEmail",
+    "callee": "equalsIgnoreCase"
+  },
+  {
+    "caller": "sendEmail",
+    "callee": "builder"
+  },
+  {
+    "caller": "sendEmail",
+    "callee": "recipient"
+  },
+  {
+    "caller": "sendEmail",
+    "callee": "title"
+  },
+  {
+    "caller": "sendEmail",
+    "callee": "contents"
+  },
+  {
+    "caller": "sendEmail",
+    "callee": "reverse"
+  },
+  {
+    "caller": "sendEmail",
+    "callee": "sender"
+  },
+  {
+    "caller": "sendEmail",
+    "callee": "build"
+  },
+  {
+    "caller": "sendEmail",
+    "callee": "postForEntity"
+  },
+  {
+    "caller": "sendEmail",
+    "callee": "informationMessage"
+  },
+  {
+    "caller": "sendEmail",
+    "callee": "feedback"
+  },
+  {
+    "caller": "sendEmail",
+    "callee": "output"
+  },
+  {
+    "caller": "sendEmail",
+    "callee": "getMessage"
+  },
+  {
+    "caller": "sendEmail",
+    "callee": "feedbackArgs"
+  },
+  {
+    "caller": "sendEmail",
+    "callee": "PostMapping"
+  },
+  {
+    "caller": "completed",
+    "callee": "equals"
+  },
+  {
+    "caller": "completed",
+    "callee": "reverse"
+  },
+  {
+    "caller": "completed",
+    "callee": "success"
+  },
+  {
+    "caller": "completed",
+    "callee": "build"
+  },
+  {
+    "caller": "completed",
+    "callee": "failed"
+  },
+  {
+    "caller": "completed",
+    "callee": "feedbackArgs"
+  },
+  {
     "caller": "getSecretToken",
     "callee": "builder"
   },
@@ -9337,7 +9505,31 @@
   },
   {
     "caller": "initVotes",
-    "callee": "MappingJacksonValue"
+    "callee": "isEmpty"
+  },
+  {
+    "caller": "initVotes",
+    "callee": "parser"
+  },
+  {
+    "caller": "initVotes",
+    "callee": "setSigningKey"
+  },
+  {
+    "caller": "initVotes",
+    "callee": "parse"
+  },
+  {
+    "caller": "initVotes",
+    "callee": "getBody"
+  },
+  {
+    "caller": "initVotes",
+    "callee": "get"
+  },
+  {
+    "caller": "initVotes",
+    "callee": "equals"
   },
   {
     "caller": "initVotes",
@@ -9369,35 +9561,27 @@
   },
   {
     "caller": "initVotes",
-    "callee": "isEmpty"
+    "callee": "writerWithView"
   },
   {
     "caller": "initVotes",
-    "callee": "setSerializationView"
+    "callee": "writeValueAsString"
   },
   {
     "caller": "initVotes",
-    "callee": "parser"
+    "callee": "contentType"
   },
   {
     "caller": "initVotes",
-    "callee": "setSigningKey"
+    "callee": "body"
   },
   {
     "caller": "initVotes",
-    "callee": "parse"
+    "callee": "status"
   },
   {
     "caller": "initVotes",
-    "callee": "getBody"
-  },
-  {
-    "caller": "initVotes",
-    "callee": "get"
-  },
-  {
-    "caller": "initVotes",
-    "callee": "equals"
+    "callee": "build"
   },
   {
     "caller": "initVotes",
@@ -9410,14 +9594,6 @@
   {
     "caller": "initVotes",
     "callee": "vote"
-  },
-  {
-    "caller": "initVotes",
-    "callee": "status"
-  },
-  {
-    "caller": "initVotes",
-    "callee": "build"
   },
   {
     "caller": "initVotes",
@@ -13148,154 +13324,6 @@
     "callee": "any"
   },
   {
-    "caller": "setup",
-    "callee": "addMixIn"
-  },
-  {
-    "caller": "setup",
-    "callee": "sendingMailShouldStoreIt"
-  },
-  {
-    "caller": "setup",
-    "callee": "builder"
-  },
-  {
-    "caller": "setup",
-    "callee": "contents"
-  },
-  {
-    "caller": "setup",
-    "callee": "recipient"
-  },
-  {
-    "caller": "setup",
-    "callee": "sender"
-  },
-  {
-    "caller": "setup",
-    "callee": "title"
-  },
-  {
-    "caller": "setup",
-    "callee": "time"
-  },
-  {
-    "caller": "setup",
-    "callee": "now"
-  },
-  {
-    "caller": "setup",
-    "callee": "build"
-  },
-  {
-    "caller": "setup",
-    "callee": "perform"
-  },
-  {
-    "caller": "setup",
-    "callee": "post"
-  },
-  {
-    "caller": "setup",
-    "callee": "with"
-  },
-  {
-    "caller": "setup",
-    "callee": "csrf"
-  },
-  {
-    "caller": "setup",
-    "callee": "contentType"
-  },
-  {
-    "caller": "setup",
-    "callee": "content"
-  },
-  {
-    "caller": "setup",
-    "callee": "writeValueAsBytes"
-  },
-  {
-    "caller": "setup",
-    "callee": "andExpect"
-  },
-  {
-    "caller": "setup",
-    "callee": "status"
-  },
-  {
-    "caller": "setup",
-    "callee": "isCreated"
-  },
-  {
-    "caller": "setup",
-    "callee": "WithMockUser"
-  },
-  {
-    "caller": "setup",
-    "callee": "userShouldBeAbleToReadOwnEmail"
-  },
-  {
-    "caller": "setup",
-    "callee": "when"
-  },
-  {
-    "caller": "setup",
-    "callee": "findByRecipientOrderByTimeDesc"
-  },
-  {
-    "caller": "setup",
-    "callee": "thenReturn"
-  },
-  {
-    "caller": "setup",
-    "callee": "newArrayList"
-  },
-  {
-    "caller": "setup",
-    "callee": "get"
-  },
-  {
-    "caller": "setup",
-    "callee": "isOk"
-  },
-  {
-    "caller": "setup",
-    "callee": "view"
-  },
-  {
-    "caller": "setup",
-    "callee": "name"
-  },
-  {
-    "caller": "setup",
-    "callee": "string"
-  },
-  {
-    "caller": "setup",
-    "callee": "containsString"
-  },
-  {
-    "caller": "setup",
-    "callee": "ofPattern"
-  },
-  {
-    "caller": "setup",
-    "callee": "format"
-  },
-  {
-    "caller": "setup",
-    "callee": "getTimestamp"
-  },
-  {
-    "caller": "setup",
-    "callee": "differentUserShouldNotBeAbleToReadOwnEmail"
-  },
-  {
-    "caller": "setup",
-    "callee": "not"
-  },
-  {
     "caller": "toString",
     "callee": "ObjectMapper"
   },
@@ -13374,6 +13402,198 @@
   {
     "caller": "getAssignments",
     "callee": "getNumberOfAttempts"
+  },
+  {
+    "caller": "user",
+    "callee": "authenticated"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "addMixIn"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "sendingMailShouldStoreIt"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "builder"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "contents"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "recipient"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "sender"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "title"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "time"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "now"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "build"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "perform"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "post"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "contentType"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "content"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "writeValueAsBytes"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "andExpect"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "status"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "isCreated"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "userShouldBeAbleToReadOwnEmail"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "when"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "findByRecipientOrderByTimeDesc"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "thenReturn"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "newArrayList"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "get"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "principal"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "user"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "isOk"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "view"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "name"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "string"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "containsString"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "ofPattern"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "format"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "getTimestamp"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "countShouldReturnNumberOfUnreadEmailsForCurrentUser"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "countByRecipientAndReadFalse"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "jsonPath"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "openingMailboxMarksEmailsAsRead"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "read"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "assertThat"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "isRead"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "isTrue"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "verify"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "saveAll"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "anyList"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "differentUserShouldNotBeAbleToReadOwnEmail"
+  },
+  {
+    "caller": "setupMixIn",
+    "callee": "not"
   },
   {
     "caller": "setup",
