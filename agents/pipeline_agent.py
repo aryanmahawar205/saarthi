@@ -1,76 +1,106 @@
 import subprocess
-
-
-PIPELINE_STEPS = [
-
-    "parsers/merge_findings.py",
-
-    "parsers/severity_normalizer.py",
-
-    "parsers/finding_mapper.py",
-
-    "parsers/attack_surface_mapper.py",
-
-    "parsers/context_pack_builder.py",
-
-    "parsers/graph_linker_v2.py",
-
-    "parsers/reachability_engine.py",
-
-    "parsers/final_prioritizer.py"
-]
+import os
 
 
 def run(state):
 
-    print(
-        "\n[PipelineAgent] Running pipeline\n"
-    )
+    repo = state["project_root"]
 
-    for script in PIPELINE_STEPS:
+    os.makedirs("scans", exist_ok=True)
 
-        print(
-            f"[PipelineAgent] Executing {script}"
-        )
+    print("\n========== SAST Pipeline ==========\n")
 
-        result = subprocess.run(
-            [
-                "python3",
-                script
-            ]
-        )
+    #
+    # Run Semgrep
+    #
+    print("[1/11] Running Semgrep...")
 
-        if result.returncode != 0:
+    subprocess.run([
+        "semgrep",
+        "--config=auto",
+        repo,
+        "--json",
+        "--output",
+        "scans/semgrep.json"
+    ], check=False)
 
-            raise RuntimeError(
-                f"Pipeline failed at {script}"
-            )
+    #
+    # Run Trivy
+    #
+    print("[2/11] Running Trivy...")
 
-    print(
-        "\n[PipelineAgent] Pipeline completed"
-    )
+    subprocess.run([
+        "trivy",
+        "fs",
+        "--format",
+        "json",
+        "--output",
+        "scans/trivy.json",
+        repo
+    ], check=False)
 
-    state[
-        "pipeline_complete"
-    ] = True
+    #
+    # Run Gitleaks
+    #
+    print("[3/11] Running Gitleaks...")
 
-    # Load the prioritized findings into state
-    import json
-    import os
-    PRIORITIZED_FINDINGS_FILE = "reports/final_prioritized_findings.json"
-    if os.path.exists(PRIORITIZED_FINDINGS_FILE):
-        try:
-            with open(PRIORITIZED_FINDINGS_FILE, "r") as f:
-                findings = json.load(f)
-                state["findings"] = findings
-                print(f"[PipelineAgent] Loaded {len(findings)} findings into state")
+    subprocess.run([
+        "gitleaks",
+        "detect",
+        "--source",
+        repo,
+        "--report-format",
+        "json",
+        "--report-path",
+        "scans/gitleaks.json"
+    ], check=False)
 
-                # Now run the CorrelationAgent logic if findings exist
-                from agents.correlation_agent import run as correlation_agent
-                state = correlation_agent(state)
-        except Exception as e:
-            print(f"[PipelineAgent] Error loading findings: {e}")
-    else:
-        print(f"[PipelineAgent] {PRIORITIZED_FINDINGS_FILE} not found. No findings to load.")
+    #
+    # Parse scanner outputs
+    #
+    print("[4/11] Parsing Semgrep...")
+    subprocess.run(["python3", "parsers/semgrep_parser.py"], check=False)
+
+    print("[5/11] Parsing Trivy...")
+    subprocess.run(["python3", "parsers/trivy_parser.py"], check=False)
+
+    print("[6/11] Parsing Gitleaks...")
+    subprocess.run(["python3", "parsers/gitleaks_parser.py"], check=False)
+
+    #
+    # Merge findings
+    #
+    print("[7/11] Merging Findings...")
+    subprocess.run(["python3", "parsers/merge_findings.py"], check=False)
+
+    #
+    # Normalize severities
+    #
+    print("[8/11] Normalizing Findings...")
+    subprocess.run(["python3", "parsers/severity_normalizer.py"], check=False)
+
+    #
+    # Map findings
+    #
+    print("[9/11] Mapping Findings...")
+    subprocess.run(["python3", "parsers/finding_mapper.py"], check=False)
+
+    #
+    # Build attack surface
+    #
+    print("[10/11] Building Attack Surface...")
+    subprocess.run(["python3", "parsers/attack_surface_mapper.py"], check=False)
+
+    #
+    # Remaining enrichment
+    #
+    print("[11/11] Context + Reachability + Prioritization...")
+
+    subprocess.run(["python3", "parsers/context_pack_builder.py"], check=False)
+    subprocess.run(["python3", "parsers/graph_linker_v2.py"], check=False)
+    subprocess.run(["python3", "parsers/reachability_engine.py"], check=False)
+    subprocess.run(["python3", "parsers/final_prioritizer.py"], check=False)
+
+    print("\n========== SAST Pipeline Complete ==========\n")
 
     return state
