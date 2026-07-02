@@ -1,4 +1,5 @@
 import json
+import os
 
 ZAP_FILE = "reports/normalized_zap.json"
 SEMGREP_FILE = "reports/normalized_semgrep.json"
@@ -7,16 +8,17 @@ GITLEAKS_FILE = "reports/normalized_gitleaks.json"
 
 OUTPUT_FILE = "reports/all_findings.json"
 
-
-import os
-
 def load_json(path):
     if not os.path.exists(path):
         return []
     try:
         with open(path, "r") as f:
-            return json.load(f)
-    except:
+            data = json.load(f)
+            if not isinstance(data, list):
+                return []
+            return data
+    except Exception as e:
+        print(f"[MergeFindings] Error loading {path}: {e}")
         return []
 
 
@@ -34,6 +36,7 @@ def main():
     all_findings.extend(gitleaks)
     all_findings.extend(zap)
 
+    os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
     with open(OUTPUT_FILE, "w") as f:
         json.dump(
             all_findings,

@@ -1,0 +1,8 @@
+[
+  {
+    "incident": "aws-access-token",
+    "priority": "MEDIUM",
+    "action": "Remediate aws-access-token by implementing proper input validation and security controls.",
+    "effort": "Medium"
+  }
+]

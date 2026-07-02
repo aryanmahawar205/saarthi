@@ -1,0 +1,12 @@
+{
+  "source_files": [
+    "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/LessonController.java",
+    "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/Config.java",
+    "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/SqlInjection.java"
+  ],
+  "config_files": [],
+  "documents": [],
+  "pom_files": [
+    "vulnerable_codebases/WebGoat/pom.xml"
+  ]
+}

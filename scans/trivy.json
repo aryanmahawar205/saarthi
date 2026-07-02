@@ -1,0 +1,30 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.72.0"
+  },
+  "ReportID": "019f2492-8290-7835-975c-52517f577c92",
+  "CreatedAt": "2026-07-02T20:43:29.296538879Z",
+  "ArtifactName": "vulnerable_codebases/WebGoat",
+  "ArtifactType": "filesystem",
+  "Results": [
+    {
+      "Target": "pom.xml",
+      "Class": "lang-pkgs",
+      "Type": "pom",
+      "Packages": [
+        {
+          "ID": "org.owasp.webgoat:webgoat:1.0::eb4bdf11",
+          "Name": "org.owasp.webgoat:webgoat",
+          "Identifier": {
+            "PURL": "pkg:maven/org.owasp.webgoat/webgoat@1.0",
+            "UID": "3948ace11433403a"
+          },
+          "Version": "1.0",
+          "Relationship": "root",
+          "AnalyzedBy": "pom"
+        }
+      ]
+    }
+  ]
+}

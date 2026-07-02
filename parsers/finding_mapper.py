@@ -7,7 +7,8 @@ OUTPUT_FILE = "reports/mapped_findings.json"
 
 
 def load_json(path):
-
+    if not os.path.exists(path):
+        return []
     with open(path) as f:
         return json.load(f)
 

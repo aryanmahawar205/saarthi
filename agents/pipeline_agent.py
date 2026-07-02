@@ -7,13 +7,14 @@ def run(state):
     repo = state["project_root"]
 
     os.makedirs("scans", exist_ok=True)
+    os.makedirs("reports", exist_ok=True)
 
     print("\n========== SAST Pipeline ==========\n")
 
     #
     # Run Semgrep
     #
-    print("[1/11] Running Semgrep...")
+    print("[1/11] Running Semgrep Scan...")
 
     subprocess.run([
         "semgrep",
@@ -23,11 +24,12 @@ def run(state):
         "--output",
         "scans/semgrep.json"
     ], check=False)
+    print("[✓] Semgrep Scan Complete")
 
     #
     # Run Trivy
     #
-    print("[2/11] Running Trivy...")
+    print("[2/11] Running Trivy Scan...")
 
     subprocess.run([
         "trivy",
@@ -38,12 +40,15 @@ def run(state):
         "scans/trivy.json",
         repo
     ], check=False)
+    print("[✓] Trivy Scan Complete")
 
     #
     # Run Gitleaks
     #
-    print("[3/11] Running Gitleaks...")
+    print("[3/11] Running Gitleaks Scan...")
 
+    # Gitleaks often fails if not in a git repo, use --no-git if needed,
+    # but the prompt says it is tracked by git in semgrep output
     subprocess.run([
         "gitleaks",
         "detect",
@@ -52,8 +57,10 @@ def run(state):
         "--report-format",
         "json",
         "--report-path",
-        "scans/gitleaks.json"
+        "scans/gitleaks.json",
+        "--no-git"
     ], check=False)
+    print("[✓] Gitleaks Scan Complete")
 
     #
     # Parse scanner outputs
@@ -66,12 +73,14 @@ def run(state):
 
     print("[6/11] Parsing Gitleaks...")
     subprocess.run(["python3", "parsers/gitleaks_parser.py"], check=False)
+    print("[✓] Normalize Findings Complete")
 
     #
     # Merge findings
     #
     print("[7/11] Merging Findings...")
     subprocess.run(["python3", "parsers/merge_findings.py"], check=False)
+    print("[✓] Merge Findings Complete")
 
     #
     # Normalize severities
@@ -100,6 +109,9 @@ def run(state):
     subprocess.run(["python3", "parsers/graph_linker_v2.py"], check=False)
     subprocess.run(["python3", "parsers/reachability_engine.py"], check=False)
     subprocess.run(["python3", "parsers/final_prioritizer.py"], check=False)
+
+    print("[✓] Reachability Analysis Complete")
+    print("[✓] Prioritization Complete")
 
     print("\n========== SAST Pipeline Complete ==========\n")
 

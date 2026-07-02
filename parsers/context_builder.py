@@ -1,7 +1,13 @@
 import json
 import os
 
-REPO_ROOT = "vulnerable_codebases/WebGoat"
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--repo", default="vulnerable_codebases/WebGoat")
+args, _ = parser.parse_known_args()
+
+REPO_ROOT = args.repo
 
 OUTPUT_FILE = "reports/repository_context.json"
 

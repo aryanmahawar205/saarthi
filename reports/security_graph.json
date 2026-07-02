@@ -1,0 +1,19 @@
+{
+  "nodes": [],
+  "edges": [],
+  "statistics": {
+    "node_count": 0,
+    "edge_count": 0,
+    "edge_types": []
+  },
+  "raw_inputs": {
+    "attack_surface": {},
+    "trust_boundaries": [],
+    "api_call_chains": [],
+    "sast_incidents": [],
+    "dast_incidents": [],
+    "runtime_observations": [],
+    "runtime_evidence": [],
+    "runtime_flow_evidence": []
+  }
+}
