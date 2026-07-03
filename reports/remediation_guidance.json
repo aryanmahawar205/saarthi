@@ -1,8 +1,122 @@
 [
   {
-    "incident": "aws-access-token",
+    "incident": "java.lang.security.audit.object-deserialization.object-deserialization",
     "priority": "MEDIUM",
-    "action": "Remediate aws-access-token by implementing proper input validation and security controls.",
+    "action": "Remediate java.lang.security.audit.object-deserialization.object-deserialization by implementing proper input validation and security controls.",
+    "effort": "Medium"
+  },
+  {
+    "incident": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal",
+    "priority": "MEDIUM",
+    "action": "Remediate java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal by implementing proper input validation and security controls.",
+    "effort": "Medium"
+  },
+  {
+    "incident": "java.spring.security.injection.tainted-file-path.tainted-file-path",
+    "priority": "MEDIUM",
+    "action": "Remediate java.spring.security.injection.tainted-file-path.tainted-file-path by implementing proper input validation and security controls.",
+    "effort": "Medium"
+  },
+  {
+    "incident": "java.spring.security.injection.tainted-sql-string.tainted-sql-string",
+    "priority": "MEDIUM",
+    "action": "Remediate java.spring.security.injection.tainted-sql-string.tainted-sql-string by implementing proper input validation and security controls.",
+    "effort": "Medium"
+  },
+  {
+    "incident": "java.lang.security.audit.formatted-sql-string.formatted-sql-string",
+    "priority": "MEDIUM",
+    "action": "Remediate java.lang.security.audit.formatted-sql-string.formatted-sql-string by implementing proper input validation and security controls.",
+    "effort": "Medium"
+  },
+  {
+    "incident": "java.spring.security.injection.tainted-sql-string.tainted-sql-string",
+    "priority": "MEDIUM",
+    "action": "Remediate java.spring.security.injection.tainted-sql-string.tainted-sql-string by implementing proper input validation and security controls.",
+    "effort": "Medium"
+  },
+  {
+    "incident": "java.lang.security.audit.formatted-sql-string.formatted-sql-string",
+    "priority": "MEDIUM",
+    "action": "Remediate java.lang.security.audit.formatted-sql-string.formatted-sql-string by implementing proper input validation and security controls.",
+    "effort": "Medium"
+  },
+  {
+    "incident": "java.lang.security.audit.formatted-sql-string.formatted-sql-string",
+    "priority": "MEDIUM",
+    "action": "Remediate java.lang.security.audit.formatted-sql-string.formatted-sql-string by implementing proper input validation and security controls.",
+    "effort": "Medium"
+  },
+  {
+    "incident": "java.lang.security.audit.formatted-sql-string.formatted-sql-string",
+    "priority": "MEDIUM",
+    "action": "Remediate java.lang.security.audit.formatted-sql-string.formatted-sql-string by implementing proper input validation and security controls.",
+    "effort": "Medium"
+  },
+  {
+    "incident": "java.lang.security.audit.formatted-sql-string.formatted-sql-string",
+    "priority": "MEDIUM",
+    "action": "Remediate java.lang.security.audit.formatted-sql-string.formatted-sql-string by implementing proper input validation and security controls.",
+    "effort": "Medium"
+  },
+  {
+    "incident": "java.lang.security.audit.formatted-sql-string.formatted-sql-string",
+    "priority": "MEDIUM",
+    "action": "Remediate java.lang.security.audit.formatted-sql-string.formatted-sql-string by implementing proper input validation and security controls.",
+    "effort": "Medium"
+  },
+  {
+    "incident": "java.lang.security.audit.formatted-sql-string.formatted-sql-string",
+    "priority": "MEDIUM",
+    "action": "Remediate java.lang.security.audit.formatted-sql-string.formatted-sql-string by implementing proper input validation and security controls.",
+    "effort": "Medium"
+  },
+  {
+    "incident": "java.lang.security.audit.formatted-sql-string.formatted-sql-string",
+    "priority": "MEDIUM",
+    "action": "Remediate java.lang.security.audit.formatted-sql-string.formatted-sql-string by implementing proper input validation and security controls.",
+    "effort": "Medium"
+  },
+  {
+    "incident": "java.spring.security.injection.tainted-sql-string.tainted-sql-string",
+    "priority": "MEDIUM",
+    "action": "Remediate java.spring.security.injection.tainted-sql-string.tainted-sql-string by implementing proper input validation and security controls.",
+    "effort": "Medium"
+  },
+  {
+    "incident": "java.spring.security.unrestricted-request-mapping.unrestricted-request-mapping",
+    "priority": "MEDIUM",
+    "action": "Remediate java.spring.security.unrestricted-request-mapping.unrestricted-request-mapping by implementing proper input validation and security controls.",
+    "effort": "Medium"
+  },
+  {
+    "incident": "java.spring.security.unrestricted-request-mapping.unrestricted-request-mapping",
+    "priority": "MEDIUM",
+    "action": "Remediate java.spring.security.unrestricted-request-mapping.unrestricted-request-mapping by implementing proper input validation and security controls.",
+    "effort": "Medium"
+  },
+  {
+    "incident": "java.lang.security.audit.object-deserialization.object-deserialization",
+    "priority": "MEDIUM",
+    "action": "Remediate java.lang.security.audit.object-deserialization.object-deserialization by implementing proper input validation and security controls.",
+    "effort": "Medium"
+  },
+  {
+    "incident": "java.lang.security.audit.sqli.jdbc-sqli.jdbc-sqli",
+    "priority": "MEDIUM",
+    "action": "Remediate java.lang.security.audit.sqli.jdbc-sqli.jdbc-sqli by implementing proper input validation and security controls.",
+    "effort": "Medium"
+  },
+  {
+    "incident": "java.lang.security.audit.sqli.jdbc-sqli.jdbc-sqli",
+    "priority": "MEDIUM",
+    "action": "Remediate java.lang.security.audit.sqli.jdbc-sqli.jdbc-sqli by implementing proper input validation and security controls.",
+    "effort": "Medium"
+  },
+  {
+    "incident": "java.lang.security.audit.sqli.jdbc-sqli.jdbc-sqli",
+    "priority": "MEDIUM",
+    "action": "Remediate java.lang.security.audit.sqli.jdbc-sqli.jdbc-sqli by implementing proper input validation and security controls.",
     "effort": "Medium"
   }
 ]

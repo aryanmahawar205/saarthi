@@ -1,18 +1,23 @@
 {
-  "application_type": "Java Application",
+  "application_type": "Spring Boot",
   "contains_api": true,
-  "contains_database": false,
-  "contains_authentication": false,
-  "contains_dependencies": false,
+  "contains_database": true,
+  "contains_authentication": true,
+  "contains_dependencies": true,
   "recommended_scanners": [
     "semgrep",
     "trivy",
     "zap"
   ],
   "critical_components": [
-    "API Layer"
+    "API Layer",
+    "Database Layer",
+    "Authentication Layer"
   ],
   "reasoning": [
-    "REST endpoints detected"
+    "REST endpoints detected",
+    "Database dependencies detected",
+    "Authentication components detected",
+    "Third-party dependencies detected"
   ]
 }
