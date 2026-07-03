@@ -1,1 +1,134 @@
-[]
+[
+  {
+    "name": "Browser Exploitation Chain",
+    "path": [
+      "Victim Browser",
+      "Missing CSP / Security Headers",
+      "Script Injection or Clickjacking",
+      "Session Theft or State Modification"
+    ],
+    "impact": "Account Takeover / Reputation Damage",
+    "boundary_crossed": "Application Layer"
+  },
+  {
+    "name": "Authentication Abuse",
+    "path": [
+      "External Input",
+      "Exposed Login Endpoint",
+      "Weak Session Controls or Brute Force",
+      "Session Hijacking or Credential Compromise"
+    ],
+    "impact": "Account Compromise / Data Breach",
+    "boundary_crossed": "Identity Boundary"
+  },
+  {
+    "name": "Exploitation of Sub Resource Integrity Attribute Missing",
+    "path": [
+      "External Input",
+      "Discovery of Vulnerability",
+      "Exploitation of Sub Resource Integrity Attribute Missing",
+      "Impact Realization"
+    ],
+    "impact": "Variable based on context",
+    "boundary_crossed": "Application Layer"
+  },
+  {
+    "name": "Exploitation of Cross-Domain JavaScript Source File Inclusion",
+    "path": [
+      "External Input",
+      "Discovery of Vulnerability",
+      "Exploitation of Cross-Domain JavaScript Source File Inclusion",
+      "Impact Realization"
+    ],
+    "impact": "Variable based on context",
+    "boundary_crossed": "Application Layer"
+  },
+  {
+    "name": "Exploitation of Strict-Transport-Security Header Not Set",
+    "path": [
+      "External Input",
+      "Discovery of Vulnerability",
+      "Exploitation of Strict-Transport-Security Header Not Set",
+      "Impact Realization"
+    ],
+    "impact": "Variable based on context",
+    "boundary_crossed": "Application Layer"
+  },
+  {
+    "name": "Exploitation of Timestamp Disclosure - Unix",
+    "path": [
+      "External Input",
+      "Discovery of Vulnerability",
+      "Exploitation of Timestamp Disclosure - Unix",
+      "Impact Realization"
+    ],
+    "impact": "Variable based on context",
+    "boundary_crossed": "Application Layer"
+  },
+  {
+    "name": "Exploitation of Information Disclosure - Sensitive Information in URL",
+    "path": [
+      "External Input",
+      "Discovery of Vulnerability",
+      "Exploitation of Information Disclosure - Sensitive Information in URL",
+      "Impact Realization"
+    ],
+    "impact": "Variable based on context",
+    "boundary_crossed": "Application Layer"
+  },
+  {
+    "name": "Exploitation of Modern Web Application",
+    "path": [
+      "External Input",
+      "Discovery of Vulnerability",
+      "Exploitation of Modern Web Application",
+      "Impact Realization"
+    ],
+    "impact": "Variable based on context",
+    "boundary_crossed": "Application Layer"
+  },
+  {
+    "name": "Exploitation of Non-Storable Content",
+    "path": [
+      "External Input",
+      "Discovery of Vulnerability",
+      "Exploitation of Non-Storable Content",
+      "Impact Realization"
+    ],
+    "impact": "Variable based on context",
+    "boundary_crossed": "Application Layer"
+  },
+  {
+    "name": "Exploitation of Re-examine Cache-control Directives",
+    "path": [
+      "External Input",
+      "Discovery of Vulnerability",
+      "Exploitation of Re-examine Cache-control Directives",
+      "Impact Realization"
+    ],
+    "impact": "Variable based on context",
+    "boundary_crossed": "Application Layer"
+  },
+  {
+    "name": "Exploitation of Retrieved from Cache",
+    "path": [
+      "External Input",
+      "Discovery of Vulnerability",
+      "Exploitation of Retrieved from Cache",
+      "Impact Realization"
+    ],
+    "impact": "Variable based on context",
+    "boundary_crossed": "Application Layer"
+  },
+  {
+    "name": "Exploitation of Storable and Cacheable Content",
+    "path": [
+      "External Input",
+      "Discovery of Vulnerability",
+      "Exploitation of Storable and Cacheable Content",
+      "Impact Realization"
+    ],
+    "impact": "Variable based on context",
+    "boundary_crossed": "Application Layer"
+  }
+]

@@ -2,10 +2,10 @@
 
 ## Executive Summary
 
-**Overall Risk Level:** CRITICAL (85/100)
+**Overall Risk Level:** UNKNOWN (0/100)
 
 ### Summary of Findings
-Saarthi's analysis of the target application has identified a total of 20 SAST incidents and 0 DAST incidents. Through runtime observation, we've correlated these findings into 0 critical attack chains.
+Saarthi's analysis of the target application has identified a total of 20 SAST incidents and 49 DAST incidents. Through runtime observation, we've correlated these findings into 12 critical attack chains.
 
 The assessment highlights significant risks in the application's handling of external inputs and session management, particularly where they cross defined trust boundaries.
 
@@ -16,9 +16,9 @@ The application architecture was analyzed using a combination of repository pars
 
 ## Assessment Scope
 
-- **Target URL:** N/A
-- **Repository Path:** vulnerable_codebases/WebGoat
-- **Discovery Mode:** Single-Mode
+- **Target URL:** https://about.me/venugopals
+- **Repository Path:** /workspaces/saarthi
+- **Discovery Mode:** Hybrid
 
 ## Attack Surface
 
@@ -151,50 +151,212 @@ No runtime traffic was observed.
 
 ## Dynamic Findings (DAST)
 
-No runtime findings were identified.
+- **Weak Browser Security Controls** (Instances: 28)
+- **Authentication Surface** (Instances: 10)
+- **Sub Resource Integrity Attribute Missing** (Instances: 1)
+- **Sub Resource Integrity Attribute Missing** (Instances: 1)
+- **Sub Resource Integrity Attribute Missing** (Instances: 1)
+- **Sub Resource Integrity Attribute Missing** (Instances: 1)
+- **Sub Resource Integrity Attribute Missing** (Instances: 1)
+- **Cross-Domain JavaScript Source File Inclusion** (Instances: 1)
+- **Cross-Domain JavaScript Source File Inclusion** (Instances: 1)
+- **Cross-Domain JavaScript Source File Inclusion** (Instances: 1)
+- **Cross-Domain JavaScript Source File Inclusion** (Instances: 1)
+- **Cross-Domain JavaScript Source File Inclusion** (Instances: 1)
+- **Strict-Transport-Security Header Not Set** (Instances: 1)
+- **Strict-Transport-Security Header Not Set** (Instances: 1)
+- **Strict-Transport-Security Header Not Set** (Instances: 1)
+- **Strict-Transport-Security Header Not Set** (Instances: 1)
+- **Strict-Transport-Security Header Not Set** (Instances: 1)
+- **Timestamp Disclosure - Unix** (Instances: 1)
+- **Timestamp Disclosure - Unix** (Instances: 1)
+- **Timestamp Disclosure - Unix** (Instances: 1)
+- **Timestamp Disclosure - Unix** (Instances: 1)
+- **Timestamp Disclosure - Unix** (Instances: 1)
+- **Information Disclosure - Sensitive Information in URL** (Instances: 1)
+- **Information Disclosure - Sensitive Information in URL** (Instances: 1)
+- **Information Disclosure - Sensitive Information in URL** (Instances: 1)
+- **Information Disclosure - Sensitive Information in URL** (Instances: 1)
+- **Information Disclosure - Sensitive Information in URL** (Instances: 1)
+- **Modern Web Application** (Instances: 1)
+- **Modern Web Application** (Instances: 1)
+- **Modern Web Application** (Instances: 1)
+- **Non-Storable Content** (Instances: 1)
+- **Non-Storable Content** (Instances: 1)
+- **Non-Storable Content** (Instances: 1)
+- **Non-Storable Content** (Instances: 1)
+- **Non-Storable Content** (Instances: 1)
+- **Re-examine Cache-control Directives** (Instances: 1)
+- **Re-examine Cache-control Directives** (Instances: 1)
+- **Re-examine Cache-control Directives** (Instances: 1)
+- **Re-examine Cache-control Directives** (Instances: 1)
+- **Re-examine Cache-control Directives** (Instances: 1)
+- **Retrieved from Cache** (Instances: 1)
+- **Retrieved from Cache** (Instances: 1)
+- **Retrieved from Cache** (Instances: 1)
+- **Retrieved from Cache** (Instances: 1)
+- **Retrieved from Cache** (Instances: 1)
+- **Storable and Cacheable Content** (Instances: 1)
+- **Storable and Cacheable Content** (Instances: 1)
+- **Storable and Cacheable Content** (Instances: 1)
+- **Storable and Cacheable Content** (Instances: 1)
 
 ## Correlated Findings
 
 Saarthi has correlated static code vulnerabilities with runtime execution evidence. This correlation reduces false positives and highlights vulnerabilities that are demonstrably reachable in the running environment.
 
 ### Knowledge Graph Statistics
-- **Nodes:** 378
-- **Edges:** 316
-- **Relationship Types:** points_to, calls, crosses, contains_vulnerability, initiates
+- **Nodes:** 414
+- **Edges:** 375
+- **Relationship Types:** calls, initiates, has_finding, contains_vulnerability, points_to, crosses, affects_boundary
 
 ## Attack Chains
 
-No definitive attack chains were derived.
+### 1. Browser Exploitation Chain
+**Boundary Crossed:** Application Layer
+**Impact:** Account Takeover / Reputation Damage
+
+**Chain:**
+- Victim Browser
+- Missing CSP / Security Headers
+- Script Injection or Clickjacking
+- Session Theft or State Modification
+
+### 2. Authentication Abuse
+**Boundary Crossed:** Identity Boundary
+**Impact:** Account Compromise / Data Breach
+
+**Chain:**
+- External Input
+- Exposed Login Endpoint
+- Weak Session Controls or Brute Force
+- Session Hijacking or Credential Compromise
+
+### 3. Exploitation of Sub Resource Integrity Attribute Missing
+**Boundary Crossed:** Application Layer
+**Impact:** Variable based on context
+
+**Chain:**
+- External Input
+- Discovery of Vulnerability
+- Exploitation of Sub Resource Integrity Attribute Missing
+- Impact Realization
+
+### 4. Exploitation of Cross-Domain JavaScript Source File Inclusion
+**Boundary Crossed:** Application Layer
+**Impact:** Variable based on context
+
+**Chain:**
+- External Input
+- Discovery of Vulnerability
+- Exploitation of Cross-Domain JavaScript Source File Inclusion
+- Impact Realization
+
+### 5. Exploitation of Strict-Transport-Security Header Not Set
+**Boundary Crossed:** Application Layer
+**Impact:** Variable based on context
+
+**Chain:**
+- External Input
+- Discovery of Vulnerability
+- Exploitation of Strict-Transport-Security Header Not Set
+- Impact Realization
+
+### 6. Exploitation of Timestamp Disclosure - Unix
+**Boundary Crossed:** Application Layer
+**Impact:** Variable based on context
+
+**Chain:**
+- External Input
+- Discovery of Vulnerability
+- Exploitation of Timestamp Disclosure - Unix
+- Impact Realization
+
+### 7. Exploitation of Information Disclosure - Sensitive Information in URL
+**Boundary Crossed:** Application Layer
+**Impact:** Variable based on context
+
+**Chain:**
+- External Input
+- Discovery of Vulnerability
+- Exploitation of Information Disclosure - Sensitive Information in URL
+- Impact Realization
+
+### 8. Exploitation of Modern Web Application
+**Boundary Crossed:** Application Layer
+**Impact:** Variable based on context
+
+**Chain:**
+- External Input
+- Discovery of Vulnerability
+- Exploitation of Modern Web Application
+- Impact Realization
+
+### 9. Exploitation of Non-Storable Content
+**Boundary Crossed:** Application Layer
+**Impact:** Variable based on context
+
+**Chain:**
+- External Input
+- Discovery of Vulnerability
+- Exploitation of Non-Storable Content
+- Impact Realization
+
+### 10. Exploitation of Re-examine Cache-control Directives
+**Boundary Crossed:** Application Layer
+**Impact:** Variable based on context
+
+**Chain:**
+- External Input
+- Discovery of Vulnerability
+- Exploitation of Re-examine Cache-control Directives
+- Impact Realization
+
+### 11. Exploitation of Retrieved from Cache
+**Boundary Crossed:** Application Layer
+**Impact:** Variable based on context
+
+**Chain:**
+- External Input
+- Discovery of Vulnerability
+- Exploitation of Retrieved from Cache
+- Impact Realization
+
+### 12. Exploitation of Storable and Cacheable Content
+**Boundary Crossed:** Application Layer
+**Impact:** Variable based on context
+
+**Chain:**
+- External Input
+- Discovery of Vulnerability
+- Exploitation of Storable and Cacheable Content
+- Impact Realization
 
 ## AI-Assisted Reasoning
 
 ### Most Likely Attack
-Path Traversal (httpservlet-path-traversal)
+Failed to determine.
 
 ### Most Dangerous Attack
-Object Deserialization (object-deserialization)
+Failed to determine.
 
 ### Exploitability Assessment
-HIGH - These vulnerabilities are well-documented and can be easily exploited by attackers.
+Failed to assess.
 
 ### Business Impact
-CRITICAL - Data exposure, potential data breaches, and loss of customer trust could result in significant financial and reputational damage.
+Failed to generate business impact.
 
 ## Risk Assessment
 
-**Priority:** Fix the object deserialization vulnerability first, as it poses a high risk of remote code execution and data exposure.
+**Priority:** Unknown
 
 ### Top Risks
 
-- java.lang.security.audit.object-deserialization.object-deserialization
-- java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal
-- java.spring.security.injection.tainted-file-path.tainted-file-path
+No prioritized risks were provided.
 
 ## Remediation Roadmap
 
-1. Address the object deserialization issue in 'SerializationHelper.java' by ensuring proper validation and sanitization of input data.
-1. Implement path traversal prevention measures in 'ProfileUploadRetrieval.java', such as input validation and restricted file paths.
-1. Review and secure any SQL injection vulnerabilities found, particularly focusing on preventing tainted SQL strings from being executed.
+No remediation steps were provided.
 
 ## Executive Recommendations
 

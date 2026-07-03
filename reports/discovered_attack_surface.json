@@ -1,5 +1,5 @@
 {
-  "target": "http://localhost:8080/WebGoat",
+  "target": "https://about.me/venugopals",
   "endpoint_count": 0,
   "endpoints": []
 }
