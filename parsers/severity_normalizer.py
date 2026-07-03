@@ -22,11 +22,19 @@ GITLEAKS_MAP = {
     "HIGH": "HIGH"
 }
 
+ZAP_MAP = {
+    "CRITICAL": "CRITICAL",
+    "HIGH": "HIGH",
+    "MEDIUM": "MEDIUM",
+    "LOW": "LOW",
+    "INFO": "LOW"
+}
+
 
 def normalize_severity(finding):
 
     tool = finding.get("tool", "")
-    severity = finding.get("severity", "")
+    severity = str(finding.get("severity", "")).upper()
 
     if tool == "Semgrep":
         return SEMGREP_MAP.get(
@@ -46,6 +54,12 @@ def normalize_severity(finding):
             "HIGH"
         )
 
+    elif tool == "ZAP":
+        return ZAP_MAP.get(
+            severity,
+            "LOW"
+        )
+
     return severity
 
 
@@ -63,7 +77,7 @@ def main():
     for finding in findings:
 
         finding["original_severity"] = \
-            finding["severity"]
+            finding.get("severity", "UNKNOWN")
 
         finding["severity"] = \
             normalize_severity(finding)

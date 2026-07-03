@@ -1,0 +1,15 @@
+[
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/LessonController.java",
+    "methods": [
+      "getLesson"
+    ]
+  },
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/SqlInjection.java",
+    "methods": [
+      "query",
+      "execute"
+    ]
+  }
+]

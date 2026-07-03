@@ -6,7 +6,7 @@ OUTPUT_FILE = "reports/normalized_zap.json"
 
 
 RISK_MAP = {
-    "0": "LOW",
+    "0": "INFO",
     "1": "LOW",
     "2": "MEDIUM",
     "3": "HIGH",
@@ -59,7 +59,7 @@ def normalize_alert(alert):
                     ""
                 ),
 
-            "cwe": [],
+            "cwe": [alert.get("cweid")] if alert.get("cweid") else [],
 
             "owasp": [],
 
@@ -113,9 +113,14 @@ def normalize_alert(alert):
 
 
 def main():
+    import os
+    if not os.path.exists(INPUT_FILE):
+        print(f"[!] {INPUT_FILE} not found. Skipping ZAP parsing.")
+        with open(OUTPUT_FILE, "w") as f:
+            json.dump([], f)
+        return
 
     with open(INPUT_FILE) as f:
-
         data = json.load(f)
 
     output = []

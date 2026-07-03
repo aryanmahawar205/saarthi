@@ -1,0 +1,62 @@
+[
+  {
+    "finding_id": "4ca26512-9fc8-472f-a23e-7050bb5c0568",
+    "tool": "Gitleaks",
+    "category": "SECRETS",
+    "severity": "HIGH",
+    "confidence": "HIGH",
+    "title": "aws-access-token",
+    "description": "Identified a pattern that may indicate AWS credentials, risking unauthorized cloud resource access and data breaches on AWS platforms.",
+    "cwe": [],
+    "owasp": [],
+    "cve": "",
+    "package": "",
+    "installed_version": "",
+    "fixed_version": "",
+    "cvss_score": 0.0,
+    "cvss_vector": "",
+    "secret_type": "aws-access-token",
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/Config.java",
+    "line": 1,
+    "likelihood": "HIGH",
+    "impact": "HIGH",
+    "vulnerability_class": [
+      "Secret Exposure"
+    ],
+    "status": "NEW",
+    "ai_analysis": null,
+    "references": [],
+    "raw_finding": {
+      "Description": "Identified a pattern that may indicate AWS credentials, risking unauthorized cloud resource access and data breaches on AWS platforms.",
+      "StartLine": 1,
+      "EndLine": 1,
+      "StartColumn": 16,
+      "EndColumn": 35,
+      "Match": "AKIAIOSFODNN7EXAMPLE",
+      "Secret": "AKIAIOSFODNN7EXAMPLE",
+      "File": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/Config.java",
+      "SymlinkFile": "",
+      "Commit": "",
+      "Entropy": 3.6841838,
+      "Author": "",
+      "Email": "",
+      "Date": "",
+      "Message": "",
+      "Tags": [],
+      "RuleID": "aws-access-token",
+      "Fingerprint": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/Config.java:aws-access-token:1"
+    },
+    "original_severity": "HIGH",
+    "repository_context": {
+      "file": "Config.java",
+      "api_endpoints": []
+    },
+    "attack_surface": {
+      "asset_type": "APPLICATION_CODE"
+    },
+    "asset_type": "APPLICATION_CODE",
+    "api_endpoints": [],
+    "methods": [],
+    "related_calls": []
+  }
+]

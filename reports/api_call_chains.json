@@ -1,0 +1,9 @@
+[
+  {
+    "file": "vulnerable_codebases/WebGoat/src/main/java/org/owasp/webgoat/LessonController.java",
+    "endpoints": [
+      "/lesson"
+    ],
+    "call_chain": []
+  }
+]

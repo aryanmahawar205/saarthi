@@ -7,7 +7,10 @@ except Exception:
     llm = None
 
 def run(state):
-    findings = state["findings"]
+    findings = state.get("findings", [])
+    if not findings:
+         state["incidents"] = []
+         return state
 
     prompt = f"""
 You are a security analyst.
@@ -20,7 +23,7 @@ Format:
   {{
     "incident":"SQL Injection",
     "findings":[
-      "finding title"
+      {{"title": "finding title", "file": "file path"}}
     ]
   }}
 ]
@@ -31,13 +34,24 @@ Format:
     try:
         result = llm.invoke(prompt)
         content = result.content
+        # Try to parse content as JSON
+        try:
+            incidents = json.loads(content)
+        except json.JSONDecodeError:
+            clean_content = content.replace('```json', '').replace('```', '').strip()
+            incidents = json.loads(clean_content)
     except Exception as e:
         print(f"[CorrelationAgent] Model failed: {e}")
-        # dummy fallback
-        content = json.dumps([])
+        # dummy fallback: one incident per finding
+        incidents = []
+        for f in findings:
+            incidents.append({
+                "incident": f.get("title"),
+                "findings": [f]
+            })
 
     print("[CorrelationAgent] Complete")
 
-    state["incidents"] = content
+    state["incidents"] = incidents
 
     return state

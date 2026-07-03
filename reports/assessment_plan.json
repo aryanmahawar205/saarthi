@@ -1,0 +1,18 @@
+{
+  "application_type": "Java Application",
+  "contains_api": true,
+  "contains_database": false,
+  "contains_authentication": false,
+  "contains_dependencies": false,
+  "recommended_scanners": [
+    "semgrep",
+    "trivy",
+    "zap"
+  ],
+  "critical_components": [
+    "API Layer"
+  ],
+  "reasoning": [
+    "REST endpoints detected"
+  ]
+}
